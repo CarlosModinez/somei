@@ -101,10 +101,10 @@
 			children = (
 				A591D72E239005AB005032D0 /* AppDelegate.swift */,
 				A591D730239005AB005032D0 /* SceneDelegate.swift */,
-				A591D732239005AB005032D0 /* ViewController.swift */,
-				A591D734239005AB005032D0 /* Main.storyboard */,
-				A591D737239005AF005032D0 /* Assets.xcassets */,
-				A591D739239005AF005032D0 /* LaunchScreen.storyboard */,
+				A591D76023900687005032D0 /* Model */,
+				A591D76123900695005032D0 /* Singleton */,
+				A591D75E23900659005032D0 /* View */,
+				A591D75F23900671005032D0 /* Controller */,
 				A591D73C239005AF005032D0 /* Info.plist */,
 			);
 			path = somei;
@@ -126,6 +126,38 @@
 				A591D752239005B0005032D0 /* Info.plist */,
 			);
 			path = someiUITests;
+			sourceTree = "<group>";
+		};
+		A591D75E23900659005032D0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A591D734239005AB005032D0 /* Main.storyboard */,
+				A591D737239005AF005032D0 /* Assets.xcassets */,
+				A591D739239005AF005032D0 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A591D75F23900671005032D0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A591D732239005AB005032D0 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A591D76023900687005032D0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A591D76123900695005032D0 /* Singleton */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Singleton;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
