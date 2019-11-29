@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -65,16 +65,40 @@
 		3909E37F2391495F00CD0958 /* Somei */ = {
 			isa = PBXGroup;
 			children = (
+				39A0F20223914D7800F52119 /* Controller */,
+				39A0F20123914D7300F52119 /* View */,
+				39A0F20023914D6600F52119 /* Model */,
 				3909E3802391495F00CD0958 /* AppDelegate.swift */,
 				3909E3822391495F00CD0958 /* SceneDelegate.swift */,
-				3909E3842391495F00CD0958 /* ViewController.swift */,
-				3909E3862391495F00CD0958 /* Main.storyboard */,
-				3909E3892391496400CD0958 /* Assets.xcassets */,
-				3909E38B2391496400CD0958 /* LaunchScreen.storyboard */,
 				3909E38E2391496400CD0958 /* Info.plist */,
 				393C377323914B2C00D85016 /* GoogleService-Info.plist */,
 			);
 			path = Somei;
+			sourceTree = "<group>";
+		};
+		39A0F20023914D6600F52119 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		39A0F20123914D7300F52119 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3909E38B2391496400CD0958 /* LaunchScreen.storyboard */,
+				3909E3862391495F00CD0958 /* Main.storyboard */,
+				3909E3892391496400CD0958 /* Assets.xcassets */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		39A0F20223914D7800F52119 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3909E3842391495F00CD0958 /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		403F872596AA76C9309C2B20 /* Pods */ = {
@@ -83,7 +107,6 @@
 				60EE2ED7D7A425936D289E28 /* Pods-Somei.debug.xcconfig */,
 				EC267DC846CDDFB79EF72AAA /* Pods-Somei.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
