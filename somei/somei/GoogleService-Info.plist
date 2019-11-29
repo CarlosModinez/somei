@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>408301523600-obtblf0g3hju6qcsgbg8a4ouhfcko0t9.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.408301523600-obtblf0g3hju6qcsgbg8a4ouhfcko0t9</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCq4BQdsnCo6WBkkIdFMPtq6UC9SmjBp_8</string>
+	<key>GCM_SENDER_ID</key>
+	<string>408301523600</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>co.cris.somei</string>
+	<key>PROJECT_ID</key>
+	<string>somei-1e6b1</string>
+	<key>STORAGE_BUCKET</key>
+	<string>somei-1e6b1.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:408301523600:ios:ffb883d1d16755c5437e15</string>
+	<key>DATABASE_URL</key>
+	<string>https://somei-1e6b1.firebaseio.com</string>
+</dict>
+</plist>
