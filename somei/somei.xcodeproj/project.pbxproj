@@ -14,6 +14,7 @@
 		3909E38A2391496400CD0958 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3909E3892391496400CD0958 /* Assets.xcassets */; };
 		3909E38D2391496400CD0958 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3909E38B2391496400CD0958 /* LaunchScreen.storyboard */; };
 		393C377423914B2C00D85016 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 393C377323914B2C00D85016 /* GoogleService-Info.plist */; };
+		39A0F20423914EAB00F52119 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A0F20323914EAB00F52119 /* File.swift */; };
 		7AF2033E0040AC6DD0E62130 /* Pods_Somei.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CA65FDD52ACDC82E05D15B6 /* Pods_Somei.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +28,7 @@
 		3909E38C2391496400CD0958 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3909E38E2391496400CD0958 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		393C377323914B2C00D85016 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		39A0F20323914EAB00F52119 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		3CA65FDD52ACDC82E05D15B6 /* Pods_Somei.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Somei.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		60EE2ED7D7A425936D289E28 /* Pods-Somei.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Somei.debug.xcconfig"; path = "Target Support Files/Pods-Somei/Pods-Somei.debug.xcconfig"; sourceTree = "<group>"; };
 		EC267DC846CDDFB79EF72AAA /* Pods-Somei.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Somei.release.xcconfig"; path = "Target Support Files/Pods-Somei/Pods-Somei.release.xcconfig"; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 		39A0F20023914D6600F52119 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				39A0F20323914EAB00F52119 /* File.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -235,6 +238,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3909E3852391495F00CD0958 /* ViewController.swift in Sources */,
+				39A0F20423914EAB00F52119 /* File.swift in Sources */,
 				3909E3812391495F00CD0958 /* AppDelegate.swift in Sources */,
 				3909E3832391495F00CD0958 /* SceneDelegate.swift in Sources */,
 			);
