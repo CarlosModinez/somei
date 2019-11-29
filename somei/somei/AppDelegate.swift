@@ -1,13 +1,12 @@
 //
 //  AppDelegate.swift
-//  somei
+//  Somei
 //
-//  Created by Cristiano Correia on 28/11/19.
-//  Copyright © 2019 Cristiano Correia. All rights reserved.
+//  Created by José Guilherme Bestel on 29/11/19.
+//  Copyright © 2019 José Guilherme Bestel. All rights reserved.
 //
 
 import UIKit
-import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,7 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        FirebaseApp.configure()
+        // Override point for customization after application launch.
         return true
     }
 

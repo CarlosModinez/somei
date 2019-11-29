@@ -1,9 +1,9 @@
 //
 //  SceneDelegate.swift
-//  somei
+//  Somei
 //
-//  Created by Cristiano Correia on 28/11/19.
-//  Copyright © 2019 Cristiano Correia. All rights reserved.
+//  Created by José Guilherme Bestel on 29/11/19.
+//  Copyright © 2019 José Guilherme Bestel. All rights reserved.
 //
 
 import UIKit
