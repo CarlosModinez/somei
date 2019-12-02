@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		3911CA59239159E20027B1FF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3911CA58239159E20027B1FF /* GoogleService-Info.plist */; };
-		3947C99E23915AB900B72900 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3947C99D23915AB900B72900 /* File.swift */; };
 		3947C9A023915F5300B72900 /* PrincipalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3947C99F23915F5300B72900 /* PrincipalViewController.swift */; };
 		39BAA0D1239159470066B302 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BAA0D0239159470066B302 /* AppDelegate.swift */; };
 		39BAA0D3239159470066B302 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BAA0D2239159470066B302 /* SceneDelegate.swift */; };
@@ -16,6 +15,13 @@
 		39BAA0D8239159470066B302 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39BAA0D6239159470066B302 /* Main.storyboard */; };
 		39BAA0DA239159490066B302 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39BAA0D9239159490066B302 /* Assets.xcassets */; };
 		39BAA0DD239159490066B302 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39BAA0DB239159490066B302 /* LaunchScreen.storyboard */; };
+		A5846BD6239542A400311414 /* Endereco.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5846BCF239542A300311414 /* Endereco.swift */; };
+		A5846BD7239542A400311414 /* InfoUsuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5846BD0239542A300311414 /* InfoUsuario.swift */; };
+		A5846BD9239542A400311414 /* InfoEmpresa.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5846BD2239542A400311414 /* InfoEmpresa.swift */; };
+		A5846BDA239542A400311414 /* Empresa.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5846BD3239542A400311414 /* Empresa.swift */; };
+		A5846BDB239542A400311414 /* Usuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5846BD4239542A400311414 /* Usuario.swift */; };
+		A5846BDC239542A400311414 /* Avaliacao.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5846BD5239542A400311414 /* Avaliacao.swift */; };
+		A5846BDE239542D600311414 /* ProcurarProfissionaisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5846BDD239542D600311414 /* ProcurarProfissionaisViewController.swift */; };
 		AF677AF8D3BF3BCCEB6DA650 /* Pods_Somei.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21E34BE9621ABE1E25C25B78 /* Pods_Somei.framework */; };
 /* End PBXBuildFile section */
 
@@ -23,7 +29,6 @@
 		08B2B67085EA8A969AA28D9F /* Pods-Somei.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Somei.debug.xcconfig"; path = "Target Support Files/Pods-Somei/Pods-Somei.debug.xcconfig"; sourceTree = "<group>"; };
 		21E34BE9621ABE1E25C25B78 /* Pods_Somei.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Somei.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3911CA58239159E20027B1FF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		3947C99D23915AB900B72900 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		3947C99F23915F5300B72900 /* PrincipalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrincipalViewController.swift; sourceTree = "<group>"; };
 		39BAA0CD239159470066B302 /* Somei.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Somei.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39BAA0D0239159470066B302 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -34,6 +39,13 @@
 		39BAA0DC239159490066B302 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		39BAA0DE239159490066B302 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46F7EE9F17B980114189616F /* Pods-Somei.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Somei.release.xcconfig"; path = "Target Support Files/Pods-Somei/Pods-Somei.release.xcconfig"; sourceTree = "<group>"; };
+		A5846BCF239542A300311414 /* Endereco.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Endereco.swift; path = ../../../../../../somei/somei/Model/Endereco.swift; sourceTree = "<group>"; };
+		A5846BD0239542A300311414 /* InfoUsuario.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoUsuario.swift; sourceTree = "<group>"; };
+		A5846BD2239542A400311414 /* InfoEmpresa.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoEmpresa.swift; sourceTree = "<group>"; };
+		A5846BD3239542A400311414 /* Empresa.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Empresa.swift; path = ../../../../../../somei/somei/Model/Empresa.swift; sourceTree = "<group>"; };
+		A5846BD4239542A400311414 /* Usuario.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Usuario.swift; path = ../../../../../../somei/somei/Model/Usuario.swift; sourceTree = "<group>"; };
+		A5846BD5239542A400311414 /* Avaliacao.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Avaliacao.swift; path = ../../../../../../somei/somei/Model/Avaliacao.swift; sourceTree = "<group>"; };
+		A5846BDD239542D600311414 /* ProcurarProfissionaisViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProcurarProfissionaisViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,7 +63,12 @@
 		3947C99A23915A7900B72900 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				3947C99D23915AB900B72900 /* File.swift */,
+				A5846BD5239542A400311414 /* Avaliacao.swift */,
+				A5846BD3239542A400311414 /* Empresa.swift */,
+				A5846BCF239542A300311414 /* Endereco.swift */,
+				A5846BD2239542A400311414 /* InfoEmpresa.swift */,
+				A5846BD0239542A300311414 /* InfoUsuario.swift */,
+				A5846BD4239542A400311414 /* Usuario.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -71,6 +88,7 @@
 			children = (
 				39BAA0D4239159470066B302 /* ViewController.swift */,
 				3947C99F23915F5300B72900 /* PrincipalViewController.swift */,
+				A5846BDD239542D600311414 /* ProcurarProfissionaisViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -162,7 +180,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 39BAA0C8239159470066B302 /* Build configuration list for PBXProject "Somei" */;
+			buildConfigurationList = 39BAA0C8239159470066B302 /* Build configuration list for PBXProject "somei" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -258,11 +276,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5846BD9239542A400311414 /* InfoEmpresa.swift in Sources */,
+				A5846BDA239542A400311414 /* Empresa.swift in Sources */,
+				A5846BD7239542A400311414 /* InfoUsuario.swift in Sources */,
+				A5846BD6239542A400311414 /* Endereco.swift in Sources */,
 				39BAA0D5239159470066B302 /* ViewController.swift in Sources */,
-				3947C99E23915AB900B72900 /* File.swift in Sources */,
+				A5846BDE239542D600311414 /* ProcurarProfissionaisViewController.swift in Sources */,
 				3947C9A023915F5300B72900 /* PrincipalViewController.swift in Sources */,
+				A5846BDC239542A400311414 /* Avaliacao.swift in Sources */,
 				39BAA0D1239159470066B302 /* AppDelegate.swift in Sources */,
 				39BAA0D3239159470066B302 /* SceneDelegate.swift in Sources */,
+				A5846BDB239542A400311414 /* Usuario.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,7 +467,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		39BAA0C8239159470066B302 /* Build configuration list for PBXProject "Somei" */ = {
+		39BAA0C8239159470066B302 /* Build configuration list for PBXProject "somei" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				39BAA0DF239159490066B302 /* Debug */,
