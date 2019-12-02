@@ -24,6 +24,10 @@
 		A5CBEA2523954530009D2658 /* InfoEmpresa.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CBEA1F23954530009D2658 /* InfoEmpresa.swift */; };
 		A5CBEA2623954530009D2658 /* Avaliacao.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CBEA2023954530009D2658 /* Avaliacao.swift */; };
 		A5CBEA2723954530009D2658 /* InfoUsuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CBEA2123954530009D2658 /* InfoUsuario.swift */; };
+		A5EC9E0623956EFC00BC72B3 /* ListaProfissionaisPesquisaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EC9E0523956EFC00BC72B3 /* ListaProfissionaisPesquisaViewController.swift */; };
+		A5EC9E082395739F00BC72B3 /* ListaProfissionaisTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EC9E072395739F00BC72B3 /* ListaProfissionaisTableViewCell.swift */; };
+		A5EC9E0A2395754300BC72B3 /* PerfilProfissionalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EC9E092395754300BC72B3 /* PerfilProfissionalViewController.swift */; };
+		A5EC9E0C2395767500BC72B3 /* ListaAtividadesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EC9E0B2395767500BC72B3 /* ListaAtividadesTableViewCell.swift */; };
 		AF677AF8D3BF3BCCEB6DA650 /* Pods_Somei.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21E34BE9621ABE1E25C25B78 /* Pods_Somei.framework */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +54,10 @@
 		A5CBEA1F23954530009D2658 /* InfoEmpresa.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InfoEmpresa.swift; path = somei/Model/InfoEmpresa.swift; sourceTree = SOURCE_ROOT; };
 		A5CBEA2023954530009D2658 /* Avaliacao.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Avaliacao.swift; path = somei/Model/Avaliacao.swift; sourceTree = SOURCE_ROOT; };
 		A5CBEA2123954530009D2658 /* InfoUsuario.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InfoUsuario.swift; path = somei/Model/InfoUsuario.swift; sourceTree = SOURCE_ROOT; };
+		A5EC9E0523956EFC00BC72B3 /* ListaProfissionaisPesquisaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ListaProfissionaisPesquisaViewController.swift; path = somei/Controller/Profissionais/ListaProfissionaisPesquisaViewController.swift; sourceTree = SOURCE_ROOT; };
+		A5EC9E072395739F00BC72B3 /* ListaProfissionaisTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ListaProfissionaisTableViewCell.swift; path = somei/Controller/Profissionais/Cell/ListaProfissionaisTableViewCell.swift; sourceTree = SOURCE_ROOT; };
+		A5EC9E092395754300BC72B3 /* PerfilProfissionalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PerfilProfissionalViewController.swift; path = somei/Controller/Profissionais/PerfilProfissionalViewController.swift; sourceTree = SOURCE_ROOT; };
+		A5EC9E0B2395767500BC72B3 /* ListaAtividadesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ListaAtividadesTableViewCell.swift; path = somei/Controller/Profissionais/Cell/ListaAtividadesTableViewCell.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,11 +75,11 @@
 		3947C99A23915A7900B72900 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A5CBEA2123954530009D2658 /* InfoUsuario.swift */,
+				A5CBEA1F23954530009D2658 /* InfoEmpresa.swift */,
 				A5CBEA2023954530009D2658 /* Avaliacao.swift */,
 				A5CBEA1C23954530009D2658 /* Empresa.swift */,
 				A5CBEA1D23954530009D2658 /* Endereco.swift */,
-				A5CBEA1F23954530009D2658 /* InfoEmpresa.swift */,
-				A5CBEA2123954530009D2658 /* InfoUsuario.swift */,
 				A5CBEA1E23954530009D2658 /* Usuario.swift */,
 			);
 			path = Model;
@@ -134,6 +142,8 @@
 			isa = PBXGroup;
 			children = (
 				A5459D4123954BAE0023D99D /* ProfissionaisMaisProcuradosCollectionViewCell.swift */,
+				A5EC9E072395739F00BC72B3 /* ListaProfissionaisTableViewCell.swift */,
+				A5EC9E0B2395767500BC72B3 /* ListaAtividadesTableViewCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -142,6 +152,8 @@
 			isa = PBXGroup;
 			children = (
 				A5459D3F23954BA20023D99D /* ProcurarProfissionaisViewController.swift */,
+				A5EC9E0523956EFC00BC72B3 /* ListaProfissionaisPesquisaViewController.swift */,
+				A5EC9E092395754300BC72B3 /* PerfilProfissionalViewController.swift */,
 				A5459D3A23954A760023D99D /* Cell */,
 			);
 			path = Profissionais;
@@ -310,11 +322,15 @@
 				A5459D4223954BAE0023D99D /* ProfissionaisMaisProcuradosCollectionViewCell.swift in Sources */,
 				A5CBEA2423954530009D2658 /* Usuario.swift in Sources */,
 				39BAA0D5239159470066B302 /* ViewController.swift in Sources */,
+				A5EC9E082395739F00BC72B3 /* ListaProfissionaisTableViewCell.swift in Sources */,
 				3947C9A023915F5300B72900 /* PrincipalViewController.swift in Sources */,
 				A5CBEA2223954530009D2658 /* Empresa.swift in Sources */,
 				A5CBEA2323954530009D2658 /* Endereco.swift in Sources */,
 				A5CBEA2623954530009D2658 /* Avaliacao.swift in Sources */,
 				A5459D492395527E0023D99D /* EXTViewArrendondada.swift in Sources */,
+				A5EC9E0C2395767500BC72B3 /* ListaAtividadesTableViewCell.swift in Sources */,
+				A5EC9E0623956EFC00BC72B3 /* ListaProfissionaisPesquisaViewController.swift in Sources */,
+				A5EC9E0A2395754300BC72B3 /* PerfilProfissionalViewController.swift in Sources */,
 				A5459D4023954BA20023D99D /* ProcurarProfissionaisViewController.swift in Sources */,
 				39BAA0D1239159470066B302 /* AppDelegate.swift in Sources */,
 				A5CBEA2723954530009D2658 /* InfoUsuario.swift in Sources */,

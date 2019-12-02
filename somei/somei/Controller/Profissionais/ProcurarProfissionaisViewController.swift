@@ -22,33 +22,43 @@ class ProcurarProfissionaisViewController: UIViewController, UICollectionViewDel
         
         
     }
-    
-    func atualizarInterface(){
-        
-        
-    }
+
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
         
         
-        return 1
+        return 5
     }
     
+    //TODO: categoria de profissionais
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Profissionais", for: indexPath) as! ProfissionaisMaisProcuradosCollectionViewCell
         
-        
-        
-
-
-        
+//        cell.lblAreaProfissional = 
+        sombreiaView(v: cell.viewCellAreaProfissional, blur: 7, y: 2, opacidade: 0.6)
         
         
         return cell
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+          if let vc = storyboard?.instantiateViewController(withIdentifier: "ListaProfissionaisPesquisaViewController") as? ListaProfissionaisPesquisaViewController {
+            
+              self.navigationController?.pushViewController(vc, animated: true)
+          }
+      }
+    
+    
+    func sombreiaView (v : UIView!, blur : CGFloat, y: CGFloat, opacidade : Float) {
+        
+    v.layer.shadowOffset = CGSize(width: 0, height: y)
+    v.layer.shadowRadius = blur
+    v.layer.shadowColor = UIColor.lightGray.cgColor
+    v.layer.shadowOpacity = opacidade
+        
+    }
 
     /*
     // MARK: - Navigation
