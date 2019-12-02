@@ -99,14 +99,46 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="dN5-27-cp2">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Profissionais" id="dN5-27-cp2" customClass="ProfissionaisMaisProcuradosCollectionViewCell" customModule="Somei" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="144" height="98"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="DAN-9W-gGl">
                                             <rect key="frame" x="0.0" y="0.0" width="144" height="98"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qaZ-98-JzB">
+                                                    <rect key="frame" x="0.0" y="0.0" width="144" height="98"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Restaurador de obras de arte" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ilY-mo-5Zu">
+                                                    <rect key="frame" x="7" y="0.0" width="129.5" height="98"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="8"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="qaZ-98-JzB" firstAttribute="centerX" secondItem="DAN-9W-gGl" secondAttribute="centerX" id="1ch-Zk-iVX"/>
+                                                <constraint firstItem="ilY-mo-5Zu" firstAttribute="leading" secondItem="DAN-9W-gGl" secondAttribute="leading" constant="7" id="7bj-dJ-Vks"/>
+                                                <constraint firstItem="qaZ-98-JzB" firstAttribute="height" secondItem="DAN-9W-gGl" secondAttribute="height" id="HrS-u2-MD9"/>
+                                                <constraint firstItem="ilY-mo-5Zu" firstAttribute="height" secondItem="DAN-9W-gGl" secondAttribute="height" id="Kne-Zf-plr"/>
+                                                <constraint firstItem="ilY-mo-5Zu" firstAttribute="width" secondItem="DAN-9W-gGl" secondAttribute="width" multiplier="0.9" id="L4B-kF-VNG"/>
+                                                <constraint firstItem="ilY-mo-5Zu" firstAttribute="centerX" secondItem="DAN-9W-gGl" secondAttribute="centerX" id="LHb-1U-MC4"/>
+                                                <constraint firstItem="ilY-mo-5Zu" firstAttribute="centerY" secondItem="DAN-9W-gGl" secondAttribute="centerY" id="W22-ul-Sdr"/>
+                                                <constraint firstItem="qaZ-98-JzB" firstAttribute="centerY" secondItem="DAN-9W-gGl" secondAttribute="centerY" id="Xmm-gX-ryU"/>
+                                                <constraint firstItem="qaZ-98-JzB" firstAttribute="width" secondItem="DAN-9W-gGl" secondAttribute="width" id="qvV-e9-slw"/>
+                                            </constraints>
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="144" height="98"/>
+                                        <connections>
+                                            <outlet property="lblAreaProfissional" destination="ilY-mo-5Zu" id="hqw-oh-9Fu"/>
+                                            <outlet property="viewCellAreaProfissional" destination="qaZ-98-JzB" id="eK3-1Z-IN3"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
@@ -125,6 +157,10 @@
                         <viewLayoutGuide key="safeArea" id="f4U-Ua-Fwo"/>
                     </view>
                     <navigationItem key="navigationItem" id="ysJ-bL-K9j"/>
+                    <connections>
+                        <outlet property="collectionView" destination="4qO-q6-wda" id="fty-pq-zYd"/>
+                        <outlet property="searchBar" destination="Oou-gN-snP" id="kOP-BQ-HdU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="21X-0a-8CC" sceneMemberID="firstResponder"/>
             </objects>
@@ -155,6 +191,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" red="0.20380932090000001" green="0.33304071429999998" blue="0.96475893260000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </tabBar>
                     <connections>
                         <segue destination="5Z2-7n-snU" kind="relationship" relationship="viewControllers" id="ue1-wf-7WM"/>
@@ -170,7 +207,7 @@
         <scene sceneID="kac-mI-bPo">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5Z2-7n-snU" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" id="Cej-VB-0t7"/>
+                    <tabBarItem key="tabBarItem" title="" selectedImage="icon-profissionais" id="Cej-VB-0t7"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" hidden="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="h7M-Qj-XwJ">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -189,7 +226,7 @@
         <scene sceneID="0gJ-2Q-nlj">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="npE-qU-ghD" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="Sm3-sV-GQX"/>
+                    <tabBarItem key="tabBarItem" title="Item" selectedImage="icon-chat" id="Sm3-sV-GQX"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="RrB-rf-hed">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -224,7 +261,7 @@
         <scene sceneID="1To-kV-taf">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mrz-cP-9s8" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="B0T-Sm-c5t"/>
+                    <tabBarItem key="tabBarItem" title="Item" selectedImage="icon-minha-conta" id="B0T-Sm-c5t"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Jwu-3k-X6Z">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -240,4 +277,9 @@
             <point key="canvasLocation" x="1047.8260869565217" y="1581.6964285714284"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="icon-chat" width="25" height="21.5"/>
+        <image name="icon-minha-conta" width="20" height="20"/>
+        <image name="icon-profissionais" width="30" height="30"/>
+    </resources>
 </document>
