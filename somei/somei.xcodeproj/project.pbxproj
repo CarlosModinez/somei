@@ -7,116 +7,119 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3909E3812391495F00CD0958 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3909E3802391495F00CD0958 /* AppDelegate.swift */; };
-		3909E3832391495F00CD0958 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3909E3822391495F00CD0958 /* SceneDelegate.swift */; };
-		3909E3852391495F00CD0958 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3909E3842391495F00CD0958 /* ViewController.swift */; };
-		3909E3882391495F00CD0958 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3909E3862391495F00CD0958 /* Main.storyboard */; };
-		3909E38A2391496400CD0958 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3909E3892391496400CD0958 /* Assets.xcassets */; };
-		3909E38D2391496400CD0958 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3909E38B2391496400CD0958 /* LaunchScreen.storyboard */; };
-		393C377423914B2C00D85016 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 393C377323914B2C00D85016 /* GoogleService-Info.plist */; };
-		39A0F20423914EAB00F52119 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A0F20323914EAB00F52119 /* File.swift */; };
-		7AF2033E0040AC6DD0E62130 /* Pods_Somei.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CA65FDD52ACDC82E05D15B6 /* Pods_Somei.framework */; };
+		3911CA59239159E20027B1FF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3911CA58239159E20027B1FF /* GoogleService-Info.plist */; };
+		3947C99E23915AB900B72900 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3947C99D23915AB900B72900 /* File.swift */; };
+		3947C9A023915F5300B72900 /* PrincipalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3947C99F23915F5300B72900 /* PrincipalViewController.swift */; };
+		39BAA0D1239159470066B302 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BAA0D0239159470066B302 /* AppDelegate.swift */; };
+		39BAA0D3239159470066B302 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BAA0D2239159470066B302 /* SceneDelegate.swift */; };
+		39BAA0D5239159470066B302 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BAA0D4239159470066B302 /* ViewController.swift */; };
+		39BAA0D8239159470066B302 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39BAA0D6239159470066B302 /* Main.storyboard */; };
+		39BAA0DA239159490066B302 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39BAA0D9239159490066B302 /* Assets.xcassets */; };
+		39BAA0DD239159490066B302 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39BAA0DB239159490066B302 /* LaunchScreen.storyboard */; };
+		AF677AF8D3BF3BCCEB6DA650 /* Pods_Somei.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21E34BE9621ABE1E25C25B78 /* Pods_Somei.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3909E37D2391495F00CD0958 /* Somei.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Somei.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		3909E3802391495F00CD0958 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3909E3822391495F00CD0958 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3909E3842391495F00CD0958 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		3909E3872391495F00CD0958 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		3909E3892391496400CD0958 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		3909E38C2391496400CD0958 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		3909E38E2391496400CD0958 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		393C377323914B2C00D85016 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		39A0F20323914EAB00F52119 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
-		3CA65FDD52ACDC82E05D15B6 /* Pods_Somei.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Somei.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		60EE2ED7D7A425936D289E28 /* Pods-Somei.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Somei.debug.xcconfig"; path = "Target Support Files/Pods-Somei/Pods-Somei.debug.xcconfig"; sourceTree = "<group>"; };
-		EC267DC846CDDFB79EF72AAA /* Pods-Somei.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Somei.release.xcconfig"; path = "Target Support Files/Pods-Somei/Pods-Somei.release.xcconfig"; sourceTree = "<group>"; };
+		08B2B67085EA8A969AA28D9F /* Pods-Somei.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Somei.debug.xcconfig"; path = "Target Support Files/Pods-Somei/Pods-Somei.debug.xcconfig"; sourceTree = "<group>"; };
+		21E34BE9621ABE1E25C25B78 /* Pods_Somei.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Somei.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3911CA58239159E20027B1FF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3947C99D23915AB900B72900 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		3947C99F23915F5300B72900 /* PrincipalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrincipalViewController.swift; sourceTree = "<group>"; };
+		39BAA0CD239159470066B302 /* Somei.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Somei.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		39BAA0D0239159470066B302 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		39BAA0D2239159470066B302 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		39BAA0D4239159470066B302 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		39BAA0D7239159470066B302 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		39BAA0D9239159490066B302 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		39BAA0DC239159490066B302 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		39BAA0DE239159490066B302 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46F7EE9F17B980114189616F /* Pods-Somei.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Somei.release.xcconfig"; path = "Target Support Files/Pods-Somei/Pods-Somei.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		3909E37A2391495F00CD0958 /* Frameworks */ = {
+		39BAA0CA239159470066B302 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7AF2033E0040AC6DD0E62130 /* Pods_Somei.framework in Frameworks */,
+				AF677AF8D3BF3BCCEB6DA650 /* Pods_Somei.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3909E3742391495F00CD0958 = {
+		3947C99A23915A7900B72900 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				3909E37F2391495F00CD0958 /* Somei */,
-				3909E37E2391495F00CD0958 /* Products */,
-				403F872596AA76C9309C2B20 /* Pods */,
-				BA00244E863EDB0D8595B4C4 /* Frameworks */,
-			);
-			sourceTree = "<group>";
-		};
-		3909E37E2391495F00CD0958 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				3909E37D2391495F00CD0958 /* Somei.app */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		3909E37F2391495F00CD0958 /* Somei */ = {
-			isa = PBXGroup;
-			children = (
-				39A0F20223914D7800F52119 /* Controller */,
-				39A0F20123914D7300F52119 /* View */,
-				39A0F20023914D6600F52119 /* Model */,
-				3909E3802391495F00CD0958 /* AppDelegate.swift */,
-				3909E3822391495F00CD0958 /* SceneDelegate.swift */,
-				3909E38E2391496400CD0958 /* Info.plist */,
-				393C377323914B2C00D85016 /* GoogleService-Info.plist */,
-			);
-			path = Somei;
-			sourceTree = "<group>";
-		};
-		39A0F20023914D6600F52119 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				39A0F20323914EAB00F52119 /* File.swift */,
+				3947C99D23915AB900B72900 /* File.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
-		39A0F20123914D7300F52119 /* View */ = {
+		3947C99B23915A8200B72900 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				3909E38B2391496400CD0958 /* LaunchScreen.storyboard */,
-				3909E3862391495F00CD0958 /* Main.storyboard */,
-				3909E3892391496400CD0958 /* Assets.xcassets */,
+				39BAA0D6239159470066B302 /* Main.storyboard */,
+				39BAA0DB239159490066B302 /* LaunchScreen.storyboard */,
+				39BAA0D9239159490066B302 /* Assets.xcassets */,
 			);
 			path = View;
 			sourceTree = "<group>";
 		};
-		39A0F20223914D7800F52119 /* Controller */ = {
+		3947C99C23915A9500B72900 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				3909E3842391495F00CD0958 /* ViewController.swift */,
+				39BAA0D4239159470066B302 /* ViewController.swift */,
+				3947C99F23915F5300B72900 /* PrincipalViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		403F872596AA76C9309C2B20 /* Pods */ = {
+		39BAA0C4239159470066B302 = {
 			isa = PBXGroup;
 			children = (
-				60EE2ED7D7A425936D289E28 /* Pods-Somei.debug.xcconfig */,
-				EC267DC846CDDFB79EF72AAA /* Pods-Somei.release.xcconfig */,
+				39BAA0CF239159470066B302 /* Somei */,
+				39BAA0CE239159470066B302 /* Products */,
+				B3A6728E47613F6F5C4E8DC9 /* Pods */,
+				D0275FBDE1D4B8C03BD1DB54 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		39BAA0CE239159470066B302 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				39BAA0CD239159470066B302 /* Somei.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		39BAA0CF239159470066B302 /* Somei */ = {
+			isa = PBXGroup;
+			children = (
+				3947C99C23915A9500B72900 /* Controller */,
+				3947C99B23915A8200B72900 /* View */,
+				3947C99A23915A7900B72900 /* Model */,
+				39BAA0D0239159470066B302 /* AppDelegate.swift */,
+				39BAA0D2239159470066B302 /* SceneDelegate.swift */,
+				39BAA0DE239159490066B302 /* Info.plist */,
+				3911CA58239159E20027B1FF /* GoogleService-Info.plist */,
+			);
+			path = Somei;
+			sourceTree = "<group>";
+		};
+		B3A6728E47613F6F5C4E8DC9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				08B2B67085EA8A969AA28D9F /* Pods-Somei.debug.xcconfig */,
+				46F7EE9F17B980114189616F /* Pods-Somei.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		BA00244E863EDB0D8595B4C4 /* Frameworks */ = {
+		D0275FBDE1D4B8C03BD1DB54 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				3CA65FDD52ACDC82E05D15B6 /* Pods_Somei.framework */,
+				21E34BE9621ABE1E25C25B78 /* Pods_Somei.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -124,15 +127,16 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3909E37C2391495F00CD0958 /* Somei */ = {
+		39BAA0CC239159470066B302 /* Somei */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3909E3912391496400CD0958 /* Build configuration list for PBXNativeTarget "Somei" */;
+			buildConfigurationList = 39BAA0E1239159490066B302 /* Build configuration list for PBXNativeTarget "Somei" */;
 			buildPhases = (
-				8E45FC0411467B27C112819B /* [CP] Check Pods Manifest.lock */,
-				3909E3792391495F00CD0958 /* Sources */,
-				3909E37A2391495F00CD0958 /* Frameworks */,
-				3909E37B2391495F00CD0958 /* Resources */,
-				65CD88C094DE95B2EB7855C3 /* [CP] Embed Pods Frameworks */,
+				8F6C3BF56DC99248095FD68F /* [CP] Check Pods Manifest.lock */,
+				39BAA0C9239159470066B302 /* Sources */,
+				39BAA0CA239159470066B302 /* Frameworks */,
+				39BAA0CB239159470066B302 /* Resources */,
+				BD94D496BAD002F6D2BD0616 /* [CP] Embed Pods Frameworks */,
+				4EFF98A7276545907FB7505B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -140,25 +144,25 @@
 			);
 			name = Somei;
 			productName = Somei;
-			productReference = 3909E37D2391495F00CD0958 /* Somei.app */;
+			productReference = 39BAA0CD239159470066B302 /* Somei.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		3909E3752391495F00CD0958 /* Project object */ = {
+		39BAA0C5239159470066B302 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1120;
 				LastUpgradeCheck = 1120;
 				ORGANIZATIONNAME = "José Guilherme Bestel";
 				TargetAttributes = {
-					3909E37C2391495F00CD0958 = {
+					39BAA0CC239159470066B302 = {
 						CreatedOnToolsVersion = 11.2.1;
 					};
 				};
 			};
-			buildConfigurationList = 3909E3782391495F00CD0958 /* Build configuration list for PBXProject "Somei" */;
+			buildConfigurationList = 39BAA0C8239159470066B302 /* Build configuration list for PBXProject "Somei" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -166,49 +170,49 @@
 				en,
 				Base,
 			);
-			mainGroup = 3909E3742391495F00CD0958;
-			productRefGroup = 3909E37E2391495F00CD0958 /* Products */;
+			mainGroup = 39BAA0C4239159470066B302;
+			productRefGroup = 39BAA0CE239159470066B302 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3909E37C2391495F00CD0958 /* Somei */,
+				39BAA0CC239159470066B302 /* Somei */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		3909E37B2391495F00CD0958 /* Resources */ = {
+		39BAA0CB239159470066B302 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3909E38D2391496400CD0958 /* LaunchScreen.storyboard in Resources */,
-				393C377423914B2C00D85016 /* GoogleService-Info.plist in Resources */,
-				3909E38A2391496400CD0958 /* Assets.xcassets in Resources */,
-				3909E3882391495F00CD0958 /* Main.storyboard in Resources */,
+				39BAA0DD239159490066B302 /* LaunchScreen.storyboard in Resources */,
+				3911CA59239159E20027B1FF /* GoogleService-Info.plist in Resources */,
+				39BAA0DA239159490066B302 /* Assets.xcassets in Resources */,
+				39BAA0D8239159470066B302 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		65CD88C094DE95B2EB7855C3 /* [CP] Embed Pods Frameworks */ = {
+		4EFF98A7276545907FB7505B /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Somei/Pods-Somei-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Somei/Pods-Somei-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP] Embed Pods Frameworks";
+			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Somei/Pods-Somei-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Somei/Pods-Somei-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Somei/Pods-Somei-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Somei/Pods-Somei-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		8E45FC0411467B27C112819B /* [CP] Check Pods Manifest.lock */ = {
+		8F6C3BF56DC99248095FD68F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -230,35 +234,53 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		BD94D496BAD002F6D2BD0616 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Somei/Pods-Somei-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Somei/Pods-Somei-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Somei/Pods-Somei-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		3909E3792391495F00CD0958 /* Sources */ = {
+		39BAA0C9239159470066B302 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3909E3852391495F00CD0958 /* ViewController.swift in Sources */,
-				39A0F20423914EAB00F52119 /* File.swift in Sources */,
-				3909E3812391495F00CD0958 /* AppDelegate.swift in Sources */,
-				3909E3832391495F00CD0958 /* SceneDelegate.swift in Sources */,
+				39BAA0D5239159470066B302 /* ViewController.swift in Sources */,
+				3947C99E23915AB900B72900 /* File.swift in Sources */,
+				3947C9A023915F5300B72900 /* PrincipalViewController.swift in Sources */,
+				39BAA0D1239159470066B302 /* AppDelegate.swift in Sources */,
+				39BAA0D3239159470066B302 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		3909E3862391495F00CD0958 /* Main.storyboard */ = {
+		39BAA0D6239159470066B302 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				3909E3872391495F00CD0958 /* Base */,
+				39BAA0D7239159470066B302 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		3909E38B2391496400CD0958 /* LaunchScreen.storyboard */ = {
+		39BAA0DB239159490066B302 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				3909E38C2391496400CD0958 /* Base */,
+				39BAA0DC239159490066B302 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -266,7 +288,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		3909E38F2391496400CD0958 /* Debug */ = {
+		39BAA0DF239159490066B302 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -326,7 +348,7 @@
 			};
 			name = Debug;
 		};
-		3909E3902391496400CD0958 /* Release */ = {
+		39BAA0E0239159490066B302 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -380,9 +402,9 @@
 			};
 			name = Release;
 		};
-		3909E3922391496400CD0958 /* Debug */ = {
+		39BAA0E2239159490066B302 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 60EE2ED7D7A425936D289E28 /* Pods-Somei.debug.xcconfig */;
+			baseConfigurationReference = 08B2B67085EA8A969AA28D9F /* Pods-Somei.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -392,16 +414,16 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = co.cris.somei;
+				PRODUCT_BUNDLE_IDENTIFIER = br.pucpr.Somei;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		3909E3932391496400CD0958 /* Release */ = {
+		39BAA0E3239159490066B302 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EC267DC846CDDFB79EF72AAA /* Pods-Somei.release.xcconfig */;
+			baseConfigurationReference = 46F7EE9F17B980114189616F /* Pods-Somei.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -411,7 +433,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = co.cris.somei;
+				PRODUCT_BUNDLE_IDENTIFIER = br.pucpr.Somei;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -421,25 +443,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3909E3782391495F00CD0958 /* Build configuration list for PBXProject "Somei" */ = {
+		39BAA0C8239159470066B302 /* Build configuration list for PBXProject "Somei" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3909E38F2391496400CD0958 /* Debug */,
-				3909E3902391496400CD0958 /* Release */,
+				39BAA0DF239159490066B302 /* Debug */,
+				39BAA0E0239159490066B302 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3909E3912391496400CD0958 /* Build configuration list for PBXNativeTarget "Somei" */ = {
+		39BAA0E1239159490066B302 /* Build configuration list for PBXNativeTarget "Somei" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3909E3922391496400CD0958 /* Debug */,
-				3909E3932391496400CD0958 /* Release */,
+				39BAA0E2239159490066B302 /* Debug */,
+				39BAA0E3239159490066B302 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 3909E3752391495F00CD0958 /* Project object */;
+	rootObject = 39BAA0C5239159470066B302 /* Project object */;
 }
