@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:/Users/joseguilhermebestel/Dropbox (DeveloperAcademy-BR)/Academy/MiniChallenge3/somei/Somei/Somei/View/MinhaConta.storyboard">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/joseguilhermebestel/Dropbox (DeveloperAcademy-BR)/Academy/MiniChallenge3/somei/Somei/Somei/View/Profissionais.storyboard">
+   </FileRef>
+   <FileRef
       location = "group:Somei.xcodeproj">
    </FileRef>
    <FileRef
