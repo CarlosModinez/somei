@@ -15,9 +15,9 @@ class Usuario {
     var nome : String
     var email : String
     var cnpj : String
-    var empresa : Empresa
+    var empresa : Empresa?
     
-    init (cpf: String, dtNascimento: String, nome: String, email: String, cnpj: String, empresa: Empresa){
+    init (cpf: String, dtNascimento: String, nome: String, email: String, cnpj: String, empresa: Empresa?){
         
         self.cpf = cpf
         self.dtNascimento = dtNascimento
