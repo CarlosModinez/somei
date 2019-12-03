@@ -8,6 +8,7 @@
 
 import UIKit
 import FirebaseUI
+import Alamofire
 
 class PrincipalViewController: UIViewController {
     
@@ -21,7 +22,10 @@ class PrincipalViewController: UIViewController {
         super.viewDidLoad()
         
 //        criarUsuario(email: "josegbestel@gmail.com", password: "Abc@12345")
-        loginUsuario(email: "josegbestel@gmail.com", password: "Abc@12345")
+//        loginUsuario(email: "josegbestel@gmail.com", password: "Abc@12345")
+//        logoutUsiario()
+        dadosCnpj()
+        
 
         // Do any additional setup after loading the view.
     }
@@ -29,8 +33,13 @@ class PrincipalViewController: UIViewController {
     //Detecta o estado de autenticação
     override func viewWillAppear(_ animated: Bool) {
         handle = Auth.auth().addStateDidChangeListener { (auth, user) in
-            self.isLogado = true
             print("estado login: \(user?.email ?? nil)")
+            print("Email usuario: \(user?.email?.isEmpty)")
+            if(user?.email?.isEmpty ?? true){
+                print("sem usuario")
+            }else{
+                self.isLogado = true
+            }
         }
     }
     
@@ -56,17 +65,61 @@ class PrincipalViewController: UIViewController {
         }
     }
     
+    func logoutUsiario(){
+        do{
+            try Auth.auth().signOut()
+        }catch _ {
+            print("Erro no login")
+        }
+    }
+    
     @IBAction func logar(_ sender: Any) {
-        if emailLogin.text! != nil && senhaLogin! != nil{
+        print("logar")
+        if !emailLogin.text!.isEmpty && !senhaLogin.text!.isEmpty{
+            print("campos ok")
             loginUsuario(email: emailLogin.text!, password: senhaLogin.text!)
         }else{
             print("Campos de login vazios")
         }
     }
-    
     @IBAction func verificarLogin(_ sender: Any) {
+        print("verificar login")
         print("logado: \(self.isLogado)")
     }
+    
+    func dadosCnpj(){
+        print("\n\n\n")
+        let url = URL(string: "https://www.receitaws.com.br/v1/cnpj/29783738000154")!
+        let task = URLSession.shared.dataTask(with: url) {(data, response, error) in
+        guard let data = data else { return }
+        print(String(data: data, encoding: .utf8)!)
+            
+            do{
+                let json = try JSONSerialization.jsonObject(with: data, options: .mutableLeaves) as? Dictionary<String, AnyObject>
+                let email = json!["email"] as? String
+                
+                let fantasia = json!["fantasia"] as? String
+                let telefone = json!["telefone"] as? String
+                let situacao = json!["situacao"] as? String //Validar se é Ativa
+                let status = json!["status"] as? String //Validar se é OK
+                let logradouro = json!["logradouro"] as? String
+                let numero = json!["numero"] as? String
+                let bairro = json!["bairro"] as? String
+                let municipio = json!["municipio"] as? String
+                let uf = json!["uf"] as? String
+                let cep = json!["cep"] as? String
+                let natureza_juridica = json!["natureza_juridica"] as? String //Validar se é MEI
+            }catch _{
+                
+            }
+            
+        }
+        
+        task.resume()
+        print("pos resumo")
+    }
+    
+    
     
     /*
      RECEBER INFOS DO USUARIO
