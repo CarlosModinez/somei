@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3911CA59239159E20027B1FF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3911CA58239159E20027B1FF /* GoogleService-Info.plist */; };
 		3947C9A023915F5300B72900 /* PrincipalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3947C99F23915F5300B72900 /* PrincipalViewController.swift */; };
+		399B5F1D2396AB31008F886D /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 399B5F1C2396AB31008F886D /* Colors.xcassets */; };
 		39BAA0D1239159470066B302 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BAA0D0239159470066B302 /* AppDelegate.swift */; };
 		39BAA0D3239159470066B302 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BAA0D2239159470066B302 /* SceneDelegate.swift */; };
 		39BAA0D5239159470066B302 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BAA0D4239159470066B302 /* ViewController.swift */; };
@@ -38,6 +39,7 @@
 		3947C99F23915F5300B72900 /* PrincipalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrincipalViewController.swift; sourceTree = "<group>"; };
 		399B5F1A2396A791008F886D /* MinhaConta.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = MinhaConta.storyboard; path = "/Users/joseguilhermebestel/Dropbox (DeveloperAcademy-BR)/Academy/MiniChallenge3/somei/Somei/Somei/View/MinhaConta.storyboard"; sourceTree = "<absolute>"; };
 		399B5F1B2396A791008F886D /* Profissionais.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Profissionais.storyboard; path = "/Users/joseguilhermebestel/Dropbox (DeveloperAcademy-BR)/Academy/MiniChallenge3/somei/Somei/Somei/View/Profissionais.storyboard"; sourceTree = "<absolute>"; };
+		399B5F1C2396AB31008F886D /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		39BAA0CD239159470066B302 /* Somei.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Somei.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39BAA0D0239159470066B302 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		39BAA0D2239159470066B302 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 				39BAA0D6239159470066B302 /* Main.storyboard */,
 				39BAA0DB239159490066B302 /* LaunchScreen.storyboard */,
 				39BAA0D9239159490066B302 /* Assets.xcassets */,
+				399B5F1C2396AB31008F886D /* Colors.xcassets */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -249,6 +252,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				399B5F1D2396AB31008F886D /* Colors.xcassets in Resources */,
 				39BAA0DD239159490066B302 /* LaunchScreen.storyboard in Resources */,
 				3911CA59239159E20027B1FF /* GoogleService-Info.plist in Resources */,
 				39BAA0DA239159490066B302 /* Assets.xcassets in Resources */,
