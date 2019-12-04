@@ -10,6 +10,13 @@ import UIKit
 
 class AdicionarComenta_rioViewController: UIViewController {
 
+    @IBOutlet var txtEscreverComentario: UITextField!
+    @IBOutlet var finalizarAvaliacaoButton: UIButton!
+    @IBOutlet var problemaButton: UIButton!
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

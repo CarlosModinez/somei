@@ -10,6 +10,11 @@ import UIKit
 
 class ComentarioTableViewCell: UITableViewCell {
 
+    
+    @IBOutlet weak var lblNomeComentario: UILabel!
+    @IBOutlet weak var txtComentario: UITextView!
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
