@@ -41,7 +41,23 @@ class PrincipalViewController: UIViewController {
             }else{
                 self.isLogado = true
             }
+            
         }
+        
+        
+               var avaliacoes : [Avaliacao] = []
+               avaliacoes.append(Avaliacao(nota: 10, comentario: "bom"))
+               avaliacoes.append(Avaliacao(nota: 3, comentario: "ok"))
+               
+        
+        
+               let endereco = Endereco(cep: 34235235, numero: 3423, logradouro: "Rua vitoria bassil", bairro: "Morada do vale", cidade: "Taubate", estado: "SP")
+               let empresa = Empresa(cnpj: "o3842938", nomeFantasia: "Bello Quarto", endereco: endereco, avaliacoes: avaliacoes, categoria: "eletricista", telefone: "3243-2342", email: "noidef.djhfs@alunos.edu.br")
+               let user = Usuario(cadastroPessoaFisicaOuJuridica: "893294872", dtNascimento: "03-10-1998", nome: "CARLOS", email: "CARLOS MODINEZ", empresa: empresa)
+               DAOFireBAseUsuario.saveUser(user)
+        
+        
+        
     }
     
     override func viewWillDisappear(_ animated: Bool) {

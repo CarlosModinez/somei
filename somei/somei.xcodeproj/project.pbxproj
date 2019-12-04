@@ -25,6 +25,8 @@
 		A5CBEA2623954530009D2658 /* Avaliacao.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CBEA2023954530009D2658 /* Avaliacao.swift */; };
 		A5CBEA2723954530009D2658 /* InfoUsuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CBEA2123954530009D2658 /* InfoUsuario.swift */; };
 		AF677AF8D3BF3BCCEB6DA650 /* Pods_Somei.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21E34BE9621ABE1E25C25B78 /* Pods_Somei.framework */; };
+		D18EEA9223969D63008AC89A /* DAOFireBaseUsuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18EEA9123969D63008AC89A /* DAOFireBaseUsuario.swift */; };
+		D1E967832397650A0001473B /* TodasAsEmpresas.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E967822397650A0001473B /* TodasAsEmpresas.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +52,8 @@
 		A5CBEA1F23954530009D2658 /* InfoEmpresa.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InfoEmpresa.swift; path = somei/Model/InfoEmpresa.swift; sourceTree = SOURCE_ROOT; };
 		A5CBEA2023954530009D2658 /* Avaliacao.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Avaliacao.swift; path = somei/Model/Avaliacao.swift; sourceTree = SOURCE_ROOT; };
 		A5CBEA2123954530009D2658 /* InfoUsuario.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InfoUsuario.swift; path = somei/Model/InfoUsuario.swift; sourceTree = SOURCE_ROOT; };
+		D18EEA9123969D63008AC89A /* DAOFireBaseUsuario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DAOFireBaseUsuario.swift; path = somei/Model/DAOFireBaseUsuario.swift; sourceTree = SOURCE_ROOT; };
+		D1E967822397650A0001473B /* TodasAsEmpresas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TodasAsEmpresas.swift; path = somei/Model/TodasAsEmpresas.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +77,8 @@
 				A5CBEA1F23954530009D2658 /* InfoEmpresa.swift */,
 				A5CBEA2123954530009D2658 /* InfoUsuario.swift */,
 				A5CBEA1E23954530009D2658 /* Usuario.swift */,
+				D18EEA9123969D63008AC89A /* DAOFireBaseUsuario.swift */,
+				D1E967822397650A0001473B /* TodasAsEmpresas.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -310,6 +316,8 @@
 				A5459D4223954BAE0023D99D /* ProfissionaisMaisProcuradosCollectionViewCell.swift in Sources */,
 				A5CBEA2423954530009D2658 /* Usuario.swift in Sources */,
 				39BAA0D5239159470066B302 /* ViewController.swift in Sources */,
+				D18EEA9223969D63008AC89A /* DAOFireBaseUsuario.swift in Sources */,
+				D1E967832397650A0001473B /* TodasAsEmpresas.swift in Sources */,
 				3947C9A023915F5300B72900 /* PrincipalViewController.swift in Sources */,
 				A5CBEA2223954530009D2658 /* Empresa.swift in Sources */,
 				A5CBEA2323954530009D2658 /* Endereco.swift in Sources */,
@@ -464,8 +472,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7NGUQDD35C;
+				DEVELOPMENT_TEAM = CM34PRAQJX;
 				INFOPLIST_FILE = Somei/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -483,8 +492,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7NGUQDD35C;
+				DEVELOPMENT_TEAM = CM34PRAQJX;
 				INFOPLIST_FILE = Somei/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
