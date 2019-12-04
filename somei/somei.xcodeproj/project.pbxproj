@@ -19,6 +19,7 @@
 		A5459D4023954BA20023D99D /* ProcurarProfissionaisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5459D3F23954BA20023D99D /* ProcurarProfissionaisViewController.swift */; };
 		A5459D4223954BAE0023D99D /* ProfissionaisMaisProcuradosCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5459D4123954BAE0023D99D /* ProfissionaisMaisProcuradosCollectionViewCell.swift */; };
 		A5459D492395527E0023D99D /* EXTViewArrendondada.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5459D482395527E0023D99D /* EXTViewArrendondada.swift */; };
+		A55DD4662397D58900821A2F /* PerfilProfissional.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A55DD4652397D58900821A2F /* PerfilProfissional.storyboard */; };
 		A5B5BDFE2397D0D600F800CC /* MinhaConta.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5B5BDFD2397D0D600F800CC /* MinhaConta.storyboard */; };
 		A5B5BE022397D10100F800CC /* Profissionais.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5B5BE012397D10100F800CC /* Profissionais.storyboard */; };
 		A5CBEA2223954530009D2658 /* Empresa.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CBEA1C23954530009D2658 /* Empresa.swift */; };
@@ -52,6 +53,7 @@
 		A5459D3F23954BA20023D99D /* ProcurarProfissionaisViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProcurarProfissionaisViewController.swift; path = somei/Controller/Profissionais/ProcurarProfissionaisViewController.swift; sourceTree = SOURCE_ROOT; };
 		A5459D4123954BAE0023D99D /* ProfissionaisMaisProcuradosCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfissionaisMaisProcuradosCollectionViewCell.swift; path = somei/Controller/Profissionais/Cell/ProfissionaisMaisProcuradosCollectionViewCell.swift; sourceTree = SOURCE_ROOT; };
 		A5459D482395527E0023D99D /* EXTViewArrendondada.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EXTViewArrendondada.swift; path = somei/EXTViewArrendondada.swift; sourceTree = SOURCE_ROOT; };
+		A55DD4652397D58900821A2F /* PerfilProfissional.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = PerfilProfissional.storyboard; path = somei/View/PerfilProfissional.storyboard; sourceTree = SOURCE_ROOT; };
 		A5B5BDFD2397D0D600F800CC /* MinhaConta.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = MinhaConta.storyboard; path = somei/View/MinhaConta.storyboard; sourceTree = SOURCE_ROOT; };
 		A5B5BE012397D10100F800CC /* Profissionais.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Profissionais.storyboard; path = Somei/View/Profissionais.storyboard; sourceTree = SOURCE_ROOT; };
 		A5CBEA1C23954530009D2658 /* Empresa.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Empresa.swift; path = somei/Model/Empresa.swift; sourceTree = SOURCE_ROOT; };
@@ -96,6 +98,7 @@
 			children = (
 				A5459D47239552710023D99D /* Extension */,
 				A5B5BE012397D10100F800CC /* Profissionais.storyboard */,
+				A55DD4652397D58900821A2F /* PerfilProfissional.storyboard */,
 				A5B5BDFD2397D0D600F800CC /* MinhaConta.storyboard */,
 				39BAA0D6239159470066B302 /* Main.storyboard */,
 				39BAA0DB239159490066B302 /* LaunchScreen.storyboard */,
@@ -231,7 +234,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 39BAA0C8239159470066B302 /* Build configuration list for PBXProject "Somei" */;
+			buildConfigurationList = 39BAA0C8239159470066B302 /* Build configuration list for PBXProject "somei" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -261,6 +264,7 @@
 				39BAA0DA239159490066B302 /* Assets.xcassets in Resources */,
 				A5B5BDFE2397D0D600F800CC /* MinhaConta.storyboard in Resources */,
 				39BAA0D8239159470066B302 /* Main.storyboard in Resources */,
+				A55DD4662397D58900821A2F /* PerfilProfissional.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -527,7 +531,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		39BAA0C8239159470066B302 /* Build configuration list for PBXProject "Somei" */ = {
+		39BAA0C8239159470066B302 /* Build configuration list for PBXProject "somei" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				39BAA0DF239159490066B302 /* Debug */,
