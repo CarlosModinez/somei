@@ -40,6 +40,7 @@
 		399B5F1A2396A791008F886D /* MinhaConta.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = MinhaConta.storyboard; path = "/Users/joseguilhermebestel/Dropbox (DeveloperAcademy-BR)/Academy/MiniChallenge3/somei/Somei/Somei/View/MinhaConta.storyboard"; sourceTree = "<absolute>"; };
 		399B5F1B2396A791008F886D /* Profissionais.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Profissionais.storyboard; path = "/Users/joseguilhermebestel/Dropbox (DeveloperAcademy-BR)/Academy/MiniChallenge3/somei/Somei/Somei/View/Profissionais.storyboard"; sourceTree = "<absolute>"; };
 		399B5F1C2396AB31008F886D /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		399B5F1E2397D01D008F886D /* MinhaConta.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = MinhaConta.storyboard; path = "/Users/joseguilhermebestel/Dropbox (DeveloperAcademy-BR)/Academy/MiniChallenge3/somei/Somei/Somei/View/MinhaConta.storyboard"; sourceTree = "<absolute>"; };
 		39BAA0CD239159470066B302 /* Somei.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Somei.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39BAA0D0239159470066B302 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		39BAA0D2239159470066B302 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -92,6 +93,7 @@
 		3947C99B23915A8200B72900 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				399B5F1E2397D01D008F886D /* MinhaConta.storyboard */,
 				A5459D47239552710023D99D /* Extension */,
 				399B5F1A2396A791008F886D /* MinhaConta.storyboard */,
 				399B5F1B2396A791008F886D /* Profissionais.storyboard */,

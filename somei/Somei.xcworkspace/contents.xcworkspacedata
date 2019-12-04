@@ -5,6 +5,9 @@
       location = "group:/Users/joseguilhermebestel/Dropbox (DeveloperAcademy-BR)/Academy/MiniChallenge3/somei/Somei/Somei/View/MinhaConta.storyboard">
    </FileRef>
    <FileRef
+      location = "absolute:/Users/joseguilhermebestel/Dropbox (DeveloperAcademy-BR)/Academy/MiniChallenge3/somei/Somei/Somei/View/MinhaConta.storyboard">
+   </FileRef>
+   <FileRef
       location = "group:/Users/joseguilhermebestel/Dropbox (DeveloperAcademy-BR)/Academy/MiniChallenge3/somei/Somei/Somei/View/Profissionais.storyboard">
    </FileRef>
    <FileRef
