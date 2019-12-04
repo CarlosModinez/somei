@@ -27,6 +27,7 @@
 		AF677AF8D3BF3BCCEB6DA650 /* Pods_Somei.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21E34BE9621ABE1E25C25B78 /* Pods_Somei.framework */; };
 		D18EEA9223969D63008AC89A /* DAOFireBaseUsuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18EEA9123969D63008AC89A /* DAOFireBaseUsuario.swift */; };
 		D1E967832397650A0001473B /* TodasAsEmpresas.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E967822397650A0001473B /* TodasAsEmpresas.swift */; };
+		D1E967862397F83A0001473B /* TodosOsUsuarios.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E967852397F83A0001473B /* TodosOsUsuarios.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,7 +54,8 @@
 		A5CBEA2023954530009D2658 /* Avaliacao.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Avaliacao.swift; path = somei/Model/Avaliacao.swift; sourceTree = SOURCE_ROOT; };
 		A5CBEA2123954530009D2658 /* InfoUsuario.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InfoUsuario.swift; path = somei/Model/InfoUsuario.swift; sourceTree = SOURCE_ROOT; };
 		D18EEA9123969D63008AC89A /* DAOFireBaseUsuario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DAOFireBaseUsuario.swift; path = somei/Model/DAOFireBaseUsuario.swift; sourceTree = SOURCE_ROOT; };
-		D1E967822397650A0001473B /* TodasAsEmpresas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TodasAsEmpresas.swift; path = somei/Model/TodasAsEmpresas.swift; sourceTree = SOURCE_ROOT; };
+		D1E967822397650A0001473B /* TodasAsEmpresas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TodasAsEmpresas.swift; path = Somei/Model/shared/TodasAsEmpresas.swift; sourceTree = SOURCE_ROOT; };
+		D1E967852397F83A0001473B /* TodosOsUsuarios.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TodosOsUsuarios.swift; path = somei/Model/shared/TodosOsUsuarios.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 		3947C99A23915A7900B72900 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D1E967842397F8170001473B /* shared */,
 				A5CBEA2023954530009D2658 /* Avaliacao.swift */,
 				A5CBEA1C23954530009D2658 /* Empresa.swift */,
 				A5CBEA1D23954530009D2658 /* Endereco.swift */,
@@ -78,7 +81,6 @@
 				A5CBEA2123954530009D2658 /* InfoUsuario.swift */,
 				A5CBEA1E23954530009D2658 /* Usuario.swift */,
 				D18EEA9123969D63008AC89A /* DAOFireBaseUsuario.swift */,
-				D1E967822397650A0001473B /* TodasAsEmpresas.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -176,6 +178,15 @@
 				21E34BE9621ABE1E25C25B78 /* Pods_Somei.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D1E967842397F8170001473B /* shared */ = {
+			isa = PBXGroup;
+			children = (
+				D1E967822397650A0001473B /* TodasAsEmpresas.swift */,
+				D1E967852397F83A0001473B /* TodosOsUsuarios.swift */,
+			);
+			path = shared;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -318,6 +329,7 @@
 				39BAA0D5239159470066B302 /* ViewController.swift in Sources */,
 				D18EEA9223969D63008AC89A /* DAOFireBaseUsuario.swift in Sources */,
 				D1E967832397650A0001473B /* TodasAsEmpresas.swift in Sources */,
+				D1E967862397F83A0001473B /* TodosOsUsuarios.swift in Sources */,
 				3947C9A023915F5300B72900 /* PrincipalViewController.swift in Sources */,
 				A5CBEA2223954530009D2658 /* Empresa.swift in Sources */,
 				A5CBEA2323954530009D2658 /* Endereco.swift in Sources */,

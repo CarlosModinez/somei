@@ -8,8 +8,8 @@
 
 import Foundation
 
-class TodasAsEmpresas {
-    static var shared = TodasAsEmpresas()
+class TodosOsUsuarios {
+    static var shared = TodosOsUsuarios()
 
     
     //usuarios como empresas cadastradas
@@ -18,3 +18,4 @@ class TodasAsEmpresas {
     init(){}
     
 }
+

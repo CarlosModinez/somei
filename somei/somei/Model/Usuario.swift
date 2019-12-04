@@ -39,15 +39,36 @@ class Usuario {
     
     
     func login(){
-        
-        
-        
     }
     
     func fecharNegocio(cnpj: String){
-        
-        
-        
     }
+    
+    
+    func mapToDictionary() -> [String :Any]{
+        
+        let localData :[String:Any] = [
+            "cadastroPessoaFisicaOuJuridica": self.cadastroPessoaFisicaOuJuridica,
+            "dtNascimento": self.dtNascimento,
+            "nome": self.nome,
+            "email": self.email,
+        ]
+            
+        return localData
+    }
+    
+    static func mapToObject(dct : [String :Any]) -> Usuario {
+        
+        let cadastroPessoaFisicaOuJuridica: String = dct["cadastroPessoaFisicaOuJuridica"] as! String
+        let dtNascimento: String = dct["dtNascimento"] as! String
+        let nome: String = dct["nome"] as! String
+        let email: String = dct["email"] as! String
+        
+        let usuario = Usuario(cadastroPessoaFisicaOuJuridica: cadastroPessoaFisicaOuJuridica, dtNascimento: dtNascimento, nome: nome, email: email, empresa: nil)
+        
+        return usuario
+    }
+    
+    
     
 }

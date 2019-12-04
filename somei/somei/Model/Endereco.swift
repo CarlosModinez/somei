@@ -59,4 +59,19 @@ class Endereco {
         
     }
     
+    static func mapToObect(dct : [String:Any]) -> Endereco {
+        let cep : Int = dct["cep"] as! Int
+        let numero : Int = dct["numero"] as! Int
+//        let latitude : Double = dct["latitude"] as! Double
+//        let longitude : Double = dct["longitude"] as! Double
+        let logradouro : String = dct["logradouro"] as! String
+        let bairro : String = dct["bairro"] as! String
+        let cidade : String = dct["cidade"] as! String
+        let estado : String = dct["estado"] as! String
+    
+        let endereco = Endereco(cep: cep, numero: numero, logradouro: logradouro, bairro: bairro, cidade: cidade, estado: estado)
+        
+        return endereco
+    }
+    
 }
