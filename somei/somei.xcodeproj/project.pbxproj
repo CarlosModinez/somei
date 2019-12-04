@@ -28,10 +28,9 @@
 		A5CBEA2523954530009D2658 /* InfoEmpresa.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CBEA1F23954530009D2658 /* InfoEmpresa.swift */; };
 		A5CBEA2623954530009D2658 /* Avaliacao.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CBEA2023954530009D2658 /* Avaliacao.swift */; };
 		A5CBEA2723954530009D2658 /* InfoUsuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CBEA2123954530009D2658 /* InfoUsuario.swift */; };
-		A5EC9E0623956EFC00BC72B3 /* ListaProfissionaisPesquisaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EC9E0523956EFC00BC72B3 /* ListaProfissionaisPesquisaViewController.swift */; };
-		A5EC9E082395739F00BC72B3 /* ListaProfissionaisTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EC9E072395739F00BC72B3 /* ListaProfissionaisTableViewCell.swift */; };
-		A5EC9E0A2395754300BC72B3 /* PerfilProfissionalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EC9E092395754300BC72B3 /* PerfilProfissionalViewController.swift */; };
-		A5EC9E0C2395767500BC72B3 /* ListaAtividadesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EC9E0B2395767500BC72B3 /* ListaAtividadesTableViewCell.swift */; };
+		A5EC9E0623956EFC00BC72B3 /* (null) in Sources */ = {isa = PBXBuildFile; };
+		A5EC9E0A2395754300BC72B3 /* (null) in Sources */ = {isa = PBXBuildFile; };
+		A5EC9E0C2395767500BC72B3 /* (null) in Sources */ = {isa = PBXBuildFile; };
 		AF677AF8D3BF3BCCEB6DA650 /* Pods_Somei.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21E34BE9621ABE1E25C25B78 /* Pods_Somei.framework */; };
 		D18EEA9223969D63008AC89A /* DAOFireBaseUsuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18EEA9123969D63008AC89A /* DAOFireBaseUsuario.swift */; };
 		D1E967832397650A0001473B /* TodasAsEmpresas.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E967822397650A0001473B /* TodasAsEmpresas.swift */; };
@@ -65,9 +64,10 @@
 		A5CBEA1F23954530009D2658 /* InfoEmpresa.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InfoEmpresa.swift; path = somei/Model/InfoEmpresa.swift; sourceTree = SOURCE_ROOT; };
 		A5CBEA2023954530009D2658 /* Avaliacao.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Avaliacao.swift; path = somei/Model/Avaliacao.swift; sourceTree = SOURCE_ROOT; };
 		A5CBEA2123954530009D2658 /* InfoUsuario.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InfoUsuario.swift; path = somei/Model/InfoUsuario.swift; sourceTree = SOURCE_ROOT; };
-		D18EEA9123969D63008AC89A /* DAOFireBaseUsuario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DAOFireBaseUsuario.swift; path = somei/Model/DAOFireBaseUsuario.swift; sourceTree = SOURCE_ROOT; };
-		D1E967822397650A0001473B /* TodasAsEmpresas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TodasAsEmpresas.swift; path = Somei/Model/shared/TodasAsEmpresas.swift; sourceTree = SOURCE_ROOT; };
-		D1E967852397F83A0001473B /* TodosOsUsuarios.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TodosOsUsuarios.swift; path = somei/Model/shared/TodosOsUsuarios.swift; sourceTree = SOURCE_ROOT; };
+		A5EC9E0523956EFC00BC72B3 /* ListaProfissionaisPesquisaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ListaProfissionaisPesquisaViewController.swift; path = somei/Controller/Profissionais/ListaProfissionaisPesquisaViewController.swift; sourceTree = SOURCE_ROOT; };
+		A5EC9E072395739F00BC72B3 /* ListaProfissionaisTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ListaProfissionaisTableViewCell.swift; path = somei/Controller/Profissionais/Cell/ListaProfissionaisTableViewCell.swift; sourceTree = SOURCE_ROOT; };
+		A5EC9E092395754300BC72B3 /* PerfilProfissionalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PerfilProfissionalViewController.swift; path = somei/Controller/Profissionais/PerfilProfissionalViewController.swift; sourceTree = SOURCE_ROOT; };
+		A5EC9E0B2395767500BC72B3 /* ListaAtividadesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ListaAtividadesTableViewCell.swift; path = somei/Controller/Profissionais/Cell/ListaAtividadesTableViewCell.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +126,7 @@
 				39BAA0CE239159470066B302 /* Products */,
 				B3A6728E47613F6F5C4E8DC9 /* Pods */,
 				D0275FBDE1D4B8C03BD1DB54 /* Frameworks */,
+				D1A984AD2397FC52004C170C /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -155,8 +156,6 @@
 			isa = PBXGroup;
 			children = (
 				A5459D4123954BAE0023D99D /* ProfissionaisMaisProcuradosCollectionViewCell.swift */,
-				A5EC9E072395739F00BC72B3 /* ListaProfissionaisTableViewCell.swift */,
-				A5EC9E0B2395767500BC72B3 /* ListaAtividadesTableViewCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -165,8 +164,6 @@
 			isa = PBXGroup;
 			children = (
 				A5459D3F23954BA20023D99D /* ProcurarProfissionaisViewController.swift */,
-				A5EC9E0523956EFC00BC72B3 /* ListaProfissionaisPesquisaViewController.swift */,
-				A5EC9E092395754300BC72B3 /* PerfilProfissionalViewController.swift */,
 				A5459D3A23954A760023D99D /* Cell */,
 			);
 			path = Profissionais;
@@ -195,15 +192,6 @@
 				21E34BE9621ABE1E25C25B78 /* Pods_Somei.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		D1E967842397F8170001473B /* shared */ = {
-			isa = PBXGroup;
-			children = (
-				D1E967822397650A0001473B /* TodasAsEmpresas.swift */,
-				D1E967852397F83A0001473B /* TodosOsUsuarios.swift */,
-			);
-			path = shared;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -244,7 +232,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 39BAA0C8239159470066B302 /* Build configuration list for PBXProject "somei" */;
+			buildConfigurationList = 39BAA0C8239159470066B302 /* Build configuration list for PBXProject "Somei" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -353,9 +341,9 @@
 				A5CBEA2323954530009D2658 /* Endereco.swift in Sources */,
 				A5CBEA2623954530009D2658 /* Avaliacao.swift in Sources */,
 				A5459D492395527E0023D99D /* EXTViewArrendondada.swift in Sources */,
-				A5EC9E0C2395767500BC72B3 /* ListaAtividadesTableViewCell.swift in Sources */,
-				A5EC9E0623956EFC00BC72B3 /* ListaProfissionaisPesquisaViewController.swift in Sources */,
-				A5EC9E0A2395754300BC72B3 /* PerfilProfissionalViewController.swift in Sources */,
+				A5EC9E0C2395767500BC72B3 /* (null) in Sources */,
+				A5EC9E0623956EFC00BC72B3 /* (null) in Sources */,
+				A5EC9E0A2395754300BC72B3 /* (null) in Sources */,
 				A5459D4023954BA20023D99D /* ProcurarProfissionaisViewController.swift in Sources */,
 				39BAA0D1239159470066B302 /* AppDelegate.swift in Sources */,
 				A5CBEA2723954530009D2658 /* InfoUsuario.swift in Sources */,
@@ -542,7 +530,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		39BAA0C8239159470066B302 /* Build configuration list for PBXProject "somei" */ = {
+		39BAA0C8239159470066B302 /* Build configuration list for PBXProject "Somei" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				39BAA0DF239159490066B302 /* Debug */,
