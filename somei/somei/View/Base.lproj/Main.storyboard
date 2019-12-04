@@ -345,7 +345,7 @@
     <resources>
         <image name="somei" width="153.5" height="147.5"/>
         <namedColor name="AzulApp">
-            <color red="0.0" green="0.40000000000000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.0" green="0.40000000596046448" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
     </resources>
     <color key="tintColor" name="AzulApp"/>
