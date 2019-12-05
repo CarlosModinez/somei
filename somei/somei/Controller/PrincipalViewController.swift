@@ -44,7 +44,6 @@ class PrincipalViewController: UIViewController {
             
         }
         
-        
         var avaliacoes : [Avaliacao] = []
         avaliacoes.append(Avaliacao(nota: 10, comentario: "bom"))
         avaliacoes.append(Avaliacao(nota: 3, comentario: "ok"))
