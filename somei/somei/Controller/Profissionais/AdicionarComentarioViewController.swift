@@ -32,14 +32,6 @@ class AdicionarComentarioViewController: UIViewController, UITextFieldDelegate {
         return true
     }
     
-//    apertar em qualquer lugar e fechar teclado
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        self.view.endEditing(true)
-        
-        return true
-    }
-    
-    
 //    onde usuario da o input do comentario
     @IBAction func inputComentario(_ sender: Any) {
         

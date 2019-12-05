@@ -1,17 +1,16 @@
 //
-//  ComentarioTableViewCell.swift
+//  DescricaoProfissionalTableViewCell.swift
 //  Somei
 //
-//  Created by Cristiano Correia on 04/12/19.
+//  Created by Cristiano Correia on 05/12/19.
 //  Copyright © 2019 José Guilherme Bestel. All rights reserved.
 //
 
 import UIKit
 
-class ComentarioTableViewCell: UITableViewCell {
+class DescricaoProfissionalTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var txtComentario: UITextView!
-    @IBOutlet weak var imgAvaliacao: UIImageView!
+    @IBOutlet weak var txtDescricaoProfissional: UITextView!
     
     override func awakeFromNib() {
         super.awakeFromNib()

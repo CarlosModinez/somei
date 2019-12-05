@@ -1,17 +1,17 @@
 //
-//  ComentarioTableViewCell.swift
+//  BotaoContatoTableViewCell.swift
 //  Somei
 //
-//  Created by Cristiano Correia on 04/12/19.
+//  Created by Cristiano Correia on 05/12/19.
 //  Copyright © 2019 José Guilherme Bestel. All rights reserved.
 //
 
 import UIKit
 
-class ComentarioTableViewCell: UITableViewCell {
+class BotaoContatoTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var txtComentario: UITextView!
-    @IBOutlet weak var imgAvaliacao: UIImageView!
+    @IBOutlet weak var ligarButton: UIButton!
+    @IBOutlet weak var mensagemButton: UIButton!
     
     override func awakeFromNib() {
         super.awakeFromNib()

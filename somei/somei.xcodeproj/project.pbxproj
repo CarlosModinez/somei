@@ -24,6 +24,10 @@
 		A5732DDF2397F45B00EEAD94 /* AdicionarComentarioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5732DDE2397F45B00EEAD94 /* AdicionarComentarioViewController.swift */; };
 		A5B5BDFE2397D0D600F800CC /* MinhaConta.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5B5BDFD2397D0D600F800CC /* MinhaConta.storyboard */; };
 		A5B5BE022397D10100F800CC /* Profissionais.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5B5BE012397D10100F800CC /* Profissionais.storyboard */; };
+		A5C71D3A23993A63006B68DB /* NomeProfissionalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C71D3923993A63006B68DB /* NomeProfissionalTableViewCell.swift */; };
+		A5C71D3C23993ADB006B68DB /* DescricaoProfissionalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C71D3B23993ADB006B68DB /* DescricaoProfissionalTableViewCell.swift */; };
+		A5C71D3E23993B23006B68DB /* BotaoContatoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C71D3D23993B23006B68DB /* BotaoContatoTableViewCell.swift */; };
+		A5C71D4023993B67006B68DB /* AvaliacaoProfissionalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C71D3F23993B67006B68DB /* AvaliacaoProfissionalTableViewCell.swift */; };
 		A5CBEA2223954530009D2658 /* Empresa.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CBEA1C23954530009D2658 /* Empresa.swift */; };
 		A5CBEA2323954530009D2658 /* Endereco.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CBEA1D23954530009D2658 /* Endereco.swift */; };
 		A5CBEA2423954530009D2658 /* Usuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CBEA1E23954530009D2658 /* Usuario.swift */; };
@@ -34,13 +38,12 @@
 		A5EC9E082395739F00BC72B3 /* ListaProfissionaisTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EC9E072395739F00BC72B3 /* ListaProfissionaisTableViewCell.swift */; };
 		A5EC9E0A2395754300BC72B3 /* PerfilProfissionalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EC9E092395754300BC72B3 /* PerfilProfissionalViewController.swift */; };
 		AF677AF8D3BF3BCCEB6DA650 /* Pods_Somei.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21E34BE9621ABE1E25C25B78 /* Pods_Somei.framework */; };
-		D1A984BF239921A6004C170C /* PerfilProfissionalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A984BC239921A6004C170C /* PerfilProfissionalViewController.swift */; };
-		D1A984C1239921A6004C170C /* ListaProfissionaisPesquisaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A984BE239921A6004C170C /* ListaProfissionaisPesquisaViewController.swift */; };
-		D1A984C723992231004C170C /* DAOFireBaseUsuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A984C623992231004C170C /* DAOFireBaseUsuario.swift */; };
-		D1D518AA239922EB008C8C1A /* TodosOsUsuarios.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D518A9239922EA008C8C1A /* TodosOsUsuarios.swift */; };
-		D1D518AC239922EE008C8C1A /* TodasAsEmpresas.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D518AB239922EE008C8C1A /* TodasAsEmpresas.swift */; };
-		D1D518B02399233D008C8C1A /* ListaAtividadesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D518AE2399233D008C8C1A /* ListaAtividadesTableViewCell.swift */; };
-		D1D518B12399233D008C8C1A /* ListaProfissionaisTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D518AF2399233D008C8C1A /* ListaProfissionaisTableViewCell.swift */; };
+		D1A984BF239921A6004C170C /* (null) in Sources */ = {isa = PBXBuildFile; };
+		D1A984C1239921A6004C170C /* (null) in Sources */ = {isa = PBXBuildFile; };
+		D1A984C723992231004C170C /* (null) in Sources */ = {isa = PBXBuildFile; };
+		D1D518AA239922EB008C8C1A /* (null) in Sources */ = {isa = PBXBuildFile; };
+		D1D518AC239922EE008C8C1A /* (null) in Sources */ = {isa = PBXBuildFile; };
+		D1D518B12399233D008C8C1A /* (null) in Sources */ = {isa = PBXBuildFile; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +69,10 @@
 		A5732DDE2397F45B00EEAD94 /* AdicionarComentarioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AdicionarComentarioViewController.swift; path = somei/Controller/Profissionais/AdicionarComentarioViewController.swift; sourceTree = SOURCE_ROOT; };
 		A5B5BDFD2397D0D600F800CC /* MinhaConta.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = MinhaConta.storyboard; path = somei/View/MinhaConta.storyboard; sourceTree = SOURCE_ROOT; };
 		A5B5BE012397D10100F800CC /* Profissionais.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Profissionais.storyboard; path = Somei/View/Profissionais.storyboard; sourceTree = SOURCE_ROOT; };
+		A5C71D3923993A63006B68DB /* NomeProfissionalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NomeProfissionalTableViewCell.swift; path = somei/Controller/Profissionais/Cell/NomeProfissionalTableViewCell.swift; sourceTree = SOURCE_ROOT; };
+		A5C71D3B23993ADB006B68DB /* DescricaoProfissionalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DescricaoProfissionalTableViewCell.swift; path = somei/Controller/Profissionais/Cell/DescricaoProfissionalTableViewCell.swift; sourceTree = SOURCE_ROOT; };
+		A5C71D3D23993B23006B68DB /* BotaoContatoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BotaoContatoTableViewCell.swift; path = somei/Controller/Profissionais/Cell/BotaoContatoTableViewCell.swift; sourceTree = SOURCE_ROOT; };
+		A5C71D3F23993B67006B68DB /* AvaliacaoProfissionalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AvaliacaoProfissionalTableViewCell.swift; path = somei/Controller/Profissionais/Cell/AvaliacaoProfissionalTableViewCell.swift; sourceTree = SOURCE_ROOT; };
 		A5CBEA1C23954530009D2658 /* Empresa.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Empresa.swift; path = somei/Model/Empresa.swift; sourceTree = SOURCE_ROOT; };
 		A5CBEA1D23954530009D2658 /* Endereco.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Endereco.swift; path = somei/Model/Endereco.swift; sourceTree = SOURCE_ROOT; };
 		A5CBEA1E23954530009D2658 /* Usuario.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Usuario.swift; path = somei/Model/Usuario.swift; sourceTree = SOURCE_ROOT; };
@@ -97,7 +104,6 @@
 				A5CBEA1C23954530009D2658 /* Empresa.swift */,
 				A5CBEA1D23954530009D2658 /* Endereco.swift */,
 				A5CBEA1E23954530009D2658 /* Usuario.swift */,
-				D1A984C623992231004C170C /* DAOFireBaseUsuario.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -165,6 +171,10 @@
 			children = (
 				A5459D4123954BAE0023D99D /* ProfissionaisMaisProcuradosCollectionViewCell.swift */,
 				A5EC9E072395739F00BC72B3 /* ListaProfissionaisTableViewCell.swift */,
+				A5C71D3923993A63006B68DB /* NomeProfissionalTableViewCell.swift */,
+				A5C71D3B23993ADB006B68DB /* DescricaoProfissionalTableViewCell.swift */,
+				A5C71D3D23993B23006B68DB /* BotaoContatoTableViewCell.swift */,
+				A5C71D3F23993B67006B68DB /* AvaliacaoProfissionalTableViewCell.swift */,
 				A5732D9E2397E3DB00EEAD94 /* ComentarioTableViewCell.swift */,
 			);
 			path = Cell;
@@ -219,8 +229,6 @@
 		D1D518AD23992307008C8C1A /* shared */ = {
 			isa = PBXGroup;
 			children = (
-				D1D518A9239922EA008C8C1A /* TodosOsUsuarios.swift */,
-				D1D518AB239922EE008C8C1A /* TodasAsEmpresas.swift */,
 			);
 			path = shared;
 			sourceTree = "<group>";
@@ -364,12 +372,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5CBEA2523954530009D2658 /* InfoEmpresa.swift in Sources */,
-				D1A984BF239921A6004C170C /* PerfilProfissionalViewController.swift in Sources */,
+				D1A984BF239921A6004C170C /* (null) in Sources */,
 				A5459D4223954BAE0023D99D /* ProfissionaisMaisProcuradosCollectionViewCell.swift in Sources */,
-				D1A984C723992231004C170C /* DAOFireBaseUsuario.swift in Sources */,
+				D1A984C723992231004C170C /* (null) in Sources */,
 				A5CBEA2423954530009D2658 /* Usuario.swift in Sources */,
-				D1A984C1239921A6004C170C /* ListaProfissionaisPesquisaViewController.swift in Sources */,
-				D1D518B12399233D008C8C1A /* ListaProfissionaisTableViewCell.swift in Sources */,
+				D1A984C1239921A6004C170C /* (null) in Sources */,
+				D1D518B12399233D008C8C1A /* (null) in Sources */,
 				39BAA0D5239159470066B302 /* ViewController.swift in Sources */,
 				A5732D9F2397E3DB00EEAD94 /* ComentarioTableViewCell.swift in Sources */,
 				A5EC9E082395739F00BC72B3 /* ListaProfissionaisTableViewCell.swift in Sources */,
@@ -377,13 +385,17 @@
 				A5CBEA2223954530009D2658 /* Empresa.swift in Sources */,
 				A5732DDF2397F45B00EEAD94 /* AdicionarComentarioViewController.swift in Sources */,
 				A5CBEA2323954530009D2658 /* Endereco.swift in Sources */,
-				D1D518AA239922EB008C8C1A /* TodosOsUsuarios.swift in Sources */,
+				D1D518AA239922EB008C8C1A /* (null) in Sources */,
 				A5CBEA2623954530009D2658 /* Avaliacao.swift in Sources */,
+				A5C71D4023993B67006B68DB /* AvaliacaoProfissionalTableViewCell.swift in Sources */,
+				A5C71D3C23993ADB006B68DB /* DescricaoProfissionalTableViewCell.swift in Sources */,
+				A5C71D3E23993B23006B68DB /* BotaoContatoTableViewCell.swift in Sources */,
 				A5459D492395527E0023D99D /* EXTViewArrendondada.swift in Sources */,
 				A5EC9E0623956EFC00BC72B3 /* ListaProfissionaisPesquisaViewController.swift in Sources */,
 				A5EC9E0A2395754300BC72B3 /* PerfilProfissionalViewController.swift in Sources */,
 				A5459D4023954BA20023D99D /* ProcurarProfissionaisViewController.swift in Sources */,
-				D1D518AC239922EE008C8C1A /* TodasAsEmpresas.swift in Sources */,
+				D1D518AC239922EE008C8C1A /* (null) in Sources */,
+				A5C71D3A23993A63006B68DB /* NomeProfissionalTableViewCell.swift in Sources */,
 				39BAA0D1239159470066B302 /* AppDelegate.swift in Sources */,
 				A5CBEA2723954530009D2658 /* InfoUsuario.swift in Sources */,
 				39BAA0D3239159470066B302 /* SceneDelegate.swift in Sources */,
@@ -532,7 +544,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = CM34PRAQJX;
+				DEVELOPMENT_TEAM = 7NGUQDD35C;
 				INFOPLIST_FILE = Somei/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -552,7 +564,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = CM34PRAQJX;
+				DEVELOPMENT_TEAM = 7NGUQDD35C;
 				INFOPLIST_FILE = Somei/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
