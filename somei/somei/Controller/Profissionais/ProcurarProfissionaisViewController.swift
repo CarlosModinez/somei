@@ -81,6 +81,7 @@ class ProcurarProfissionaisViewController: UIViewController, UICollectionViewDel
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
                 
+        // Tira o fundo cinza da caixa de busca
         for sub in searchBar.subviews {
             for s in sub.subviews {
                 for subview in s.subviews {
@@ -105,7 +106,7 @@ class ProcurarProfissionaisViewController: UIViewController, UICollectionViewDel
         return categorias.count
     }
     
-    //TODO: categoria de profissionais
+
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Profissionais", for: indexPath) as! ProfissionaisMaisProcuradosCollectionViewCell
@@ -129,11 +130,16 @@ class ProcurarProfissionaisViewController: UIViewController, UICollectionViewDel
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-          if let vc = storyboard?.instantiateViewController(withIdentifier: "ListaProfissionaisPesquisaViewController") as? ListaProfissionaisPesquisaViewController {
+        if let vc = storyboard?.instantiateViewController(withIdentifier: "ListaProfissionaisPesquisaViewController") as? ListaProfissionaisPesquisaViewController {
+            // TODO: categoria de profissionais
             
-              self.navigationController?.pushViewController(vc, animated: true)
-          }
-      }
+            // Passa o texto da célula como categoria para a próxima célula
+            let categoria = (isFiltering ? nomesFiltrados[indexPath.row] : categorias[indexPath.row])
+            vc.categoria = categoria
+
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+    }
     
     
     func sombreiaView (v : UIView!, blur : CGFloat, y: CGFloat, opacidade : Float) {
