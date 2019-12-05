@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03DD581B2397E522006FF392 /* PinterestLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DD581A2397E522006FF392 /* PinterestLayout.swift */; };
 		3911CA59239159E20027B1FF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3911CA58239159E20027B1FF /* GoogleService-Info.plist */; };
 		3947C9A023915F5300B72900 /* PrincipalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3947C99F23915F5300B72900 /* PrincipalViewController.swift */; };
 		399B5F1D2396AB31008F886D /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 399B5F1C2396AB31008F886D /* Colors.xcassets */; };
@@ -42,6 +43,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		03DD581A2397E522006FF392 /* PinterestLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PinterestLayout.swift; path = somei/Controller/Profissionais/PinterestLayout.swift; sourceTree = SOURCE_ROOT; };
 		08B2B67085EA8A969AA28D9F /* Pods-Somei.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Somei.debug.xcconfig"; path = "Target Support Files/Pods-Somei/Pods-Somei.debug.xcconfig"; sourceTree = "<group>"; };
 		21E34BE9621ABE1E25C25B78 /* Pods_Somei.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Somei.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3911CA58239159E20027B1FF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -177,6 +179,7 @@
 				D1A984BE239921A6004C170C /* ListaProfissionaisPesquisaViewController.swift */,
 				D1A984BC239921A6004C170C /* PerfilProfissionalViewController.swift */,
 				A5459D3A23954A760023D99D /* Cell */,
+				03DD581A2397E522006FF392 /* PinterestLayout.swift */,
 			);
 			path = Profissionais;
 			sourceTree = "<group>";
@@ -262,7 +265,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 39BAA0C8239159470066B302 /* Build configuration list for PBXProject "somei" */;
+			buildConfigurationList = 39BAA0C8239159470066B302 /* Build configuration list for PBXProject "Somei" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -371,6 +374,7 @@
 				D1D518B12399233D008C8C1A /* ListaProfissionaisTableViewCell.swift in Sources */,
 				39BAA0D5239159470066B302 /* ViewController.swift in Sources */,
 				3947C9A023915F5300B72900 /* PrincipalViewController.swift in Sources */,
+				03DD581B2397E522006FF392 /* PinterestLayout.swift in Sources */,
 				A5CBEA2223954530009D2658 /* Empresa.swift in Sources */,
 				A5CBEA2323954530009D2658 /* Endereco.swift in Sources */,
 				D1D518AA239922EB008C8C1A /* TodosOsUsuarios.swift in Sources */,
@@ -460,7 +464,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -514,7 +518,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -567,7 +571,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		39BAA0C8239159470066B302 /* Build configuration list for PBXProject "somei" */ = {
+		39BAA0C8239159470066B302 /* Build configuration list for PBXProject "Somei" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				39BAA0DF239159490066B302 /* Debug */,
