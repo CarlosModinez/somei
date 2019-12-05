@@ -34,6 +34,13 @@
 		A5EC9E082395739F00BC72B3 /* ListaProfissionaisTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EC9E072395739F00BC72B3 /* ListaProfissionaisTableViewCell.swift */; };
 		A5EC9E0A2395754300BC72B3 /* PerfilProfissionalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EC9E092395754300BC72B3 /* PerfilProfissionalViewController.swift */; };
 		AF677AF8D3BF3BCCEB6DA650 /* Pods_Somei.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21E34BE9621ABE1E25C25B78 /* Pods_Somei.framework */; };
+		D1A984BF239921A6004C170C /* PerfilProfissionalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A984BC239921A6004C170C /* PerfilProfissionalViewController.swift */; };
+		D1A984C1239921A6004C170C /* ListaProfissionaisPesquisaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A984BE239921A6004C170C /* ListaProfissionaisPesquisaViewController.swift */; };
+		D1A984C723992231004C170C /* DAOFireBaseUsuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A984C623992231004C170C /* DAOFireBaseUsuario.swift */; };
+		D1D518AA239922EB008C8C1A /* TodosOsUsuarios.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D518A9239922EA008C8C1A /* TodosOsUsuarios.swift */; };
+		D1D518AC239922EE008C8C1A /* TodasAsEmpresas.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D518AB239922EE008C8C1A /* TodasAsEmpresas.swift */; };
+		D1D518B02399233D008C8C1A /* ListaAtividadesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D518AE2399233D008C8C1A /* ListaAtividadesTableViewCell.swift */; };
+		D1D518B12399233D008C8C1A /* ListaProfissionaisTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D518AF2399233D008C8C1A /* ListaProfissionaisTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -85,12 +92,12 @@
 		3947C99A23915A7900B72900 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				A5CBEA2123954530009D2658 /* InfoUsuario.swift */,
-				A5CBEA1F23954530009D2658 /* InfoEmpresa.swift */,
+				D1D518AD23992307008C8C1A /* shared */,
 				A5CBEA2023954530009D2658 /* Avaliacao.swift */,
 				A5CBEA1C23954530009D2658 /* Empresa.swift */,
 				A5CBEA1D23954530009D2658 /* Endereco.swift */,
 				A5CBEA1E23954530009D2658 /* Usuario.swift */,
+				D1A984C623992231004C170C /* DAOFireBaseUsuario.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -127,6 +134,7 @@
 				39BAA0CE239159470066B302 /* Products */,
 				B3A6728E47613F6F5C4E8DC9 /* Pods */,
 				D0275FBDE1D4B8C03BD1DB54 /* Frameworks */,
+				D1A984BB23992159004C170C /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -197,6 +205,24 @@
 				21E34BE9621ABE1E25C25B78 /* Pods_Somei.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D1A984BB23992159004C170C /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				A5CBEA1F23954530009D2658 /* InfoEmpresa.swift */,
+				A5CBEA2123954530009D2658 /* InfoUsuario.swift */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		D1D518AD23992307008C8C1A /* shared */ = {
+			isa = PBXGroup;
+			children = (
+				D1D518A9239922EA008C8C1A /* TodosOsUsuarios.swift */,
+				D1D518AB239922EE008C8C1A /* TodasAsEmpresas.swift */,
+			);
+			path = shared;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -338,8 +364,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5CBEA2523954530009D2658 /* InfoEmpresa.swift in Sources */,
+				D1A984BF239921A6004C170C /* PerfilProfissionalViewController.swift in Sources */,
 				A5459D4223954BAE0023D99D /* ProfissionaisMaisProcuradosCollectionViewCell.swift in Sources */,
+				D1A984C723992231004C170C /* DAOFireBaseUsuario.swift in Sources */,
 				A5CBEA2423954530009D2658 /* Usuario.swift in Sources */,
+				D1A984C1239921A6004C170C /* ListaProfissionaisPesquisaViewController.swift in Sources */,
+				D1D518B12399233D008C8C1A /* ListaProfissionaisTableViewCell.swift in Sources */,
 				39BAA0D5239159470066B302 /* ViewController.swift in Sources */,
 				A5732D9F2397E3DB00EEAD94 /* ComentarioTableViewCell.swift in Sources */,
 				A5EC9E082395739F00BC72B3 /* ListaProfissionaisTableViewCell.swift in Sources */,
@@ -347,11 +377,13 @@
 				A5CBEA2223954530009D2658 /* Empresa.swift in Sources */,
 				A5732DDF2397F45B00EEAD94 /* AdicionarComentarioViewController.swift in Sources */,
 				A5CBEA2323954530009D2658 /* Endereco.swift in Sources */,
+				D1D518AA239922EB008C8C1A /* TodosOsUsuarios.swift in Sources */,
 				A5CBEA2623954530009D2658 /* Avaliacao.swift in Sources */,
 				A5459D492395527E0023D99D /* EXTViewArrendondada.swift in Sources */,
 				A5EC9E0623956EFC00BC72B3 /* ListaProfissionaisPesquisaViewController.swift in Sources */,
 				A5EC9E0A2395754300BC72B3 /* PerfilProfissionalViewController.swift in Sources */,
 				A5459D4023954BA20023D99D /* ProcurarProfissionaisViewController.swift in Sources */,
+				D1D518AC239922EE008C8C1A /* TodasAsEmpresas.swift in Sources */,
 				39BAA0D1239159470066B302 /* AppDelegate.swift in Sources */,
 				A5CBEA2723954530009D2658 /* InfoUsuario.swift in Sources */,
 				39BAA0D3239159470066B302 /* SceneDelegate.swift in Sources */,
@@ -500,8 +532,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7NGUQDD35C;
+				DEVELOPMENT_TEAM = CM34PRAQJX;
 				INFOPLIST_FILE = Somei/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -519,8 +552,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7NGUQDD35C;
+				DEVELOPMENT_TEAM = CM34PRAQJX;
 				INFOPLIST_FILE = Somei/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

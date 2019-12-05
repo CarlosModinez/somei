@@ -10,33 +10,65 @@ import Foundation
 
 class Usuario {
     
-    var cpf : String
+    var cadastroPessoaFisicaOuJuridica: String
     var dtNascimento : String
     var nome : String
     var email : String
-    var cnpj : String
-    var empresa : Empresa
+    var empresa : Empresa?
     
-    init (cpf: String, dtNascimento: String, nome: String, email: String, cnpj: String, empresa: Empresa){
+    init (cadastroPessoaFisicaOuJuridica: String, dtNascimento: String, nome: String, email: String, empresa: Empresa?){
         
-        self.cpf = cpf
+        self.cadastroPessoaFisicaOuJuridica = cadastroPessoaFisicaOuJuridica
         self.dtNascimento = dtNascimento
         self.nome = nome
         self.email = email
-        self.cnpj = cnpj
         self.empresa = empresa
     }
     
+    func mapToObject(userData: [String: Any]) -> Usuario {
+        
+        let cadastroPessoaFisicaOuJuridica: String = userData["cadastroPessoaFisicaOuJuridica"]as! String
+        let dtNascimento : String = userData["dtNascimento"] as! String
+        let nome : String =  userData["nome"] as! String
+        let email : String = userData["email"] as! String
+        
+        let usuario = Usuario(cadastroPessoaFisicaOuJuridica: cadastroPessoaFisicaOuJuridica, dtNascimento: dtNascimento, nome: nome, email: email, empresa: nil)
+        
+        return usuario
+    }
+    
+    
     func login(){
-        
-        
-        
     }
     
     func fecharNegocio(cnpj: String){
-        
-        
-        
     }
+    
+    
+    func mapToDictionary() -> [String :Any]{
+        
+        let localData :[String:Any] = [
+            "cadastroPessoaFisicaOuJuridica": self.cadastroPessoaFisicaOuJuridica,
+            "dtNascimento": self.dtNascimento,
+            "nome": self.nome,
+            "email": self.email,
+        ]
+            
+        return localData
+    }
+    
+    static func mapToObject(dct : [String :Any]) -> Usuario {
+        
+        let cadastroPessoaFisicaOuJuridica: String = dct["cadastroPessoaFisicaOuJuridica"] as! String
+        let dtNascimento: String = dct["dtNascimento"] as! String
+        let nome: String = dct["nome"] as! String
+        let email: String = dct["email"] as! String
+        
+        let usuario = Usuario(cadastroPessoaFisicaOuJuridica: cadastroPessoaFisicaOuJuridica, dtNascimento: dtNascimento, nome: nome, email: email, empresa: nil)
+        
+        return usuario
+    }
+    
+    
     
 }
