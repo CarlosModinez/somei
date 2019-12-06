@@ -14,24 +14,25 @@ class DAOFireBaseEMpresas {
     
     
     // Carreca as empresas das categorias que voce selecionou
-    static func loadEmpresa(_ categoria: String) {
+    static func loadEmpresas(_ categoria: String, completion: @escaping (([Empresa]) -> ())) -> [Empresa] {
            
         let db = Firestore.firestore()
-           
+        var empresas : [Empresa] = []
+        
         db.collection("empresas").whereField("categoria", isEqualTo: categoria).getDocuments() { (querySnapshot, err) in
             if let err =  err {
                 print("Error: \(err)")
             } else {
                 
-                TodasAsEmpresasDaCategoria.shared.empresas.removeAll()
-                   
                 for document in querySnapshot!.documents {
                     let empresa = Empresa.mapToObject(dct: document.data())
-                    TodasAsEmpresasDaCategoria.shared.empresas.append(empresa)
-                
+                    empresas.append(empresa)
                 }
             }
+            
+            completion(empresas)
         }
+        return empresas
     }
     
     static func saveEmpresa(_ empresa: Empresa) {

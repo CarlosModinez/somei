@@ -12,24 +12,23 @@ import Firebase
 class DAOFireBAseUsuario {
 
     
-    static func loadUsers() {
+    static func loadUsers(completion: @escaping ([Usuario]) -> ()) -> [Usuario]{
         let db = Firestore.firestore()
+        var usuarios : [Usuario] = []
         
         db.collection("users").getDocuments { (querySnapshot, err) in
             if let err =  err {
                 print("Error: \(err)")
             } else {
                 
-                TodasAsEmpresas.shared.empresas.removeAll()
-                
                 for document in querySnapshot!.documents {
-    
                     let usuario = Usuario.mapToObject(dct: document.data())
-                    
-                    TodosOsUsuarios.shared.usuarios.append(usuario)
+                    usuarios.append(usuario)
                 }
             }
+            completion(usuarios)
         }
+        return usuarios
     }
     
     static func saveUser(_ usuario : Usuario) {

@@ -11,51 +11,62 @@ import Firebase
 
 class DAOFireBaseCategorias {
     
-    static func buscarTraducaoMEI(_ nomeOficial: String) {
-           
+    
+    //Recebe o codigo e retorna a traducao para o nome oficial
+    
+    static func buscarTraducaoMEI(codigo: String, completion: @escaping ((String) -> ())) -> String! {
         let db = Firestore.firestore()
-        db.collection("codigoMEI").getDocuments { (querySnapshot, err) in
+        var traducao: String = ""
+            
+        db.collection("codigoMEI").whereField("codigo", isEqualTo: codigo).getDocuments() { (querySnapshot, err) in
             if let err =  err {
+                    
                 print("Error: \(err)")
+        
             } else {
                 
-                TodasAsEmpresas.shared.empresas.removeAll()
-                   
                 for document in querySnapshot!.documents {
-                       
-                    let empresa = Empresa.mapToObject(dct: document.data())
-                       
-                    TodasAsEmpresas.shared.empresas.append(empresa)
+                    let categoria : Categoria = Categoria.mapToObject(dct: document.data())
+                    traducao = categoria.traducao
                 }
             }
+            
+            completion(traducao)
         }
+        return traducao
     }
     
-    static func salvarTablelaMEI () {
+    
+    // Nao usa essa funcao nao - Funcao usada para salvar as MEIS
+    static func salvarTabelaMEI () {
         let db = Firestore.firestore()
         
         var tabelaRef: DocumentReference? = nil
         
-        var tabelaData: [String : Any] = [
-            "ABATEDOR(A) DE AVES COM COMERCIALIZAÇÃO DO PRODUTO INDEPENDENTE 4724-500" : "Abatedor de aves"
         
-        ]
         
-        tabelaRef = db.collection("codigoMEI").addDocument(data: tabelaData) { err in
-            if let err = err {
-                print("Error: \(err)")
-            } else {
-                
+        
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        // Apagar
+        //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        var todasAsCategorias: [String: Any] = [:]
+        
+        
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        // Apagar
+        //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    
+    
+        
+        for i in 0..<todasAsCategorias.count {
+            
+            tabelaRef = db.collection("codigoMEI").addDocument(data: todasAsCategorias["\(i)"] as! [String : Any]) { err in
+                if let err = err {
+                    print("Error: \(err)")
+                }
             }
         }
+            
     }
-    
-    
-    
-    
-    
-    
-    
-    
     
 }
