@@ -13,14 +13,16 @@ import Firebase
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         FirebaseApp.configure()
         
-        DAOFireBaseCategorias.buscarTraducao(codigo: "5620104") { (traducao) in
+        DAOFireBaseCategorias.buscarTraducaoMEI(codigo: "5620104") { (traducao) in
             print(traducao)
         }
             
+        // Já ativa a localização se tiver permissão
+        MapaController.instance.ativarMapaSePuder()
+        
         return true
     }
 
