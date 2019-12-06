@@ -67,6 +67,12 @@ Equipe SOMEI</string>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ajuda" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ggd-WA-7nk">
+                                <rect key="frame" x="40" y="110" width="334" height="41"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" name="AzulApp"/>
                         <constraints>
@@ -75,11 +81,14 @@ Equipe SOMEI</string>
                             <constraint firstItem="iSC-OU-EEJ" firstAttribute="leading" secondItem="TMw-AR-Guu" secondAttribute="leading" constant="40" id="El8-lO-FLr"/>
                             <constraint firstItem="iSC-OU-EEJ" firstAttribute="centerX" secondItem="ofQ-id-cW9" secondAttribute="centerX" id="H9s-6D-06o"/>
                             <constraint firstItem="ofQ-id-cW9" firstAttribute="top" secondItem="TMw-AR-Guu" secondAttribute="top" constant="191" id="Knc-IU-KdE"/>
+                            <constraint firstItem="ggd-WA-7nk" firstAttribute="top" secondItem="TMw-AR-Guu" secondAttribute="top" multiplier="2.5" id="UeY-GS-d6g"/>
                             <constraint firstItem="ofQ-id-cW9" firstAttribute="bottom" secondItem="TMw-AR-Guu" secondAttribute="bottom" constant="34" id="W3c-fx-wd2"/>
                             <constraint firstItem="ofQ-id-cW9" firstAttribute="centerX" secondItem="TMw-AR-Guu" secondAttribute="centerX" id="WIz-fr-klJ"/>
                             <constraint firstItem="iSC-OU-EEJ" firstAttribute="top" secondItem="ofQ-id-cW9" secondAttribute="top" multiplier="1.1" id="Z0i-LF-o7a"/>
                             <constraint firstItem="54X-Dz-P8H" firstAttribute="top" secondItem="iSC-OU-EEJ" secondAttribute="bottom" constant="20" id="e9f-Af-Xvn"/>
                             <constraint firstItem="54X-Dz-P8H" firstAttribute="centerX" secondItem="iSC-OU-EEJ" secondAttribute="centerX" id="n6K-sB-LIq"/>
+                            <constraint firstItem="ggd-WA-7nk" firstAttribute="width" secondItem="iSC-OU-EEJ" secondAttribute="width" id="niZ-Ei-hGz"/>
+                            <constraint firstItem="ggd-WA-7nk" firstAttribute="leading" secondItem="iSC-OU-EEJ" secondAttribute="leading" id="pp0-Wi-DDF"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="TMw-AR-Guu"/>
                     </view>
