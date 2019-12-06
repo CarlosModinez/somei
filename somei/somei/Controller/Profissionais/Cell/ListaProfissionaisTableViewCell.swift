@@ -12,6 +12,7 @@ class ListaProfissionaisTableViewCell: UITableViewCell {
 
     @IBOutlet var lblNomeProfissional: UILabel!
     @IBOutlet var lblDistanciaProfissional: UILabel!
+    @IBOutlet var imgNotaProfissional: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
