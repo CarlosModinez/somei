@@ -47,7 +47,7 @@ class ListaProfissionaisPesquisaViewController: UIViewController, UITableViewDel
                     Avaliacao(nota: 5, comentario: ""),
                     Avaliacao(nota: 5, comentario: ""),
                 ],
-                categoria: "", telefone: "", email: ""),
+                categoria: "", telefone: "", email: "", descricao: ""),
             
             Empresa(
             cnpj: "", nomeFantasia: "Nome Carlinhos Boa Vista",
@@ -59,7 +59,7 @@ class ListaProfissionaisPesquisaViewController: UIViewController, UITableViewDel
                 Avaliacao(nota: 5, comentario: ""),
                 Avaliacao(nota: 5, comentario: ""),
             ],
-            categoria: "", telefone: "", email: ""),
+            categoria: "", telefone: "", email: "", descricao: ""),
             
             Empresa(
             cnpj: "", nomeFantasia: "Nome Carlinhos Boa Vista",
@@ -71,7 +71,7 @@ class ListaProfissionaisPesquisaViewController: UIViewController, UITableViewDel
                 Avaliacao(nota: 5, comentario: ""),
                 Avaliacao(nota: 5, comentario: ""),
             ],
-            categoria: "", telefone: "", email: ""),
+            categoria: "", telefone: "", email: "", descricao: ""),
             
             Empresa(
             cnpj: "", nomeFantasia: "Nome Carlinhos Boa Vista",
@@ -83,7 +83,7 @@ class ListaProfissionaisPesquisaViewController: UIViewController, UITableViewDel
                 Avaliacao(nota: 5, comentario: ""),
                 Avaliacao(nota: 5, comentario: ""),
             ],
-            categoria: "", telefone: "", email: ""),
+            categoria: "", telefone: "", email: "", descricao: ""),
             
             Empresa(
             cnpj: "", nomeFantasia: "Nome Carlinhos Boa Vista",
@@ -95,7 +95,7 @@ class ListaProfissionaisPesquisaViewController: UIViewController, UITableViewDel
                 Avaliacao(nota: 5, comentario: ""),
                 Avaliacao(nota: 5, comentario: ""),
             ],
-            categoria: "", telefone: "", email: ""),
+            categoria: "", telefone: "", email: "", descricao: ""),
             
             Empresa(
             cnpj: "", nomeFantasia: "Nome Carlinhos Boa Vista",
@@ -107,7 +107,7 @@ class ListaProfissionaisPesquisaViewController: UIViewController, UITableViewDel
                 Avaliacao(nota: 5, comentario: ""),
                 Avaliacao(nota: 5, comentario: ""),
             ],
-            categoria: "", telefone: "", email: ""),
+            categoria: "", telefone: "", email: "", descricao: ""),
             
             Empresa(
             cnpj: "", nomeFantasia: "Nome Carlinhos Boa Vista",
@@ -119,7 +119,7 @@ class ListaProfissionaisPesquisaViewController: UIViewController, UITableViewDel
                 Avaliacao(nota: 5, comentario: ""),
                 Avaliacao(nota: 5, comentario: ""),
             ],
-            categoria: "", telefone: "", email: ""),
+            categoria: "", telefone: "", email: "", descricao: ""),
             
             Empresa(
             cnpj: "", nomeFantasia: "Nome Carlinhos Boa Vista",
@@ -131,7 +131,7 @@ class ListaProfissionaisPesquisaViewController: UIViewController, UITableViewDel
                 Avaliacao(nota: 5, comentario: ""),
                 Avaliacao(nota: 5, comentario: ""),
             ],
-            categoria: "", telefone: "", email: ""),
+            categoria: "", telefone: "", email: "", descricao: ""),
             
             Empresa(
             cnpj: "", nomeFantasia: "Nome Carlinhos Boa Vista",
@@ -143,7 +143,7 @@ class ListaProfissionaisPesquisaViewController: UIViewController, UITableViewDel
                 Avaliacao(nota: 5, comentario: ""),
                 Avaliacao(nota: 5, comentario: ""),
             ],
-            categoria: "", telefone: "", email: ""),
+            categoria: "", telefone: "", email: "", descricao: ""),
         ]
         
         
