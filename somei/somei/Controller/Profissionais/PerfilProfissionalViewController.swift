@@ -12,6 +12,11 @@ import MessageUI
 class PerfilProfissionalViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, MFMessageComposeViewControllerDelegate {
 
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var umaEstrela: UIButton!
+    @IBOutlet weak var duasEstrela: UIButton!
+    @IBOutlet weak var tresEstrela: UIButton!
+    @IBOutlet weak var quatroEstrela: UIButton!
+    @IBOutlet weak var cincoEstrela: UIButton!
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -44,7 +49,7 @@ class PerfilProfissionalViewController: UIViewController, UITableViewDataSource,
     //propriedades tableview comentários
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return 5
+        return 10
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -82,7 +87,7 @@ class PerfilProfissionalViewController: UIViewController, UITableViewDataSource,
             cell2.mensagemButton.addTarget(self, action: #selector(mandarMensagem), for: .touchUpInside)
             cell2.ligarButton.addTarget(self, action: #selector(ligarParaProfissional), for: .touchUpInside)
             
-            self.tableView.rowHeight = 120
+            self.tableView.rowHeight = 140
             
             
             return cell2
@@ -95,8 +100,12 @@ class PerfilProfissionalViewController: UIViewController, UITableViewDataSource,
             return cell3
         } else{
             
-//            cell4.imgAvaliacao =
-//            cell4.txtComentario =
+           cell4.layer.cornerRadius = 10
+           cell4.layer.shadowColor = UIColor.lightGray.cgColor
+           cell4.layer.shadowOffset = CGSize(width: 1, height: 1.0)
+           cell4.layer.shadowRadius = 1.5
+           cell4.layer.shadowOpacity = 0.5
+           cell4.layer.masksToBounds = false
             
         }
         
@@ -113,11 +122,15 @@ class PerfilProfissionalViewController: UIViewController, UITableViewDataSource,
         controller.messageComposeDelegate = self
         
         //conteudo da mensagem
-        controller.body = "TestMessage"
+            let nome = "Carlitos Tevez"
+        controller.body = "Olá \(nome)! Encontrei seu perfil no App Somei e gostaria de solicitar um orçamento, por favor."
         //aqui chama o numero de telefone do model
         controller.recipients = ["988384480"]
             
+        vibrate()
+            
         self.present(controller, animated: true, completion: nil)
+            
         
     }
 }
@@ -140,6 +153,8 @@ class PerfilProfissionalViewController: UIViewController, UITableViewDataSource,
             controller.dismiss(animated: true, completion: nil)
         }
     
+    
+    
     @objc func ligarParaProfissional(){
         
         let phone = 988384480
@@ -151,6 +166,23 @@ class PerfilProfissionalViewController: UIViewController, UITableViewDataSource,
                 UIApplication.shared.openURL(url)
             }
         }
+        
+        vibrate()
     }
+    
+    @IBAction func avaliarEstrela(_ sender: UIButton) {
+        
+        vibrate()
+        
+    }
+    
+    func vibrate(){
+       
+        let generator = UIImpactFeedbackGenerator()
+        generator.impactOccurred()
+
+    }
+    
+    
     
 }

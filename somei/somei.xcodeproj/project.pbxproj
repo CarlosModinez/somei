@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		03DD581B2397E522006FF392 /* PinterestLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DD581A2397E522006FF392 /* PinterestLayout.swift */; };
 		3911CA59239159E20027B1FF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3911CA58239159E20027B1FF /* GoogleService-Info.plist */; };
 		3947C9A023915F5300B72900 /* PrincipalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3947C99F23915F5300B72900 /* PrincipalViewController.swift */; };
 		399B5F1D2396AB31008F886D /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 399B5F1C2396AB31008F886D /* Colors.xcassets */; };
@@ -17,6 +16,10 @@
 		39BAA0D8239159470066B302 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39BAA0D6239159470066B302 /* Main.storyboard */; };
 		39BAA0DA239159490066B302 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39BAA0D9239159490066B302 /* Assets.xcassets */; };
 		39BAA0DD239159490066B302 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39BAA0DB239159490066B302 /* LaunchScreen.storyboard */; };
+		A51F9614239A831500BC6EAA /* AdicionarComentarioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51F9610239A831500BC6EAA /* AdicionarComentarioViewController.swift */; };
+		A51F9615239A831500BC6EAA /* ListaProfissionaisPesquisaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51F9611239A831500BC6EAA /* ListaProfissionaisPesquisaViewController.swift */; };
+		A51F9616239A831500BC6EAA /* PerfilProfissionalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51F9612239A831500BC6EAA /* PerfilProfissionalViewController.swift */; };
+		A51F9617239A831500BC6EAA /* PinterestLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51F9613239A831500BC6EAA /* PinterestLayout.swift */; };
 		A5459D4023954BA20023D99D /* ProcurarProfissionaisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5459D3F23954BA20023D99D /* ProcurarProfissionaisViewController.swift */; };
 		A5459D4223954BAE0023D99D /* ProfissionaisMaisProcuradosCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5459D4123954BAE0023D99D /* ProfissionaisMaisProcuradosCollectionViewCell.swift */; };
 		A5459D492395527E0023D99D /* EXTViewArrendondada.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5459D482395527E0023D99D /* EXTViewArrendondada.swift */; };
@@ -50,7 +53,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		03DD581A2397E522006FF392 /* PinterestLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PinterestLayout.swift; path = somei/Controller/Profissionais/PinterestLayout.swift; sourceTree = SOURCE_ROOT; };
 		08B2B67085EA8A969AA28D9F /* Pods-Somei.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Somei.debug.xcconfig"; path = "Target Support Files/Pods-Somei/Pods-Somei.debug.xcconfig"; sourceTree = "<group>"; };
 		21E34BE9621ABE1E25C25B78 /* Pods_Somei.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Somei.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3911CA58239159E20027B1FF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -65,6 +67,10 @@
 		39BAA0DC239159490066B302 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		39BAA0DE239159490066B302 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46F7EE9F17B980114189616F /* Pods-Somei.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Somei.release.xcconfig"; path = "Target Support Files/Pods-Somei/Pods-Somei.release.xcconfig"; sourceTree = "<group>"; };
+		A51F9610239A831500BC6EAA /* AdicionarComentarioViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AdicionarComentarioViewController.swift; path = somei/Controller/Profissionais/AdicionarComentarioViewController.swift; sourceTree = SOURCE_ROOT; };
+		A51F9611239A831500BC6EAA /* ListaProfissionaisPesquisaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListaProfissionaisPesquisaViewController.swift; path = somei/Controller/Profissionais/ListaProfissionaisPesquisaViewController.swift; sourceTree = SOURCE_ROOT; };
+		A51F9612239A831500BC6EAA /* PerfilProfissionalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PerfilProfissionalViewController.swift; path = somei/Controller/Profissionais/PerfilProfissionalViewController.swift; sourceTree = SOURCE_ROOT; };
+		A51F9613239A831500BC6EAA /* PinterestLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PinterestLayout.swift; path = somei/Controller/Profissionais/PinterestLayout.swift; sourceTree = SOURCE_ROOT; };
 		A5459D3F23954BA20023D99D /* ProcurarProfissionaisViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProcurarProfissionaisViewController.swift; path = somei/Controller/Profissionais/ProcurarProfissionaisViewController.swift; sourceTree = SOURCE_ROOT; };
 		A5459D4123954BAE0023D99D /* ProfissionaisMaisProcuradosCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfissionaisMaisProcuradosCollectionViewCell.swift; path = somei/Controller/Profissionais/Cell/ProfissionaisMaisProcuradosCollectionViewCell.swift; sourceTree = SOURCE_ROOT; };
 		A5459D482395527E0023D99D /* EXTViewArrendondada.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EXTViewArrendondada.swift; path = somei/EXTViewArrendondada.swift; sourceTree = SOURCE_ROOT; };
@@ -133,8 +139,6 @@
 			isa = PBXGroup;
 			children = (
 				A5459D3E23954B520023D99D /* Profissionais */,
-				3947C99F23915F5300B72900 /* PrincipalViewController.swift */,
-				39BAA0D4239159470066B302 /* ViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -189,12 +193,14 @@
 		A5459D3E23954B520023D99D /* Profissionais */ = {
 			isa = PBXGroup;
 			children = (
-				A5459D3A23954A760023D99D /* Cell */,
 				A5459D3F23954BA20023D99D /* ProcurarProfissionaisViewController.swift */,
-				D1A984BE239921A6004C170C /* ListaProfissionaisPesquisaViewController.swift */,
-				D1A984BC239921A6004C170C /* PerfilProfissionalViewController.swift */,
+				A51F9610239A831500BC6EAA /* AdicionarComentarioViewController.swift */,
+				A51F9611239A831500BC6EAA /* ListaProfissionaisPesquisaViewController.swift */,
+				A51F9612239A831500BC6EAA /* PerfilProfissionalViewController.swift */,
+				A51F9613239A831500BC6EAA /* PinterestLayout.swift */,
+				3947C99F23915F5300B72900 /* PrincipalViewController.swift */,
+				39BAA0D4239159470066B302 /* ViewController.swift */,
 				A5459D3A23954A760023D99D /* Cell */,
-				03DD581A2397E522006FF392 /* PinterestLayout.swift */,
 			);
 			path = Profissionais;
 			sourceTree = "<group>";
@@ -229,6 +235,9 @@
 			children = (
 				A5CBEA1F23954530009D2658 /* InfoEmpresa.swift */,
 				A5CBEA2123954530009D2658 /* InfoUsuario.swift */,
+				A5732DDE2397F45B00EEAD94 /* AdicionarComentarioViewController.swift */,
+				A5EC9E0523956EFC00BC72B3 /* ListaProfissionaisPesquisaViewController.swift */,
+				A5EC9E092395754300BC72B3 /* PerfilProfissionalViewController.swift */,
 			);
 			name = "Recovered References";
 			sourceTree = "<group>";
@@ -280,7 +289,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 39BAA0C8239159470066B302 /* Build configuration list for PBXProject "Somei" */;
+			buildConfigurationList = 39BAA0C8239159470066B302 /* Build configuration list for PBXProject "somei" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -381,6 +390,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5CBEA2523954530009D2658 /* InfoEmpresa.swift in Sources */,
+				A51F9616239A831500BC6EAA /* PerfilProfissionalViewController.swift in Sources */,
 				D1A984BF239921A6004C170C /* (null) in Sources */,
 				A5459D4223954BAE0023D99D /* ProfissionaisMaisProcuradosCollectionViewCell.swift in Sources */,
 				D1A984C723992231004C170C /* (null) in Sources */,
@@ -389,14 +399,15 @@
 				D1D518B12399233D008C8C1A /* (null) in Sources */,
 				39BAA0D5239159470066B302 /* ViewController.swift in Sources */,
 				A5732D9F2397E3DB00EEAD94 /* ComentarioTableViewCell.swift in Sources */,
+				A51F9617239A831500BC6EAA /* PinterestLayout.swift in Sources */,
 				A5EC9E082395739F00BC72B3 /* ListaProfissionaisTableViewCell.swift in Sources */,
 				3947C9A023915F5300B72900 /* PrincipalViewController.swift in Sources */,
-				03DD581B2397E522006FF392 /* PinterestLayout.swift in Sources */,
 				A5CBEA2223954530009D2658 /* Empresa.swift in Sources */,
 				A5732DDF2397F45B00EEAD94 /* AdicionarComentarioViewController.swift in Sources */,
 				A5CBEA2323954530009D2658 /* Endereco.swift in Sources */,
 				D1D518AA239922EB008C8C1A /* (null) in Sources */,
 				A5CBEA2623954530009D2658 /* Avaliacao.swift in Sources */,
+				A51F9615239A831500BC6EAA /* ListaProfissionaisPesquisaViewController.swift in Sources */,
 				A5C71D4023993B67006B68DB /* AvaliacaoProfissionalTableViewCell.swift in Sources */,
 				A5C71D3C23993ADB006B68DB /* DescricaoProfissionalTableViewCell.swift in Sources */,
 				A5C71D3E23993B23006B68DB /* BotaoContatoTableViewCell.swift in Sources */,
@@ -408,6 +419,7 @@
 				A5459D4023954BA20023D99D /* ProcurarProfissionaisViewController.swift in Sources */,
 				D1D518AC239922EE008C8C1A /* (null) in Sources */,
 				A5C71D3A23993A63006B68DB /* NomeProfissionalTableViewCell.swift in Sources */,
+				A51F9614239A831500BC6EAA /* AdicionarComentarioViewController.swift in Sources */,
 				39BAA0D1239159470066B302 /* AppDelegate.swift in Sources */,
 				A5CBEA2723954530009D2658 /* InfoUsuario.swift in Sources */,
 				39BAA0D3239159470066B302 /* SceneDelegate.swift in Sources */,
@@ -593,7 +605,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		39BAA0C8239159470066B302 /* Build configuration list for PBXProject "Somei" */ = {
+		39BAA0C8239159470066B302 /* Build configuration list for PBXProject "somei" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				39BAA0DF239159490066B302 /* Debug */,
