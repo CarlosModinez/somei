@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		037A3B54239A90F900708803 /* Ext_String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037A3B53239A90F900708803 /* Ext_String.swift */; };
 		03DD581B2397E522006FF392 /* PinterestLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DD581A2397E522006FF392 /* PinterestLayout.swift */; };
+		03DD581D2399C9BF006FF392 /* MapaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DD581C2399C9BE006FF392 /* MapaController.swift */; };
 		3911CA59239159E20027B1FF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3911CA58239159E20027B1FF /* GoogleService-Info.plist */; };
 		3947C9A023915F5300B72900 /* PrincipalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3947C99F23915F5300B72900 /* PrincipalViewController.swift */; };
 		399B5F1D2396AB31008F886D /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 399B5F1C2396AB31008F886D /* Colors.xcassets */; };
@@ -47,7 +49,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		037A3B53239A90F900708803 /* Ext_String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Ext_String.swift; path = somei/Controller/Ext_String.swift; sourceTree = SOURCE_ROOT; };
 		03DD581A2397E522006FF392 /* PinterestLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PinterestLayout.swift; path = somei/Controller/Profissionais/PinterestLayout.swift; sourceTree = SOURCE_ROOT; };
+		03DD581C2399C9BE006FF392 /* MapaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MapaController.swift; path = somei/Controller/MapaController.swift; sourceTree = SOURCE_ROOT; };
 		08B2B67085EA8A969AA28D9F /* Pods-Somei.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Somei.debug.xcconfig"; path = "Target Support Files/Pods-Somei/Pods-Somei.debug.xcconfig"; sourceTree = "<group>"; };
 		21E34BE9621ABE1E25C25B78 /* Pods_Somei.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Somei.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3911CA58239159E20027B1FF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -135,6 +139,7 @@
 				A5459D3E23954B520023D99D /* Profissionais */,
 				3947C99F23915F5300B72900 /* PrincipalViewController.swift */,
 				39BAA0D4239159470066B302 /* ViewController.swift */,
+				03DD581C2399C9BE006FF392 /* MapaController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -198,6 +203,7 @@
 			isa = PBXGroup;
 			children = (
 				A5459D482395527E0023D99D /* EXTViewArrendondada.swift */,
+				037A3B53239A90F900708803 /* Ext_String.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -393,6 +399,7 @@
 				A5CBEA2423954530009D2658 /* Usuario.swift in Sources */,
 				D1A984C1239921A6004C170C /* ListaProfissionaisPesquisaViewController.swift in Sources */,
 				D1D518B12399233D008C8C1A /* ListaProfissionaisTableViewCell.swift in Sources */,
+				03DD581D2399C9BF006FF392 /* MapaController.swift in Sources */,
 				39BAA0D5239159470066B302 /* ViewController.swift in Sources */,
 				3947C9A023915F5300B72900 /* PrincipalViewController.swift in Sources */,
 				03DD581B2397E522006FF392 /* PinterestLayout.swift in Sources */,
@@ -403,6 +410,7 @@
 				D1AFC83D23993348009583B3 /* DAOFireBaseEmpresas.swift in Sources */,
 				A5CBEA2623954530009D2658 /* Avaliacao.swift in Sources */,
 				A5459D492395527E0023D99D /* EXTViewArrendondada.swift in Sources */,
+				037A3B54239A90F900708803 /* Ext_String.swift in Sources */,
 				D1D518B02399233D008C8C1A /* ListaAtividadesTableViewCell.swift in Sources */,
 				A5EC9E0C2395767500BC72B3 /* (null) in Sources */,
 				A5EC9E0623956EFC00BC72B3 /* (null) in Sources */,

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreLocation
 
 class ProcurarProfissionaisViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UISearchBarDelegate {
     
@@ -73,7 +74,7 @@ class ProcurarProfissionaisViewController: UIViewController, UICollectionViewDel
         }
         
         
-        // Design da collection
+        // Design da collection//
         collectionView?.backgroundColor = .clear
         collectionView?.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 10, right: 0)
     }
@@ -81,6 +82,7 @@ class ProcurarProfissionaisViewController: UIViewController, UICollectionViewDel
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
                 
+        // Tira o fundo cinza da caixa de busca
         for sub in searchBar.subviews {
             for s in sub.subviews {
                 for subview in s.subviews {
@@ -88,6 +90,10 @@ class ProcurarProfissionaisViewController: UIViewController, UICollectionViewDel
                 }
             }
         }
+        
+        // Deselegante, obriga o LM responder pra cá, porque tem que ser um vc
+        MapaController.instance.locationManager.delegate = self
+        MapaController.instance.pedirPermissaoMapa()
 
     }
     
@@ -95,7 +101,9 @@ class ProcurarProfissionaisViewController: UIViewController, UICollectionViewDel
         print("POW", searchBar.text!)
         filterContentForSearchText(searchBar.text!)
     }
-
+    
+    
+    // MARK: Collection View Delegate
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if isFiltering {
@@ -105,7 +113,7 @@ class ProcurarProfissionaisViewController: UIViewController, UICollectionViewDel
         return categorias.count
     }
     
-    //TODO: categoria de profissionais
+
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Profissionais", for: indexPath) as! ProfissionaisMaisProcuradosCollectionViewCell
@@ -129,11 +137,16 @@ class ProcurarProfissionaisViewController: UIViewController, UICollectionViewDel
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-          if let vc = storyboard?.instantiateViewController(withIdentifier: "ListaProfissionaisPesquisaViewController") as? ListaProfissionaisPesquisaViewController {
+        if let vc = storyboard?.instantiateViewController(withIdentifier: "ListaProfissionaisPesquisaViewController") as? ListaProfissionaisPesquisaViewController {
+            // TODO: categoria de profissionais
             
-              self.navigationController?.pushViewController(vc, animated: true)
-          }
-      }
+            // Passa o texto da célula como categoria para a próxima célula
+            let categoria = (isFiltering ? nomesFiltrados[indexPath.row] : categorias[indexPath.row])
+            vc.categoria = categoria
+
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+    }
     
     
     func sombreiaView (v : UIView!, blur : CGFloat, y: CGFloat, opacidade : Float) {
@@ -217,4 +230,38 @@ extension ProcurarProfissionaisViewController: PinterestLayoutDelegate {
     
     return CGFloat(resultado + 50) //photos[indexPath.item].image.size.height
   }
+}
+
+
+// MARK: Location Manager Delegate
+extension ProcurarProfissionaisViewController : CLLocationManagerDelegate {
+    // Essa função [deveria] é chamada quando o status da permissão muda
+    func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
+    
+        print("Pediram permissão")
+        
+        switch status { // Mudou para:
+            case .authorizedWhenInUse:
+                MapaController.instance.ativarMapaSePuder()
+                break
+            
+            case .authorizedAlways:
+                MapaController.instance.ativarMapaSePuder()
+                break
+            
+            case .denied:
+                let alert = UIAlertController(
+                    title: "Localização desativada",
+                    message: "Se mudar de ideia, você sempre pode mudar isso nas configurações.",
+                    preferredStyle: .alert
+                )
+                let okAction = UIAlertAction(title: "Tudo bem!", style: .default, handler: nil)
+                alert.addAction(okAction)
+                present(alert, animated: true, completion: nil)
+                break
+            
+            default:
+                break
+        }
+    }
 }
