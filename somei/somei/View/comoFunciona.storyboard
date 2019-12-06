@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="VCr-hb-tnh">
+            <objects>
+                <viewController id="YHS-pI-FQm" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HO2-Pv-HM6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m1k-GZ-9Yb">
+                                <rect key="frame" x="0.0" y="179" width="414" height="717"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="gqB-ct-pBQ">
+                                        <rect key="frame" x="33" y="30" width="348" height="573.5"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <string key="text">Somei?
+
+Somei é uma plataforma que busca fazer a ponte entre o Microempreendedor individual, mais conhecido como MEI, e o consumidor.
+
+Dentro do app você pode cadastrar a sua empresa para prestar ou contratar serviços, ou apenas encontrar a solução para os seus problemas.
+
+Para se cadastrar é fácil, basta inserir:
+
+- Seu Nome
+- Seu CPF ou CNPJ
+- Seu Telefone
+- Seu Email 
+
+E escolher uma senha para sua conta.
+
+Depois disso é fácil encontrar qualquer serviço ou ser contratado para solucionar o problema de alguém!</string>
+                                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="gqB-ct-pBQ" firstAttribute="centerX" secondItem="m1k-GZ-9Yb" secondAttribute="centerX" id="Fn4-OW-zwy"/>
+                                    <constraint firstItem="gqB-ct-pBQ" firstAttribute="width" secondItem="m1k-GZ-9Yb" secondAttribute="width" multiplier="0.84" id="TQd-8d-MFb"/>
+                                    <constraint firstItem="gqB-ct-pBQ" firstAttribute="height" secondItem="m1k-GZ-9Yb" secondAttribute="height" multiplier="0.8" id="Yl2-9e-e5T"/>
+                                    <constraint firstItem="gqB-ct-pBQ" firstAttribute="top" secondItem="m1k-GZ-9Yb" secondAttribute="top" constant="30" id="hoq-Sm-3MI"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Como funciona?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZMc-Wc-57T">
+                                <rect key="frame" x="33" y="84" width="348" height="42"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="35"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hO1-Qw-Rl5">
+                                <rect key="frame" x="58.5" y="786" width="297" height="40"/>
+                                <state key="normal" image="botaoOqEMEI">
+                                    <color key="titleColor" name="AzulApp"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" name="AzulApp"/>
+                        <constraints>
+                            <constraint firstItem="m1k-GZ-9Yb" firstAttribute="height" secondItem="HO2-Pv-HM6" secondAttribute="height" multiplier="0.8" id="3of-yj-wWJ"/>
+                            <constraint firstAttribute="bottom" secondItem="m1k-GZ-9Yb" secondAttribute="bottom" id="6nH-rB-bfI"/>
+                            <constraint firstItem="hO1-Qw-Rl5" firstAttribute="width" secondItem="gqB-ct-pBQ" secondAttribute="width" multiplier="0.853448" id="H0l-2j-A1h"/>
+                            <constraint firstItem="gqB-ct-pBQ" firstAttribute="top" secondItem="ZMc-Wc-57T" secondAttribute="bottom" constant="83" id="Kvd-K9-fYm"/>
+                            <constraint firstItem="hO1-Qw-Rl5" firstAttribute="centerX" secondItem="gqB-ct-pBQ" secondAttribute="centerX" id="aqY-uD-wvM"/>
+                            <constraint firstItem="m1k-GZ-9Yb" firstAttribute="width" secondItem="HO2-Pv-HM6" secondAttribute="width" id="bBi-8C-oiN"/>
+                            <constraint firstItem="hO1-Qw-Rl5" firstAttribute="height" secondItem="gqB-ct-pBQ" secondAttribute="height" multiplier="0.0697472" id="iIe-1O-9sw"/>
+                            <constraint firstItem="m1k-GZ-9Yb" firstAttribute="centerX" secondItem="DDx-qa-Dyp" secondAttribute="centerX" id="izD-r0-1QW"/>
+                            <constraint firstItem="ZMc-Wc-57T" firstAttribute="trailing" secondItem="gqB-ct-pBQ" secondAttribute="trailing" id="jx8-b9-pfu"/>
+                            <constraint firstItem="hO1-Qw-Rl5" firstAttribute="top" secondItem="gqB-ct-pBQ" secondAttribute="bottom" constant="3.5" id="r3V-PY-1yx"/>
+                            <constraint firstItem="ZMc-Wc-57T" firstAttribute="leading" secondItem="gqB-ct-pBQ" secondAttribute="leading" id="yiE-71-UUi"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="DDx-qa-Dyp"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yV2-CE-YX4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="61" y="-2725"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="gKi-Wp-e74">
+            <objects>
+                <viewController id="uKa-ve-Tok" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wgV-Uu-bag">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fo3-64-8h3">
+                                <rect key="frame" x="0.0" y="179" width="414" height="717"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="csx-ed-eRi">
+                                        <rect key="frame" x="33" y="30" width="348" height="573.5"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <string key="text">Porque me tornar MEI?
+
+O Microempreendedor Individual (MEI) é o tipo mais simples de empresa e foi criado pelo Governo para permitir que o pequeno empresário tenha fácil acesso a um CNPJ, por um custo baixo e sem burocracia. 
+
+E as vantagens de se tornar um MEI são muitas:
+
+- Sair da informalidade sem burocracia e a um baixo custo;
+
+- Ter um CNPJ e acesso a produtos, serviços bancários e crédito diferenciado;
+
+- Poder emitir nota fiscal para outras empresas e para o governo;
+
+- Benefícios da previdência (INSS) como auxílio-doença, aposentadoria por idade e invalidez, salário-maternidade, pensão e auxílio reclusão;</string>
+                                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y8J-Az-064">
+                                        <rect key="frame" x="53.5" y="611" width="307" height="40"/>
+                                        <state key="normal" image="botaoOqPrecisa">
+                                            <color key="titleColor" name="AzulApp"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="csx-ed-eRi" firstAttribute="top" secondItem="Fo3-64-8h3" secondAttribute="top" constant="30" id="09B-Dg-rpH"/>
+                                    <constraint firstItem="csx-ed-eRi" firstAttribute="centerX" secondItem="Fo3-64-8h3" secondAttribute="centerX" id="IFL-uF-Ezb"/>
+                                    <constraint firstItem="y8J-Az-064" firstAttribute="height" secondItem="csx-ed-eRi" secondAttribute="height" multiplier="0.0697472" id="Lro-4g-NS7"/>
+                                    <constraint firstItem="csx-ed-eRi" firstAttribute="width" secondItem="Fo3-64-8h3" secondAttribute="width" multiplier="0.84" id="TwA-lw-TMO"/>
+                                    <constraint firstItem="y8J-Az-064" firstAttribute="width" secondItem="csx-ed-eRi" secondAttribute="width" multiplier="0.882184" id="Uao-Hu-0GC"/>
+                                    <constraint firstItem="csx-ed-eRi" firstAttribute="height" secondItem="Fo3-64-8h3" secondAttribute="height" multiplier="0.8" id="da6-wI-Qq9"/>
+                                    <constraint firstItem="y8J-Az-064" firstAttribute="centerX" secondItem="csx-ed-eRi" secondAttribute="centerX" id="iXO-Ck-dwz"/>
+                                    <constraint firstItem="y8J-Az-064" firstAttribute="top" secondItem="csx-ed-eRi" secondAttribute="bottom" constant="7.5" id="jgw-Rm-faz"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Como funciona?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZoQ-jS-7Jn">
+                                <rect key="frame" x="33" y="84" width="348" height="42"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="35"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" name="AzulApp"/>
+                        <constraints>
+                            <constraint firstItem="Fo3-64-8h3" firstAttribute="centerX" secondItem="58F-3r-zSq" secondAttribute="centerX" id="CKX-kg-b5k"/>
+                            <constraint firstItem="Fo3-64-8h3" firstAttribute="height" secondItem="wgV-Uu-bag" secondAttribute="height" multiplier="0.8" id="DaJ-nV-CIL"/>
+                            <constraint firstItem="Fo3-64-8h3" firstAttribute="width" secondItem="wgV-Uu-bag" secondAttribute="width" id="NXc-af-dxf"/>
+                            <constraint firstItem="csx-ed-eRi" firstAttribute="top" secondItem="ZoQ-jS-7Jn" secondAttribute="bottom" constant="83" id="Q9v-kH-oXk"/>
+                            <constraint firstAttribute="bottom" secondItem="Fo3-64-8h3" secondAttribute="bottom" id="jeo-Py-ksO"/>
+                            <constraint firstItem="ZoQ-jS-7Jn" firstAttribute="trailing" secondItem="csx-ed-eRi" secondAttribute="trailing" id="jxD-sg-lTf"/>
+                            <constraint firstItem="ZoQ-jS-7Jn" firstAttribute="leading" secondItem="csx-ed-eRi" secondAttribute="leading" id="qTW-IL-0Yj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="58F-3r-zSq"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="17i-0X-uUB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="842" y="-2742"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="6Ev-8E-VyC">
+            <objects>
+                <viewController id="DdC-Ji-xhf" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3Tt-Zv-l61">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3OK-Vk-DiF">
+                                <rect key="frame" x="0.0" y="179" width="414" height="717"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="8cn-5j-fIZ">
+                                        <rect key="frame" x="33" y="30" width="348" height="573.5"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <string key="text">O que preciso para fazer o meu cadastro como MEI? 
+
+- Documentos pessoais (precisa ter RG, CPF e Título de Eleitor);
+
+- Endereço e um número de telefone;
+
+- Ser maior de 18 anos (ou ter entre 16 e 18 anos e ser emancipado);
+
+- Escolher uma das atividades permitidas pelo MEI; (Confira a lista das atividades)
+
+- Faturamento limitado a 81 mil reais por ano, (receita bruta);
+
+- Não participar como sócio, administrador ou titular de outra empresa;
+
+- Ter no máximo um empregado;
+
+- Não ser Pensionista e Servidor Público Federal em atividade;</string>
+                                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="8cn-5j-fIZ" firstAttribute="centerX" secondItem="3OK-Vk-DiF" secondAttribute="centerX" id="8LY-9a-NRT"/>
+                                    <constraint firstItem="8cn-5j-fIZ" firstAttribute="height" secondItem="3OK-Vk-DiF" secondAttribute="height" multiplier="0.8" id="JdW-2W-LfP"/>
+                                    <constraint firstItem="8cn-5j-fIZ" firstAttribute="width" secondItem="3OK-Vk-DiF" secondAttribute="width" multiplier="0.84" id="b07-7V-ja9"/>
+                                    <constraint firstItem="8cn-5j-fIZ" firstAttribute="top" secondItem="3OK-Vk-DiF" secondAttribute="top" constant="30" id="bro-9C-a50"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Como funciona?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tqd-dK-6g9">
+                                <rect key="frame" x="33" y="84" width="348" height="42"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="35"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zcE-x9-dqW">
+                                <rect key="frame" x="58.5" y="786" width="297" height="40"/>
+                                <state key="normal" image="botaoCadastro">
+                                    <color key="titleColor" name="AzulApp"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" name="AzulApp"/>
+                        <constraints>
+                            <constraint firstItem="3OK-Vk-DiF" firstAttribute="centerX" secondItem="sVh-50-hUL" secondAttribute="centerX" id="1Wd-WA-JiF"/>
+                            <constraint firstItem="Tqd-dK-6g9" firstAttribute="leading" secondItem="8cn-5j-fIZ" secondAttribute="leading" id="2r0-ba-aMS"/>
+                            <constraint firstItem="zcE-x9-dqW" firstAttribute="width" secondItem="8cn-5j-fIZ" secondAttribute="width" multiplier="0.853448" id="5f0-Br-NVK"/>
+                            <constraint firstItem="Tqd-dK-6g9" firstAttribute="trailing" secondItem="8cn-5j-fIZ" secondAttribute="trailing" id="81n-Nd-jwA"/>
+                            <constraint firstItem="zcE-x9-dqW" firstAttribute="height" secondItem="8cn-5j-fIZ" secondAttribute="height" multiplier="0.0697472" id="BYF-uW-jLL"/>
+                            <constraint firstItem="8cn-5j-fIZ" firstAttribute="top" secondItem="Tqd-dK-6g9" secondAttribute="bottom" constant="83" id="La4-1B-5l1"/>
+                            <constraint firstItem="zcE-x9-dqW" firstAttribute="top" secondItem="8cn-5j-fIZ" secondAttribute="bottom" constant="3.5" id="Ze1-Xk-o2M"/>
+                            <constraint firstAttribute="bottom" secondItem="3OK-Vk-DiF" secondAttribute="bottom" id="aLh-1H-6PT"/>
+                            <constraint firstItem="zcE-x9-dqW" firstAttribute="centerX" secondItem="8cn-5j-fIZ" secondAttribute="centerX" id="d5j-Lt-tiQ"/>
+                            <constraint firstItem="3OK-Vk-DiF" firstAttribute="width" secondItem="3Tt-Zv-l61" secondAttribute="width" id="d5m-gC-47M"/>
+                            <constraint firstItem="3OK-Vk-DiF" firstAttribute="height" secondItem="3Tt-Zv-l61" secondAttribute="height" multiplier="0.8" id="ilC-Ra-Pfu"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="sVh-50-hUL"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bXP-jn-xi2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1478" y="-2742"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="botaoCadastro" width="307" height="40"/>
+        <image name="botaoOqEMEI" width="307" height="40"/>
+        <image name="botaoOqPrecisa" width="307" height="40"/>
+        <namedColor name="AzulApp">
+            <color red="0.0" green="0.40000000596046448" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>

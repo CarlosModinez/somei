@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		03DD581B2397E522006FF392 /* PinterestLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DD581A2397E522006FF392 /* PinterestLayout.swift */; };
+		22EE5195239A791100D2FEFD /* comoFunciona.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22EE5194239A791100D2FEFD /* comoFunciona.storyboard */; };
 		3911CA59239159E20027B1FF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3911CA58239159E20027B1FF /* GoogleService-Info.plist */; };
 		3947C9A023915F5300B72900 /* PrincipalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3947C99F23915F5300B72900 /* PrincipalViewController.swift */; };
 		399B5F1D2396AB31008F886D /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 399B5F1C2396AB31008F886D /* Colors.xcassets */; };
@@ -46,6 +47,7 @@
 		03DD581A2397E522006FF392 /* PinterestLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PinterestLayout.swift; path = somei/Controller/Profissionais/PinterestLayout.swift; sourceTree = SOURCE_ROOT; };
 		08B2B67085EA8A969AA28D9F /* Pods-Somei.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Somei.debug.xcconfig"; path = "Target Support Files/Pods-Somei/Pods-Somei.debug.xcconfig"; sourceTree = "<group>"; };
 		21E34BE9621ABE1E25C25B78 /* Pods_Somei.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Somei.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		22EE5194239A791100D2FEFD /* comoFunciona.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = comoFunciona.storyboard; path = somei/View/comoFunciona.storyboard; sourceTree = SOURCE_ROOT; };
 		3911CA58239159E20027B1FF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3947C99F23915F5300B72900 /* PrincipalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrincipalViewController.swift; sourceTree = "<group>"; };
 		399B5F1C2396AB31008F886D /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 				39BAA0DB239159490066B302 /* LaunchScreen.storyboard */,
 				39BAA0D9239159490066B302 /* Assets.xcassets */,
 				399B5F1C2396AB31008F886D /* Colors.xcassets */,
+				22EE5194239A791100D2FEFD /* comoFunciona.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -265,7 +268,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 39BAA0C8239159470066B302 /* Build configuration list for PBXProject "Somei" */;
+			buildConfigurationList = 39BAA0C8239159470066B302 /* Build configuration list for PBXProject "somei" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -293,6 +296,7 @@
 				39BAA0DD239159490066B302 /* LaunchScreen.storyboard in Resources */,
 				3911CA59239159E20027B1FF /* GoogleService-Info.plist in Resources */,
 				39BAA0DA239159490066B302 /* Assets.xcassets in Resources */,
+				22EE5195239A791100D2FEFD /* comoFunciona.storyboard in Resources */,
 				A5B5BDFE2397D0D600F800CC /* MinhaConta.storyboard in Resources */,
 				39BAA0D8239159470066B302 /* Main.storyboard in Resources */,
 				A55DD4662397D58900821A2F /* PerfilProfissional.storyboard in Resources */,
@@ -534,7 +538,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = CM34PRAQJX;
+				DEVELOPMENT_TEAM = QF2XVHQ9W2;
 				INFOPLIST_FILE = Somei/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -554,7 +558,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = CM34PRAQJX;
+				DEVELOPMENT_TEAM = QF2XVHQ9W2;
 				INFOPLIST_FILE = Somei/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -571,7 +575,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		39BAA0C8239159470066B302 /* Build configuration list for PBXProject "Somei" */ = {
+		39BAA0C8239159470066B302 /* Build configuration list for PBXProject "somei" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				39BAA0DF239159490066B302 /* Debug */,
