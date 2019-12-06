@@ -29,7 +29,7 @@
                                 <rect key="frame" x="25" y="174" width="364" height="688"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="NomeProfissional" rowHeight="83" id="YNs-2o-A0x" customClass="NomeProfissionalTableViewCell" customModule="Somei" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="NomeProfissional" rowHeight="83" id="YNs-2o-A0x" customClass="NomeProfissionalTableViewCell" customModule="Somei" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="364" height="83"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="YNs-2o-A0x" id="mps-ql-Bj6">
@@ -73,14 +73,14 @@
                                             <outlet property="lblNomeProfissional" destination="TDF-cs-TXO" id="aJ9-QL-bT9"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="DescricaoProfissional" rowHeight="165" id="Rhi-a7-jim" customClass="DescricaoProfissionalTableViewCell" customModule="Somei" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="DescricaoProfissional" rowHeight="165" id="Rhi-a7-jim" customClass="DescricaoProfissionalTableViewCell" customModule="Somei" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="111" width="364" height="165"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Rhi-a7-jim" id="PVN-CC-SIP">
                                             <rect key="frame" x="0.0" y="0.0" width="364" height="165"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nkZ-6d-f9U">
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nkZ-6d-f9U">
                                                     <rect key="frame" x="0.0" y="0.0" width="364" height="165"/>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                     <string key="text">Experiência, qualidade e preço justo. Lâmpadas, refletores, montagem de quadros, passagem de fiação padrão Copel, tomadas, interruptores, disjuntores, DR, DDR. Comodidades: mais opções de pagamento, diversas áreas de atuação, garantia do serviço.</string>
@@ -101,7 +101,7 @@
                                             <outlet property="txtDescricaoProfissional" destination="nkZ-6d-f9U" id="OUb-bC-fxh"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="BotaoContato" rowHeight="112" id="q5b-IM-wCe" customClass="BotaoContatoTableViewCell" customModule="Somei" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="BotaoContato" rowHeight="112" id="q5b-IM-wCe" customClass="BotaoContatoTableViewCell" customModule="Somei" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="276" width="364" height="112"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="q5b-IM-wCe" id="7fm-HE-Jqe">
@@ -115,7 +115,7 @@
                                                         <constraint firstAttribute="width" secondItem="N7J-Nj-v0Q" secondAttribute="height" multiplier="307:40" id="Syl-i9-HhF"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                                    <state key="normal" title="Ligar para Maria Helena Cruz">
+                                                    <state key="normal" title="Ligar">
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </state>
                                                     <userDefinedRuntimeAttributes>
@@ -131,7 +131,7 @@
                                                         <constraint firstAttribute="width" secondItem="SwP-mF-o5k" secondAttribute="height" multiplier="307:40" id="fdf-ti-Ury"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                                    <state key="normal" title="Conversar no WhatsApp">
+                                                    <state key="normal" title="Mandar Mensagem">
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </state>
                                                     <userDefinedRuntimeAttributes>
@@ -155,7 +155,7 @@
                                             <outlet property="mensagemButton" destination="SwP-mF-o5k" id="NGK-X0-zvh"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="AvaliacaoProfissional" rowHeight="112" id="sag-2I-LXI">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="AvaliacaoProfissional" rowHeight="112" id="sag-2I-LXI" customClass="AvaliacaoProfissionalTableViewCell" customModule="Somei" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="388" width="364" height="112"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="sag-2I-LXI" id="AJI-DE-GV9">
@@ -202,7 +202,7 @@
                                                         <constraint firstAttribute="width" secondItem="p0P-1Z-uhY" secondAttribute="height" multiplier="5:1" id="DiO-bt-tfM"/>
                                                     </constraints>
                                                 </imageView>
-                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Pontual e super caprichosa, preço em conta e aceita cartão de crédito. Recomendo!!!" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="8tq-5Q-mEl">
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Pontual e super caprichosa, preço em conta e aceita cartão de crédito. Recomendo!!!" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="8tq-5Q-mEl">
                                                     <rect key="frame" x="20" y="30" width="324" height="86"/>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                     <constraints>
@@ -258,7 +258,7 @@
             <objects>
                 <viewController id="InZ-re-YcP" customClass="AdicionarComenta_rioViewController" customModule="Somei" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fMe-Mw-b5e">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iZX-yy-329">
@@ -266,9 +266,6 @@
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tOe-dV-Lfp">
                                         <rect key="frame" x="54" y="188" width="306" height="188"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="tOe-dV-Lfp" secondAttribute="height" multiplier="153:94" id="C5F-ez-MzZ"/>
-                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <userDefinedRuntimeAttributes>
@@ -365,33 +362,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="waG-EI-z7w" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5478.2608695652179" y="138.61607142857142"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="9Ms-Z7-Bng">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="LIN-HQ-A9l" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" hidden="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="jbc-Ns-T5S">
-                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="barTintColor" name="AzulApp"/>
-                        <textAttributes key="titleTextAttributes">
-                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        </textAttributes>
-                        <textAttributes key="largeTitleTextAttributes">
-                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        </textAttributes>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="lWi-Kd-cnK" kind="relationship" relationship="rootViewController" id="VcA-sE-cR2"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="P4E-Ze-Mu9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3718.840579710145" y="138.61607142857142"/>
         </scene>
     </scenes>
     <resources>

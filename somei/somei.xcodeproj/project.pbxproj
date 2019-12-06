@@ -22,6 +22,8 @@
 		A55DD4662397D58900821A2F /* PerfilProfissional.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A55DD4652397D58900821A2F /* PerfilProfissional.storyboard */; };
 		A5732D9F2397E3DB00EEAD94 /* ComentarioTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5732D9E2397E3DB00EEAD94 /* ComentarioTableViewCell.swift */; };
 		A5732DDF2397F45B00EEAD94 /* AdicionarComentarioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5732DDE2397F45B00EEAD94 /* AdicionarComentarioViewController.swift */; };
+		A5826D9D2399442B001BC776 /* TodasAsEmpresas.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5826D9B2399442B001BC776 /* TodasAsEmpresas.swift */; };
+		A5826D9E2399442B001BC776 /* TodosOsUsuarios.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5826D9C2399442B001BC776 /* TodosOsUsuarios.swift */; };
 		A5B5BDFE2397D0D600F800CC /* MinhaConta.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5B5BDFD2397D0D600F800CC /* MinhaConta.storyboard */; };
 		A5B5BE022397D10100F800CC /* Profissionais.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5B5BE012397D10100F800CC /* Profissionais.storyboard */; };
 		A5C71D3A23993A63006B68DB /* NomeProfissionalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C71D3923993A63006B68DB /* NomeProfissionalTableViewCell.swift */; };
@@ -67,6 +69,8 @@
 		A55DD4652397D58900821A2F /* PerfilProfissional.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = PerfilProfissional.storyboard; path = somei/View/PerfilProfissional.storyboard; sourceTree = SOURCE_ROOT; };
 		A5732D9E2397E3DB00EEAD94 /* ComentarioTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ComentarioTableViewCell.swift; path = somei/Controller/Profissionais/Cell/ComentarioTableViewCell.swift; sourceTree = SOURCE_ROOT; };
 		A5732DDE2397F45B00EEAD94 /* AdicionarComentarioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AdicionarComentarioViewController.swift; path = somei/Controller/Profissionais/AdicionarComentarioViewController.swift; sourceTree = SOURCE_ROOT; };
+		A5826D9B2399442B001BC776 /* TodasAsEmpresas.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TodasAsEmpresas.swift; path = somei/Model/shared/TodasAsEmpresas.swift; sourceTree = SOURCE_ROOT; };
+		A5826D9C2399442B001BC776 /* TodosOsUsuarios.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TodosOsUsuarios.swift; path = somei/Model/shared/TodosOsUsuarios.swift; sourceTree = SOURCE_ROOT; };
 		A5B5BDFD2397D0D600F800CC /* MinhaConta.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = MinhaConta.storyboard; path = somei/View/MinhaConta.storyboard; sourceTree = SOURCE_ROOT; };
 		A5B5BE012397D10100F800CC /* Profissionais.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Profissionais.storyboard; path = Somei/View/Profissionais.storyboard; sourceTree = SOURCE_ROOT; };
 		A5C71D3923993A63006B68DB /* NomeProfissionalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NomeProfissionalTableViewCell.swift; path = somei/Controller/Profissionais/Cell/NomeProfissionalTableViewCell.swift; sourceTree = SOURCE_ROOT; };
@@ -229,6 +233,8 @@
 		D1D518AD23992307008C8C1A /* shared */ = {
 			isa = PBXGroup;
 			children = (
+				A5826D9B2399442B001BC776 /* TodasAsEmpresas.swift */,
+				A5826D9C2399442B001BC776 /* TodosOsUsuarios.swift */,
 			);
 			path = shared;
 			sourceTree = "<group>";
@@ -390,6 +396,8 @@
 				A5C71D4023993B67006B68DB /* AvaliacaoProfissionalTableViewCell.swift in Sources */,
 				A5C71D3C23993ADB006B68DB /* DescricaoProfissionalTableViewCell.swift in Sources */,
 				A5C71D3E23993B23006B68DB /* BotaoContatoTableViewCell.swift in Sources */,
+				A5826D9D2399442B001BC776 /* TodasAsEmpresas.swift in Sources */,
+				A5826D9E2399442B001BC776 /* TodosOsUsuarios.swift in Sources */,
 				A5459D492395527E0023D99D /* EXTViewArrendondada.swift in Sources */,
 				A5EC9E0623956EFC00BC72B3 /* ListaProfissionaisPesquisaViewController.swift in Sources */,
 				A5EC9E0A2395754300BC72B3 /* PerfilProfissionalViewController.swift in Sources */,

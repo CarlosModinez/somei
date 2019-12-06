@@ -293,7 +293,7 @@
         <!--Profissionais-->
         <scene sceneID="kac-mI-bPo">
             <objects>
-                <navigationController storyboardIdentifier="UINavigationController-5Z2-7n-snU" automaticallyAdjustsScrollViewInsets="NO" id="5Z2-7n-snU" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="UIProfissionais" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="5Z2-7n-snU" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Profissionais" selectedImage="icon-profissionais" id="Cej-VB-0t7"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" hidden="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="h7M-Qj-XwJ">

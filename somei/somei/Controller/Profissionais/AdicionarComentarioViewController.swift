@@ -19,8 +19,7 @@ class AdicionarComentarioViewController: UIViewController, UITextFieldDelegate {
         
         adicionarComentario.delegate = self
         
-        
-        
+
     }
     
 //    apertar return e fechar teclado
