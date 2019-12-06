@@ -45,7 +45,7 @@ class DAOFireBAseUsuario {
                 
                 for document in querySnapshot!.documents {
     
-                    let usuario = Usuario.mapToObject(dct: document.data())
+                    let usuario = Usuario.mapToObject(userData: document.data())
                     
                     TodosOsUsuarios.shared.usuarios.append(usuario)
                 }

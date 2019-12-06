@@ -8,24 +8,42 @@
 
 import UIKit
 
-class CadastroViewController: UIViewController {
+class CadastroViewController: UIViewController, UITextFieldDelegate{
     
     @IBOutlet var nome: UITextField!
     @IBOutlet var cpfCnpj: UITextField!
     @IBOutlet var telefone: UITextField!
     
+    let user: Usuario = Usuario()
+    var acharClientes :Bool = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.navigationController?.navigationBar.transparentNavigationBar()
-        self.navigationController?.navigationBar.tintColor = UIColor.white
+//        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
+//        view.addGestureRecognizer(tap)
     }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesBegan(touches as! Set<UITouch>, with: event)
+        view.endEditing(true)
+    }
+    
     
     @IBAction func prosseguir(_ sender: Any) {
         
-        let user = Usuario()
-        user.nome = nome.text ?? ""
+        self.user.nome = nome.text ?? ""
+        self.user.cadastroPessoaFisicaOuJuridica = cpfCnpj.text ?? ""
+        self.user.telefone = telefone.text ?? ""
+        
+        print("usuario: \(self.user.nome)\n\(self.user.cadastroPessoaFisicaOuJuridica)\n\(self.user.telefone)")
+        
+        if let vc = storyboard?.instantiateViewController(withIdentifier: "cadastroDoisViewController") as? CadastroDoisViewController{
+            vc.user = self.user
+            vc.acharClientes = self.acharClientes
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+        
     }
     
     /*

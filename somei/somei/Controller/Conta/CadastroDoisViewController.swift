@@ -8,16 +8,39 @@
 
 import UIKit
 
-class CadastroDoisViewController: UIViewController {
+class CadastroDoisViewController: UIViewController, UITextFieldDelegate {
+    
+    @IBOutlet var email: UITextField!
+    @IBOutlet var senha: UITextField!
+    @IBOutlet var confirmSenha: UITextField!
+    
+    var user :Usuario = Usuario()
+    var senhaUser :String = ""
+    var acharClientes :Bool = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        self.navigationController?.navigationBar.barTintColor = UIColor(red: 0.0, green: 102/255, blue: 225/225, alpha: 1.0)
-        self.navigationController?.navigationBar.tintColor = UIColor.white
     }
     
-
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesBegan(touches as! Set<UITouch>, with: event)
+        view.endEditing(true)
+    }
+    
+    @IBAction func prosseguir(_ sender: Any) {
+        self.user.email = email.text ?? ""
+        self.senhaUser = senha.text ?? ""
+        
+        print("usuario: \(self.user.nome)\n\(self.user.cadastroPessoaFisicaOuJuridica)\n\(self.user.telefone)\n\(self.user.email)\n\(self.senhaUser)")
+        
+        if let vc = storyboard?.instantiateViewController(withIdentifier: "cadastroTresViewController") as? CadastroTresViewController{
+            vc.user = self.user
+            vc.senhaUser = self.senhaUser
+            vc.acharClientes = self.acharClientes
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+    }
+    
     /*
     // MARK: - Navigation
 

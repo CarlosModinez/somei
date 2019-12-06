@@ -21,7 +21,6 @@
 		39EDBDAF23994DA2008C03A8 /* CadastroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39EDBDAE23994DA2008C03A8 /* CadastroViewController.swift */; };
 		39EDBDB123994DC5008C03A8 /* CadastroDoisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39EDBDB023994DC5008C03A8 /* CadastroDoisViewController.swift */; };
 		39EDBDB323994DF0008C03A8 /* CadastroTresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39EDBDB223994DF0008C03A8 /* CadastroTresViewController.swift */; };
-		39EDBDB523994E0F008C03A8 /* CadastroQuatroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39EDBDB423994E0F008C03A8 /* CadastroQuatroViewController.swift */; };
 		39EDBDB723994E7A008C03A8 /* InicioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39EDBDB623994E7A008C03A8 /* InicioViewController.swift */; };
 		39EDBDB923995600008C03A8 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39EDBDB823995600008C03A8 /* Extensions.swift */; };
 		A5459D4023954BA20023D99D /* ProcurarProfissionaisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5459D3F23954BA20023D99D /* ProcurarProfissionaisViewController.swift */; };
@@ -68,7 +67,6 @@
 		39EDBDAE23994DA2008C03A8 /* CadastroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadastroViewController.swift; sourceTree = "<group>"; };
 		39EDBDB023994DC5008C03A8 /* CadastroDoisViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadastroDoisViewController.swift; sourceTree = "<group>"; };
 		39EDBDB223994DF0008C03A8 /* CadastroTresViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadastroTresViewController.swift; sourceTree = "<group>"; };
-		39EDBDB423994E0F008C03A8 /* CadastroQuatroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadastroQuatroViewController.swift; sourceTree = "<group>"; };
 		39EDBDB623994E7A008C03A8 /* InicioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InicioViewController.swift; sourceTree = "<group>"; };
 		39EDBDB823995600008C03A8 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		46F7EE9F17B980114189616F /* Pods-Somei.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Somei.release.xcconfig"; path = "Target Support Files/Pods-Somei/Pods-Somei.release.xcconfig"; sourceTree = "<group>"; };
@@ -186,7 +184,6 @@
 				39EDBDAE23994DA2008C03A8 /* CadastroViewController.swift */,
 				39EDBDB023994DC5008C03A8 /* CadastroDoisViewController.swift */,
 				39EDBDB223994DF0008C03A8 /* CadastroTresViewController.swift */,
-				39EDBDB423994E0F008C03A8 /* CadastroQuatroViewController.swift */,
 			);
 			path = Conta;
 			sourceTree = "<group>";
@@ -294,7 +291,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 39BAA0C8239159470066B302 /* Build configuration list for PBXProject "Somei" */;
+			buildConfigurationList = 39BAA0C8239159470066B302 /* Build configuration list for PBXProject "somei" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -411,10 +408,9 @@
 				A5CBEA2623954530009D2658 /* Avaliacao.swift in Sources */,
 				A5459D492395527E0023D99D /* EXTViewArrendondada.swift in Sources */,
 				39EDBDB323994DF0008C03A8 /* CadastroTresViewController.swift in Sources */,
-				A5EC9E0C2395767500BC72B3 /* ListaAtividadesTableViewCell.swift in Sources */,
-				39EDBDB523994E0F008C03A8 /* CadastroQuatroViewController.swift in Sources */,
-				A5EC9E0623956EFC00BC72B3 /* ListaProfissionaisPesquisaViewController.swift in Sources */,
-				A5EC9E0A2395754300BC72B3 /* PerfilProfissionalViewController.swift in Sources */,
+				A5EC9E0C2395767500BC72B3 /* (null) in Sources */,
+				A5EC9E0623956EFC00BC72B3 /* (null) in Sources */,
+				A5EC9E0A2395754300BC72B3 /* (null) in Sources */,
 				D1D518B02399233D008C8C1A /* ListaAtividadesTableViewCell.swift in Sources */,
 				A5EC9E0C2395767500BC72B3 /* (null) in Sources */,
 				A5EC9E0623956EFC00BC72B3 /* (null) in Sources */,
@@ -610,7 +606,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		39BAA0C8239159470066B302 /* Build configuration list for PBXProject "Somei" */ = {
+		39BAA0C8239159470066B302 /* Build configuration list for PBXProject "somei" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				39BAA0DF239159490066B302 /* Debug */,

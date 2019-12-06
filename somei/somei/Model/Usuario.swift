@@ -14,14 +14,26 @@ class Usuario {
     var dtNascimento : String
     var nome : String
     var email : String
+    var telefone : String
     var empresa : Empresa?
     
-    init (cadastroPessoaFisicaOuJuridica: String, dtNascimento: String, nome: String, email: String, empresa: Empresa?){
+    init(){
+        
+        self.cadastroPessoaFisicaOuJuridica = ""
+        self.dtNascimento = ""
+        self.nome = ""
+        self.email = ""
+        self.telefone = ""
+        self.empresa = nil
+    }
+    
+    init (cadastroPessoaFisicaOuJuridica: String, dtNascimento: String, nome: String, email: String, telefone: String, empresa: Empresa?){
         
         self.cadastroPessoaFisicaOuJuridica = cadastroPessoaFisicaOuJuridica
         self.dtNascimento = dtNascimento
         self.nome = nome
         self.email = email
+        self.telefone = telefone
         self.empresa = empresa
     }
     
@@ -31,8 +43,9 @@ class Usuario {
         let dtNascimento : String = userData["dtNascimento"] as! String
         let nome : String =  userData["nome"] as! String
         let email : String = userData["email"] as! String
+        let telefone :String = userData["telefone"] as! String
         
-        let usuario = Usuario(cadastroPessoaFisicaOuJuridica: cadastroPessoaFisicaOuJuridica, dtNascimento: dtNascimento, nome: nome, email: email, empresa: nil)
+        let usuario = Usuario(cadastroPessoaFisicaOuJuridica: cadastroPessoaFisicaOuJuridica, dtNascimento: dtNascimento, nome: nome, email: email, telefone: telefone, empresa: nil)
         
         return usuario
     }
@@ -52,19 +65,21 @@ class Usuario {
             "dtNascimento": self.dtNascimento,
             "nome": self.nome,
             "email": self.email,
+            "telefone": self.telefone
         ]
             
         return localData
     }
     
-    static func mapToObject(dct : [String :Any]) -> Usuario {
+    static func mapToObject(userData: [String: Any]) -> Usuario {
         
-        let cadastroPessoaFisicaOuJuridica: String = dct["cadastroPessoaFisicaOuJuridica"] as! String
-        let dtNascimento: String = dct["dtNascimento"] as! String
-        let nome: String = dct["nome"] as! String
-        let email: String = dct["email"] as! String
+        let cadastroPessoaFisicaOuJuridica: String = userData["cadastroPessoaFisicaOuJuridica"]as! String
+        let dtNascimento : String = userData["dtNascimento"] as! String
+        let nome : String =  userData["nome"] as! String
+        let email : String = userData["email"] as! String
+        let telefone :String = userData["telefone"] as! String
         
-        let usuario = Usuario(cadastroPessoaFisicaOuJuridica: cadastroPessoaFisicaOuJuridica, dtNascimento: dtNascimento, nome: nome, email: email, empresa: nil)
+        let usuario = Usuario(cadastroPessoaFisicaOuJuridica: cadastroPessoaFisicaOuJuridica, dtNascimento: dtNascimento, nome: nome, email: email, telefone: telefone, empresa: nil)
         
         return usuario
     }

@@ -12,22 +12,8 @@ import FirebaseUI
 
 class ViewController: UIViewController {
     
-    
-
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        var actionCodeSettings = ActionCodeSettings()
-        actionCodeSettings.url = URL(string: "https://example.appspot.com")
-        actionCodeSettings.handleCodeInApp = true
-        actionCodeSettings.setAndroidPackageName("com.firebase.example", installIfNotAvailable: false, minimumVersion: "12")
-        
-       
-        
     }
-    
-
-
 }
 
