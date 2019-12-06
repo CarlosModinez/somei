@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -79,25 +79,10 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <searchBar contentMode="redraw" fixedFrame="YES" placeholder="Ex: Redator, eletricista, etc." translatesAutoresizingMaskIntoConstraints="NO" id="Oou-gN-snP">
-                                <rect key="frame" x="35" y="149" width="344" height="56"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <scopeButtonTitles>
-                                    <string>Title</string>
-                                    <string>Title</string>
-                                </scopeButtonTitles>
-                            </searchBar>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="4qO-q6-wda">
                                 <rect key="frame" x="35" y="344" width="344" height="523"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="PqA-mA-mEC">
-                                    <size key="itemSize" width="50" height="50"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
+                                <collectionViewLayout key="collectionViewLayout" id="3Wh-m8-EuT" customClass="PinterestLayout" customModule="Somei" customModuleProvider="target"/>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Profissionais" id="dN5-27-cp2" customClass="ProfissionaisMaisProcuradosCollectionViewCell" customModule="Somei" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="144" height="98"/>
@@ -108,28 +93,31 @@
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qaZ-98-JzB">
                                                     <rect key="frame" x="0.0" y="0.0" width="144" height="98"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Restaurador de obras de arte" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ilY-mo-5Zu">
+                                                            <rect key="frame" x="15" y="15" width="114" height="68"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstItem="ilY-mo-5Zu" firstAttribute="centerX" secondItem="qaZ-98-JzB" secondAttribute="centerX" id="MXe-4h-XPd"/>
+                                                        <constraint firstItem="ilY-mo-5Zu" firstAttribute="width" secondItem="qaZ-98-JzB" secondAttribute="width" constant="-30" id="WV8-25-n7E"/>
+                                                        <constraint firstItem="ilY-mo-5Zu" firstAttribute="centerY" secondItem="qaZ-98-JzB" secondAttribute="centerY" id="YSN-65-DYv"/>
+                                                        <constraint firstItem="ilY-mo-5Zu" firstAttribute="height" secondItem="qaZ-98-JzB" secondAttribute="height" constant="-30" id="fI2-8f-v9i"/>
+                                                    </constraints>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                             <real key="value" value="8"/>
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
                                                 </view>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Restaurador de obras de arte" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ilY-mo-5Zu">
-                                                    <rect key="frame" x="7" y="0.0" width="129.5" height="98"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="qaZ-98-JzB" firstAttribute="centerX" secondItem="2g0-hD-7eQ" secondAttribute="centerX" id="1ch-Zk-iVX"/>
-                                                <constraint firstItem="ilY-mo-5Zu" firstAttribute="leading" secondItem="2g0-hD-7eQ" secondAttribute="leading" constant="7" id="7bj-dJ-Vks"/>
                                                 <constraint firstAttribute="height" secondItem="qaZ-98-JzB" secondAttribute="height" id="DYf-ox-Qae"/>
-                                                <constraint firstItem="ilY-mo-5Zu" firstAttribute="height" secondItem="2g0-hD-7eQ" secondAttribute="height" id="Kne-Zf-plr"/>
-                                                <constraint firstItem="ilY-mo-5Zu" firstAttribute="width" secondItem="2g0-hD-7eQ" secondAttribute="width" multiplier="0.9" id="L4B-kF-VNG"/>
-                                                <constraint firstItem="ilY-mo-5Zu" firstAttribute="centerX" secondItem="2g0-hD-7eQ" secondAttribute="centerX" id="LHb-1U-MC4"/>
-                                                <constraint firstItem="ilY-mo-5Zu" firstAttribute="centerY" secondItem="2g0-hD-7eQ" secondAttribute="centerY" id="W22-ul-Sdr"/>
                                                 <constraint firstItem="qaZ-98-JzB" firstAttribute="centerY" secondItem="2g0-hD-7eQ" secondAttribute="centerY" id="Xmm-gX-ryU"/>
                                                 <constraint firstAttribute="width" secondItem="qaZ-98-JzB" secondAttribute="width" id="tkJ-a1-m6R"/>
                                             </constraints>
@@ -142,6 +130,16 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
+                            <searchBar contentMode="redraw" fixedFrame="YES" searchBarStyle="minimal" text="" placeholder="Ex: Redator, eletricista, etc." translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oou-gN-snP">
+                                <rect key="frame" x="35" y="172" width="344" height="56"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <scopeButtonTitles>
+                                    <string>Title</string>
+                                    <string>Title</string>
+                                </scopeButtonTitles>
+                            </searchBar>
                         </subviews>
                         <color key="backgroundColor" red="0.16643446680000001" green="0.3928629756" blue="0.96475702519999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
@@ -293,7 +291,7 @@
         <!--Profissionais-->
         <scene sceneID="kac-mI-bPo">
             <objects>
-                <navigationController storyboardIdentifier="UINavigationController-5Z2-7n-snU" automaticallyAdjustsScrollViewInsets="NO" id="5Z2-7n-snU" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="UIProfissionais" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="5Z2-7n-snU" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Profissionais" selectedImage="icon-profissionais" id="Cej-VB-0t7"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" hidden="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="h7M-Qj-XwJ">
