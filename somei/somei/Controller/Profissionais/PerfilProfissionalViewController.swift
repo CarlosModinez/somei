@@ -42,7 +42,7 @@ class PerfilProfissionalViewController: UIViewController, UITableViewDataSource,
         avaliacoes.append(avaliacao)
         
         endereco = Endereco(cep: 82030150, numero: 240, logradouro: "Rua Ferrara", bairro: "São João", cidade: "Curitiba", estado: "Taubatexas")
-        empresa = Empresa(cnpj: "123124", nomeFantasia: "Conrider Da Nike", endereco: endereco, avaliacoes: avaliacoes, categoria: "Chinelero", telefone: "99671-4302", email: "conrider@nike.com")
+        empresa = Empresa(cnpj: "123124", nomeFantasia: "Conrider Da Nike", endereco: endereco, avaliacoes: avaliacoes, categoria: "Chinelero", telefone: "99671-4302", email: "conrider@nike.com", descricao: "alo alo voce sabem quem sou eu")
 //      ---------------APAGAR
 
 //        de 0 a 3 é padrão do perfil, depois disso tem que somar o numero de comentários do tipo Avaliações
