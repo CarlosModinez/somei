@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		037A3B54239A90F900708803 /* Ext_String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037A3B53239A90F900708803 /* Ext_String.swift */; };
 		03DD581B2397E522006FF392 /* PinterestLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DD581A2397E522006FF392 /* PinterestLayout.swift */; };
 		22009F7C239A89FF007661BC /* CadastroMEIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22009F7B239A89FF007661BC /* CadastroMEIViewController.swift */; };
 		22009F7E239A9383007661BC /* OnBoarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22009F7D239A9383007661BC /* OnBoarding.storyboard */; };
 		2299D619239C2B080061B1AA /* MinhaContaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2299D618239C2B080061B1AA /* MinhaContaViewController.swift */; };
 		22EE5195239A791100D2FEFD /* comoFunciona.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22EE5194239A791100D2FEFD /* comoFunciona.storyboard */; };
+		03DD581D2399C9BF006FF392 /* MapaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DD581C2399C9BE006FF392 /* MapaController.swift */; };
 		3911CA59239159E20027B1FF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3911CA58239159E20027B1FF /* GoogleService-Info.plist */; };
 		3947C9A023915F5300B72900 /* PrincipalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3947C99F23915F5300B72900 /* PrincipalViewController.swift */; };
 		399B5F1D2396AB31008F886D /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 399B5F1C2396AB31008F886D /* Colors.xcassets */; };
@@ -37,17 +39,24 @@
 		A5EC9E0A2395754300BC72B3 /* (null) in Sources */ = {isa = PBXBuildFile; };
 		A5EC9E0C2395767500BC72B3 /* (null) in Sources */ = {isa = PBXBuildFile; };
 		AF677AF8D3BF3BCCEB6DA650 /* Pods_Somei.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21E34BE9621ABE1E25C25B78 /* Pods_Somei.framework */; };
+		CC430098239C28B40004A8B2 /* avaliacoes-minha-conta.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC430097239C28B40004A8B2 /* avaliacoes-minha-conta.storyboard */; };
+		CCCC66A7239A768C00FABFF1 /* Ajuda.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCCC66A6239A768C00FABFF1 /* Ajuda.storyboard */; };
 		D1A984BF239921A6004C170C /* PerfilProfissionalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A984BC239921A6004C170C /* PerfilProfissionalViewController.swift */; };
 		D1A984C1239921A6004C170C /* ListaProfissionaisPesquisaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A984BE239921A6004C170C /* ListaProfissionaisPesquisaViewController.swift */; };
 		D1A984C723992231004C170C /* DAOFireBaseUsuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A984C623992231004C170C /* DAOFireBaseUsuario.swift */; };
+		D1AFC83D23993348009583B3 /* DAOFireBaseEmpresas.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AFC83C23993348009583B3 /* DAOFireBaseEmpresas.swift */; };
+		D1AFC83F239934AC009583B3 /* DAOFireBaseCategorias.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AFC83E239934AC009583B3 /* DAOFireBaseCategorias.swift */; };
+		D1AFC84323994DC1009583B3 /* Categoria.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AFC84223994DC1009583B3 /* Categoria.swift */; };
 		D1D518AA239922EB008C8C1A /* TodosOsUsuarios.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D518A9239922EA008C8C1A /* TodosOsUsuarios.swift */; };
-		D1D518AC239922EE008C8C1A /* TodasAsEmpresas.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D518AB239922EE008C8C1A /* TodasAsEmpresas.swift */; };
+		D1D518AC239922EE008C8C1A /* TodasAsEmpresasDaCategoria.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D518AB239922EE008C8C1A /* TodasAsEmpresasDaCategoria.swift */; };
 		D1D518B02399233D008C8C1A /* ListaAtividadesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D518AE2399233D008C8C1A /* ListaAtividadesTableViewCell.swift */; };
 		D1D518B12399233D008C8C1A /* ListaProfissionaisTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D518AF2399233D008C8C1A /* ListaProfissionaisTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		037A3B53239A90F900708803 /* Ext_String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Ext_String.swift; path = somei/Controller/Ext_String.swift; sourceTree = SOURCE_ROOT; };
 		03DD581A2397E522006FF392 /* PinterestLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PinterestLayout.swift; path = somei/Controller/Profissionais/PinterestLayout.swift; sourceTree = SOURCE_ROOT; };
+		03DD581C2399C9BE006FF392 /* MapaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MapaController.swift; path = somei/Controller/MapaController.swift; sourceTree = SOURCE_ROOT; };
 		08B2B67085EA8A969AA28D9F /* Pods-Somei.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Somei.debug.xcconfig"; path = "Target Support Files/Pods-Somei/Pods-Somei.debug.xcconfig"; sourceTree = "<group>"; };
 		21E34BE9621ABE1E25C25B78 /* Pods_Somei.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Somei.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		22009F7B239A89FF007661BC /* CadastroMEIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CadastroMEIViewController.swift; path = somei/Controller/CadastroMEIViewController.swift; sourceTree = SOURCE_ROOT; };
@@ -78,11 +87,16 @@
 		A5CBEA1F23954530009D2658 /* InfoEmpresa.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InfoEmpresa.swift; path = somei/Model/InfoEmpresa.swift; sourceTree = SOURCE_ROOT; };
 		A5CBEA2023954530009D2658 /* Avaliacao.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Avaliacao.swift; path = somei/Model/Avaliacao.swift; sourceTree = SOURCE_ROOT; };
 		A5CBEA2123954530009D2658 /* InfoUsuario.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InfoUsuario.swift; path = somei/Model/InfoUsuario.swift; sourceTree = SOURCE_ROOT; };
+		CC430097239C28B40004A8B2 /* avaliacoes-minha-conta.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "avaliacoes-minha-conta.storyboard"; path = "Somei/View/avaliacoes-minha-conta.storyboard"; sourceTree = SOURCE_ROOT; };
+		CCCC66A6239A768C00FABFF1 /* Ajuda.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Ajuda.storyboard; path = Somei/View/Ajuda.storyboard; sourceTree = SOURCE_ROOT; };
 		D1A984BC239921A6004C170C /* PerfilProfissionalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PerfilProfissionalViewController.swift; path = somei/Controller/Profissionais/PerfilProfissionalViewController.swift; sourceTree = SOURCE_ROOT; };
 		D1A984BE239921A6004C170C /* ListaProfissionaisPesquisaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListaProfissionaisPesquisaViewController.swift; path = somei/Controller/Profissionais/ListaProfissionaisPesquisaViewController.swift; sourceTree = SOURCE_ROOT; };
 		D1A984C623992231004C170C /* DAOFireBaseUsuario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DAOFireBaseUsuario.swift; sourceTree = "<group>"; };
+		D1AFC83C23993348009583B3 /* DAOFireBaseEmpresas.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DAOFireBaseEmpresas.swift; path = "somei/Model/DAO's FireBase/DAOFireBaseEmpresas.swift"; sourceTree = SOURCE_ROOT; };
+		D1AFC83E239934AC009583B3 /* DAOFireBaseCategorias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DAOFireBaseCategorias.swift; path = "somei/Model/DAO's FireBase/DAOFireBaseCategorias.swift"; sourceTree = SOURCE_ROOT; };
+		D1AFC84223994DC1009583B3 /* Categoria.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Categoria.swift; path = somei/Model/Categoria.swift; sourceTree = SOURCE_ROOT; };
 		D1D518A9239922EA008C8C1A /* TodosOsUsuarios.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodosOsUsuarios.swift; sourceTree = "<group>"; };
-		D1D518AB239922EE008C8C1A /* TodasAsEmpresas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodasAsEmpresas.swift; sourceTree = "<group>"; };
+		D1D518AB239922EE008C8C1A /* TodasAsEmpresasDaCategoria.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodasAsEmpresasDaCategoria.swift; sourceTree = "<group>"; };
 		D1D518AE2399233D008C8C1A /* ListaAtividadesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListaAtividadesTableViewCell.swift; path = somei/Controller/Profissionais/Cell/ListaAtividadesTableViewCell.swift; sourceTree = SOURCE_ROOT; };
 		D1D518AF2399233D008C8C1A /* ListaProfissionaisTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListaProfissionaisTableViewCell.swift; path = somei/Controller/Profissionais/Cell/ListaProfissionaisTableViewCell.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
@@ -102,12 +116,13 @@
 		3947C99A23915A7900B72900 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D1D518B223993264008C8C1A /* DAO's FireBase */,
 				D1D518AD23992307008C8C1A /* shared */,
 				A5CBEA2023954530009D2658 /* Avaliacao.swift */,
 				A5CBEA1C23954530009D2658 /* Empresa.swift */,
 				A5CBEA1D23954530009D2658 /* Endereco.swift */,
 				A5CBEA1E23954530009D2658 /* Usuario.swift */,
-				D1A984C623992231004C170C /* DAOFireBaseUsuario.swift */,
+				D1AFC84223994DC1009583B3 /* Categoria.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -117,6 +132,8 @@
 			children = (
 				A5459D47239552710023D99D /* Extension */,
 				A5B5BE012397D10100F800CC /* Profissionais.storyboard */,
+				CC430097239C28B40004A8B2 /* avaliacoes-minha-conta.storyboard */,
+				CCCC66A6239A768C00FABFF1 /* Ajuda.storyboard */,
 				A55DD4652397D58900821A2F /* PerfilProfissional.storyboard */,
 				A5B5BDFD2397D0D600F800CC /* MinhaConta.storyboard */,
 				39BAA0D6239159470066B302 /* Main.storyboard */,
@@ -137,6 +154,7 @@
 				39BAA0D4239159470066B302 /* ViewController.swift */,
 				22009F7B239A89FF007661BC /* CadastroMEIViewController.swift */,
 				2299D618239C2B080061B1AA /* MinhaContaViewController.swift */,
+				03DD581C2399C9BE006FF392 /* MapaController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -200,6 +218,7 @@
 			isa = PBXGroup;
 			children = (
 				A5459D482395527E0023D99D /* EXTViewArrendondada.swift */,
+				037A3B53239A90F900708803 /* Ext_String.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -234,9 +253,19 @@
 			isa = PBXGroup;
 			children = (
 				D1D518A9239922EA008C8C1A /* TodosOsUsuarios.swift */,
-				D1D518AB239922EE008C8C1A /* TodasAsEmpresas.swift */,
+				D1D518AB239922EE008C8C1A /* TodasAsEmpresasDaCategoria.swift */,
 			);
 			path = shared;
+			sourceTree = "<group>";
+		};
+		D1D518B223993264008C8C1A /* DAO's FireBase */ = {
+			isa = PBXGroup;
+			children = (
+				D1A984C623992231004C170C /* DAOFireBaseUsuario.swift */,
+				D1AFC83C23993348009583B3 /* DAOFireBaseEmpresas.swift */,
+				D1AFC83E239934AC009583B3 /* DAOFireBaseCategorias.swift */,
+			);
+			path = "DAO's FireBase";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,7 +306,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 39BAA0C8239159470066B302 /* Build configuration list for PBXProject "Somei" */;
+			buildConfigurationList = 39BAA0C8239159470066B302 /* Build configuration list for PBXProject "somei" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -302,6 +331,8 @@
 			files = (
 				A5B5BE022397D10100F800CC /* Profissionais.storyboard in Resources */,
 				399B5F1D2396AB31008F886D /* Colors.xcassets in Resources */,
+				CC430098239C28B40004A8B2 /* avaliacoes-minha-conta.storyboard in Resources */,
+				CCCC66A7239A768C00FABFF1 /* Ajuda.storyboard in Resources */,
 				39BAA0DD239159490066B302 /* LaunchScreen.storyboard in Resources */,
 				3911CA59239159E20027B1FF /* GoogleService-Info.plist in Resources */,
 				39BAA0DA239159490066B302 /* Assets.xcassets in Resources */,
@@ -387,20 +418,25 @@
 				A5CBEA2423954530009D2658 /* Usuario.swift in Sources */,
 				D1A984C1239921A6004C170C /* ListaProfissionaisPesquisaViewController.swift in Sources */,
 				D1D518B12399233D008C8C1A /* ListaProfissionaisTableViewCell.swift in Sources */,
+				03DD581D2399C9BF006FF392 /* MapaController.swift in Sources */,
 				39BAA0D5239159470066B302 /* ViewController.swift in Sources */,
 				3947C9A023915F5300B72900 /* PrincipalViewController.swift in Sources */,
 				03DD581B2397E522006FF392 /* PinterestLayout.swift in Sources */,
 				A5CBEA2223954530009D2658 /* Empresa.swift in Sources */,
 				A5CBEA2323954530009D2658 /* Endereco.swift in Sources */,
 				D1D518AA239922EB008C8C1A /* TodosOsUsuarios.swift in Sources */,
+				D1AFC83F239934AC009583B3 /* DAOFireBaseCategorias.swift in Sources */,
+				D1AFC83D23993348009583B3 /* DAOFireBaseEmpresas.swift in Sources */,
 				A5CBEA2623954530009D2658 /* Avaliacao.swift in Sources */,
 				A5459D492395527E0023D99D /* EXTViewArrendondada.swift in Sources */,
+				037A3B54239A90F900708803 /* Ext_String.swift in Sources */,
 				D1D518B02399233D008C8C1A /* ListaAtividadesTableViewCell.swift in Sources */,
 				A5EC9E0C2395767500BC72B3 /* (null) in Sources */,
 				A5EC9E0623956EFC00BC72B3 /* (null) in Sources */,
 				A5EC9E0A2395754300BC72B3 /* (null) in Sources */,
 				A5459D4023954BA20023D99D /* ProcurarProfissionaisViewController.swift in Sources */,
-				D1D518AC239922EE008C8C1A /* TodasAsEmpresas.swift in Sources */,
+				D1D518AC239922EE008C8C1A /* TodasAsEmpresasDaCategoria.swift in Sources */,
+				D1AFC84323994DC1009583B3 /* Categoria.swift in Sources */,
 				39BAA0D1239159470066B302 /* AppDelegate.swift in Sources */,
 				A5CBEA2723954530009D2658 /* InfoUsuario.swift in Sources */,
 				2299D619239C2B080061B1AA /* MinhaContaViewController.swift in Sources */,
@@ -550,7 +586,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = QF2XVHQ9W2;
+				DEVELOPMENT_TEAM = CM34PRAQJX;
 				INFOPLIST_FILE = Somei/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -587,7 +623,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		39BAA0C8239159470066B302 /* Build configuration list for PBXProject "Somei" */ = {
+		39BAA0C8239159470066B302 /* Build configuration list for PBXProject "somei" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				39BAA0DF239159490066B302 /* Debug */,

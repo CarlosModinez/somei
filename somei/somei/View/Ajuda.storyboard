@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="5bq-2c-Z4U">
+            <objects>
+                <viewController id="jhU-YW-2HT" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pdH-gm-6dy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ofQ-id-cW9">
+                                <rect key="frame" x="0.0" y="235" width="414" height="661"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Entre em contato com o Departamento de Proteção e Defesa do Consumidor do seu estado e abra uma reclamação." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="54X-Dz-P8H">
+                                        <rect key="frame" x="40" y="91.5" width="334" height="63"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Denunciar perfil" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="prv-SY-R2N">
+                                        <rect key="frame" x="40" y="174.5" width="334" height="24"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XyX-SQ-Hdn">
+                                        <rect key="frame" x="40" y="218.5" width="334" height="189"/>
+                                        <string key="text">Caso deseje denunciar o perfil do profissional entre em contato conosco via e-mail:
+
+contato@somei.net.br
+
+Atenciosamente,
+
+Equipe SOMEI</string>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="414" id="J2F-zF-fIP"/>
+                                    <constraint firstItem="prv-SY-R2N" firstAttribute="centerX" secondItem="54X-Dz-P8H" secondAttribute="centerX" id="Uta-Ew-AyR"/>
+                                    <constraint firstItem="prv-SY-R2N" firstAttribute="top" secondItem="54X-Dz-P8H" secondAttribute="bottom" constant="20" id="X9J-4z-gFg"/>
+                                    <constraint firstItem="XyX-SQ-Hdn" firstAttribute="width" secondItem="prv-SY-R2N" secondAttribute="width" id="ZCl-Ia-wMc"/>
+                                    <constraint firstItem="XyX-SQ-Hdn" firstAttribute="centerX" secondItem="prv-SY-R2N" secondAttribute="centerX" id="iWO-Od-T9T"/>
+                                    <constraint firstItem="prv-SY-R2N" firstAttribute="width" secondItem="54X-Dz-P8H" secondAttribute="width" id="o8j-yM-Vf3"/>
+                                    <constraint firstItem="XyX-SQ-Hdn" firstAttribute="top" secondItem="prv-SY-R2N" secondAttribute="bottom" constant="20" id="sSW-pG-QfS"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="40"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Teve algum problema com o prestador de serviços?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iSC-OU-EEJ">
+                                <rect key="frame" x="40" y="258.5" width="334" height="48"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ajuda" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ggd-WA-7nk">
+                                <rect key="frame" x="40" y="110" width="334" height="41"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" name="AzulApp"/>
+                        <constraints>
+                            <constraint firstItem="54X-Dz-P8H" firstAttribute="width" secondItem="iSC-OU-EEJ" secondAttribute="width" id="2Vx-bM-j1W"/>
+                            <constraint firstItem="TMw-AR-Guu" firstAttribute="trailing" secondItem="iSC-OU-EEJ" secondAttribute="trailing" constant="40" id="CFY-F8-xp8"/>
+                            <constraint firstItem="iSC-OU-EEJ" firstAttribute="leading" secondItem="TMw-AR-Guu" secondAttribute="leading" constant="40" id="El8-lO-FLr"/>
+                            <constraint firstItem="iSC-OU-EEJ" firstAttribute="centerX" secondItem="ofQ-id-cW9" secondAttribute="centerX" id="H9s-6D-06o"/>
+                            <constraint firstItem="ofQ-id-cW9" firstAttribute="top" secondItem="TMw-AR-Guu" secondAttribute="top" constant="191" id="Knc-IU-KdE"/>
+                            <constraint firstItem="ggd-WA-7nk" firstAttribute="top" secondItem="TMw-AR-Guu" secondAttribute="top" multiplier="2.5" id="UeY-GS-d6g"/>
+                            <constraint firstItem="ofQ-id-cW9" firstAttribute="bottom" secondItem="TMw-AR-Guu" secondAttribute="bottom" constant="34" id="W3c-fx-wd2"/>
+                            <constraint firstItem="ofQ-id-cW9" firstAttribute="centerX" secondItem="TMw-AR-Guu" secondAttribute="centerX" id="WIz-fr-klJ"/>
+                            <constraint firstItem="iSC-OU-EEJ" firstAttribute="top" secondItem="ofQ-id-cW9" secondAttribute="top" multiplier="1.1" id="Z0i-LF-o7a"/>
+                            <constraint firstItem="54X-Dz-P8H" firstAttribute="top" secondItem="iSC-OU-EEJ" secondAttribute="bottom" constant="20" id="e9f-Af-Xvn"/>
+                            <constraint firstItem="54X-Dz-P8H" firstAttribute="centerX" secondItem="iSC-OU-EEJ" secondAttribute="centerX" id="n6K-sB-LIq"/>
+                            <constraint firstItem="ggd-WA-7nk" firstAttribute="width" secondItem="iSC-OU-EEJ" secondAttribute="width" id="niZ-Ei-hGz"/>
+                            <constraint firstItem="ggd-WA-7nk" firstAttribute="leading" secondItem="iSC-OU-EEJ" secondAttribute="leading" id="pp0-Wi-DDF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="TMw-AR-Guu"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eAe-qF-7Tu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-171.01449275362319" y="23.4375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="AzulApp">
+            <color red="0.0" green="0.40000000596046448" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+    <color key="tintColor" name="AzulApp"/>
+</document>
