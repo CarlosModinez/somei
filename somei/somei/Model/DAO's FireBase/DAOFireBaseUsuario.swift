@@ -46,9 +46,9 @@ class DAOFireBAseUsuario {
                     usuario = Usuario.mapToObject(dct: document.data())
                 }
             }
-            completion(usuarios)
+            completion(usuario)
         }
-        return usuarios
+        return usuario
     }
     
     
@@ -72,8 +72,6 @@ class DAOFireBAseUsuario {
             
         }
     }
-
-
 }
 
 

@@ -80,7 +80,7 @@ class Empresa {
         let endereco : Endereco =  Endereco.mapToObect(dct: dct["endereco"] as! [String: Any])
 
         var avaliacoes : [Avaliacao] = []
-        var dctAvaliacoes : [String : Any] = dct["avaliacoes"] as! [String : Any]
+        let dctAvaliacoes : [String : Any] = dct["avaliacoes"] as! [String : Any]
         
         for i in 0..<dctAvaliacoes.count {
             var avaliacao : Avaliacao
