@@ -16,8 +16,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         FirebaseApp.configure()
         
-        DAOFireBaseCategorias.buscarTraducaoMEI(codigo: "5620104") { (traducao) in
-            print(traducao)
+    
+        DAOFireBaseEMpresas.buscarEmpresaPeloCnpj(cnpj: "99899") { (empresa) in
+            print("\n\n\n \(empresa?.descricao)")
         }
             
         // Já ativa a localização se tiver permissão

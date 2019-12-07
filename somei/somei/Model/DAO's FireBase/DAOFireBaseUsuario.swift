@@ -31,6 +31,7 @@ class DAOFireBAseUsuario {
         return usuarios
     }
     
+    
     static func saveUser(_ usuario : Usuario) {
         let db = Firestore.firestore()
         

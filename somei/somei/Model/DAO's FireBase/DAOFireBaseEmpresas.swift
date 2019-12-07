@@ -14,7 +14,7 @@ class DAOFireBaseEMpresas {
     
     
     // Carreca as empresas das categorias que voce selecionou
-    static func loadEmpresas(_ categoria: String, completion: @escaping (([Empresa]) -> ())) -> [Empresa] {
+    static func loadEmpresas(_ categoria: String, completion: @escaping (([Empresa]?) -> ())) -> [Empresa]? {
            
         let db = Firestore.firestore()
         var empresas : [Empresa] = []
@@ -29,10 +29,36 @@ class DAOFireBaseEMpresas {
                     empresas.append(empresa)
                 }
             }
-            
             completion(empresas)
         }
-        return empresas
+        
+        if empresas.count > 0 {
+            print("Categoria invalida")
+            return empresas
+        }
+        else {
+            return nil
+        }
+    }
+    
+    static func buscarEmpresaPeloCnpj(cnpj: String, completion: @escaping ((Empresa?) -> ())) -> Empresa? {
+        
+        let db = Firestore.firestore()
+        var empresa : Empresa? = nil
+        
+        db.collection("empresas").whereField("cnpj", isEqualTo: cnpj).getDocuments { (querySnapshot, err) in
+            if let err = err {
+                print("Error \(err)")
+            } else {
+                for document in querySnapshot!.documents {
+                    empresa = Empresa.mapToObject(dct: document.data())
+                }
+            }
+            completion(empresa)
+        }
+        
+        return empresa
+        
     }
     
     static func saveEmpresa(_ empresa: Empresa) {
