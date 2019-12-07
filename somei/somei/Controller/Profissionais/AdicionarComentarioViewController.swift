@@ -14,11 +14,11 @@ class AdicionarComentarioViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet var avaliarButton: UIButton!
     
     
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
         adicionarComentario.delegate = self
-        
 
     }
     
@@ -31,6 +31,12 @@ class AdicionarComentarioViewController: UIViewController, UITextFieldDelegate {
         return true
     }
     
+    @IBAction func avaliarEstrelas(_ sender: Any) {
+        
+        
+        
+    }
+    
 //    onde usuario da o input do comentario
     @IBAction func inputComentario(_ sender: Any) {
         
@@ -40,7 +46,23 @@ class AdicionarComentarioViewController: UIViewController, UITextFieldDelegate {
 //    dar send na avaliação
     @IBAction func finalizarAvaliacao(_ sender: Any) {
         
+        vibrate()
         
     }
+    
+    func vibrate(){
+       
+        let generator = UIImpactFeedbackGenerator()
+        generator.impactOccurred()
+
+    }
+    
+    //chamar tela de ajuda
+    @IBAction func direcionarAjudaButton(_ sender: Any) {
+        
+        
+        
+    }
+    
     
 }

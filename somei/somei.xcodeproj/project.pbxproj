@@ -194,9 +194,9 @@
 			isa = PBXGroup;
 			children = (
 				A5459D3F23954BA20023D99D /* ProcurarProfissionaisViewController.swift */,
-				A51F9610239A831500BC6EAA /* AdicionarComentarioViewController.swift */,
 				A51F9611239A831500BC6EAA /* ListaProfissionaisPesquisaViewController.swift */,
 				A51F9612239A831500BC6EAA /* PerfilProfissionalViewController.swift */,
+				A51F9610239A831500BC6EAA /* AdicionarComentarioViewController.swift */,
 				A51F9613239A831500BC6EAA /* PinterestLayout.swift */,
 				3947C99F23915F5300B72900 /* PrincipalViewController.swift */,
 				39BAA0D4239159470066B302 /* ViewController.swift */,

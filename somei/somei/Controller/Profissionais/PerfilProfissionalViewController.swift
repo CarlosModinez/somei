@@ -12,11 +12,7 @@ import MessageUI
 class PerfilProfissionalViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, MFMessageComposeViewControllerDelegate {
 
     @IBOutlet weak var tableView: UITableView!
-    @IBOutlet weak var umaEstrela: UIButton!
-    @IBOutlet weak var duasEstrela: UIButton!
-    @IBOutlet weak var tresEstrela: UIButton!
-    @IBOutlet weak var quatroEstrela: UIButton!
-    @IBOutlet weak var cincoEstrela: UIButton!
+
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -50,6 +46,7 @@ class PerfilProfissionalViewController: UIViewController, UITableViewDataSource,
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         return 10
+        
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -94,18 +91,18 @@ class PerfilProfissionalViewController: UIViewController, UITableViewDataSource,
         } else if indexPath.row == 3{
             
             
-            self.tableView.rowHeight = 80
+            self.tableView.rowHeight = 130
             
             
             return cell3
         } else{
             
-           cell4.layer.cornerRadius = 10
-           cell4.layer.shadowColor = UIColor.lightGray.cgColor
-           cell4.layer.shadowOffset = CGSize(width: 1, height: 1.0)
-           cell4.layer.shadowRadius = 1.5
-           cell4.layer.shadowOpacity = 0.5
-           cell4.layer.masksToBounds = false
+            cell4.layer.cornerRadius = 10
+            cell4.layer.shadowColor = UIColor.lightGray.cgColor
+            cell4.layer.shadowOffset = CGSize(width: 1, height: 1.0)
+            cell4.layer.shadowRadius = 1.5
+            cell4.layer.shadowOpacity = 0.5
+            cell4.layer.masksToBounds = false
             
         }
         
@@ -182,6 +179,13 @@ class PerfilProfissionalViewController: UIViewController, UITableViewDataSource,
         generator.impactOccurred()
 
     }
+    
+    @IBAction func deixarComentarioButton(_ sender: Any) {
+        
+        
+        
+    }
+    
     
     
     
