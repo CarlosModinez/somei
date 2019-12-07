@@ -10,6 +10,10 @@
 		037A3B54239A90F900708803 /* Ext_String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037A3B53239A90F900708803 /* Ext_String.swift */; };
 		03DD581B2397E522006FF392 /* PinterestLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DD581A2397E522006FF392 /* PinterestLayout.swift */; };
 		03DD581D2399C9BF006FF392 /* MapaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DD581C2399C9BE006FF392 /* MapaController.swift */; };
+		22009F7C239A89FF007661BC /* CadastroMEIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22009F7B239A89FF007661BC /* CadastroMEIViewController.swift */; };
+		22009F7E239A9383007661BC /* OnBoarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22009F7D239A9383007661BC /* OnBoarding.storyboard */; };
+		2299D619239C2B080061B1AA /* MinhaContaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2299D618239C2B080061B1AA /* MinhaContaViewController.swift */; };
+		22EE5195239A791100D2FEFD /* comoFunciona.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22EE5194239A791100D2FEFD /* comoFunciona.storyboard */; };
 		3911CA59239159E20027B1FF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3911CA58239159E20027B1FF /* GoogleService-Info.plist */; };
 		3947C9A023915F5300B72900 /* PrincipalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3947C99F23915F5300B72900 /* PrincipalViewController.swift */; };
 		399B5F1D2396AB31008F886D /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 399B5F1C2396AB31008F886D /* Colors.xcassets */; };
@@ -55,6 +59,10 @@
 		03DD581C2399C9BE006FF392 /* MapaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MapaController.swift; path = somei/Controller/MapaController.swift; sourceTree = SOURCE_ROOT; };
 		08B2B67085EA8A969AA28D9F /* Pods-Somei.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Somei.debug.xcconfig"; path = "Target Support Files/Pods-Somei/Pods-Somei.debug.xcconfig"; sourceTree = "<group>"; };
 		21E34BE9621ABE1E25C25B78 /* Pods_Somei.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Somei.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		22009F7B239A89FF007661BC /* CadastroMEIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CadastroMEIViewController.swift; path = somei/Controller/CadastroMEIViewController.swift; sourceTree = SOURCE_ROOT; };
+		22009F7D239A9383007661BC /* OnBoarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = OnBoarding.storyboard; path = somei/View/OnBoarding.storyboard; sourceTree = SOURCE_ROOT; };
+		2299D618239C2B080061B1AA /* MinhaContaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MinhaContaViewController.swift; path = somei/Controller/MinhaContaViewController.swift; sourceTree = SOURCE_ROOT; };
+		22EE5194239A791100D2FEFD /* comoFunciona.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = comoFunciona.storyboard; path = somei/View/comoFunciona.storyboard; sourceTree = SOURCE_ROOT; };
 		3911CA58239159E20027B1FF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3947C99F23915F5300B72900 /* PrincipalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrincipalViewController.swift; sourceTree = "<group>"; };
 		399B5F1C2396AB31008F886D /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
@@ -132,6 +140,8 @@
 				39BAA0DB239159490066B302 /* LaunchScreen.storyboard */,
 				39BAA0D9239159490066B302 /* Assets.xcassets */,
 				399B5F1C2396AB31008F886D /* Colors.xcassets */,
+				22EE5194239A791100D2FEFD /* comoFunciona.storyboard */,
+				22009F7D239A9383007661BC /* OnBoarding.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -142,6 +152,8 @@
 				A5459D3E23954B520023D99D /* Profissionais */,
 				3947C99F23915F5300B72900 /* PrincipalViewController.swift */,
 				39BAA0D4239159470066B302 /* ViewController.swift */,
+				22009F7B239A89FF007661BC /* CadastroMEIViewController.swift */,
+				2299D618239C2B080061B1AA /* MinhaContaViewController.swift */,
 				03DD581C2399C9BE006FF392 /* MapaController.swift */,
 			);
 			path = Controller;
@@ -294,7 +306,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 39BAA0C8239159470066B302 /* Build configuration list for PBXProject "somei" */;
+			buildConfigurationList = 39BAA0C8239159470066B302 /* Build configuration list for PBXProject "Somei" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -324,9 +336,11 @@
 				39BAA0DD239159490066B302 /* LaunchScreen.storyboard in Resources */,
 				3911CA59239159E20027B1FF /* GoogleService-Info.plist in Resources */,
 				39BAA0DA239159490066B302 /* Assets.xcassets in Resources */,
+				22EE5195239A791100D2FEFD /* comoFunciona.storyboard in Resources */,
 				A5B5BDFE2397D0D600F800CC /* MinhaConta.storyboard in Resources */,
 				39BAA0D8239159470066B302 /* Main.storyboard in Resources */,
 				A55DD4662397D58900821A2F /* PerfilProfissional.storyboard in Resources */,
+				22009F7E239A9383007661BC /* OnBoarding.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,6 +411,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5CBEA2523954530009D2658 /* InfoEmpresa.swift in Sources */,
+				22009F7C239A89FF007661BC /* CadastroMEIViewController.swift in Sources */,
 				D1A984BF239921A6004C170C /* PerfilProfissionalViewController.swift in Sources */,
 				A5459D4223954BAE0023D99D /* ProfissionaisMaisProcuradosCollectionViewCell.swift in Sources */,
 				D1A984C723992231004C170C /* DAOFireBaseUsuario.swift in Sources */,
@@ -424,6 +439,7 @@
 				D1AFC84323994DC1009583B3 /* Categoria.swift in Sources */,
 				39BAA0D1239159470066B302 /* AppDelegate.swift in Sources */,
 				A5CBEA2723954530009D2658 /* InfoUsuario.swift in Sources */,
+				2299D619239C2B080061B1AA /* MinhaContaViewController.swift in Sources */,
 				39BAA0D3239159470066B302 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -570,7 +586,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = KRXQ9SD27Q;
+				DEVELOPMENT_TEAM = CM34PRAQJX;
 				INFOPLIST_FILE = Somei/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -590,7 +606,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = KRXQ9SD27Q;
+				DEVELOPMENT_TEAM = CM34PRAQJX;
 				INFOPLIST_FILE = Somei/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -607,7 +623,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		39BAA0C8239159470066B302 /* Build configuration list for PBXProject "somei" */ = {
+		39BAA0C8239159470066B302 /* Build configuration list for PBXProject "Somei" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				39BAA0DF239159490066B302 /* Debug */,
