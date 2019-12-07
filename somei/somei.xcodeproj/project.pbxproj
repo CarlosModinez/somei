@@ -35,6 +35,7 @@
 		A5EC9E0A2395754300BC72B3 /* (null) in Sources */ = {isa = PBXBuildFile; };
 		A5EC9E0C2395767500BC72B3 /* (null) in Sources */ = {isa = PBXBuildFile; };
 		AF677AF8D3BF3BCCEB6DA650 /* Pods_Somei.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21E34BE9621ABE1E25C25B78 /* Pods_Somei.framework */; };
+		CC430098239C28B40004A8B2 /* avaliacoes-minha-conta.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC430097239C28B40004A8B2 /* avaliacoes-minha-conta.storyboard */; };
 		CCCC66A7239A768C00FABFF1 /* Ajuda.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCCC66A6239A768C00FABFF1 /* Ajuda.storyboard */; };
 		D1A984BF239921A6004C170C /* PerfilProfissionalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A984BC239921A6004C170C /* PerfilProfissionalViewController.swift */; };
 		D1A984C1239921A6004C170C /* ListaProfissionaisPesquisaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A984BE239921A6004C170C /* ListaProfissionaisPesquisaViewController.swift */; };
@@ -78,6 +79,7 @@
 		A5CBEA1F23954530009D2658 /* InfoEmpresa.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InfoEmpresa.swift; path = somei/Model/InfoEmpresa.swift; sourceTree = SOURCE_ROOT; };
 		A5CBEA2023954530009D2658 /* Avaliacao.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Avaliacao.swift; path = somei/Model/Avaliacao.swift; sourceTree = SOURCE_ROOT; };
 		A5CBEA2123954530009D2658 /* InfoUsuario.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InfoUsuario.swift; path = somei/Model/InfoUsuario.swift; sourceTree = SOURCE_ROOT; };
+		CC430097239C28B40004A8B2 /* avaliacoes-minha-conta.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "avaliacoes-minha-conta.storyboard"; path = "Somei/View/avaliacoes-minha-conta.storyboard"; sourceTree = SOURCE_ROOT; };
 		CCCC66A6239A768C00FABFF1 /* Ajuda.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Ajuda.storyboard; path = Somei/View/Ajuda.storyboard; sourceTree = SOURCE_ROOT; };
 		D1A984BC239921A6004C170C /* PerfilProfissionalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PerfilProfissionalViewController.swift; path = somei/Controller/Profissionais/PerfilProfissionalViewController.swift; sourceTree = SOURCE_ROOT; };
 		D1A984BE239921A6004C170C /* ListaProfissionaisPesquisaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListaProfissionaisPesquisaViewController.swift; path = somei/Controller/Profissionais/ListaProfissionaisPesquisaViewController.swift; sourceTree = SOURCE_ROOT; };
@@ -122,6 +124,7 @@
 			children = (
 				A5459D47239552710023D99D /* Extension */,
 				A5B5BE012397D10100F800CC /* Profissionais.storyboard */,
+				CC430097239C28B40004A8B2 /* avaliacoes-minha-conta.storyboard */,
 				CCCC66A6239A768C00FABFF1 /* Ajuda.storyboard */,
 				A55DD4652397D58900821A2F /* PerfilProfissional.storyboard */,
 				A5B5BDFD2397D0D600F800CC /* MinhaConta.storyboard */,
@@ -316,6 +319,7 @@
 			files = (
 				A5B5BE022397D10100F800CC /* Profissionais.storyboard in Resources */,
 				399B5F1D2396AB31008F886D /* Colors.xcassets in Resources */,
+				CC430098239C28B40004A8B2 /* avaliacoes-minha-conta.storyboard in Resources */,
 				CCCC66A7239A768C00FABFF1 /* Ajuda.storyboard in Resources */,
 				39BAA0DD239159490066B302 /* LaunchScreen.storyboard in Resources */,
 				3911CA59239159E20027B1FF /* GoogleService-Info.plist in Resources */,
