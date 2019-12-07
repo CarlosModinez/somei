@@ -14,17 +14,14 @@ class DAOFireBaseCategorias {
     
     //Recebe o codigo e retorna a traducao para o nome oficial
     
-    static func buscarTraducaoMEI(codigo: String, completion: @escaping ((String) -> ())) -> String! {
+    static func buscarTraducaoMEI(codigo: String, completion: @escaping ((String?) -> ())) -> String? {
         let db = Firestore.firestore()
-        var traducao: String = ""
+        var traducao: String?
             
         db.collection("codigoMEI").whereField("codigo", isEqualTo: codigo).getDocuments() { (querySnapshot, err) in
             if let err =  err {
-                    
                 print("Error: \(err)")
-        
             } else {
-                
                 for document in querySnapshot!.documents {
                     let categoria : Categoria = Categoria.mapToObject(dct: document.data())
                     traducao = categoria.traducao
@@ -35,6 +32,7 @@ class DAOFireBaseCategorias {
         }
         return traducao
     }
+
     
     
     // Nao usa essa funcao nao - Funcao usada para salvar as MEIS
@@ -42,8 +40,6 @@ class DAOFireBaseCategorias {
         let db = Firestore.firestore()
         
         var tabelaRef: DocumentReference? = nil
-        
-        
         
         
         ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
