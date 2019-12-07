@@ -9,11 +9,11 @@
 /* Begin PBXBuildFile section */
 		037A3B54239A90F900708803 /* Ext_String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037A3B53239A90F900708803 /* Ext_String.swift */; };
 		03DD581B2397E522006FF392 /* PinterestLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DD581A2397E522006FF392 /* PinterestLayout.swift */; };
+		03DD581D2399C9BF006FF392 /* MapaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DD581C2399C9BE006FF392 /* MapaController.swift */; };
 		22009F7C239A89FF007661BC /* CadastroMEIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22009F7B239A89FF007661BC /* CadastroMEIViewController.swift */; };
 		22009F7E239A9383007661BC /* OnBoarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22009F7D239A9383007661BC /* OnBoarding.storyboard */; };
 		2299D619239C2B080061B1AA /* MinhaContaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2299D618239C2B080061B1AA /* MinhaContaViewController.swift */; };
 		22EE5195239A791100D2FEFD /* comoFunciona.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22EE5194239A791100D2FEFD /* comoFunciona.storyboard */; };
-		03DD581D2399C9BF006FF392 /* MapaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DD581C2399C9BE006FF392 /* MapaController.swift */; };
 		3911CA59239159E20027B1FF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3911CA58239159E20027B1FF /* GoogleService-Info.plist */; };
 		3947C9A023915F5300B72900 /* PrincipalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3947C99F23915F5300B72900 /* PrincipalViewController.swift */; };
 		399B5F1D2396AB31008F886D /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 399B5F1C2396AB31008F886D /* Colors.xcassets */; };
@@ -306,7 +306,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 39BAA0C8239159470066B302 /* Build configuration list for PBXProject "somei" */;
+			buildConfigurationList = 39BAA0C8239159470066B302 /* Build configuration list for PBXProject "Somei" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -606,7 +606,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = QF2XVHQ9W2;
+				DEVELOPMENT_TEAM = CM34PRAQJX;
 				INFOPLIST_FILE = Somei/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -623,7 +623,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		39BAA0C8239159470066B302 /* Build configuration list for PBXProject "somei" */ = {
+		39BAA0C8239159470066B302 /* Build configuration list for PBXProject "Somei" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				39BAA0DF239159490066B302 /* Debug */,
