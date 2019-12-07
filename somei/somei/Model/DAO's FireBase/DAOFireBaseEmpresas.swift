@@ -50,15 +50,14 @@ class DAOFireBaseEMpresas {
             if let err = err {
                 print("Error \(err)")
             } else {
+
                 for document in querySnapshot!.documents {
                     empresa = Empresa.mapToObject(dct: document.data())
                 }
             }
             completion(empresa)
         }
-        
         return empresa
-        
     }
     
     static func saveEmpresa(_ empresa: Empresa) {

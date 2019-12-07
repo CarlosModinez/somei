@@ -32,6 +32,26 @@ class DAOFireBAseUsuario {
     }
     
     
+    static func buscarUsuarioPeloEmail(email: String, completion: @escaping (Usuario?) -> ()) -> Usuario? {
+        
+        let db = Firestore.firestore()
+        var usuario : Usuario? = nil
+        
+        db.collection("users").whereField("email", isEqualTo: email).getDocuments { (querySnapshot, err) in
+            if let err =  err {
+                print("Error: \(err)")
+            } else {
+                
+                for document in querySnapshot!.documents {
+                    usuario = Usuario.mapToObject(dct: document.data())
+                }
+            }
+            completion(usuarios)
+        }
+        return usuarios
+    }
+    
+    
     static func saveUser(_ usuario : Usuario) {
         let db = Firestore.firestore()
         
