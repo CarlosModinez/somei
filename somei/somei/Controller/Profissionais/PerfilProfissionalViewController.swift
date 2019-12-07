@@ -12,73 +12,86 @@ import MessageUI
 class PerfilProfissionalViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, MFMessageComposeViewControllerDelegate {
 
     @IBOutlet weak var tableView: UITableView!
-
+    
+//    -----------------APAGAR
+    var empresa : Empresa?
+    var avaliacao : Avaliacao!
+    var avaliacoes : [Avaliacao] = []
+    var endereco : Endereco!
+//    -----------------APAGAR
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
         tableView.dataSource = self
         tableView.delegate = self
-        tableView.reloadData()
+        
+
+//        tableView.reloadData()
         
     }
-    
-//    colar o numero de telefone dado pelo usuario no app de ligaçao
-    private func callNumber(phoneNumber:String) {
 
-         if let phoneCallURL = URL(string: "telprompt://\(phoneNumber)") {
 
-             let application:UIApplication = UIApplication.shared
-             if (application.canOpenURL(phoneCallURL)) {
-                 if #available(iOS 10.0, *) {
-                     application.open(phoneCallURL, options: [:], completionHandler: nil)
-                 } else {
-                     // Fallback on earlier versions
-                      application.openURL(phoneCallURL as URL)
-
-                 }
-             }
-         }
-     }
-    
-    //propriedades tableview comentários
+    //propriedades tableview
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return 10
+//        TODO: Apagar a população aqui
+        avaliacao = Avaliacao(nota: 3, comentario: "cuza1")
+        let avaliacao2 = Avaliacao(nota: 2, comentario: "doida1")
+        avaliacoes.append(avaliacao2)
+        avaliacoes.append(avaliacao)
+        
+        endereco = Endereco(cep: 82030150, numero: 240, logradouro: "Rua Ferrara", bairro: "São João", cidade: "Curitiba", estado: "Taubatexas")
+        empresa = Empresa(cnpj: "123124", nomeFantasia: "Conrider Da Nike", endereco: endereco, avaliacoes: avaliacoes, categoria: "Chinelero", telefone: "99671-4302", email: "conrider@nike.com")
+//      ---------------APAGAR
+
+//        de 0 a 3 é padrão do perfil, depois disso tem que somar o numero de comentários do tipo Avaliações
+        return 4 + avaliacoes.count
         
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        let cell0 = tableView.dequeueReusableCell(withIdentifier: "NomeProfissional", for: indexPath) as! NomeProfissionalTableViewCell
-        
-        let cell1 = tableView.dequeueReusableCell(withIdentifier: "DescricaoProfissional", for: indexPath) as! DescricaoProfissionalTableViewCell
-        
-        let cell2 = tableView.dequeueReusableCell(withIdentifier: "BotaoContato", for: indexPath) as! BotaoContatoTableViewCell
-        
-        let cell3 = tableView.dequeueReusableCell(withIdentifier: "AvaliacaoProfissional", for: indexPath) as! AvaliacaoProfissionalTableViewCell
-        
-        let cell4 = tableView.dequeueReusableCell(withIdentifier: "Comentario", for: indexPath) as! ComentarioTableViewCell
 
+        // chamando a cell4 aqui pra não dar xabu no return lá no final dessa função da tableview
+        let cell4 = tableView.dequeueReusableCell(withIdentifier: "Comentario", for: indexPath) as! ComentarioTableViewCell
+        
+        
         if indexPath.row == 0{
             
-            cell0.lblNomeProfissional.text = "Cristiano Correia"
+        let cell0 = tableView.dequeueReusableCell(withIdentifier: "NomeProfissional", for: indexPath) as! NomeProfissionalTableViewCell
+            
+//           nome no perfil
+            cell0.lblNomeProfissional.text = empresa?.nomeFantasia
+
+//            TODO: imagem profissional
 //            cell0.imgProfissional.image =
+            
+//            TODO: media de avaliações
 //            cell0.imgAvaliacao.image =
+            
             self.tableView.rowHeight = 90
             
             return cell0
-        } else if indexPath.row == 1{
             
-            cell1.txtDescricaoProfissional.text = "Experiência, qualidade e preço justo. Lâmpadas, refletores, montagem de quadros, passagem de fiação padrão Copel, tomadas, interruptores, disjuntores, DR, DDR. Comodidades: mais opções de pagamento, diversas áreas de atuação, garantia do serviço."
+        }
+            
+        
+        else if indexPath.row == 1{
+            
+            let cell1 = tableView.dequeueReusableCell(withIdentifier: "DescricaoProfissional", for: indexPath) as! DescricaoProfissionalTableViewCell
+            
+//            cell1.txtDescricaoProfissional.text = empresa?.descricao
             
             self.tableView.rowHeight = 165
 
             return cell1
-        } else if indexPath.row == 2{
-
-//            cell2.ligarButton.titleLabel =
-//            cell2.mensagemButton.titleLabel =
+            
+        }
+        
+        
+        else if indexPath.row == 2{
+            
+             let cell2 = tableView.dequeueReusableCell(withIdentifier: "BotaoContato", for: indexPath) as! BotaoContatoTableViewCell
             
             cell2.mensagemButton.addTarget(self, action: #selector(mandarMensagem), for: .touchUpInside)
             cell2.ligarButton.addTarget(self, action: #selector(ligarParaProfissional), for: .touchUpInside)
@@ -87,50 +100,54 @@ class PerfilProfissionalViewController: UIViewController, UITableViewDataSource,
             
             
             return cell2
-        } else if indexPath.row == 3{
             
+        }
+        
+        
+        else if indexPath.row == 3{
             
+             let cell3 = tableView.dequeueReusableCell(withIdentifier: "AvaliacaoProfissional", for: indexPath) as! AvaliacaoProfissionalTableViewCell
+
             self.tableView.rowHeight = 130
             
             
             return cell3
-        } else{
-            
-            cell4.layer.cornerRadius = 10
-            cell4.layer.shadowColor = UIColor.lightGray.cgColor
-            cell4.layer.shadowOffset = CGSize(width: 1, height: 1.0)
-            cell4.layer.shadowRadius = 1.5
-            cell4.layer.shadowOpacity = 0.5
-            cell4.layer.masksToBounds = false
-            
         }
         
+        
+        else {
+            
+            cell4.txtComentario.text = empresa?.avaliacoes[indexPath.row - 4].comentario
+            
+//            chamar imagem de quantas estrelas foram dadas
+//            cell4.imgAvaliacao.image =
+            
+        }
+
         return cell4
         
     }
-    
+
+    // chama uma função pro botão da tableview para mandar mensagem de texto
     @objc func mandarMensagem(){
-        
-        print("fe")
         
         if MFMessageComposeViewController.canSendText() {
         let controller = MFMessageComposeViewController()
         controller.messageComposeDelegate = self
         
         //conteudo da mensagem
-            let nome = "Carlitos Tevez"
-        controller.body = "Olá \(nome)! Encontrei seu perfil no App Somei e gostaria de solicitar um orçamento, por favor."
+            controller.body = "Olá, \(empresa!.nomeFantasia)! Encontrei seu perfil no app Somei e gostaria de solicitar um orçamento."
         //aqui chama o numero de telefone do model
-        controller.recipients = ["988384480"]
+            controller.recipients = ["\(empresa!.telefone)"]
             
         vibrate()
-            
+        
+        //chama controller pra mandar mensagem
         self.present(controller, animated: true, completion: nil)
             
-        
     }
 }
-    
+    // continuação da função pra chamar mensagem de texto, tava pedindo pra ter na documentação
      func messageComposeViewController(_ controller: MFMessageComposeViewController, didFinishWith result: MessageComposeResult) {
             switch (result) {
                 case .cancelled:
@@ -150,10 +167,11 @@ class PerfilProfissionalViewController: UIViewController, UITableViewDataSource,
         }
     
     
-    
+    // função para chamar uma ligação para o profissional
     @objc func ligarParaProfissional(){
         
-        let phone = 988384480
+        // chama o numero do model
+        let phone = empresa!.telefone
         
         if let url = URL(string: "tel://\(phone)"), UIApplication.shared.canOpenURL(url) {
             if #available(iOS 10, *) {
@@ -166,12 +184,15 @@ class PerfilProfissionalViewController: UIViewController, UITableViewDataSource,
         vibrate()
     }
     
+    
+    // essa parte ainda não soube como fazer :(
     @IBAction func avaliarEstrela(_ sender: UIButton) {
         
         vibrate()
         
     }
     
+//    função pra feedback de vibração
     func vibrate(){
        
         let generator = UIImpactFeedbackGenerator()

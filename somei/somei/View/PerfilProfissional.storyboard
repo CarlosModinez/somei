@@ -253,6 +253,13 @@
                                                 <constraint firstItem="Rjs-Wv-Ujd" firstAttribute="width" secondItem="b8V-vC-XtZ" secondAttribute="width" id="zTl-6M-lcG"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="cincoEstrela" destination="8Wu-ps-95j" id="IvN-68-zi3"/>
+                                            <outlet property="duasEstrela" destination="Rjs-Wv-Ujd" id="O6d-I0-SJf"/>
+                                            <outlet property="quatroEstrela" destination="k89-SD-jTO" id="is8-JJ-JiG"/>
+                                            <outlet property="tresEstrela" destination="CuU-HL-7oy" id="6bV-OY-JT6"/>
+                                            <outlet property="umaEstrela" destination="b8V-vC-XtZ" id="Pzy-hc-whk"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Comentario" rowHeight="112" id="4dR-24-Zh3" customClass="ComentarioTableViewCell" customModule="Somei" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="528" width="364" height="112"/>

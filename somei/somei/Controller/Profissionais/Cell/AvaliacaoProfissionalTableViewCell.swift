@@ -10,6 +10,12 @@ import UIKit
 
 class AvaliacaoProfissionalTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var umaEstrela: UIButton!
+    @IBOutlet weak var duasEstrela: UIButton!
+    @IBOutlet weak var tresEstrela: UIButton!
+    @IBOutlet weak var quatroEstrela: UIButton!
+    @IBOutlet weak var cincoEstrela: UIButton!
+ 
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
