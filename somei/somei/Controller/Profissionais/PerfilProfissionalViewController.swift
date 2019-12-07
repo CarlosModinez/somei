@@ -19,7 +19,6 @@ class PerfilProfissionalViewController: UIViewController, UITableViewDataSource,
         
         tableView.dataSource = self
         tableView.delegate = self
-        
         tableView.reloadData()
         
     }

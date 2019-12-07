@@ -369,6 +369,9 @@
                                             <constraint firstAttribute="width" secondItem="1Bg-Bw-GQa" secondAttribute="height" multiplier="19:18" id="yq0-DB-Uwi"/>
                                         </constraints>
                                         <state key="normal" image="star-line"/>
+                                        <connections>
+                                            <action selector="avaliarEstrelas:" destination="InZ-re-YcP" eventType="touchUpInside" id="5DD-wS-SPd"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lem-qw-6yE">
                                         <rect key="frame" x="142" y="74" width="38" height="36"/>
@@ -376,6 +379,9 @@
                                             <constraint firstAttribute="width" secondItem="lem-qw-6yE" secondAttribute="height" multiplier="19:18" id="ZQR-oh-muf"/>
                                         </constraints>
                                         <state key="normal" image="star-line"/>
+                                        <connections>
+                                            <action selector="avaliarEstrelas:" destination="InZ-re-YcP" eventType="touchUpInside" id="vHg-It-rBE"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9lY-rt-6W2">
                                         <rect key="frame" x="188" y="74" width="38" height="36"/>
@@ -383,6 +389,9 @@
                                             <constraint firstAttribute="width" secondItem="9lY-rt-6W2" secondAttribute="height" multiplier="19:18" id="Lux-wL-RXc"/>
                                         </constraints>
                                         <state key="normal" image="star-line"/>
+                                        <connections>
+                                            <action selector="avaliarEstrelas:" destination="InZ-re-YcP" eventType="touchUpInside" id="v2I-LB-7bt"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="taM-Wr-1Jf">
                                         <rect key="frame" x="234" y="74" width="38" height="36"/>
@@ -390,6 +399,9 @@
                                             <constraint firstAttribute="width" secondItem="taM-Wr-1Jf" secondAttribute="height" multiplier="19:18" id="7D3-D4-ppu"/>
                                         </constraints>
                                         <state key="normal" image="star-line"/>
+                                        <connections>
+                                            <action selector="avaliarEstrelas:" destination="InZ-re-YcP" eventType="touchUpInside" id="2oy-iZ-TfM"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RLx-1j-49P">
                                         <rect key="frame" x="280" y="74" width="38" height="36"/>
@@ -398,7 +410,7 @@
                                         </constraints>
                                         <state key="normal" image="star-line"/>
                                         <connections>
-                                            <action selector="avaliarEstrelas:" destination="InZ-re-YcP" eventType="touchUpInside" id="xFx-XV-0HN"/>
+                                            <action selector="avaliarEstrelas:" destination="InZ-re-YcP" eventType="touchUpInside" id="66a-Xt-ie2"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -477,6 +489,11 @@
                     <connections>
                         <outlet property="adicionarComentario" destination="tOe-dV-Lfp" id="7E5-8r-qg8"/>
                         <outlet property="avaliarButton" destination="hrD-NG-cUI" id="O8B-QR-2ij"/>
+                        <outletCollection property="avaliacaoLista" destination="1Bg-Bw-GQa" collectionClass="NSMutableArray" id="zSd-k0-46M"/>
+                        <outletCollection property="avaliacaoLista" destination="lem-qw-6yE" collectionClass="NSMutableArray" id="LLG-xP-IM3"/>
+                        <outletCollection property="avaliacaoLista" destination="9lY-rt-6W2" collectionClass="NSMutableArray" id="wWs-rs-HhR"/>
+                        <outletCollection property="avaliacaoLista" destination="taM-Wr-1Jf" collectionClass="NSMutableArray" id="YEM-jU-5Qx"/>
+                        <outletCollection property="avaliacaoLista" destination="RLx-1j-49P" collectionClass="NSMutableArray" id="2ha-L3-ePc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="waG-EI-z7w" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

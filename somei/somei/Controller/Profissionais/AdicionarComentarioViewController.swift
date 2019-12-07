@@ -12,7 +12,7 @@ class AdicionarComentarioViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet var adicionarComentario: UITextField!
     @IBOutlet var avaliarButton: UIButton!
-    
+    @IBOutlet var avaliacaoLista: Array <UIButton>?
     
     
     override func viewWillAppear(_ animated: Bool) {
@@ -31,22 +31,28 @@ class AdicionarComentarioViewController: UIViewController, UITextFieldDelegate {
         return true
     }
     
+    
+//  receber de botaoLista e contar a tag que foi recebida e direcionar pra regra de 3 das avaliações
     @IBAction func avaliarEstrelas(_ sender: Any) {
         
-        
+ 
         
     }
     
-//    onde usuario da o input do comentario
+    
+//  onde usuario da o input do comentario
     @IBAction func inputComentario(_ sender: Any) {
         
         
     }
     
-//    dar send na avaliação
+//    dar send na avaliação e chamar a view anterior
     @IBAction func finalizarAvaliacao(_ sender: Any) {
         
         vibrate()
+        
+//        let controller = PerfilProfissionalViewController()
+//        self.present(controller, animated: true, completion: nil)
         
     }
     
