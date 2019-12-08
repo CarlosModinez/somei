@@ -1,18 +1,16 @@
 //
-//  ListaProfissionaisTableViewCell.swift
+//  DescricaoProfissionalTableViewCell.swift
 //  Somei
 //
-//  Created by Cristiano Correia on 02/12/19.
+//  Created by Cristiano Correia on 05/12/19.
 //  Copyright © 2019 José Guilherme Bestel. All rights reserved.
 //
 
 import UIKit
 
-class ListaProfissionaisTableViewCell: UITableViewCell {
+class DescricaoProfissionalTableViewCell: UITableViewCell {
 
-    @IBOutlet var lblNomeProfissional: UILabel!
-    @IBOutlet var lblDistanciaProfissional: UILabel!
-    @IBOutlet var imgNotaProfissional: UIImageView!
+    @IBOutlet weak var txtDescricaoProfissional: UITextView!
     
     override func awakeFromNib() {
         super.awakeFromNib()

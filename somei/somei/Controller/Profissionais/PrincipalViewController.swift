@@ -25,7 +25,9 @@ class PrincipalViewController: UIViewController {
 //        loginUsuario(email: "josegbestel@gmail.com", password: "Abc@12345")
 //        logoutUsiario()
 //        dadosCnpj()
+        
         getlatLon()
+        
         
 
         // Do any additional setup after loading the view.

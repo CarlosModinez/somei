@@ -17,8 +17,9 @@ class Empresa {
     var avaliacoes : [Avaliacao]
     var categoria : String
     var email : String
+    var descricao : String
     
-    init (cnpj: String, nomeFantasia: String, endereco: Endereco, avaliacoes: [Avaliacao], categoria: String, telefone: String, email: String){
+    init (cnpj: String, nomeFantasia: String, endereco: Endereco, avaliacoes: [Avaliacao], categoria: String, telefone: String, email: String, descricao: String){
      
         self.cnpj = cnpj
         self.nomeFantasia = nomeFantasia
@@ -27,6 +28,7 @@ class Empresa {
         self.avaliacoes = avaliacoes
         self.categoria = categoria
         self.email = email
+        self.descricao = descricao
     }
     
     func avaliar(numNota: Int) {
@@ -61,7 +63,8 @@ class Empresa {
             
             "avaliacoes": avaliacoes,
             "categoria": self.categoria,
-            "email": self.email
+            "email": self.email,
+            "descricao": self.descricao
         ]
         
         return empresaData
@@ -77,7 +80,7 @@ class Empresa {
         let endereco : Endereco =  Endereco.mapToObect(dct: dct["endereco"] as! [String: Any])
 
         var avaliacoes : [Avaliacao] = []
-        var dctAvaliacoes : [String : Any] = dct["avaliacoes"] as! [String : Any]
+        let dctAvaliacoes : [String : Any] = dct["avaliacoes"] as! [String : Any]
         
         for i in 0..<dctAvaliacoes.count {
             var avaliacao : Avaliacao
@@ -88,8 +91,9 @@ class Empresa {
 
         let categoria : String = dct["categoria"] as! String
         let email : String = dct["email"] as! String
-
-        let empresa = Empresa(cnpj: cnpj, nomeFantasia: nomeFantasia, endereco: endereco, avaliacoes: avaliacoes, categoria: categoria, telefone: telefone, email: email)
+        let descricao : String = dct["descricao"] as! String
+        
+        let empresa = Empresa(cnpj: cnpj, nomeFantasia: nomeFantasia, endereco: endereco, avaliacoes: avaliacoes, categoria: categoria, telefone: telefone, email: email, descricao: descricao)
 
         return empresa
     }

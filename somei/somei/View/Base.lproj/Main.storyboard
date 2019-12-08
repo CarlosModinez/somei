@@ -54,6 +54,9 @@
                                                 <real key="value" value="8"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="g4a-5u-Kmk" kind="show" id="TBA-DN-ZAa"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sJb-a8-PP5">
                                         <rect key="frame" x="68" y="216.5" width="278" height="79"/>
@@ -471,6 +474,7 @@
             <objects>
                 <viewControllerPlaceholder storyboardName="Profissionais" referencedIdentifier="UIProfissionais" id="g4a-5u-Kmk" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="rRm-23-sSR"/>
+                    <navigationItem key="navigationItem" id="rFp-Un-Oyo"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X9s-33-QR4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -924,5 +928,8 @@
             <color red="0.0" green="0.40000000596046448" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="TBA-DN-ZAa"/>
+    </inferredMetricsTieBreakers>
     <color key="tintColor" name="AzulApp"/>
 </document>

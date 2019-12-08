@@ -12,49 +12,44 @@ import Firebase
 class DAOFireBAseUsuario {
 
     
-    static func loadEmpresa() {
-        
+    static func loadUsers(completion: @escaping ([Usuario]) -> ()) -> [Usuario]{
         let db = Firestore.firestore()
-        
-        db.collection("empresas").getDocuments { (querySnapshot, err) in
-            if let err =  err {
-                print("Error: \(err)")
-            } else {
-                
-                TodasAsEmpresas.shared.empresas.removeAll()
-                
-                for document in querySnapshot!.documents {
-                    
-                    let empresa = Empresa.mapToObject(dct: document.data())
-                    
-                    TodasAsEmpresas.shared.empresas.append(empresa)
-                }
-            }
-        }
-    }
-    
-    static func loadUsers() {
-        let db = Firestore.firestore()
+        var usuarios : [Usuario] = []
         
         db.collection("users").getDocuments { (querySnapshot, err) in
             if let err =  err {
                 print("Error: \(err)")
             } else {
                 
-                TodasAsEmpresas.shared.empresas.removeAll()
-                
                 for document in querySnapshot!.documents {
-    
-                    let usuario = Usuario.mapToObject(userData: document.data())
-                    
-                    TodosOsUsuarios.shared.usuarios.append(usuario)
+                    let usuario = Usuario.mapToObject(dct: document.data())
+                    usuarios.append(usuario)
                 }
             }
+            completion(usuarios)
         }
-
+        return usuarios
     }
     
     
+    static func buscarUsuarioPeloEmail(email: String, completion: @escaping (Usuario?) -> ()) -> Usuario? {
+        
+        let db = Firestore.firestore()
+        var usuario : Usuario? = nil
+        
+        db.collection("users").whereField("email", isEqualTo: email).getDocuments { (querySnapshot, err) in
+            if let err =  err {
+                print("Error: \(err)")
+            } else {
+                
+                for document in querySnapshot!.documents {
+                    usuario = Usuario.mapToObject(dct: document.data())
+                }
+            }
+            completion(usuario)
+        }
+        return usuario
+    }
     
     
     static func saveUser(_ usuario : Usuario) {
@@ -64,7 +59,6 @@ class DAOFireBAseUsuario {
         var userData: [String: Any] = [:]
         
         userData = usuario.mapToDictionary()
-        
         userRef = db.collection("users").addDocument(data: userData) { err in
             if let err = err {
                 print("Error: \(err)")
@@ -74,23 +68,8 @@ class DAOFireBAseUsuario {
         }
         
         if usuario.empresa != nil {
-            saveEmpresa(usuario.empresa!)
-        }
-    }
-
-    static func saveEmpresa(_ empresa: Empresa) {
-        let db = Firestore.firestore()
-        
-        var empresaRef: DocumentReference? = nil
-        var empresaData: [String : Any] = [:]
-        
-        empresaData = empresa.mapToDictionary()
-        empresaRef = db.collection("empresas").addDocument(data: empresaData) { err in
-            if let err = err {
-                print("Error: \(err)")
-            } else {
-                print(empresaRef!.documentID)
-            }
+            DAOFireBaseEMpresas.saveEmpresa(usuario.empresa!)
+            
         }
     }
 }
