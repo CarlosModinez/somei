@@ -53,6 +53,7 @@
 		AF677AF8D3BF3BCCEB6DA650 /* Pods_Somei.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21E34BE9621ABE1E25C25B78 /* Pods_Somei.framework */; };
 		CC430098239C28B40004A8B2 /* avaliacoes-minha-conta.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC430097239C28B40004A8B2 /* avaliacoes-minha-conta.storyboard */; };
 		CCCC66A7239A768C00FABFF1 /* Ajuda.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCCC66A6239A768C00FABFF1 /* Ajuda.storyboard */; };
+		D10C8726239E72A600531E07 /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10C8725239E72A600531E07 /* Singleton.swift */; };
 		D1A984C1239921A6004C170C /* ListaProfissionaisPesquisaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A984BE239921A6004C170C /* ListaProfissionaisPesquisaViewController.swift */; };
 		D1A984C723992231004C170C /* DAOFireBaseUsuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A984C623992231004C170C /* DAOFireBaseUsuario.swift */; };
 		D1AFC83D23993348009583B3 /* DAOFireBaseEmpresas.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AFC83C23993348009583B3 /* DAOFireBaseEmpresas.swift */; };
@@ -114,6 +115,7 @@
 		A5EC9E092395754300BC72B3 /* PerfilProfissionalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PerfilProfissionalViewController.swift; path = somei/Controller/Profissionais/PerfilProfissionalViewController.swift; sourceTree = SOURCE_ROOT; };
 		CC430097239C28B40004A8B2 /* avaliacoes-minha-conta.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "avaliacoes-minha-conta.storyboard"; path = "Somei/View/avaliacoes-minha-conta.storyboard"; sourceTree = SOURCE_ROOT; };
 		CCCC66A6239A768C00FABFF1 /* Ajuda.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Ajuda.storyboard; path = Somei/View/Ajuda.storyboard; sourceTree = SOURCE_ROOT; };
+		D10C8725239E72A600531E07 /* Singleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Singleton.swift; path = somei/Model/Singleton.swift; sourceTree = SOURCE_ROOT; };
 		D1A984BE239921A6004C170C /* ListaProfissionaisPesquisaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListaProfissionaisPesquisaViewController.swift; path = somei/Controller/Profissionais/ListaProfissionaisPesquisaViewController.swift; sourceTree = SOURCE_ROOT; };
 		D1A984C623992231004C170C /* DAOFireBaseUsuario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DAOFireBaseUsuario.swift; sourceTree = "<group>"; };
 		D1AFC83C23993348009583B3 /* DAOFireBaseEmpresas.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DAOFireBaseEmpresas.swift; path = "somei/Model/DAO's FireBase/DAOFireBaseEmpresas.swift"; sourceTree = SOURCE_ROOT; };
@@ -145,6 +147,7 @@
 				A5CBEA1D23954530009D2658 /* Endereco.swift */,
 				A5CBEA1E23954530009D2658 /* Usuario.swift */,
 				D1AFC84223994DC1009583B3 /* Categoria.swift */,
+				D10C8725239E72A600531E07 /* Singleton.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -341,7 +344,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 39BAA0C8239159470066B302 /* Build configuration list for PBXProject "Somei" */;
+			buildConfigurationList = 39BAA0C8239159470066B302 /* Build configuration list for PBXProject "somei" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -462,6 +465,7 @@
 				A5CBEA2223954530009D2658 /* Empresa.swift in Sources */,
 				A5732DDF2397F45B00EEAD94 /* AdicionarComentarioViewController.swift in Sources */,
 				A5CBEA2323954530009D2658 /* Endereco.swift in Sources */,
+				D10C8726239E72A600531E07 /* Singleton.swift in Sources */,
 				A5825D49239C43DF00DB6D21 /* ViewController.swift in Sources */,
 				D1AFC83F239934AC009583B3 /* DAOFireBaseCategorias.swift in Sources */,
 				D1AFC83D23993348009583B3 /* DAOFireBaseEmpresas.swift in Sources */,
@@ -667,7 +671,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		39BAA0C8239159470066B302 /* Build configuration list for PBXProject "Somei" */ = {
+		39BAA0C8239159470066B302 /* Build configuration list for PBXProject "somei" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				39BAA0DF239159490066B302 /* Debug */,
