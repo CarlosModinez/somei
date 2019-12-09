@@ -91,9 +91,6 @@ class AdicionarComentarioViewController: UIViewController, UITextFieldDelegate {
         
         vibrate()
         
-        //        let controller = PerfilProfissionalViewController()
-        //        self.present(controller, animated: true, completion: nil)
-        
     }
     
     func vibrate(){
@@ -109,11 +106,10 @@ class AdicionarComentarioViewController: UIViewController, UITextFieldDelegate {
     @IBAction func direcionarAjudaButton(_ sender: Any) {
         
 //        TODO: chamar a view de ajuda
-//        if let vc = storyboard?.instantiateViewController(withIdentifier: "") as? {
-//
-//            self.navigationController?.pushViewController(vc, animated: true)
-//
-//        }
+        if let vc = storyboard?.instantiateViewController(withIdentifier: "AjudaViewController") as? AjudaViewController {
+              self.navigationController?.pushViewController(vc, animated: true)
+        
+          }
         
     }
     

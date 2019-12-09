@@ -949,20 +949,18 @@
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f5S-qj-XqY">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="448"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoBranca" translatesAutoresizingMaskIntoConstraints="NO" id="lmW-HK-6J3">
-                                        <rect key="frame" x="83" y="-74.5" width="248" height="1283"/>
-                                    </imageView>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="lmW-HK-6J3" firstAttribute="centerX" secondItem="f5S-qj-XqY" secondAttribute="centerX" id="3EH-mg-qOL"/>
-                                    <constraint firstItem="lmW-HK-6J3" firstAttribute="width" secondItem="f5S-qj-XqY" secondAttribute="width" multiplier="0.6" id="8sT-17-us8"/>
-                                    <constraint firstItem="lmW-HK-6J3" firstAttribute="top" secondItem="f5S-qj-XqY" secondAttribute="top" constant="-74.5" id="laB-YH-MzY"/>
-                                </constraints>
                             </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="somei" translatesAutoresizingMaskIntoConstraints="NO" id="lmW-HK-6J3">
+                                <rect key="frame" x="107" y="300" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="lmW-HK-6J3" secondAttribute="height" multiplier="1:1" id="6gX-ti-2eK"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" name="AzulApp"/>
                         <constraints>
+                            <constraint firstItem="lmW-HK-6J3" firstAttribute="centerX" secondItem="6MS-WB-A2j" secondAttribute="centerX" id="0MM-Qv-klh"/>
+                            <constraint firstItem="lmW-HK-6J3" firstAttribute="width" secondItem="6MS-WB-A2j" secondAttribute="width" multiplier="0.483092" id="0NM-YE-V6A"/>
                             <constraint firstItem="f5S-qj-XqY" firstAttribute="width" secondItem="lJp-0m-hAy" secondAttribute="width" id="CQY-Wp-vnY"/>
                             <constraint firstItem="f5S-qj-XqY" firstAttribute="centerX" secondItem="oGv-9I-mcy" secondAttribute="centerX" id="Dja-dX-1fo"/>
                             <constraint firstItem="6MS-WB-A2j" firstAttribute="height" secondItem="lJp-0m-hAy" secondAttribute="height" multiplier="0.5" id="GQ1-u8-f5r"/>
@@ -970,6 +968,7 @@
                             <constraint firstItem="f5S-qj-XqY" firstAttribute="height" secondItem="lJp-0m-hAy" secondAttribute="height" multiplier="0.5" id="LcP-JX-x4f"/>
                             <constraint firstAttribute="top" secondItem="f5S-qj-XqY" secondAttribute="top" id="Rfp-PV-F1K"/>
                             <constraint firstAttribute="bottom" secondItem="6MS-WB-A2j" secondAttribute="bottom" id="Xiv-GB-sOL"/>
+                            <constraint firstItem="6MS-WB-A2j" firstAttribute="top" secondItem="lmW-HK-6J3" secondAttribute="bottom" constant="-52" id="rf8-wf-Kdh"/>
                             <constraint firstItem="6MS-WB-A2j" firstAttribute="centerX" secondItem="oGv-9I-mcy" secondAttribute="centerX" id="tQQ-7m-x6F"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="oGv-9I-mcy"/>
@@ -993,7 +992,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="encontreProfissionais-1" translatesAutoresizingMaskIntoConstraints="NO" id="O93-zo-IDx">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="812"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414.00000000000045" height="812"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JUZ-oa-rAa">
                                 <rect key="frame" x="0.0" y="537.5" width="414" height="358.5"/>
@@ -1223,7 +1222,7 @@ Negocie o orçamento do serviço  diretamente por telefone ou sms e feche o neg�
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avalieSolucao" translatesAutoresizingMaskIntoConstraints="NO" id="CmZ-1p-Xft">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="812"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414.00000000000045" height="812"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U3T-ku-4qL">
                                 <rect key="frame" x="0.0" y="537.5" width="414" height="358.5"/>
@@ -1633,7 +1632,6 @@ E as vantagens de se tornar um MEI são muitas:
         <image name="avalieSolucao" width="1687" height="3000"/>
         <image name="checkmark" catalog="system" width="64" height="56"/>
         <image name="encontreProfissionais-1" width="1687" height="3000"/>
-        <image name="logoBranca" width="641.5" height="641.5"/>
         <image name="negocieServico" width="1687" height="3000"/>
         <image name="somei" width="153.5" height="147.5"/>
         <namedColor name="AzulApp">

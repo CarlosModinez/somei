@@ -26,7 +26,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Njf-5e-GIa">
-                                <rect key="frame" x="25" y="223" width="364" height="688"/>
+                                <rect key="frame" x="25" y="219" width="364" height="688"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="NomeProfissional" rowHeight="83" id="YNs-2o-A0x" customClass="NomeProfissionalTableViewCell" customModule="Somei" customModuleProvider="target">
@@ -286,7 +286,7 @@
                         <constraints>
                             <constraint firstItem="Njf-5e-GIa" firstAttribute="height" secondItem="W4w-N6-4Er" secondAttribute="height" multiplier="0.959554" id="53B-Ex-GMc"/>
                             <constraint firstItem="W4w-N6-4Er" firstAttribute="width" secondItem="mUL-uc-M8r" secondAttribute="width" id="6PQ-ho-tn7"/>
-                            <constraint firstItem="Njf-5e-GIa" firstAttribute="bottom" secondItem="W4w-N6-4Er" secondAttribute="bottom" constant="-1" id="7Pw-ZR-zjJ"/>
+                            <constraint firstItem="Njf-5e-GIa" firstAttribute="bottom" secondItem="W4w-N6-4Er" secondAttribute="bottom" constant="-5" id="7Pw-ZR-zjJ"/>
                             <constraint firstItem="Njf-5e-GIa" firstAttribute="width" secondItem="W4w-N6-4Er" secondAttribute="width" multiplier="0.88" id="8iJ-sU-MYQ"/>
                             <constraint firstItem="Njf-5e-GIa" firstAttribute="centerX" secondItem="W4w-N6-4Er" secondAttribute="centerX" id="Dh8-CU-FbY"/>
                             <constraint firstItem="W4w-N6-4Er" firstAttribute="height" secondItem="mUL-uc-M8r" secondAttribute="height" multiplier="0.8" id="Xca-h8-DO2"/>
@@ -298,7 +298,6 @@
                     <navigationItem key="navigationItem" largeTitleDisplayMode="always" id="tRs-1J-CtJ"/>
                     <connections>
                         <outlet property="tableView" destination="Njf-5e-GIa" id="ocb-L5-SCU"/>
-                        <segue destination="InZ-re-YcP" kind="show" id="1sZ-sJ-IbY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ILU-CS-DPV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -342,7 +341,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ruS-Lg-Aew">
-                                        <rect key="frame" x="54" y="469" width="281" height="21"/>
+                                        <rect key="frame" x="67" y="469" width="281" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <state key="normal" title="Teve algum problema? Clique aqui.">
                                             <color key="titleColor" name="AzulApp"/>
@@ -465,9 +464,9 @@
                             <constraint firstItem="iZX-yy-329" firstAttribute="height" secondItem="fMe-Mw-b5e" secondAttribute="height" multiplier="0.737723" id="Mz2-2L-XdG"/>
                             <constraint firstItem="ruS-Lg-Aew" firstAttribute="height" secondItem="hrD-NG-cUI" secondAttribute="height" multiplier="0.525" id="Ua4-iq-m09"/>
                             <constraint firstItem="iZX-yy-329" firstAttribute="centerX" secondItem="Uks-oq-6Tg" secondAttribute="centerX" id="WbQ-Kv-Nhb"/>
-                            <constraint firstItem="ruS-Lg-Aew" firstAttribute="leading" secondItem="hrD-NG-cUI" secondAttribute="leading" id="WvY-qq-L45"/>
                             <constraint firstItem="hrD-NG-cUI" firstAttribute="leading" secondItem="tOe-dV-Lfp" secondAttribute="leading" id="b6d-y5-12G"/>
                             <constraint firstItem="ruS-Lg-Aew" firstAttribute="top" secondItem="hrD-NG-cUI" secondAttribute="bottom" constant="8" id="ljg-vl-xhs"/>
+                            <constraint firstItem="ruS-Lg-Aew" firstAttribute="centerX" secondItem="hrD-NG-cUI" secondAttribute="centerX" id="lnt-1r-cA2"/>
                             <constraint firstItem="hrD-NG-cUI" firstAttribute="top" secondItem="tOe-dV-Lfp" secondAttribute="bottom" constant="45" id="ogM-xA-Nmi"/>
                             <constraint firstItem="hrD-NG-cUI" firstAttribute="width" secondItem="iZX-yy-329" secondAttribute="width" multiplier="0.741546" id="qNl-Zj-zTG"/>
                         </constraints>

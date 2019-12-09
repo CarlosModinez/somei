@@ -28,6 +28,7 @@
 		A51F9615239A831500BC6EAA /* ListaProfissionaisPesquisaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51F9611239A831500BC6EAA /* ListaProfissionaisPesquisaViewController.swift */; };
 		A51F9616239A831500BC6EAA /* PerfilProfissionalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51F9612239A831500BC6EAA /* PerfilProfissionalViewController.swift */; };
 		A51F9617239A831500BC6EAA /* PinterestLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51F9613239A831500BC6EAA /* PinterestLayout.swift */; };
+		A53A7665239EC5E4009CB815 /* AjudaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53A7664239EC5E4009CB815 /* AjudaViewController.swift */; };
 		A5459D4023954BA20023D99D /* ProcurarProfissionaisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5459D3F23954BA20023D99D /* ProcurarProfissionaisViewController.swift */; };
 		A5459D4223954BAE0023D99D /* ProfissionaisMaisProcuradosCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5459D4123954BAE0023D99D /* ProfissionaisMaisProcuradosCollectionViewCell.swift */; };
 		A5459D492395527E0023D99D /* EXTViewArrendondada.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5459D482395527E0023D99D /* EXTViewArrendondada.swift */; };
@@ -92,6 +93,7 @@
 		A51F9611239A831500BC6EAA /* ListaProfissionaisPesquisaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListaProfissionaisPesquisaViewController.swift; path = somei/Controller/Profissionais/ListaProfissionaisPesquisaViewController.swift; sourceTree = SOURCE_ROOT; };
 		A51F9612239A831500BC6EAA /* PerfilProfissionalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PerfilProfissionalViewController.swift; path = somei/Controller/Profissionais/PerfilProfissionalViewController.swift; sourceTree = SOURCE_ROOT; };
 		A51F9613239A831500BC6EAA /* PinterestLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PinterestLayout.swift; path = somei/Controller/Profissionais/PinterestLayout.swift; sourceTree = SOURCE_ROOT; };
+		A53A7664239EC5E4009CB815 /* AjudaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AjudaViewController.swift; path = somei/Controller/Conta/AjudaViewController.swift; sourceTree = SOURCE_ROOT; };
 		A5459D3F23954BA20023D99D /* ProcurarProfissionaisViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProcurarProfissionaisViewController.swift; path = somei/Controller/Profissionais/ProcurarProfissionaisViewController.swift; sourceTree = SOURCE_ROOT; };
 		A5459D4123954BAE0023D99D /* ProfissionaisMaisProcuradosCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfissionaisMaisProcuradosCollectionViewCell.swift; path = somei/Controller/Profissionais/Cell/ProfissionaisMaisProcuradosCollectionViewCell.swift; sourceTree = SOURCE_ROOT; };
 		A5459D482395527E0023D99D /* EXTViewArrendondada.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EXTViewArrendondada.swift; path = somei/EXTViewArrendondada.swift; sourceTree = SOURCE_ROOT; };
@@ -227,6 +229,7 @@
 				39EDBDAE23994DA2008C03A8 /* CadastroViewController.swift */,
 				39EDBDB023994DC5008C03A8 /* CadastroDoisViewController.swift */,
 				39EDBDB223994DF0008C03A8 /* CadastroTresViewController.swift */,
+				A53A7664239EC5E4009CB815 /* AjudaViewController.swift */,
 			);
 			path = Conta;
 			sourceTree = "<group>";
@@ -497,6 +500,7 @@
 				A5459D4023954BA20023D99D /* ProcurarProfissionaisViewController.swift in Sources */,
 				A5C71D3A23993A63006B68DB /* NomeProfissionalTableViewCell.swift in Sources */,
 				A51F9614239A831500BC6EAA /* AdicionarComentarioViewController.swift in Sources */,
+				A53A7665239EC5E4009CB815 /* AjudaViewController.swift in Sources */,
 				397B835A239E98C800C86D2A /* ComoFuncionaViewController.swift in Sources */,
 				D1AFC84323994DC1009583B3 /* Categoria.swift in Sources */,
 				39BAA0D1239159470066B302 /* AppDelegate.swift in Sources */,
