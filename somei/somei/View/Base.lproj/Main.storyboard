@@ -304,7 +304,7 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.40000000000000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" name="AzulApp"/>
                         <constraints>
                             <constraint firstItem="vXW-nS-QQa" firstAttribute="height" secondItem="Sl1-DW-iyh" secondAttribute="height" id="6ob-Yu-HT9"/>
                             <constraint firstItem="vXW-nS-QQa" firstAttribute="top" secondItem="Sl1-DW-iyh" secondAttribute="bottom" constant="58" id="BUp-8J-5r8"/>
@@ -949,20 +949,18 @@
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f5S-qj-XqY">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="448"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoBranca" translatesAutoresizingMaskIntoConstraints="NO" id="lmW-HK-6J3">
-                                        <rect key="frame" x="83" y="-74.5" width="248" height="1283"/>
-                                    </imageView>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="lmW-HK-6J3" firstAttribute="centerX" secondItem="f5S-qj-XqY" secondAttribute="centerX" id="3EH-mg-qOL"/>
-                                    <constraint firstItem="lmW-HK-6J3" firstAttribute="width" secondItem="f5S-qj-XqY" secondAttribute="width" multiplier="0.6" id="8sT-17-us8"/>
-                                    <constraint firstItem="lmW-HK-6J3" firstAttribute="top" secondItem="f5S-qj-XqY" secondAttribute="top" constant="-74.5" id="laB-YH-MzY"/>
-                                </constraints>
                             </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="somei" translatesAutoresizingMaskIntoConstraints="NO" id="lmW-HK-6J3">
+                                <rect key="frame" x="107" y="300" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="lmW-HK-6J3" secondAttribute="height" multiplier="1:1" id="6gX-ti-2eK"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" name="AzulApp"/>
                         <constraints>
+                            <constraint firstItem="lmW-HK-6J3" firstAttribute="centerX" secondItem="6MS-WB-A2j" secondAttribute="centerX" id="0MM-Qv-klh"/>
+                            <constraint firstItem="lmW-HK-6J3" firstAttribute="width" secondItem="6MS-WB-A2j" secondAttribute="width" multiplier="0.483092" id="0NM-YE-V6A"/>
                             <constraint firstItem="f5S-qj-XqY" firstAttribute="width" secondItem="lJp-0m-hAy" secondAttribute="width" id="CQY-Wp-vnY"/>
                             <constraint firstItem="f5S-qj-XqY" firstAttribute="centerX" secondItem="oGv-9I-mcy" secondAttribute="centerX" id="Dja-dX-1fo"/>
                             <constraint firstItem="6MS-WB-A2j" firstAttribute="height" secondItem="lJp-0m-hAy" secondAttribute="height" multiplier="0.5" id="GQ1-u8-f5r"/>
@@ -970,6 +968,7 @@
                             <constraint firstItem="f5S-qj-XqY" firstAttribute="height" secondItem="lJp-0m-hAy" secondAttribute="height" multiplier="0.5" id="LcP-JX-x4f"/>
                             <constraint firstAttribute="top" secondItem="f5S-qj-XqY" secondAttribute="top" id="Rfp-PV-F1K"/>
                             <constraint firstAttribute="bottom" secondItem="6MS-WB-A2j" secondAttribute="bottom" id="Xiv-GB-sOL"/>
+                            <constraint firstItem="6MS-WB-A2j" firstAttribute="top" secondItem="lmW-HK-6J3" secondAttribute="bottom" constant="-52" id="rf8-wf-Kdh"/>
                             <constraint firstItem="6MS-WB-A2j" firstAttribute="centerX" secondItem="oGv-9I-mcy" secondAttribute="centerX" id="tQQ-7m-x6F"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="oGv-9I-mcy"/>
@@ -993,7 +992,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="encontreProfissionais-1" translatesAutoresizingMaskIntoConstraints="NO" id="O93-zo-IDx">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="812"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414.00000000000045" height="812"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JUZ-oa-rAa">
                                 <rect key="frame" x="0.0" y="537.5" width="414" height="358.5"/>
@@ -1223,7 +1222,7 @@ Negocie o orçamento do serviço  diretamente por telefone ou sms e feche o neg�
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avalieSolucao" translatesAutoresizingMaskIntoConstraints="NO" id="CmZ-1p-Xft">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="812"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414.00000000000045" height="812"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U3T-ku-4qL">
                                 <rect key="frame" x="0.0" y="537.5" width="414" height="358.5"/>
@@ -1349,11 +1348,16 @@ Depois disso é fácil encontrar qualquer serviço ou ser contratado para soluci
                                         <rect key="frame" x="33" y="616" width="348" height="41"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cTG-MG-k4X">
-                                                <rect key="frame" x="0.0" y="0.0" width="348" height="41"/>
+                                                <rect key="frame" x="0.0" y="-10" width="348" height="61"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="21"/>
                                                 <state key="normal" title="O que é, e  porque ser MEI?">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <segue destination="tf1-tI-IiJ" kind="show" id="kbu-zA-EPJ"/>
                                                 </connections>
@@ -1362,10 +1366,15 @@ Depois disso é fácil encontrar qualquer serviço ou ser contratado para soluci
                                         <color key="backgroundColor" name="AzulApp"/>
                                         <constraints>
                                             <constraint firstItem="cTG-MG-k4X" firstAttribute="centerX" secondItem="Mny-Y3-AjC" secondAttribute="centerX" id="K9k-Jh-rWq"/>
-                                            <constraint firstItem="cTG-MG-k4X" firstAttribute="height" secondItem="Mny-Y3-AjC" secondAttribute="height" id="gZN-wD-2Rb"/>
+                                            <constraint firstItem="cTG-MG-k4X" firstAttribute="height" secondItem="Mny-Y3-AjC" secondAttribute="height" multiplier="1.5" id="gZN-wD-2Rb"/>
                                             <constraint firstItem="cTG-MG-k4X" firstAttribute="width" secondItem="Mny-Y3-AjC" secondAttribute="width" id="nmA-C6-1yT"/>
                                             <constraint firstItem="cTG-MG-k4X" firstAttribute="centerY" secondItem="Mny-Y3-AjC" secondAttribute="centerY" id="zX2-jW-8Pb"/>
                                         </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -1450,6 +1459,11 @@ E as vantagens de se tornar um MEI são muitas:
                                                 <state key="normal" title="O que preciso para ser MEI?">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <segue destination="BUQ-er-nAA" kind="show" id="fQB-Zh-LIk"/>
                                                 </connections>
@@ -1462,6 +1476,11 @@ E as vantagens de se tornar um MEI são muitas:
                                             <constraint firstItem="NbX-Mf-GJN" firstAttribute="width" secondItem="QnZ-ec-oko" secondAttribute="width" multiplier="0.818966" id="erK-Lk-jKk"/>
                                             <constraint firstItem="NbX-Mf-GJN" firstAttribute="height" secondItem="QnZ-ec-oko" secondAttribute="height" multiplier="0.926829" id="hGY-ZL-w9i"/>
                                         </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -1566,6 +1585,11 @@ E as vantagens de se tornar um MEI são muitas:
                                             <constraint firstItem="XJO-3a-pRP" firstAttribute="height" secondItem="BCQ-0p-KPF" secondAttribute="height" multiplier="0.926829" id="elc-Cx-3O4"/>
                                             <constraint firstItem="XJO-3a-pRP" firstAttribute="centerY" secondItem="BCQ-0p-KPF" secondAttribute="centerY" id="era-33-86N"/>
                                         </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -1633,7 +1657,6 @@ E as vantagens de se tornar um MEI são muitas:
         <image name="avalieSolucao" width="1687" height="3000"/>
         <image name="checkmark" catalog="system" width="64" height="56"/>
         <image name="encontreProfissionais-1" width="1687" height="3000"/>
-        <image name="logoBranca" width="641.5" height="641.5"/>
         <image name="negocieServico" width="1687" height="3000"/>
         <image name="somei" width="153.5" height="147.5"/>
         <namedColor name="AzulApp">
