@@ -14,6 +14,9 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.navigationController?.navigationBar.transparentNavigationBar()
+        self.navigationController?.navigationBar.tintColor = UIColor.white
     }
 }
 

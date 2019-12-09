@@ -88,7 +88,7 @@
                                             <color key="titleColor" red="0.0" green="0.32008445260000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="Jj8-gC-4rb" kind="show" id="3Q3-OV-4DB"/>
+                                            <segue destination="rhZ-EX-tE1" kind="show" id="PJf-RJ-oF0"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -480,7 +480,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mv9-nZ-WBs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3541" y="-519"/>
+            <point key="canvasLocation" x="3542" y="-553"/>
         </scene>
         <!--UIProfissionais-->
         <scene sceneID="Jjk-MY-gbx">
@@ -951,7 +951,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="448"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoBranca" translatesAutoresizingMaskIntoConstraints="NO" id="lmW-HK-6J3">
-                                        <rect key="frame" x="83" y="-74.5" width="248" height="1283"/>
+                                        <rect key="frame" x="83" y="-74.5" width="248" height="641.5"/>
                                     </imageView>
                                 </subviews>
                                 <constraints>
@@ -993,7 +993,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="encontreProfissionais-1" translatesAutoresizingMaskIntoConstraints="NO" id="O93-zo-IDx">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="812"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414.00000000000045" height="812"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JUZ-oa-rAa">
                                 <rect key="frame" x="0.0" y="537.5" width="414" height="358.5"/>
@@ -1104,7 +1104,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="negocieServico" translatesAutoresizingMaskIntoConstraints="NO" id="3j2-oo-qcj">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="812"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414.00000000000045" height="812"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6d2-Zk-jgL">
                                 <rect key="frame" x="0.0" y="537.5" width="414" height="358.5"/>
@@ -1195,6 +1195,7 @@ Negocie o orçamento do serviço  diretamente por telefone ou sms e feche o neg�
         <!--Navigation Controller-->
         <scene sceneID="5F5-u2-KqS">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2RJ-pG-baV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vhc-Zh-V1L" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Cx2-zZ-13Q">
@@ -1206,7 +1207,6 @@ Negocie o orçamento do serviço  diretamente por telefone ou sms e feche o neg�
                         <segue destination="V0j-6q-5fr" kind="relationship" relationship="rootViewController" id="epK-et-jXe"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="2RJ-pG-baV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-306" y="-553"/>
         </scene>
@@ -1223,7 +1223,7 @@ Negocie o orçamento do serviço  diretamente por telefone ou sms e feche o neg�
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avalieSolucao" translatesAutoresizingMaskIntoConstraints="NO" id="CmZ-1p-Xft">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="812"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414.00000000000045" height="812"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U3T-ku-4qL">
                                 <rect key="frame" x="0.0" y="537.5" width="414" height="358.5"/>
@@ -1312,17 +1312,17 @@ Negocie o orçamento do serviço  diretamente por telefone ou sms e feche o neg�
             <point key="canvasLocation" x="3541" y="-1308"/>
         </scene>
         <!--Como Funciona View Controller-->
-        <scene sceneID="zcO-fN-2Pd">
+        <scene sceneID="vVo-ye-YQO">
             <objects>
-                <viewController id="8gf-e6-0R5" customClass="ComoFuncionaViewController" customModule="Somei" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="BYK-oF-76r">
+                <viewController id="kzN-J3-gVH" customClass="ComoFuncionaViewController" customModule="Somei" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pIo-ek-huC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k5O-GM-ovZ">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q55-Zm-f4u">
                                 <rect key="frame" x="0.0" y="179" width="414" height="717"/>
                                 <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="2Eb-Zz-jtJ">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="3N1-ia-uJ3">
                                         <rect key="frame" x="33" y="30" width="348" height="573.5"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <string key="text">Somei?
@@ -1345,42 +1345,42 @@ Depois disso é fácil encontrar qualquer serviço ou ser contratado para soluci
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mny-Y3-AjC">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="toy-jT-94B">
                                         <rect key="frame" x="33" y="616" width="348" height="41"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cTG-MG-k4X">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nik-ye-Ulb">
                                                 <rect key="frame" x="0.0" y="0.0" width="348" height="41"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="21"/>
                                                 <state key="normal" title="O que é, e  porque ser MEI?">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
-                                                    <segue destination="tf1-tI-IiJ" kind="show" id="kbu-zA-EPJ"/>
+                                                    <segue destination="0FK-pq-hNJ" kind="show" id="p5l-gD-DON"/>
                                                 </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" name="AzulApp"/>
                                         <constraints>
-                                            <constraint firstItem="cTG-MG-k4X" firstAttribute="centerX" secondItem="Mny-Y3-AjC" secondAttribute="centerX" id="K9k-Jh-rWq"/>
-                                            <constraint firstItem="cTG-MG-k4X" firstAttribute="height" secondItem="Mny-Y3-AjC" secondAttribute="height" id="gZN-wD-2Rb"/>
-                                            <constraint firstItem="cTG-MG-k4X" firstAttribute="width" secondItem="Mny-Y3-AjC" secondAttribute="width" id="nmA-C6-1yT"/>
-                                            <constraint firstItem="cTG-MG-k4X" firstAttribute="centerY" secondItem="Mny-Y3-AjC" secondAttribute="centerY" id="zX2-jW-8Pb"/>
+                                            <constraint firstItem="Nik-ye-Ulb" firstAttribute="centerX" secondItem="toy-jT-94B" secondAttribute="centerX" id="0rE-7U-ibB"/>
+                                            <constraint firstItem="Nik-ye-Ulb" firstAttribute="centerY" secondItem="toy-jT-94B" secondAttribute="centerY" id="Abi-NH-QFk"/>
+                                            <constraint firstItem="Nik-ye-Ulb" firstAttribute="height" secondItem="toy-jT-94B" secondAttribute="height" id="Kjj-j3-ZMC"/>
+                                            <constraint firstItem="Nik-ye-Ulb" firstAttribute="width" secondItem="toy-jT-94B" secondAttribute="width" id="N1g-tQ-Cxq"/>
                                         </constraints>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
-                                    <constraint firstItem="Mny-Y3-AjC" firstAttribute="width" secondItem="k5O-GM-ovZ" secondAttribute="width" multiplier="0.84" id="9dL-Oo-zYk"/>
-                                    <constraint firstItem="Mny-Y3-AjC" firstAttribute="firstBaseline" secondItem="2Eb-Zz-jtJ" secondAttribute="baseline" constant="12.5" symbolType="layoutAnchor" id="VLl-yz-KBW"/>
-                                    <constraint firstItem="2Eb-Zz-jtJ" firstAttribute="width" secondItem="k5O-GM-ovZ" secondAttribute="width" multiplier="0.84" id="gwc-De-qLc"/>
-                                    <constraint firstItem="Mny-Y3-AjC" firstAttribute="centerX" secondItem="k5O-GM-ovZ" secondAttribute="centerX" id="ijr-Zs-RFr"/>
-                                    <constraint firstItem="2Eb-Zz-jtJ" firstAttribute="centerX" secondItem="k5O-GM-ovZ" secondAttribute="centerX" id="jZ3-D0-ivy"/>
-                                    <constraint firstItem="2Eb-Zz-jtJ" firstAttribute="height" secondItem="k5O-GM-ovZ" secondAttribute="height" multiplier="0.8" id="oAW-jp-fZq"/>
-                                    <constraint firstAttribute="bottom" secondItem="Mny-Y3-AjC" secondAttribute="bottom" constant="60" id="qg8-M6-nAQ"/>
-                                    <constraint firstItem="2Eb-Zz-jtJ" firstAttribute="top" secondItem="k5O-GM-ovZ" secondAttribute="top" constant="30" id="yCw-FX-lYg"/>
+                                    <constraint firstItem="3N1-ia-uJ3" firstAttribute="top" secondItem="Q55-Zm-f4u" secondAttribute="top" constant="30" id="3gK-DZ-r5O"/>
+                                    <constraint firstItem="toy-jT-94B" firstAttribute="centerX" secondItem="Q55-Zm-f4u" secondAttribute="centerX" id="Aq5-xJ-zk1"/>
+                                    <constraint firstItem="3N1-ia-uJ3" firstAttribute="width" secondItem="Q55-Zm-f4u" secondAttribute="width" multiplier="0.84" id="Iyf-jN-QNR"/>
+                                    <constraint firstItem="3N1-ia-uJ3" firstAttribute="height" secondItem="Q55-Zm-f4u" secondAttribute="height" multiplier="0.8" id="Lkw-DO-PpK"/>
+                                    <constraint firstItem="3N1-ia-uJ3" firstAttribute="centerX" secondItem="Q55-Zm-f4u" secondAttribute="centerX" id="RBO-pt-AYG"/>
+                                    <constraint firstItem="toy-jT-94B" firstAttribute="firstBaseline" secondItem="3N1-ia-uJ3" secondAttribute="baseline" constant="12.5" symbolType="layoutAnchor" id="WlR-yl-h8m"/>
+                                    <constraint firstAttribute="bottom" secondItem="toy-jT-94B" secondAttribute="bottom" constant="60" id="p9b-ZR-uEQ"/>
+                                    <constraint firstItem="toy-jT-94B" firstAttribute="width" secondItem="Q55-Zm-f4u" secondAttribute="width" multiplier="0.84" id="z76-c6-4dn"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Como funciona?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ecf-vX-tYE">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Como funciona?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VeA-He-Oeg">
                                 <rect key="frame" x="33" y="120" width="348" height="42"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="35"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1389,39 +1389,39 @@ Depois disso é fácil encontrar qualquer serviço ou ser contratado para soluci
                         </subviews>
                         <color key="backgroundColor" name="AzulApp"/>
                         <constraints>
-                            <constraint firstItem="Ecf-vX-tYE" firstAttribute="trailing" secondItem="2Eb-Zz-jtJ" secondAttribute="trailing" id="QFk-RY-FeL"/>
-                            <constraint firstAttribute="bottom" secondItem="k5O-GM-ovZ" secondAttribute="bottom" id="T9y-nU-RFc"/>
-                            <constraint firstItem="k5O-GM-ovZ" firstAttribute="width" secondItem="BYK-oF-76r" secondAttribute="width" id="adz-lJ-HoP"/>
-                            <constraint firstItem="k5O-GM-ovZ" firstAttribute="height" secondItem="BYK-oF-76r" secondAttribute="height" multiplier="0.8" id="e9a-sU-H2G"/>
-                            <constraint firstItem="k5O-GM-ovZ" firstAttribute="centerX" secondItem="qa9-Pv-Wk4" secondAttribute="centerX" id="nNP-5C-Mdx"/>
-                            <constraint firstItem="Ecf-vX-tYE" firstAttribute="leading" secondItem="2Eb-Zz-jtJ" secondAttribute="leading" id="ucK-nz-wxX"/>
-                            <constraint firstItem="k5O-GM-ovZ" firstAttribute="firstBaseline" secondItem="Ecf-vX-tYE" secondAttribute="baseline" constant="25" symbolType="layoutAnchor" id="zMj-Nf-rGv"/>
+                            <constraint firstItem="Q55-Zm-f4u" firstAttribute="width" secondItem="pIo-ek-huC" secondAttribute="width" id="8tM-aM-lT6"/>
+                            <constraint firstItem="Q55-Zm-f4u" firstAttribute="firstBaseline" secondItem="VeA-He-Oeg" secondAttribute="baseline" constant="25" symbolType="layoutAnchor" id="Ji6-eX-6Ih"/>
+                            <constraint firstItem="VeA-He-Oeg" firstAttribute="leading" secondItem="3N1-ia-uJ3" secondAttribute="leading" id="VLO-6H-hqN"/>
+                            <constraint firstItem="Q55-Zm-f4u" firstAttribute="height" secondItem="pIo-ek-huC" secondAttribute="height" multiplier="0.8" id="bfR-Zn-SBl"/>
+                            <constraint firstAttribute="bottom" secondItem="Q55-Zm-f4u" secondAttribute="bottom" id="fXz-cd-C2q"/>
+                            <constraint firstItem="Q55-Zm-f4u" firstAttribute="centerX" secondItem="6v8-u6-OU4" secondAttribute="centerX" id="r7W-wx-LlB"/>
+                            <constraint firstItem="VeA-He-Oeg" firstAttribute="trailing" secondItem="3N1-ia-uJ3" secondAttribute="trailing" id="w59-tz-wr5"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="qa9-Pv-Wk4"/>
+                        <viewLayoutGuide key="safeArea" id="6v8-u6-OU4"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Gq0-2C-FmM"/>
+                    <navigationItem key="navigationItem" id="9rK-Ma-sHx"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="EFh-8h-nOk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="right" id="Gvd-cD-7of">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mjd-l4-VYk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="WRT-1U-BOC">
                     <connections>
-                        <segue destination="tf1-tI-IiJ" kind="show" id="6AB-De-c3s"/>
+                        <segue destination="0FK-pq-hNJ" kind="show" id="xiI-4s-dXv"/>
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="3536" y="171"/>
+            <point key="canvasLocation" x="2803" y="171"/>
         </scene>
         <!--Como Funciona View Controller-->
-        <scene sceneID="tR0-xC-yi0">
+        <scene sceneID="JFy-5B-aRw">
             <objects>
-                <viewController id="tf1-tI-IiJ" customClass="ComoFuncionaViewController" customModule="Somei" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="HLJ-3z-IVs">
+                <viewController id="0FK-pq-hNJ" customClass="ComoFuncionaViewController" customModule="Somei" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Gze-lv-Hd5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zqr-wA-9us">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aoD-EV-MMf">
                                 <rect key="frame" x="0.0" y="179" width="414" height="717"/>
                                 <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="HaX-KS-ObY">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="AT9-DG-orL">
                                         <rect key="frame" x="33" y="30" width="348" height="573.5"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <string key="text">Porque me tornar MEI?
@@ -1441,42 +1441,42 @@ E as vantagens de se tornar um MEI são muitas:
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QnZ-ec-oko">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pHo-lF-KeJ">
                                         <rect key="frame" x="33" y="616" width="348" height="41"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NbX-Mf-GJN">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VEo-7o-Aov">
                                                 <rect key="frame" x="31.5" y="1.5" width="285" height="38"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="21"/>
                                                 <state key="normal" title="O que preciso para ser MEI?">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
-                                                    <segue destination="BUQ-er-nAA" kind="show" id="fQB-Zh-LIk"/>
+                                                    <segue destination="j2X-nK-Zni" kind="show" id="83o-5d-wj9"/>
                                                 </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" name="AzulApp"/>
                                         <constraints>
-                                            <constraint firstItem="NbX-Mf-GJN" firstAttribute="centerX" secondItem="QnZ-ec-oko" secondAttribute="centerX" id="XB8-V4-VR4"/>
-                                            <constraint firstItem="NbX-Mf-GJN" firstAttribute="centerY" secondItem="QnZ-ec-oko" secondAttribute="centerY" id="Zue-rk-vs8"/>
-                                            <constraint firstItem="NbX-Mf-GJN" firstAttribute="width" secondItem="QnZ-ec-oko" secondAttribute="width" multiplier="0.818966" id="erK-Lk-jKk"/>
-                                            <constraint firstItem="NbX-Mf-GJN" firstAttribute="height" secondItem="QnZ-ec-oko" secondAttribute="height" multiplier="0.926829" id="hGY-ZL-w9i"/>
+                                            <constraint firstItem="VEo-7o-Aov" firstAttribute="width" secondItem="pHo-lF-KeJ" secondAttribute="width" multiplier="0.818966" id="FeS-c5-Cmy"/>
+                                            <constraint firstItem="VEo-7o-Aov" firstAttribute="height" secondItem="pHo-lF-KeJ" secondAttribute="height" multiplier="0.926829" id="MBi-ui-H6e"/>
+                                            <constraint firstItem="VEo-7o-Aov" firstAttribute="centerY" secondItem="pHo-lF-KeJ" secondAttribute="centerY" id="ecm-hg-TQS"/>
+                                            <constraint firstItem="VEo-7o-Aov" firstAttribute="centerX" secondItem="pHo-lF-KeJ" secondAttribute="centerX" id="wNh-eJ-pbv"/>
                                         </constraints>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
-                                    <constraint firstItem="QnZ-ec-oko" firstAttribute="centerX" secondItem="zqr-wA-9us" secondAttribute="centerX" id="Lo0-jP-yde"/>
-                                    <constraint firstItem="HaX-KS-ObY" firstAttribute="centerX" secondItem="zqr-wA-9us" secondAttribute="centerX" id="PGP-kn-eF4"/>
-                                    <constraint firstItem="HaX-KS-ObY" firstAttribute="width" secondItem="zqr-wA-9us" secondAttribute="width" multiplier="0.84" id="T2w-Iq-y3p"/>
-                                    <constraint firstItem="HaX-KS-ObY" firstAttribute="top" secondItem="zqr-wA-9us" secondAttribute="top" constant="30" id="TMe-Fr-RCd"/>
-                                    <constraint firstAttribute="bottom" secondItem="QnZ-ec-oko" secondAttribute="bottom" constant="60" id="cjQ-Ti-vxa"/>
-                                    <constraint firstItem="QnZ-ec-oko" firstAttribute="width" secondItem="zqr-wA-9us" secondAttribute="width" multiplier="0.84058" id="jDk-Gu-1nn"/>
-                                    <constraint firstItem="QnZ-ec-oko" firstAttribute="firstBaseline" secondItem="HaX-KS-ObY" secondAttribute="baseline" constant="12.5" symbolType="layoutAnchor" id="vU9-Iq-S34"/>
-                                    <constraint firstItem="HaX-KS-ObY" firstAttribute="height" secondItem="zqr-wA-9us" secondAttribute="height" multiplier="0.8" id="ypn-91-v3C"/>
+                                    <constraint firstItem="pHo-lF-KeJ" firstAttribute="firstBaseline" secondItem="AT9-DG-orL" secondAttribute="baseline" constant="12.5" symbolType="layoutAnchor" id="Bza-xO-rZC"/>
+                                    <constraint firstItem="AT9-DG-orL" firstAttribute="width" secondItem="aoD-EV-MMf" secondAttribute="width" multiplier="0.84" id="Jaj-L6-4Nu"/>
+                                    <constraint firstItem="pHo-lF-KeJ" firstAttribute="width" secondItem="aoD-EV-MMf" secondAttribute="width" multiplier="0.84058" id="MNi-9J-oYO"/>
+                                    <constraint firstItem="pHo-lF-KeJ" firstAttribute="centerX" secondItem="aoD-EV-MMf" secondAttribute="centerX" id="ZM0-Ix-nLW"/>
+                                    <constraint firstItem="AT9-DG-orL" firstAttribute="top" secondItem="aoD-EV-MMf" secondAttribute="top" constant="30" id="hyx-W5-T2L"/>
+                                    <constraint firstAttribute="bottom" secondItem="pHo-lF-KeJ" secondAttribute="bottom" constant="60" id="n6c-Dg-93K"/>
+                                    <constraint firstItem="AT9-DG-orL" firstAttribute="height" secondItem="aoD-EV-MMf" secondAttribute="height" multiplier="0.8" id="nkd-KS-mYg"/>
+                                    <constraint firstItem="AT9-DG-orL" firstAttribute="centerX" secondItem="aoD-EV-MMf" secondAttribute="centerX" id="oUh-LM-vHl"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Como funciona?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y9N-ZP-QUI">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Como funciona?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O7v-r6-FIr">
                                 <rect key="frame" x="33" y="120" width="348" height="42"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="35"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1486,42 +1486,42 @@ E as vantagens de se tornar um MEI são muitas:
                         <color key="backgroundColor" name="AzulApp"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="zqr-wA-9us" firstAttribute="height" secondItem="HLJ-3z-IVs" secondAttribute="height" multiplier="0.8" id="1ev-e5-5tP"/>
-                            <constraint firstAttribute="bottom" secondItem="zqr-wA-9us" secondAttribute="bottom" id="4hm-st-o4s"/>
-                            <constraint firstItem="zqr-wA-9us" firstAttribute="firstBaseline" secondItem="Y9N-ZP-QUI" secondAttribute="baseline" constant="25" symbolType="layoutAnchor" id="7rg-vi-869"/>
-                            <constraint firstItem="Y9N-ZP-QUI" firstAttribute="trailing" secondItem="HaX-KS-ObY" secondAttribute="trailing" id="D6x-X7-501"/>
-                            <constraint firstItem="zqr-wA-9us" firstAttribute="width" secondItem="HLJ-3z-IVs" secondAttribute="width" id="LbL-Eb-For"/>
-                            <constraint firstItem="zqr-wA-9us" firstAttribute="centerX" secondItem="cBN-my-Dxt" secondAttribute="centerX" id="nUl-Ry-woQ"/>
-                            <constraint firstItem="Y9N-ZP-QUI" firstAttribute="leading" secondItem="HaX-KS-ObY" secondAttribute="leading" id="xCq-Kw-qd9"/>
+                            <constraint firstItem="aoD-EV-MMf" firstAttribute="width" secondItem="Gze-lv-Hd5" secondAttribute="width" id="146-eO-VVj"/>
+                            <constraint firstItem="aoD-EV-MMf" firstAttribute="height" secondItem="Gze-lv-Hd5" secondAttribute="height" multiplier="0.8" id="6Qu-DO-n9o"/>
+                            <constraint firstItem="aoD-EV-MMf" firstAttribute="firstBaseline" secondItem="O7v-r6-FIr" secondAttribute="baseline" constant="25" symbolType="layoutAnchor" id="G3Q-Ok-Jbc"/>
+                            <constraint firstItem="O7v-r6-FIr" firstAttribute="trailing" secondItem="AT9-DG-orL" secondAttribute="trailing" id="PTB-tu-gZT"/>
+                            <constraint firstAttribute="bottom" secondItem="aoD-EV-MMf" secondAttribute="bottom" id="VwA-4C-iRp"/>
+                            <constraint firstItem="aoD-EV-MMf" firstAttribute="centerX" secondItem="Uz3-a5-5zF" secondAttribute="centerX" id="Y9J-v7-1TF"/>
+                            <constraint firstItem="O7v-r6-FIr" firstAttribute="leading" secondItem="AT9-DG-orL" secondAttribute="leading" id="ujH-LT-s7W"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="cBN-my-Dxt"/>
+                        <viewLayoutGuide key="safeArea" id="Uz3-a5-5zF"/>
                         <connections>
-                            <outletCollection property="gestureRecognizers" destination="4PW-sP-Kef" appends="YES" id="y5a-AM-SWz"/>
+                            <outletCollection property="gestureRecognizers" destination="fnn-kF-xvL" appends="YES" id="mC7-o1-Hoa"/>
                         </connections>
                     </view>
-                    <navigationItem key="navigationItem" id="PRM-Co-dvt"/>
+                    <navigationItem key="navigationItem" id="q5L-m4-BAF"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="mAV-27-Pby" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="right" id="4PW-sP-Kef">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r7C-sG-PTT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="fnn-kF-xvL">
                     <connections>
-                        <segue destination="BUQ-er-nAA" kind="show" id="Cmi-rF-NrF"/>
+                        <segue destination="j2X-nK-Zni" kind="show" id="ga2-6m-e6K"/>
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="4274" y="171"/>
+            <point key="canvasLocation" x="3541" y="171"/>
         </scene>
         <!--CadastroMEI View Controller-->
-        <scene sceneID="1Pd-vz-3AE">
+        <scene sceneID="WmN-UW-yJh">
             <objects>
-                <viewController id="BUQ-er-nAA" customClass="CadastroMEIViewController" customModule="Somei" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="QbJ-pV-epP">
+                <viewController id="j2X-nK-Zni" customClass="CadastroMEIViewController" customModule="Somei" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hnc-kp-K63">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ei4-En-oec">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s8i-mF-SVb">
                                 <rect key="frame" x="0.0" y="179" width="414" height="717"/>
                                 <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="OUJ-Ov-uKH">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="4yG-mU-Fgd">
                                         <rect key="frame" x="33" y="30" width="348" height="573.5"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <string key="text">O que preciso para fazer o meu cadastro como MEI? 
@@ -1545,42 +1545,42 @@ E as vantagens de se tornar um MEI são muitas:
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BCQ-0p-KPF">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lXS-B2-cSK">
                                         <rect key="frame" x="33" y="616" width="348" height="41"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XJO-3a-pRP">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VnN-g2-HpU">
                                                 <rect key="frame" x="31.5" y="1.5" width="285" height="38"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="21"/>
                                                 <state key="normal" title="Fazer meu cadastro MEI">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="linkCadastrarButton:" destination="BUQ-er-nAA" eventType="touchUpInside" id="StM-D4-sgw"/>
+                                                    <action selector="linkCadastrarButton:" destination="j2X-nK-Zni" eventType="touchUpInside" id="Yst-r5-uPQ"/>
                                                 </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" name="AzulApp"/>
                                         <constraints>
-                                            <constraint firstItem="XJO-3a-pRP" firstAttribute="width" secondItem="BCQ-0p-KPF" secondAttribute="width" multiplier="0.818966" id="6cz-Qn-vYH"/>
-                                            <constraint firstItem="XJO-3a-pRP" firstAttribute="centerX" secondItem="BCQ-0p-KPF" secondAttribute="centerX" id="DiT-BI-KU1"/>
-                                            <constraint firstItem="XJO-3a-pRP" firstAttribute="height" secondItem="BCQ-0p-KPF" secondAttribute="height" multiplier="0.926829" id="elc-Cx-3O4"/>
-                                            <constraint firstItem="XJO-3a-pRP" firstAttribute="centerY" secondItem="BCQ-0p-KPF" secondAttribute="centerY" id="era-33-86N"/>
+                                            <constraint firstItem="VnN-g2-HpU" firstAttribute="width" secondItem="lXS-B2-cSK" secondAttribute="width" multiplier="0.818966" id="1iZ-hX-wYt"/>
+                                            <constraint firstItem="VnN-g2-HpU" firstAttribute="centerX" secondItem="lXS-B2-cSK" secondAttribute="centerX" id="hHK-ij-e2q"/>
+                                            <constraint firstItem="VnN-g2-HpU" firstAttribute="centerY" secondItem="lXS-B2-cSK" secondAttribute="centerY" id="mM7-f0-fj0"/>
+                                            <constraint firstItem="VnN-g2-HpU" firstAttribute="height" secondItem="lXS-B2-cSK" secondAttribute="height" multiplier="0.926829" id="seh-LY-rUV"/>
                                         </constraints>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
-                                    <constraint firstItem="BCQ-0p-KPF" firstAttribute="width" secondItem="ei4-En-oec" secondAttribute="width" multiplier="0.84058" id="6bO-bb-A0x"/>
-                                    <constraint firstItem="OUJ-Ov-uKH" firstAttribute="height" secondItem="ei4-En-oec" secondAttribute="height" multiplier="0.8" id="8Vr-vY-DhP"/>
-                                    <constraint firstItem="OUJ-Ov-uKH" firstAttribute="top" secondItem="ei4-En-oec" secondAttribute="top" constant="30" id="ACE-5h-YUo"/>
-                                    <constraint firstItem="BCQ-0p-KPF" firstAttribute="centerX" secondItem="ei4-En-oec" secondAttribute="centerX" id="FNe-kY-bkz"/>
-                                    <constraint firstAttribute="bottom" secondItem="BCQ-0p-KPF" secondAttribute="bottom" constant="60" id="c51-kn-vTj"/>
-                                    <constraint firstItem="OUJ-Ov-uKH" firstAttribute="centerX" secondItem="ei4-En-oec" secondAttribute="centerX" id="ie5-PQ-6pU"/>
-                                    <constraint firstItem="OUJ-Ov-uKH" firstAttribute="width" secondItem="ei4-En-oec" secondAttribute="width" multiplier="0.84" id="imK-rR-QaH"/>
-                                    <constraint firstItem="BCQ-0p-KPF" firstAttribute="firstBaseline" secondItem="OUJ-Ov-uKH" secondAttribute="baseline" constant="12.5" symbolType="layoutAnchor" id="ssq-Bg-r4B"/>
+                                    <constraint firstItem="4yG-mU-Fgd" firstAttribute="height" secondItem="s8i-mF-SVb" secondAttribute="height" multiplier="0.8" id="0UC-2z-5sz"/>
+                                    <constraint firstItem="4yG-mU-Fgd" firstAttribute="width" secondItem="s8i-mF-SVb" secondAttribute="width" multiplier="0.84" id="D5U-z0-ZX8"/>
+                                    <constraint firstItem="4yG-mU-Fgd" firstAttribute="top" secondItem="s8i-mF-SVb" secondAttribute="top" constant="30" id="LSD-hA-WiE"/>
+                                    <constraint firstItem="lXS-B2-cSK" firstAttribute="firstBaseline" secondItem="4yG-mU-Fgd" secondAttribute="baseline" constant="12.5" symbolType="layoutAnchor" id="Lrg-w1-SDd"/>
+                                    <constraint firstAttribute="bottom" secondItem="lXS-B2-cSK" secondAttribute="bottom" constant="60" id="TqH-Ce-FYN"/>
+                                    <constraint firstItem="lXS-B2-cSK" firstAttribute="centerX" secondItem="s8i-mF-SVb" secondAttribute="centerX" id="W1y-ke-jOe"/>
+                                    <constraint firstItem="4yG-mU-Fgd" firstAttribute="centerX" secondItem="s8i-mF-SVb" secondAttribute="centerX" id="hNR-H4-rvU"/>
+                                    <constraint firstItem="lXS-B2-cSK" firstAttribute="width" secondItem="s8i-mF-SVb" secondAttribute="width" multiplier="0.84058" id="nbU-Ta-OAp"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Como funciona?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Fu-lA-Yfr">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Como funciona?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pp4-rS-d1k">
                                 <rect key="frame" x="33" y="120" width="348" height="42"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="35"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1589,44 +1589,44 @@ E as vantagens de se tornar um MEI são muitas:
                         </subviews>
                         <color key="backgroundColor" name="AzulApp"/>
                         <constraints>
-                            <constraint firstItem="ei4-En-oec" firstAttribute="centerX" secondItem="xhj-Yl-iCQ" secondAttribute="centerX" id="Esm-aQ-NVg"/>
-                            <constraint firstItem="ei4-En-oec" firstAttribute="firstBaseline" secondItem="0Fu-lA-Yfr" secondAttribute="baseline" constant="25" symbolType="layoutAnchor" id="Q9I-fe-7tN"/>
-                            <constraint firstItem="0Fu-lA-Yfr" firstAttribute="leading" secondItem="OUJ-Ov-uKH" secondAttribute="leading" id="a5w-DP-Yxu"/>
-                            <constraint firstItem="ei4-En-oec" firstAttribute="height" secondItem="QbJ-pV-epP" secondAttribute="height" multiplier="0.8" id="c7s-se-5WS"/>
-                            <constraint firstItem="0Fu-lA-Yfr" firstAttribute="trailing" secondItem="OUJ-Ov-uKH" secondAttribute="trailing" id="cIN-go-dvz"/>
-                            <constraint firstItem="ei4-En-oec" firstAttribute="width" secondItem="QbJ-pV-epP" secondAttribute="width" id="gmV-fC-JiZ"/>
-                            <constraint firstAttribute="bottom" secondItem="ei4-En-oec" secondAttribute="bottom" id="zWz-yj-Rhv"/>
+                            <constraint firstItem="s8i-mF-SVb" firstAttribute="firstBaseline" secondItem="pp4-rS-d1k" secondAttribute="baseline" constant="25" symbolType="layoutAnchor" id="N1v-Rs-qae"/>
+                            <constraint firstItem="s8i-mF-SVb" firstAttribute="width" secondItem="hnc-kp-K63" secondAttribute="width" id="RJS-gL-VpS"/>
+                            <constraint firstItem="s8i-mF-SVb" firstAttribute="height" secondItem="hnc-kp-K63" secondAttribute="height" multiplier="0.8" id="Y6o-vr-p9s"/>
+                            <constraint firstAttribute="bottom" secondItem="s8i-mF-SVb" secondAttribute="bottom" id="mJg-td-w61"/>
+                            <constraint firstItem="pp4-rS-d1k" firstAttribute="trailing" secondItem="4yG-mU-Fgd" secondAttribute="trailing" id="tc6-M5-bWf"/>
+                            <constraint firstItem="pp4-rS-d1k" firstAttribute="leading" secondItem="4yG-mU-Fgd" secondAttribute="leading" id="x3U-TL-8ek"/>
+                            <constraint firstItem="s8i-mF-SVb" firstAttribute="centerX" secondItem="zCy-Su-3hs" secondAttribute="centerX" id="xwe-r2-7j4"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="xhj-Yl-iCQ"/>
+                        <viewLayoutGuide key="safeArea" id="zCy-Su-3hs"/>
                     </view>
-                    <navigationItem key="navigationItem" id="dLn-Ea-V0A"/>
+                    <navigationItem key="navigationItem" id="uiq-XC-rP1"/>
                     <connections>
-                        <outlet property="cadastrarMEIbutton" destination="XJO-3a-pRP" id="FvY-f5-Ucj"/>
+                        <outlet property="cadastrarMEIbutton" destination="VnN-g2-HpU" id="dyh-Xc-KeC"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="bmT-r9-H9m" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="right" id="B8z-2g-84e"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hh7-yd-OJf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="tcF-8o-kOp"/>
             </objects>
-            <point key="canvasLocation" x="5019" y="171"/>
+            <point key="canvasLocation" x="4286" y="171"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="sd0-YE-pAR">
+        <scene sceneID="8Sp-tW-mWT">
             <objects>
-                <navigationController storyboardIdentifier="UIComoFunciona" automaticallyAdjustsScrollViewInsets="NO" id="Jj8-gC-4rb" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="UIComoFunciona" automaticallyAdjustsScrollViewInsets="NO" id="rhZ-EX-tE1" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="r2c-a4-yV7"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="vp5-RW-8z5">
+                    <navigationItem key="navigationItem" id="cGN-JA-1Xn"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="1JI-JT-iRS">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="8gf-e6-0R5" kind="relationship" relationship="rootViewController" id="fkj-l7-zSt"/>
+                        <segue destination="kzN-J3-gVH" kind="relationship" relationship="rootViewController" id="8tc-AL-cAF"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ppa-NG-TJf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WBw-gt-eZ3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2778" y="171"/>
+            <point key="canvasLocation" x="2045" y="171"/>
         </scene>
     </scenes>
     <resources>
@@ -1641,8 +1641,8 @@ E as vantagens de se tornar um MEI são muitas:
         </namedColor>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Cmi-rF-NrF"/>
-        <segue reference="kbu-zA-EPJ"/>
+        <segue reference="ga2-6m-e6K"/>
+        <segue reference="p5l-gD-DON"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" name="AzulApp"/>
 </document>

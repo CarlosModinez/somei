@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import CoreLocation
 
 class Endereco {
     
@@ -30,8 +31,11 @@ class Endereco {
         
         self.latitude = 0
         self.longitude = 0
+        
+        self.getLonLat()
     }
     
+    /*
     func getLonLat(){
         //get longidute e latitude
         let enderecoCompleto = "\(self.numero)+\(self.logradouro),+\(self.cidade)".map({(c) -> Character in
@@ -57,6 +61,13 @@ class Endereco {
         }
         task.resume()
         
+    }
+ */
+    
+    func getLonLat(){
+        let loc = MapaController.instance.getlatLon(endereco: self)
+        self.longitude = (loc?.coordinate.longitude) ?? 0
+        self.latitude = (loc?.coordinate.latitude) ?? 0
     }
     
     static func mapToObect(dct : [String:Any]) -> Endereco {

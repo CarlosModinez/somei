@@ -22,7 +22,7 @@ class DAOFireBAseUsuario {
             } else {
                 
                 for document in querySnapshot!.documents {
-                    let usuario = Usuario.mapToObject(dct: document.data())
+                    let usuario = Usuario.mapToObject(userData: document.data())
                     usuarios.append(usuario)
                 }
             }
@@ -43,7 +43,7 @@ class DAOFireBAseUsuario {
             } else {
                 
                 for document in querySnapshot!.documents {
-                    usuario = Usuario.mapToObject(dct: document.data())
+                    usuario = Usuario.mapToObject(userData: document.data())
                 }
             }
             completion(usuario)
