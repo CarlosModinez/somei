@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="YIu-en-lpk">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vhc-Zh-V1L">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
@@ -11,7 +11,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="5zL-DY-rP7">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="KaN-Mv-aop" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="tabBar" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="KaN-Mv-aop" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="q2M-aA-R2v"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="mdz-z0-gpw">
@@ -109,7 +109,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A ponte entre o profissional indepedente e o cliente" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="05r-94-BPZ">
-                                <rect key="frame" x="57" y="84" width="300" height="160"/>
+                                <rect key="frame" x="57" y="128" width="300" height="160"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="gJO-pY-ysE"/>
                                     <constraint firstAttribute="width" secondItem="05r-94-BPZ" secondAttribute="height" multiplier="15:8" id="i28-VF-xaJ"/>
@@ -153,11 +153,11 @@
             <objects>
                 <viewController storyboardIdentifier="loginViewController" id="41T-mO-wgf" customClass="LoginViewController" customModule="Somei" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ToT-j2-eUf">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SjY-1z-SI8">
-                                <rect key="frame" x="0.0" y="175" width="414" height="673.5"/>
+                                <rect key="frame" x="0.0" y="188.5" width="414" height="716.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -169,7 +169,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2r1-ow-Uyx">
-                                <rect key="frame" x="34.5" y="175" width="345" height="664"/>
+                                <rect key="frame" x="34.5" y="188.5" width="345" height="707"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="E-mail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xwz-31-ISW">
                                         <rect key="frame" x="0.0" y="118" width="60.5" height="24"/>
@@ -243,7 +243,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vXW-nS-QQa">
-                                <rect key="frame" x="34.5" y="497" width="345" height="40"/>
+                                <rect key="frame" x="34.5" y="510.5" width="345" height="40"/>
                                 <color key="backgroundColor" name="AzulApp"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="vJr-aY-gUz"/>
@@ -262,7 +262,7 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W7S-Ul-AGB" userLabel="TitleView">
-                                <rect key="frame" x="34" y="76" width="215" height="76"/>
+                                <rect key="frame" x="34" y="108" width="215" height="76"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Faça" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6sX-PC-N0h">
                                         <rect key="frame" x="0.0" y="0.0" width="66" height="39"/>
@@ -853,7 +853,7 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="y8p-Eu-DOL"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="DNQ-WL-u2e">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -1212,15 +1212,18 @@ Negocie o orçamento do serviço  diretamente por telefone ou sms e feche o neg�
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="YIu-en-lpk" kind="relationship" relationship="rootViewController" id="bzL-zs-Pqa"/>
+                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2RJ-pG-baV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-306" y="-553"/>
         </scene>
-        <!--View Controller-->
+        <!--Final Onboarding-->
         <scene sceneID="cbl-r4-BH7">
             <objects>
-                <viewController storyboardIdentifier="elfo3" useStoryboardIdentifierAsRestorationIdentifier="YES" id="OCs-gI-pEC" customClass="ViewController" customModule="Somei" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="elfo3" useStoryboardIdentifierAsRestorationIdentifier="YES" id="OCs-gI-pEC" customClass="finalOnboarding" customModule="Somei" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xci-zh-1Er">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1258,7 +1261,7 @@ Negocie o orçamento do serviço  diretamente por telefone ou sms e feche o neg�
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
-                                                    <segue destination="KaN-Mv-aop" kind="show" id="FXH-Iv-Avh"/>
+                                                    <action selector="passarTela:" destination="OCs-gI-pEC" eventType="touchUpInside" id="eYG-dJ-YNQ"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -1323,14 +1326,14 @@ Negocie o orçamento do serviço  diretamente por telefone ou sms e feche o neg�
             <objects>
                 <viewController id="8gf-e6-0R5" customClass="ComoFuncionaViewController" customModule="Somei" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BYK-oF-76r">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k5O-GM-ovZ">
-                                <rect key="frame" x="0.0" y="168.5" width="414" height="673.5"/>
+                                <rect key="frame" x="0.0" y="179" width="414" height="717"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="2Eb-Zz-jtJ">
-                                        <rect key="frame" x="33" y="30" width="348" height="539"/>
+                                        <rect key="frame" x="33" y="30" width="348" height="573.5"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <string key="text">Somei?
 
@@ -1353,10 +1356,10 @@ Depois disso é fácil encontrar qualquer serviço ou ser contratado para soluci
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mny-Y3-AjC">
-                                        <rect key="frame" x="33" y="581.5" width="348" height="32"/>
+                                        <rect key="frame" x="33" y="616" width="348" height="41"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cTG-MG-k4X">
-                                                <rect key="frame" x="0.0" y="-8.5" width="348" height="48.5"/>
+                                                <rect key="frame" x="0.0" y="-10" width="348" height="61"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="21"/>
                                                 <state key="normal" title="O que é, e  porque ser MEI?">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1398,7 +1401,7 @@ Depois disso é fácil encontrar qualquer serviço ou ser contratado para soluci
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Como funciona?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ecf-vX-tYE">
-                                <rect key="frame" x="33" y="109.5" width="348" height="42"/>
+                                <rect key="frame" x="33" y="120" width="348" height="42"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="35"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -1432,14 +1435,14 @@ Depois disso é fácil encontrar qualquer serviço ou ser contratado para soluci
             <objects>
                 <viewController id="tf1-tI-IiJ" customClass="ComoFuncionaViewController" customModule="Somei" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HLJ-3z-IVs">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zqr-wA-9us">
-                                <rect key="frame" x="0.0" y="168.5" width="414" height="673.5"/>
+                                <rect key="frame" x="0.0" y="179" width="414" height="717"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="HaX-KS-ObY">
-                                        <rect key="frame" x="33" y="30" width="348" height="539"/>
+                                        <rect key="frame" x="33" y="30" width="348" height="573.5"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <string key="text">Porque me tornar MEI?
 
@@ -1459,10 +1462,10 @@ E as vantagens de se tornar um MEI são muitas:
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QnZ-ec-oko">
-                                        <rect key="frame" x="33" y="581.5" width="348" height="32"/>
+                                        <rect key="frame" x="33" y="616" width="348" height="41"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NbX-Mf-GJN">
-                                                <rect key="frame" x="31.5" y="1" width="285" height="30"/>
+                                                <rect key="frame" x="31.5" y="1.5" width="285" height="38"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="21"/>
                                                 <state key="normal" title="O que preciso para ser MEI?">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1504,7 +1507,7 @@ E as vantagens de se tornar um MEI são muitas:
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Como funciona?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y9N-ZP-QUI">
-                                <rect key="frame" x="33" y="109.5" width="348" height="42"/>
+                                <rect key="frame" x="33" y="120" width="348" height="42"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="35"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -1542,14 +1545,14 @@ E as vantagens de se tornar um MEI são muitas:
             <objects>
                 <viewController id="BUQ-er-nAA" customClass="CadastroMEIViewController" customModule="Somei" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QbJ-pV-epP">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ei4-En-oec">
-                                <rect key="frame" x="0.0" y="168.5" width="414" height="673.5"/>
+                                <rect key="frame" x="0.0" y="179" width="414" height="717"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="OUJ-Ov-uKH">
-                                        <rect key="frame" x="33" y="30" width="348" height="539"/>
+                                        <rect key="frame" x="33" y="30" width="348" height="573.5"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <string key="text">O que preciso para fazer o meu cadastro como MEI? 
 
@@ -1573,10 +1576,10 @@ E as vantagens de se tornar um MEI são muitas:
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BCQ-0p-KPF">
-                                        <rect key="frame" x="33" y="581.5" width="348" height="32"/>
+                                        <rect key="frame" x="33" y="616" width="348" height="41"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XJO-3a-pRP">
-                                                <rect key="frame" x="31.5" y="1" width="285" height="30"/>
+                                                <rect key="frame" x="31.5" y="1.5" width="285" height="38"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="21"/>
                                                 <state key="normal" title="Fazer meu cadastro MEI">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1613,7 +1616,7 @@ E as vantagens de se tornar um MEI são muitas:
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Como funciona?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Fu-lA-Yfr">
-                                <rect key="frame" x="33" y="109.5" width="348" height="42"/>
+                                <rect key="frame" x="33" y="120" width="348" height="42"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="35"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -1648,7 +1651,7 @@ E as vantagens de se tornar um MEI são muitas:
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="r2c-a4-yV7"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="vp5-RW-8z5">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

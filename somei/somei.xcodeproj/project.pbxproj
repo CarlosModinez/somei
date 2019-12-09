@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		037A3B54239A90F900708803 /* Ext_String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037A3B53239A90F900708803 /* Ext_String.swift */; };
 		038119D0239EE8D8004D6982 /* elfoPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038119CF239EE8D8004D6982 /* elfoPageViewController.swift */; };
+		038119D2239EF6CF004D6982 /* finalOnboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038119D1239EF6CF004D6982 /* finalOnboarding.swift */; };
 		03DD581D2399C9BF006FF392 /* MapaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DD581C2399C9BE006FF392 /* MapaController.swift */; };
 		3911CA59239159E20027B1FF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3911CA58239159E20027B1FF /* GoogleService-Info.plist */; };
 		397B835A239E98C800C86D2A /* ComoFuncionaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397B8359239E98C800C86D2A /* ComoFuncionaViewController.swift */; };
@@ -70,6 +71,7 @@
 /* Begin PBXFileReference section */
 		037A3B53239A90F900708803 /* Ext_String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Ext_String.swift; path = somei/Controller/Ext_String.swift; sourceTree = SOURCE_ROOT; };
 		038119CF239EE8D8004D6982 /* elfoPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = elfoPageViewController.swift; path = somei/Controller/elfoPageViewController.swift; sourceTree = SOURCE_ROOT; };
+		038119D1239EF6CF004D6982 /* finalOnboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = finalOnboarding.swift; path = somei/Controller/finalOnboarding.swift; sourceTree = SOURCE_ROOT; };
 		03DD581C2399C9BE006FF392 /* MapaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MapaController.swift; path = somei/Controller/MapaController.swift; sourceTree = SOURCE_ROOT; };
 		08B2B67085EA8A969AA28D9F /* Pods-Somei.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Somei.debug.xcconfig"; path = "Target Support Files/Pods-Somei/Pods-Somei.debug.xcconfig"; sourceTree = "<group>"; };
 		21E34BE9621ABE1E25C25B78 /* Pods_Somei.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Somei.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -188,6 +190,7 @@
 				39EDBDAD23994957008C03A8 /* Conta */,
 				397B8359239E98C800C86D2A /* ComoFuncionaViewController.swift */,
 				038119CF239EE8D8004D6982 /* elfoPageViewController.swift */,
+				038119D1239EF6CF004D6982 /* finalOnboarding.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -505,6 +508,7 @@
 				A5C71D3A23993A63006B68DB /* NomeProfissionalTableViewCell.swift in Sources */,
 				A51F9614239A831500BC6EAA /* AdicionarComentarioViewController.swift in Sources */,
 				A53A7665239EC5E4009CB815 /* AjudaViewController.swift in Sources */,
+				038119D2239EF6CF004D6982 /* finalOnboarding.swift in Sources */,
 				397B835A239E98C800C86D2A /* ComoFuncionaViewController.swift in Sources */,
 				D1AFC84323994DC1009583B3 /* Categoria.swift in Sources */,
 				39BAA0D1239159470066B302 /* AppDelegate.swift in Sources */,

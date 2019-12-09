@@ -65,4 +65,63 @@ class DAOFireBaseCategorias {
             
     }
     
+    static func loadCategorias(completion: @escaping (([String]?) -> ())) -> [String]? {
+           
+        let db = Firestore.firestore()
+        var categorias : [String] = []
+        
+        db.collection("codigoMEI").getDocuments() { (querySnapshot, err) in
+            if let err =  err {
+                print("Error: \(err)")
+            } else {
+                
+                for document in querySnapshot!.documents {
+                    let categoria = document.data()["traducao"] as? String
+                    if(!categorias.contains(categoria!)){
+                        categorias.append(categoria!)
+                    }
+                }
+            }
+            completion(categorias.sorted())
+        }
+        
+        return categorias.sorted()
+    }
+    
+    static func saveCategoriaCadastrada(_ categoria : String) {
+        let db = Firestore.firestore()
+        
+        var userRef: DocumentReference? = nil
+        let userData: [String: Any] = [categoria:1]
+        
+        userRef = db.collection("categoriasCadastradas").addDocument(data: userData) { err in
+            if let err = err {
+                print("Error: \(err)")
+            } else {
+                print(userRef!.documentID)
+            }
+        }
+    }
+    
+    static func categoriaJaCadastrada(categoria : String, completion: @escaping ((Bool?) -> ())) -> Bool? {
+        print("verificar se categoria ja existe")
+        
+        let db = Firestore.firestore()
+        var existe : Bool = false
+        
+        db.collection("codigoMEI").whereField("traducao", isEqualTo: categoria).getDocuments() { (querySnapshot, err) in
+            if let err =  err {
+                print("Error: \(err)")
+            } else {
+                
+                for _ in querySnapshot!.documents {
+                    existe = true
+                    }
+                }
+            completion(existe)
+        }
+        return existe
+    }
+    
+    
 }

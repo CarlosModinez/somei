@@ -19,7 +19,7 @@ class InicioViewController: UIViewController {
     
     @IBAction func contratar () {
         let vc = (storyboard?.instantiateViewController(withIdentifier: "elfos"))!
-          present(vc, animated: true, completion: nil)
+        navigationController?.setViewControllers([vc], animated: true)
         
     }
     

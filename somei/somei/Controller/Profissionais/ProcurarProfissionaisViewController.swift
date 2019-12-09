@@ -17,9 +17,7 @@ class ProcurarProfissionaisViewController: UIViewController, UICollectionViewDel
     
     // MARK: Variáveis
     //Vetor com os elementos da tableView
-    let categorias = [
-        "designer", "eletricista", "fotógrafo", "Traficante de drogas ilícitas no mercado internacional", "Jose", "Aquele amigo chato do rolê", "Cristiano", "Restaurador de obras arte", "Animador de festas adultas", "Ana", "Comerciante de bicicletas e triciculos", "Conrado", "Motorista de aplicativo", "Carlinhos",
-    ]
+    var categorias : [String] = []
     
     // Controller da search bar
     /*
@@ -50,6 +48,15 @@ class ProcurarProfissionaisViewController: UIViewController, UICollectionViewDel
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //let semaphore = DispatchSemaphore(value: 0)
+        DAOFireBaseCategorias.loadCategorias(completion: { (cat) in
+            cat?.forEach({ (s) in
+                self.categorias.append(s)
+            })
+            self.collectionView.reloadData()
+        })
+        //print("")
         
         collectionView.dataSource = self
         collectionView.delegate = self
@@ -185,9 +192,8 @@ class ProcurarProfissionaisViewController: UIViewController, UICollectionViewDel
         v.layer.shadowRadius = blur
         v.layer.shadowColor = UIColor.lightGray.cgColor
         v.layer.shadowOpacity = opacidade
-        
     }
-
+    
     /*
     // MARK: - Navigation
 
