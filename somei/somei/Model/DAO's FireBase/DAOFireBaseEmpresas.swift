@@ -67,11 +67,11 @@ class DAOFireBaseEMpresas {
         var empresaData: [String : Any] = [:]
         
         empresaData = empresa.mapToDictionary()
-        empresaRef = db.collection("empresas").addDocument(data: empresaData) { err in
+        
+        
+        db.collection("empresas").document(empresa.cnpj).setData(empresaData) { (err) in
             if let err = err {
                 print("Error: \(err)")
-            } else {
-                print(empresaRef!.documentID)
             }
         }
     }

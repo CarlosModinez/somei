@@ -130,6 +130,11 @@ class MapaController {
             do{
                 let json = try JSONSerialization.jsonObject(with: data, options: .mutableLeaves) as? [Dictionary<String, AnyObject>]
                 
+                guard json!.count > 0 else {
+                    semaphore.signal()
+                    return
+                }
+                
                 let lon = json?[0]["lon"] as? String
                 let lat = json?[0]["lat"] as? String
 
