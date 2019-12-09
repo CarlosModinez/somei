@@ -309,7 +309,7 @@ E as vantagens de se tornar um MEI são muitas:
         <!--Navigation Controller-->
         <scene sceneID="B0r-wo-Eae">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cGk-Sn-eUJ" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="UIComoFunciona" automaticallyAdjustsScrollViewInsets="NO" id="cGk-Sn-eUJ" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Ci5-m7-emy">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>

@@ -86,6 +86,9 @@
                                         <state key="normal" title="Como funciona?">
                                             <color key="titleColor" red="0.0" green="0.32008445260000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="IPb-35-Qoc" kind="show" id="B1D-IN-iYh"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -334,6 +337,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X9s-33-QR4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1867" y="123"/>
+        </scene>
+        <!--UIComoFunciona-->
+        <scene sceneID="rX0-p1-9JG">
+            <objects>
+                <viewControllerPlaceholder storyboardName="comoFunciona" referencedIdentifier="UIComoFunciona" id="IPb-35-Qoc" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="JjG-sg-Zyr"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cmK-8Y-GFu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2220" y="123"/>
         </scene>
         <!--UIMinhaConta-->
         <scene sceneID="LdV-Tq-jCN">
