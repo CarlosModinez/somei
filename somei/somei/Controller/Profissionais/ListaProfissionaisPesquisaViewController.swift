@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import CoreLocation
 
 class ListaProfissionaisPesquisaViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -148,14 +147,8 @@ class ListaProfissionaisPesquisaViewController: UIViewController, UITableViewDel
         ]
         
         
-        profissionais.sort { (a, b) -> Bool in
-            let localA = CLLocation(latitude: a.endereco.latitude, longitude: a.endereco.longitude)
-            let distA  = MapaController.instance.getDistanciaKm(ate: localA)
-            let localB = CLLocation(latitude: b.endereco.latitude, longitude: b.endereco.longitude)
-            let distB  = MapaController.instance.getDistanciaKm(ate: localB)
-            return distA > distB
-        }
-//        let quote = "Profissionais mais próximos:"
+        
+        let quote = "Profissionais mais próximos:"
 
         // Texto normal
         // let xString = NSMutableAttributedString(string: "mais próximos:")
@@ -217,13 +210,13 @@ class ListaProfissionaisPesquisaViewController: UIViewController, UITableViewDel
         // TODO: pegar as coordenadas
         var distancia : String
         
-        let local = CLLocation(latitude: prof.endereco.latitude, longitude: prof.endereco.longitude)
-        let dist  = MapaController.instance.getDistanciaKm(ate: local)
-        if dist != -1 {
-            
+
+        if let local = MapaController.instance.getlatLon(endereco: prof.endereco) {
+            distancia = String(format: "%.1f", MapaController.instance.getDistanciaKm(ate: local))
         }
-        distancia = String(format: "%.1f", dist)
-        
+        else {
+            distancia = "--"
+        }
         
         cell.lblNomeProfissional.text = nome
         cell.lblDistanciaProfissional.text = distancia + " km"
