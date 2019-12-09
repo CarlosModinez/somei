@@ -1195,7 +1195,6 @@ Negocie o orçamento do serviço  diretamente por telefone ou sms e feche o neg�
         <!--Navigation Controller-->
         <scene sceneID="5F5-u2-KqS">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="2RJ-pG-baV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vhc-Zh-V1L" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Cx2-zZ-13Q">
@@ -1207,6 +1206,7 @@ Negocie o orçamento do serviço  diretamente por telefone ou sms e feche o neg�
                         <segue destination="V0j-6q-5fr" kind="relationship" relationship="rootViewController" id="epK-et-jXe"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2RJ-pG-baV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-306" y="-553"/>
         </scene>
