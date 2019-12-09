@@ -304,7 +304,7 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.40000000000000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" name="AzulApp"/>
                         <constraints>
                             <constraint firstItem="vXW-nS-QQa" firstAttribute="height" secondItem="Sl1-DW-iyh" secondAttribute="height" id="6ob-Yu-HT9"/>
                             <constraint firstItem="vXW-nS-QQa" firstAttribute="top" secondItem="Sl1-DW-iyh" secondAttribute="bottom" constant="58" id="BUp-8J-5r8"/>
@@ -1348,11 +1348,16 @@ Depois disso é fácil encontrar qualquer serviço ou ser contratado para soluci
                                         <rect key="frame" x="33" y="616" width="348" height="41"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cTG-MG-k4X">
-                                                <rect key="frame" x="0.0" y="0.0" width="348" height="41"/>
+                                                <rect key="frame" x="0.0" y="-10" width="348" height="61"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="21"/>
                                                 <state key="normal" title="O que é, e  porque ser MEI?">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <segue destination="tf1-tI-IiJ" kind="show" id="kbu-zA-EPJ"/>
                                                 </connections>
@@ -1361,10 +1366,15 @@ Depois disso é fácil encontrar qualquer serviço ou ser contratado para soluci
                                         <color key="backgroundColor" name="AzulApp"/>
                                         <constraints>
                                             <constraint firstItem="cTG-MG-k4X" firstAttribute="centerX" secondItem="Mny-Y3-AjC" secondAttribute="centerX" id="K9k-Jh-rWq"/>
-                                            <constraint firstItem="cTG-MG-k4X" firstAttribute="height" secondItem="Mny-Y3-AjC" secondAttribute="height" id="gZN-wD-2Rb"/>
+                                            <constraint firstItem="cTG-MG-k4X" firstAttribute="height" secondItem="Mny-Y3-AjC" secondAttribute="height" multiplier="1.5" id="gZN-wD-2Rb"/>
                                             <constraint firstItem="cTG-MG-k4X" firstAttribute="width" secondItem="Mny-Y3-AjC" secondAttribute="width" id="nmA-C6-1yT"/>
                                             <constraint firstItem="cTG-MG-k4X" firstAttribute="centerY" secondItem="Mny-Y3-AjC" secondAttribute="centerY" id="zX2-jW-8Pb"/>
                                         </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -1449,6 +1459,11 @@ E as vantagens de se tornar um MEI são muitas:
                                                 <state key="normal" title="O que preciso para ser MEI?">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <segue destination="BUQ-er-nAA" kind="show" id="fQB-Zh-LIk"/>
                                                 </connections>
@@ -1461,6 +1476,11 @@ E as vantagens de se tornar um MEI são muitas:
                                             <constraint firstItem="NbX-Mf-GJN" firstAttribute="width" secondItem="QnZ-ec-oko" secondAttribute="width" multiplier="0.818966" id="erK-Lk-jKk"/>
                                             <constraint firstItem="NbX-Mf-GJN" firstAttribute="height" secondItem="QnZ-ec-oko" secondAttribute="height" multiplier="0.926829" id="hGY-ZL-w9i"/>
                                         </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -1565,6 +1585,11 @@ E as vantagens de se tornar um MEI são muitas:
                                             <constraint firstItem="XJO-3a-pRP" firstAttribute="height" secondItem="BCQ-0p-KPF" secondAttribute="height" multiplier="0.926829" id="elc-Cx-3O4"/>
                                             <constraint firstItem="XJO-3a-pRP" firstAttribute="centerY" secondItem="BCQ-0p-KPF" secondAttribute="centerY" id="era-33-86N"/>
                                         </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
