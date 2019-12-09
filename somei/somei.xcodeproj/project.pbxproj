@@ -14,6 +14,7 @@
 		3911CA59239159E20027B1FF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3911CA58239159E20027B1FF /* GoogleService-Info.plist */; };
 		397B835A239E98C800C86D2A /* ComoFuncionaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397B8359239E98C800C86D2A /* ComoFuncionaViewController.swift */; };
 		399B5F1D2396AB31008F886D /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 399B5F1C2396AB31008F886D /* Colors.xcassets */; };
+		39A5D675239F0F47007C43B1 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A5D674239F0F46007C43B1 /* Model.swift */; };
 		39B26D24239DBB8B0094BD08 /* DAOFireBaseUsuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B26D23239DBB8B0094BD08 /* DAOFireBaseUsuario.swift */; };
 		39BAA0D1239159470066B302 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BAA0D0239159470066B302 /* AppDelegate.swift */; };
 		39BAA0D3239159470066B302 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BAA0D2239159470066B302 /* SceneDelegate.swift */; };
@@ -78,6 +79,7 @@
 		3911CA58239159E20027B1FF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		397B8359239E98C800C86D2A /* ComoFuncionaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComoFuncionaViewController.swift; sourceTree = "<group>"; };
 		399B5F1C2396AB31008F886D /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		39A5D674239F0F46007C43B1 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		39B26D23239DBB8B0094BD08 /* DAOFireBaseUsuario.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DAOFireBaseUsuario.swift; sourceTree = "<group>"; };
 		39BAA0CD239159470066B302 /* Somei.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Somei.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39BAA0D0239159470066B302 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -158,6 +160,7 @@
 				A5CBEA1E23954530009D2658 /* Usuario.swift */,
 				39EDBDB823995600008C03A8 /* Extensions.swift */,
 				D1AFC84223994DC1009583B3 /* Categoria.swift */,
+				39A5D674239F0F46007C43B1 /* Model.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -367,7 +370,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 39BAA0C8239159470066B302 /* Build configuration list for PBXProject "somei" */;
+			buildConfigurationList = 39BAA0C8239159470066B302 /* Build configuration list for PBXProject "Somei" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -504,6 +507,7 @@
 				A5825D4C239C440500DB6D21 /* TodasAsEmpresasDaCategoria.swift in Sources */,
 				A5EC9E0A2395754300BC72B3 /* PerfilProfissionalViewController.swift in Sources */,
 				A5825D50239C444F00DB6D21 /* TodosOsUsuarios.swift in Sources */,
+				39A5D675239F0F47007C43B1 /* Model.swift in Sources */,
 				A5459D4023954BA20023D99D /* ProcurarProfissionaisViewController.swift in Sources */,
 				A5C71D3A23993A63006B68DB /* NomeProfissionalTableViewCell.swift in Sources */,
 				A51F9614239A831500BC6EAA /* AdicionarComentarioViewController.swift in Sources */,
@@ -663,7 +667,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7NGUQDD35C;
+				DEVELOPMENT_TEAM = GUL3CPS6RX;
 				INFOPLIST_FILE = Somei/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -683,7 +687,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7NGUQDD35C;
+				DEVELOPMENT_TEAM = GUL3CPS6RX;
 				INFOPLIST_FILE = Somei/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -700,7 +704,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		39BAA0C8239159470066B302 /* Build configuration list for PBXProject "somei" */ = {
+		39BAA0C8239159470066B302 /* Build configuration list for PBXProject "Somei" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				39BAA0DF239159490066B302 /* Debug */,
