@@ -152,11 +152,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="mz4-TU-3si"/>
                     </view>
-                    <navigationItem key="navigationItem" id="s3J-0w-m04"/>
-                    <connections>
-                        <outlet property="labelPrimeiroNome" destination="pBf-5p-kbv" id="NkP-yQ-N3u"/>
-                        <outlet property="tableView" destination="raK-dQ-dZu" id="ILH-oj-SFL"/>
-                    </connections>
+                    <navigationItem key="navigationItem" id="Ktr-Q3-bqw"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SPE-RZ-11h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -165,7 +161,7 @@
         <!--Minha Conta-->
         <scene sceneID="1To-kV-taf">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mrz-cP-9s8" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="UIMinhaConta" automaticallyAdjustsScrollViewInsets="NO" id="mrz-cP-9s8" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Minha Conta" selectedImage="icon-minha-conta" id="B0T-Sm-c5t"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" hidden="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Jwu-3k-X6Z">

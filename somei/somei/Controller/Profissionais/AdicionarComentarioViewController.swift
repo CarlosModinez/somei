@@ -74,7 +74,7 @@ class AdicionarComentarioViewController: UIViewController, UITextFieldDelegate {
         
         let texto = (sender as! UITextField).text
         
-        empresa.avaliacoes.append(Avaliacao(nota: notaInicial, comentario: "\(texto)") )
+        empresa.avaliacoes.append(Avaliacao(nota: notaInicial, comentario: texto!) )
         
         print(avaliacoes.debugDescription)
         
@@ -108,6 +108,12 @@ class AdicionarComentarioViewController: UIViewController, UITextFieldDelegate {
     //chamar tela de ajuda
     @IBAction func direcionarAjudaButton(_ sender: Any) {
         
+//        TODO: chamar a view de ajuda
+//        if let vc = storyboard?.instantiateViewController(withIdentifier: "") as? {
+//
+//            self.navigationController?.pushViewController(vc, animated: true)
+//
+//        }
         
     }
     

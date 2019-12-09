@@ -28,6 +28,9 @@ class PerfilProfissionalViewController: UIViewController, UITableViewDataSource,
         tableView.dataSource = self
         tableView.delegate = self
         
+        self.navigationController?.navigationBar.transparentNavigationBar()
+        self.navigationController?.navigationBar.tintColor = UIColor.white
+        
 
         tableView.reloadData()
         
@@ -246,11 +249,9 @@ class PerfilProfissionalViewController: UIViewController, UITableViewDataSource,
         
         for i in 0...4 {
             if i <= sender.tag {
-//                botoesEstrela[i]?.imageView?.image = #imageLiteral(resourceName: "star-gray")
                 botoesEstrela[i]?.setImage(#imageLiteral(resourceName: "star-gray"), for: .normal)
             }
             else {
-//                botoesEstrela[i]?.imageView?.image = #imageLiteral(resourceName: "star-line")
                 botoesEstrela[i]?.setImage(#imageLiteral(resourceName: "star-line"), for: .normal)
             }
         }

@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W4w-N6-4Er">
-                                <rect key="frame" x="0.0" y="145" width="414" height="717"/>
+                                <rect key="frame" x="0.0" y="195" width="414" height="717"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -26,7 +26,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Njf-5e-GIa">
-                                <rect key="frame" x="25" y="173" width="364" height="688"/>
+                                <rect key="frame" x="25" y="223" width="364" height="688"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="NomeProfissional" rowHeight="83" id="YNs-2o-A0x" customClass="NomeProfissionalTableViewCell" customModule="Somei" customModuleProvider="target">
@@ -291,7 +291,7 @@
                             <constraint firstItem="Njf-5e-GIa" firstAttribute="centerX" secondItem="W4w-N6-4Er" secondAttribute="centerX" id="Dh8-CU-FbY"/>
                             <constraint firstItem="W4w-N6-4Er" firstAttribute="height" secondItem="mUL-uc-M8r" secondAttribute="height" multiplier="0.8" id="Xca-h8-DO2"/>
                             <constraint firstItem="W4w-N6-4Er" firstAttribute="centerX" secondItem="BDQ-po-x62" secondAttribute="centerX" id="e2R-tK-zEW"/>
-                            <constraint firstItem="W4w-N6-4Er" firstAttribute="bottom" secondItem="BDQ-po-x62" secondAttribute="bottom" id="wIq-Qb-Jqi"/>
+                            <constraint firstItem="W4w-N6-4Er" firstAttribute="bottom" secondItem="BDQ-po-x62" secondAttribute="bottom" constant="50" id="wIq-Qb-Jqi"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="BDQ-po-x62"/>
                     </view>
