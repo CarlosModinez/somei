@@ -160,10 +160,16 @@ class MapaController {
     
     // Retorna a distância entre aqui e outro ponto
     func getDistanciaKm (ate ponto : CLLocation) -> Float {
+        var distancia : Float
         
-        print("Aqui: \(locationManager.location)")
-        print("Distancia: \(ponto.distance(from: locationManager.location!))")
-        let distancia = Float(ponto.distance(from: locationManager.location!)) / 1000
+        if temosPermissaoMapa() > 0 {
+            print("Aqui: \(locationManager.location)")
+            print("Distancia: \(ponto.distance(from: locationManager.location!))")
+            distancia = Float(ponto.distance(from: locationManager.location!)) / 1000
+        }
+        else {
+            distancia = -1
+        }
         
         return distancia
     }
