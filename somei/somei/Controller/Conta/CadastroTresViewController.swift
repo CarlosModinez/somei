@@ -157,6 +157,12 @@ class CadastroTresViewController: UIViewController, UITextFieldDelegate {
                         let endereco = Endereco(cep: cep!, numero: num!, logradouro: logradouro, bairro: bairro, cidade: municipio, estado: uf)
                         let emp = Empresa(cnpj: cnpj, nomeFantasia: nomeFantasia, endereco: endereco, avaliacoes: [], categoria: categoria!, telefone: telefone, email: self.user.email, descricao: self.descricaoAtividade.text!)
                         DAOFireBaseEMpresas.saveEmpresa(emp)
+                        
+                        DAOFireBaseCategorias.categoriaJaCadastrada(categoria: categoria!) { (existe) in
+                            if(existe!){
+                                DAOFireBaseCategorias.saveCategoriaCadastrada(categoria!)
+                            }
+                        }
                     }
                 }else{
                     
