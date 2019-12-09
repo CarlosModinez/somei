@@ -65,4 +65,29 @@ class DAOFireBaseCategorias {
             
     }
     
+    static func loadCategorias(completion: @escaping (([String]?) -> ())) -> [String]? {
+        let semaphore = DispatchSemaphore(value: 0)
+           
+        let db = Firestore.firestore()
+        var categorias : [String] = []
+        
+        db.collection("codigoMEI").getDocuments() { (querySnapshot, err) in
+            if let err =  err {
+                print("Error: \(err)")
+                semaphore.signal()
+            } else {
+                
+                for document in querySnapshot!.documents {
+                    let categoria = document.data()["traducao"] as? String
+                    if(!categorias.contains(categoria!)){
+                        categorias.append(categoria!)
+                    }
+                }
+            }
+            completion(categorias.sorted())
+        }
+        semaphore.signal()
+        return categorias.sorted()
+    }
+    
 }

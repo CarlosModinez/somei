@@ -209,7 +209,7 @@ class PerfilProfissionalViewController: UIViewController, UITableViewDataSource,
             }
         }
         
-        empresa.avaliacoes.append(Avaliacao(nota: sender.tag + 1, comentario: "") )
+        //empresa.avaliacoes.append(Avaliacao(nota: sender.tag + 1, comentario: "") )
         tableView.reloadData()
 
         vibrate()
@@ -219,7 +219,9 @@ class PerfilProfissionalViewController: UIViewController, UITableViewDataSource,
             vc.notaInicial = sender.tag
             vc.empresa = empresa
             //show(vc, sender: self)
-            present(vc, animated: true, completion: nil)
+            present(vc, animated: true) {
+                self.tableView.reloadData()
+            }
             //self.navigationController?.pushViewController(vc, animated: true)
             
             tableView.reloadData()

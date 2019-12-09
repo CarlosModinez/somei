@@ -281,6 +281,12 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Profissional" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eOm-xK-CFK">
+                                <rect key="frame" x="119.5" y="126" width="175.5" height="39"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                <color key="textColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" name="AzulApp"/>
                         <constraints>
@@ -288,9 +294,11 @@
                             <constraint firstItem="W4w-N6-4Er" firstAttribute="width" secondItem="mUL-uc-M8r" secondAttribute="width" id="6PQ-ho-tn7"/>
                             <constraint firstItem="Njf-5e-GIa" firstAttribute="bottom" secondItem="W4w-N6-4Er" secondAttribute="bottom" constant="-5" id="7Pw-ZR-zjJ"/>
                             <constraint firstItem="Njf-5e-GIa" firstAttribute="width" secondItem="W4w-N6-4Er" secondAttribute="width" multiplier="0.88" id="8iJ-sU-MYQ"/>
+                            <constraint firstItem="W4w-N6-4Er" firstAttribute="top" secondItem="eOm-xK-CFK" secondAttribute="bottom" constant="30" id="Ctb-cd-dfG"/>
                             <constraint firstItem="Njf-5e-GIa" firstAttribute="centerX" secondItem="W4w-N6-4Er" secondAttribute="centerX" id="Dh8-CU-FbY"/>
                             <constraint firstItem="W4w-N6-4Er" firstAttribute="height" secondItem="mUL-uc-M8r" secondAttribute="height" multiplier="0.8" id="Xca-h8-DO2"/>
                             <constraint firstItem="W4w-N6-4Er" firstAttribute="centerX" secondItem="BDQ-po-x62" secondAttribute="centerX" id="e2R-tK-zEW"/>
+                            <constraint firstItem="eOm-xK-CFK" firstAttribute="centerX" secondItem="BDQ-po-x62" secondAttribute="centerX" id="etN-2n-rnf"/>
                             <constraint firstItem="W4w-N6-4Er" firstAttribute="bottom" secondItem="BDQ-po-x62" secondAttribute="bottom" constant="50" id="wIq-Qb-Jqi"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="BDQ-po-x62"/>
@@ -313,10 +321,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iZX-yy-329">
-                                <rect key="frame" x="0.0" y="201" width="414" height="661"/>
+                                <rect key="frame" x="0.0" y="144" width="414" height="748"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="top" borderStyle="roundedRect" placeholder="(Opcional)" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tOe-dV-Lfp">
-                                        <rect key="frame" x="20" y="169" width="374" height="188"/>
+                                        <rect key="frame" x="20" y="169" width="374" height="299"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" returnKeyType="done"/>
                                         <userDefinedRuntimeAttributes>
@@ -341,7 +349,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ruS-Lg-Aew">
-                                        <rect key="frame" x="66.5" y="462" width="281" height="21"/>
+                                        <rect key="frame" x="66.5" y="573" width="281" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <state key="normal" title="Teve algum problema? Clique aqui.">
                                             <color key="titleColor" name="AzulApp"/>
@@ -407,7 +415,7 @@
                                     <constraint firstItem="G6i-gK-v60" firstAttribute="width" secondItem="iZX-yy-329" secondAttribute="width" multiplier="0.425121" id="5lf-l9-MHH"/>
                                     <constraint firstItem="1Bg-Bw-GQa" firstAttribute="width" secondItem="lem-qw-6yE" secondAttribute="width" id="6jo-rp-6XQ"/>
                                     <constraint firstItem="G6i-gK-v60" firstAttribute="centerX" secondItem="3cL-52-kp4" secondAttribute="centerX" id="8hh-Oo-1X1"/>
-                                    <constraint firstItem="tOe-dV-Lfp" firstAttribute="height" secondItem="iZX-yy-329" secondAttribute="height" multiplier="0.284418" id="Bbk-6I-j9f"/>
+                                    <constraint firstItem="tOe-dV-Lfp" firstAttribute="height" secondItem="iZX-yy-329" secondAttribute="height" multiplier="0.4" id="Bbk-6I-j9f"/>
                                     <constraint firstItem="1Bg-Bw-GQa" firstAttribute="top" secondItem="lem-qw-6yE" secondAttribute="top" id="C06-rN-6zx"/>
                                     <constraint firstItem="tOe-dV-Lfp" firstAttribute="top" secondItem="G6i-gK-v60" secondAttribute="bottom" constant="13" id="EsV-hP-oQT"/>
                                     <constraint firstItem="3cL-52-kp4" firstAttribute="top" secondItem="iZX-yy-329" secondAttribute="top" constant="30" id="FkC-zX-c80"/>
@@ -427,7 +435,6 @@
                                     <constraint firstItem="taM-Wr-1Jf" firstAttribute="top" secondItem="9lY-rt-6W2" secondAttribute="top" id="pK7-IH-1ci"/>
                                     <constraint firstItem="9lY-rt-6W2" firstAttribute="top" secondItem="3cL-52-kp4" secondAttribute="bottom" constant="12" id="t3s-Iv-xaq"/>
                                     <constraint firstItem="3cL-52-kp4" firstAttribute="centerX" secondItem="iZX-yy-329" secondAttribute="centerX" id="v9e-kX-REs"/>
-                                    <constraint firstItem="ruS-Lg-Aew" firstAttribute="width" secondItem="iZX-yy-329" secondAttribute="height" multiplier="281:661" id="yBn-8z-i4E"/>
                                     <constraint firstItem="lem-qw-6yE" firstAttribute="top" secondItem="9lY-rt-6W2" secondAttribute="top" id="yZb-SA-iIU"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
@@ -437,7 +444,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hrD-NG-cUI">
-                                <rect key="frame" x="53.5" y="603" width="307" height="40"/>
+                                <rect key="frame" x="53.5" y="657" width="307" height="40"/>
                                 <color key="backgroundColor" name="AzulApp"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="hrD-NG-cUI" secondAttribute="height" multiplier="307:40" id="eT7-7E-q2F"/>
@@ -455,16 +462,25 @@
                                     <action selector="finalizarAvaliacao:" destination="InZ-re-YcP" eventType="touchUpInside" id="fmq-rB-Qwt"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Avaliação" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V5c-A8-6lv">
+                                <rect key="frame" x="134.5" y="75" width="145" height="39"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                <color key="textColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" name="AzulApp"/>
+                        <color key="tintColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="iZX-yy-329" firstAttribute="width" secondItem="fMe-Mw-b5e" secondAttribute="width" id="82I-f0-5wP"/>
                             <constraint firstItem="ruS-Lg-Aew" firstAttribute="width" secondItem="hrD-NG-cUI" secondAttribute="width" multiplier="0.915309" id="EQy-hT-IA2"/>
-                            <constraint firstItem="Uks-oq-6Tg" firstAttribute="bottom" secondItem="iZX-yy-329" secondAttribute="bottom" id="GtM-iD-3Af"/>
-                            <constraint firstItem="iZX-yy-329" firstAttribute="height" secondItem="fMe-Mw-b5e" secondAttribute="height" multiplier="0.737723" id="Mz2-2L-XdG"/>
+                            <constraint firstItem="iZX-yy-329" firstAttribute="top" secondItem="V5c-A8-6lv" secondAttribute="bottom" constant="30" id="NT0-Qo-fjE"/>
                             <constraint firstItem="ruS-Lg-Aew" firstAttribute="height" secondItem="hrD-NG-cUI" secondAttribute="height" multiplier="0.525" id="Ua4-iq-m09"/>
                             <constraint firstItem="hrD-NG-cUI" firstAttribute="centerX" secondItem="tOe-dV-Lfp" secondAttribute="centerX" id="W43-2c-Ycw"/>
                             <constraint firstItem="iZX-yy-329" firstAttribute="centerX" secondItem="Uks-oq-6Tg" secondAttribute="centerX" id="WbQ-Kv-Nhb"/>
+                            <constraint firstItem="V5c-A8-6lv" firstAttribute="centerX" secondItem="Uks-oq-6Tg" secondAttribute="centerX" id="bUY-Li-X2C"/>
+                            <constraint firstItem="iZX-yy-329" firstAttribute="top" secondItem="Uks-oq-6Tg" secondAttribute="top" constant="100" id="bzH-rB-wYJ"/>
+                            <constraint firstItem="Uks-oq-6Tg" firstAttribute="bottom" secondItem="iZX-yy-329" secondAttribute="bottom" constant="-30" id="gpE-nK-Ra9"/>
                             <constraint firstItem="ruS-Lg-Aew" firstAttribute="top" secondItem="hrD-NG-cUI" secondAttribute="bottom" constant="20" id="ljg-vl-xhs"/>
                             <constraint firstItem="ruS-Lg-Aew" firstAttribute="centerX" secondItem="hrD-NG-cUI" secondAttribute="centerX" id="lnt-1r-cA2"/>
                             <constraint firstItem="hrD-NG-cUI" firstAttribute="top" secondItem="tOe-dV-Lfp" secondAttribute="bottom" constant="45" id="ogM-xA-Nmi"/>
