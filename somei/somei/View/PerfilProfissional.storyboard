@@ -36,20 +36,14 @@
                                             <rect key="frame" x="0.0" y="0.0" width="364" height="83"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6YR-QE-Qv4" userLabel="imgPerfil">
-                                                    <rect key="frame" x="0.0" y="0.0" width="83" height="83"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" secondItem="6YR-QE-Qv4" secondAttribute="height" multiplier="1:1" id="NSX-LF-wbg"/>
-                                                    </constraints>
-                                                </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Maria Helena Cruz" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TDF-cs-TXO" userLabel="nomePerfil">
-                                                    <rect key="frame" x="97" y="14" width="179" height="24"/>
+                                                    <rect key="frame" x="0.0" y="14" width="179" height="24"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star-4" translatesAutoresizingMaskIntoConstraints="NO" id="H4i-Uu-SQM" userLabel="imgEstrelas">
-                                                    <rect key="frame" x="97" y="37" width="90" height="18"/>
+                                                    <rect key="frame" x="0.0" y="37" width="90" height="18"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="H4i-Uu-SQM" secondAttribute="height" multiplier="5:1" id="61C-Ay-yau"/>
                                                     </constraints>
@@ -57,19 +51,15 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="H4i-Uu-SQM" firstAttribute="width" secondItem="mps-ql-Bj6" secondAttribute="width" multiplier="0.247253" id="4Mb-vm-IwR"/>
-                                                <constraint firstItem="6YR-QE-Qv4" firstAttribute="height" secondItem="mps-ql-Bj6" secondAttribute="height" id="ChT-be-Qr1"/>
-                                                <constraint firstItem="H4i-Uu-SQM" firstAttribute="leading" secondItem="TDF-cs-TXO" secondAttribute="leading" id="Ilp-lf-YLq"/>
                                                 <constraint firstItem="H4i-Uu-SQM" firstAttribute="top" secondItem="TDF-cs-TXO" secondAttribute="bottom" constant="-1" id="bLq-CU-LJY"/>
-                                                <constraint firstItem="6YR-QE-Qv4" firstAttribute="centerY" secondItem="mps-ql-Bj6" secondAttribute="centerY" id="gta-9e-LuH"/>
-                                                <constraint firstItem="TDF-cs-TXO" firstAttribute="leading" secondItem="6YR-QE-Qv4" secondAttribute="trailing" constant="14" id="maf-aJ-Yh5"/>
+                                                <constraint firstItem="H4i-Uu-SQM" firstAttribute="leading" secondItem="TDF-cs-TXO" secondAttribute="leading" id="cGe-iz-qWJ"/>
                                                 <constraint firstItem="TDF-cs-TXO" firstAttribute="top" secondItem="mps-ql-Bj6" secondAttribute="top" constant="14" id="nGv-KH-dye"/>
-                                                <constraint firstAttribute="trailing" secondItem="6YR-QE-Qv4" secondAttribute="trailing" constant="281" id="nW4-PA-V1H"/>
                                                 <constraint firstItem="TDF-cs-TXO" firstAttribute="width" secondItem="mps-ql-Bj6" secondAttribute="width" multiplier="0.491758" id="qbo-SE-kXJ"/>
+                                                <constraint firstItem="TDF-cs-TXO" firstAttribute="leading" secondItem="mps-ql-Bj6" secondAttribute="leading" id="vrU-vr-lpM"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="imgAvaliacao" destination="H4i-Uu-SQM" id="WXM-qj-qZx"/>
-                                            <outlet property="imgProfissional" destination="6YR-QE-Qv4" id="ki1-mV-jy0"/>
                                             <outlet property="lblNomeProfissional" destination="TDF-cs-TXO" id="aJ9-QL-bT9"/>
                                         </connections>
                                     </tableViewCell>
@@ -151,11 +141,11 @@
                                             <outlet property="mensagemButton" destination="SwP-mF-o5k" id="NGK-X0-zvh"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="AvaliacaoProfissional" rowHeight="112" id="sag-2I-LXI" customClass="AvaliacaoProfissionalTableViewCell" customModule="Somei" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="416" width="364" height="112"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="AvaliacaoProfissional" rowHeight="80" id="sag-2I-LXI" customClass="AvaliacaoProfissionalTableViewCell" customModule="Somei" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="416" width="364" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="sag-2I-LXI" id="AJI-DE-GV9">
-                                            <rect key="frame" x="0.0" y="0.0" width="364" height="112"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="364" height="80"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Avaliações" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7OP-q1-0fK">
@@ -170,15 +160,7 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iwr-LD-fZe">
-                                                    <rect key="frame" x="0.0" y="76" width="145" height="30"/>
-                                                    <state key="normal" title="Deixe um comentário"/>
-                                                    <connections>
-                                                        <action selector="deixarComentarioButton:" destination="lWi-Kd-cnK" eventType="touchUpInside" id="y5D-4c-OzN"/>
-                                                        <segue destination="InZ-re-YcP" kind="show" id="Vmb-zw-eit"/>
-                                                    </connections>
-                                                </button>
-                                                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b8V-vC-XtZ">
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b8V-vC-XtZ">
                                                     <rect key="frame" x="152" y="32.5" width="27" height="26"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="b8V-vC-XtZ" secondAttribute="height" multiplier="27:26" id="xWI-bC-HFZ"/>
@@ -188,7 +170,7 @@
                                                         <action selector="avaliarEstrela:" destination="lWi-Kd-cnK" eventType="touchUpInside" id="jAv-6S-bJi"/>
                                                     </connections>
                                                 </button>
-                                                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rjs-Wv-Ujd">
+                                                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rjs-Wv-Ujd">
                                                     <rect key="frame" x="187" y="32.5" width="27" height="26"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="Rjs-Wv-Ujd" secondAttribute="height" multiplier="27:26" id="OFQ-pj-ViK"/>
@@ -198,7 +180,7 @@
                                                         <action selector="avaliarEstrela:" destination="lWi-Kd-cnK" eventType="touchUpInside" id="aPZ-X4-krI"/>
                                                     </connections>
                                                 </button>
-                                                <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CuU-HL-7oy">
+                                                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CuU-HL-7oy">
                                                     <rect key="frame" x="222" y="32.5" width="27" height="26"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="CuU-HL-7oy" secondAttribute="height" multiplier="27:26" id="RDR-rg-daz"/>
@@ -208,7 +190,7 @@
                                                         <action selector="avaliarEstrela:" destination="lWi-Kd-cnK" eventType="touchUpInside" id="Wra-MT-Dv2"/>
                                                     </connections>
                                                 </button>
-                                                <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k89-SD-jTO">
+                                                <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k89-SD-jTO">
                                                     <rect key="frame" x="257" y="32.5" width="27" height="26"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="k89-SD-jTO" secondAttribute="height" multiplier="27:26" id="NjK-Vk-T2t"/>
@@ -218,7 +200,7 @@
                                                         <action selector="avaliarEstrela:" destination="lWi-Kd-cnK" eventType="touchUpInside" id="Gaw-iX-TEG"/>
                                                     </connections>
                                                 </button>
-                                                <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Wu-ps-95j">
+                                                <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Wu-ps-95j">
                                                     <rect key="frame" x="292" y="32.5" width="27" height="26"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="8Wu-ps-95j" secondAttribute="height" multiplier="27:26" id="p7m-55-Mat"/>
@@ -244,11 +226,9 @@
                                                 <constraint firstItem="8Wu-ps-95j" firstAttribute="leading" secondItem="k89-SD-jTO" secondAttribute="trailing" constant="8" id="SyM-Tq-aXt"/>
                                                 <constraint firstItem="8Wu-ps-95j" firstAttribute="centerY" secondItem="k89-SD-jTO" secondAttribute="centerY" id="X13-SD-EkW"/>
                                                 <constraint firstItem="4bL-r0-9Vc" firstAttribute="leading" secondItem="7OP-q1-0fK" secondAttribute="leading" id="YkZ-W1-JOE"/>
-                                                <constraint firstItem="Iwr-LD-fZe" firstAttribute="top" secondItem="4bL-r0-9Vc" secondAttribute="bottom" constant="20" id="arE-19-n3u"/>
                                                 <constraint firstItem="CuU-HL-7oy" firstAttribute="centerY" secondItem="Rjs-Wv-Ujd" secondAttribute="centerY" id="bec-Di-RAN"/>
                                                 <constraint firstItem="CuU-HL-7oy" firstAttribute="width" secondItem="Rjs-Wv-Ujd" secondAttribute="width" id="g58-Y6-vT9"/>
                                                 <constraint firstItem="b8V-vC-XtZ" firstAttribute="width" secondItem="AJI-DE-GV9" secondAttribute="width" multiplier="0.0741758" id="lJT-1J-aNA"/>
-                                                <constraint firstItem="Iwr-LD-fZe" firstAttribute="leading" secondItem="4bL-r0-9Vc" secondAttribute="leading" id="pdq-P5-imJ"/>
                                                 <constraint firstItem="Rjs-Wv-Ujd" firstAttribute="leading" secondItem="b8V-vC-XtZ" secondAttribute="trailing" constant="8" id="tIv-V5-Faw"/>
                                                 <constraint firstItem="Rjs-Wv-Ujd" firstAttribute="width" secondItem="b8V-vC-XtZ" secondAttribute="width" id="zTl-6M-lcG"/>
                                             </constraints>
@@ -262,7 +242,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Comentario" rowHeight="112" id="4dR-24-Zh3" customClass="ComentarioTableViewCell" customModule="Somei" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="528" width="364" height="112"/>
+                                        <rect key="frame" x="0.0" y="496" width="364" height="112"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4dR-24-Zh3" id="t5v-60-zxk">
                                             <rect key="frame" x="0.0" y="0.0" width="364" height="112"/>
@@ -318,6 +298,7 @@
                     <navigationItem key="navigationItem" largeTitleDisplayMode="always" id="tRs-1J-CtJ"/>
                     <connections>
                         <outlet property="tableView" destination="Njf-5e-GIa" id="ocb-L5-SCU"/>
+                        <segue destination="InZ-re-YcP" kind="show" id="1sZ-sJ-IbY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ILU-CS-DPV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -327,7 +308,7 @@
         <!--Adicionar Comentario View Controller-->
         <scene sceneID="elX-eH-GXR">
             <objects>
-                <viewController id="InZ-re-YcP" customClass="AdicionarComentarioViewController" customModule="Somei" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AdicionarComentarioViewController" id="InZ-re-YcP" customClass="AdicionarComentarioViewController" customModule="Somei" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fMe-Mw-b5e">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -370,7 +351,7 @@
                                             <action selector="direcionarAjudaButton:" destination="InZ-re-YcP" eventType="touchUpInside" id="1Ls-ao-CRY"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Bg-Bw-GQa">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Bg-Bw-GQa">
                                         <rect key="frame" x="96" y="74" width="38" height="36"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="1Bg-Bw-GQa" secondAttribute="height" multiplier="19:18" id="yq0-DB-Uwi"/>
@@ -380,7 +361,7 @@
                                             <action selector="avaliarEstrelas:" destination="InZ-re-YcP" eventType="touchUpInside" id="5DD-wS-SPd"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lem-qw-6yE">
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lem-qw-6yE">
                                         <rect key="frame" x="142" y="74" width="38" height="36"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="lem-qw-6yE" secondAttribute="height" multiplier="19:18" id="ZQR-oh-muf"/>
@@ -390,7 +371,7 @@
                                             <action selector="avaliarEstrelas:" destination="InZ-re-YcP" eventType="touchUpInside" id="vHg-It-rBE"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9lY-rt-6W2">
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9lY-rt-6W2">
                                         <rect key="frame" x="188" y="74" width="38" height="36"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="9lY-rt-6W2" secondAttribute="height" multiplier="19:18" id="Lux-wL-RXc"/>
@@ -400,7 +381,7 @@
                                             <action selector="avaliarEstrelas:" destination="InZ-re-YcP" eventType="touchUpInside" id="v2I-LB-7bt"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="taM-Wr-1Jf">
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="taM-Wr-1Jf">
                                         <rect key="frame" x="234" y="74" width="38" height="36"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="taM-Wr-1Jf" secondAttribute="height" multiplier="19:18" id="7D3-D4-ppu"/>
@@ -410,7 +391,7 @@
                                             <action selector="avaliarEstrelas:" destination="InZ-re-YcP" eventType="touchUpInside" id="2oy-iZ-TfM"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RLx-1j-49P">
+                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RLx-1j-49P">
                                         <rect key="frame" x="280" y="74" width="38" height="36"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="RLx-1j-49P" secondAttribute="height" multiplier="19:18" id="UEM-z3-zev"/>

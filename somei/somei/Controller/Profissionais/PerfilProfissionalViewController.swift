@@ -13,6 +13,8 @@ class PerfilProfissionalViewController: UIViewController, UITableViewDataSource,
 
     @IBOutlet weak var tableView: UITableView!
     
+    var botoesEstrela : [UIButton?] = []
+    
 //    -----------------APAGAR
     var empresa : Empresa?
     var avaliacao : Avaliacao!
@@ -27,7 +29,7 @@ class PerfilProfissionalViewController: UIViewController, UITableViewDataSource,
         tableView.delegate = self
         
 
-//        tableView.reloadData()
+        tableView.reloadData()
         
     }
 
@@ -66,8 +68,35 @@ class PerfilProfissionalViewController: UIViewController, UITableViewDataSource,
 //            TODO: imagem profissional
 //            cell0.imgProfissional.image =
             
+//            =========================
 //            TODO: media de avaliações
-//            cell0.imgAvaliacao.image =
+//            =========================
+            if empresa!.avaliacoes[indexPath.row].nota == 0{
+                
+                cell0.imgAvaliacao.image = UIImage(named: "star-0")
+                
+            }
+            else if empresa!.avaliacoes[indexPath.row].nota == 1{
+                          
+                cell0.imgAvaliacao.image = UIImage(named: "star-1")
+                          
+            } else if empresa!.avaliacoes[indexPath.row].nota == 2{
+                
+                cell0.imgAvaliacao.image = UIImage(named: "star-2")
+                
+            } else if empresa!.avaliacoes[indexPath.row].nota == 3{
+                
+                cell0.imgAvaliacao.image = UIImage(named: "star-3")
+                
+            } else if empresa!.avaliacoes[indexPath.row].nota == 4{
+                
+                cell0.imgAvaliacao.image = UIImage(named: "star-4")
+                
+            } else {
+                
+                cell0.imgAvaliacao.image = UIImage(named: "star-5")
+                
+            }
             
             self.tableView.rowHeight = 90
             
@@ -80,7 +109,7 @@ class PerfilProfissionalViewController: UIViewController, UITableViewDataSource,
             
             let cell1 = tableView.dequeueReusableCell(withIdentifier: "DescricaoProfissional", for: indexPath) as! DescricaoProfissionalTableViewCell
             
-//            cell1.txtDescricaoProfissional.text = empresa?.descricao
+            cell1.txtDescricaoProfissional.text = empresa?.descricao
             
             self.tableView.rowHeight = 165
 
@@ -108,8 +137,15 @@ class PerfilProfissionalViewController: UIViewController, UITableViewDataSource,
             
              let cell3 = tableView.dequeueReusableCell(withIdentifier: "AvaliacaoProfissional", for: indexPath) as! AvaliacaoProfissionalTableViewCell
 
-            self.tableView.rowHeight = 130
+            self.tableView.rowHeight = 80
             
+            //botoesEstrela.removeAll()
+            
+            botoesEstrela.append(cell3.umaEstrela)
+            botoesEstrela.append(cell3.duasEstrela)
+            botoesEstrela.append(cell3.tresEstrela)
+            botoesEstrela.append(cell3.quatroEstrela)
+            botoesEstrela.append(cell3.cincoEstrela)
             
             return cell3
         }
@@ -119,9 +155,27 @@ class PerfilProfissionalViewController: UIViewController, UITableViewDataSource,
             
             cell4.txtComentario.text = empresa?.avaliacoes[indexPath.row - 4].comentario
             
-//            chamar imagem de quantas estrelas foram dadas
-//            cell4.imgAvaliacao.image =
+            switch empresa?.avaliacoes[indexPath.row - 4].nota {
+            case 1:
+                cell4.imgAvaliacao.image = UIImage(named: "star-1")
+                
+            case 2:
+                cell4.imgAvaliacao.image = UIImage(named: "star-2")
             
+            case 3:
+                cell4.imgAvaliacao.image = UIImage(named: "star-3")
+            
+            case 4:
+                cell4.imgAvaliacao.image = UIImage(named: "star-4")
+            
+            case 5:
+                cell4.imgAvaliacao.image = UIImage(named: "star-5")
+                
+            default:
+                break
+                
+            }
+
         }
 
         return cell4
@@ -188,7 +242,32 @@ class PerfilProfissionalViewController: UIViewController, UITableViewDataSource,
     // essa parte ainda não soube como fazer :(
     @IBAction func avaliarEstrela(_ sender: UIButton) {
         
+        print("TAG: ", sender.tag)
+        
+        for i in 0...4 {
+            if i <= sender.tag {
+//                botoesEstrela[i]?.imageView?.image = #imageLiteral(resourceName: "star-gray")
+                botoesEstrela[i]?.setImage(#imageLiteral(resourceName: "star-gray"), for: .normal)
+            }
+            else {
+//                botoesEstrela[i]?.imageView?.image = #imageLiteral(resourceName: "star-line")
+                botoesEstrela[i]?.setImage(#imageLiteral(resourceName: "star-line"), for: .normal)
+            }
+        }
+        
+        avaliacoes.append(Avaliacao(nota: sender.tag + 1, comentario: "") )
+        tableView.reloadData()
+
         vibrate()
+        
+                
+        if let vc = storyboard?.instantiateViewController(withIdentifier: "AdicionarComentarioViewController") as? AdicionarComentarioViewController {
+            vc.notaInicial = sender.tag
+            vc.empresa = empresa
+            self.navigationController?.pushViewController(vc, animated: true)
+            
+            tableView.reloadData()
+        }
         
     }
     
@@ -200,13 +279,6 @@ class PerfilProfissionalViewController: UIViewController, UITableViewDataSource,
 
     }
     
-    @IBAction func deixarComentarioButton(_ sender: Any) {
-        
-        
-        
-    }
-    
-    
-    
-    
+
+ 
 }
