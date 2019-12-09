@@ -1,19 +1,15 @@
 //
-//  CadastroMEIViewController.swift
+//  ComoFuncionaViewController.swift
 //  Somei
 //
-//  Created by João Conrado Santana de Lima Dembiski on 06/12/19.
+//  Created by José Guilherme Bestel on 09/12/19.
 //  Copyright © 2019 José Guilherme Bestel. All rights reserved.
 //
 
 import UIKit
 
-class CadastroMEIViewController: UIViewController {
+class ComoFuncionaViewController: UIViewController {
 
-    @IBOutlet weak var cadastrarMEIbutton: UIButton!
-    
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -23,13 +19,7 @@ class CadastroMEIViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func linkCadastrarButton(_ sender: Any) {
-        if let url = URL(string: "https://www.portalmaisempreendedor.com.br/registro/?gclid=CjwKCAiAlajvBRB_EiwA4vAqiOgtEInghk4X3mjTr_z23ZgfhEYu8lMS1upXfMzpjCAiKK-Qm3Qj7BoCShkQAvD_BwE") {
-            UIApplication.shared.open(url)
-        }
-        
-    }
-    
+
     /*
     // MARK: - Navigation
 
