@@ -20,10 +20,12 @@ class AdicionarComentarioViewController: UIViewController, UITextFieldDelegate {
     var empresa : Empresa!
     
     var notaInicial : Int!
+    var nota : Int!
     
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        nota = notaInicial
         
         adicionarComentario.delegate = self
         
@@ -53,16 +55,14 @@ class AdicionarComentarioViewController: UIViewController, UITextFieldDelegate {
         
         for i in 0...4 {
             if i <= sender.tag {
-                //                botoesEstrela[i]?.imageView?.image = #imageLiteral(resourceName: "star-gray")
                 avaliacaoLista?[i].setImage(#imageLiteral(resourceName: "star-gray"), for: .normal)
             }
             else {
-                //                botoesEstrela[i]?.imageView?.image = #imageLiteral(resourceName: "star-line")
                 avaliacaoLista?[i].setImage(#imageLiteral(resourceName: "star-line"), for: .normal)
             }
         }
-        
-        empresa.avaliacoes.append(Avaliacao(nota: sender.tag + 1, comentario: "") )
+        nota = sender.tag + 1
+        //empresa.avaliacoes.append(Avaliacao(nota: sender.tag + 1, comentario: "") )
         
         vibrate()
         
@@ -74,7 +74,7 @@ class AdicionarComentarioViewController: UIViewController, UITextFieldDelegate {
         
         let texto = (sender as! UITextField).text
         
-        empresa.avaliacoes.append(Avaliacao(nota: notaInicial, comentario: texto!) )
+        //empresa.avaliacoes.append(Avaliacao(nota: notaInicial, comentario: texto!) )
         
         print(avaliacoes.debugDescription)
         
@@ -83,13 +83,11 @@ class AdicionarComentarioViewController: UIViewController, UITextFieldDelegate {
     //    dar send na avaliação e chamar a view anterior
     @IBAction func finalizarAvaliacao(_ sender: Any) {
         
-        if let vc = storyboard?.instantiateViewController(withIdentifier: "PerfilProfissionalViewController") as? PerfilProfissionalViewController {
-                  self.navigationController?.pushViewController(vc, animated: true)
-            vc.reloadInputViews()
-            
-              }
-        
+        empresa.avaliacoes.append(Avaliacao(nota: nota, comentario: adicionarComentario.text ?? ""))
+                
         vibrate()
+        //self.navigationController?.popViewController(animated: true)
+        dismiss(animated: true, completion: nil)
         
     }
     

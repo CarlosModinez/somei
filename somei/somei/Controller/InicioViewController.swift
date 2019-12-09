@@ -17,6 +17,12 @@ class InicioViewController: UIViewController {
         self.navigationController?.navigationBar.tintColor = UIColor.white
     }
     
+    @IBAction func contratar () {
+        let vc = (storyboard?.instantiateViewController(withIdentifier: "elfos"))!
+          present(vc, animated: true, completion: nil)
+        
+    }
+    
     /*
      if let vc = storyboard?.instantiateViewController(withIdentifier: "ListaProfissionaisPesquisaViewController") as? ListaProfissionaisPesquisaViewController {
        

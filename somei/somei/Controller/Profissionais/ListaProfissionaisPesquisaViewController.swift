@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreLocation
 
 class ListaProfissionaisPesquisaViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -21,7 +22,7 @@ class ListaProfissionaisPesquisaViewController: UIViewController, UITableViewDel
     // MARK: Variáveis
     var categoria : String!
     
-    var profissionais : [Empresa]!
+    var profissionais : [Empresa] = []
     
     
     // MARK: View Controller
@@ -31,124 +32,35 @@ class ListaProfissionaisPesquisaViewController: UIViewController, UITableViewDel
         tableView.dataSource = self
         tableView.delegate = self
     
+        // remove as linhas vazias do final da table
+        tableView.tableFooterView = UIView()
     }
     
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        // profissionais = BuscaProfissionaisCategoria (categoria)
-        profissionais = [
-            Empresa(
-                cnpj: "", nomeFantasia: "Felipe de Lima Mesquita",
-                endereco: Endereco(cep: 12, numero: 155, logradouro: "Rua Archangelo Smaniotto", bairro: "Jardim das Américas", cidade: "Curitiba", estado: "Paraná"),
-                avaliacoes: [
-                    Avaliacao(nota: 3, comentario: ""),
-                    Avaliacao(nota: 5, comentario: ""),
-                    Avaliacao(nota: 5, comentario: ""),
-                ],
-                categoria: "", telefone: "", email: "", descricao: ""),
+        print("Vou chamar os dados")
+        DAOFireBaseEMpresas.loadEmpresas(categoria) { (empresas) in
+            print("CARREGOU")
+            if self.profissionais.count > 0 {
+                self.profissionais.removeAll()
+            }
+            empresas?.forEach({ (e) in
+                print("empresa: \(e)")
+                self.profissionais.append(e)
+            })
             
-            Empresa(
-            cnpj: "", nomeFantasia: "Nome Carlinhos Boa Vista",
-            endereco: Endereco(cep: 12, numero: 12, logradouro: "", bairro: "", cidade: "", estado: ""),
-            avaliacoes: [
-                Avaliacao(nota: 4, comentario: ""),
-                Avaliacao(nota: 5, comentario: ""),
-                Avaliacao(nota: 5, comentario: ""),
-                Avaliacao(nota: 5, comentario: ""),
-                Avaliacao(nota: 5, comentario: ""),
-            ],
-            categoria: "", telefone: "", email: "", descricao: ""),
-            
-            Empresa(
-            cnpj: "", nomeFantasia: "Nome Carlinhos Boa Vista",
-            endereco: Endereco(cep: 12, numero: 12, logradouro: "", bairro: "", cidade: "", estado: ""),
-            avaliacoes: [
-                Avaliacao(nota: 4, comentario: ""),
-                Avaliacao(nota: 5, comentario: ""),
-                Avaliacao(nota: 5, comentario: ""),
-                Avaliacao(nota: 5, comentario: ""),
-                Avaliacao(nota: 5, comentario: ""),
-            ],
-            categoria: "", telefone: "", email: "", descricao: ""),
-            
-            Empresa(
-            cnpj: "", nomeFantasia: "Nome Carlinhos Boa Vista",
-            endereco: Endereco(cep: 12, numero: 12, logradouro: "", bairro: "", cidade: "", estado: ""),
-            avaliacoes: [
-                Avaliacao(nota: 4, comentario: ""),
-                Avaliacao(nota: 5, comentario: ""),
-                Avaliacao(nota: 5, comentario: ""),
-                Avaliacao(nota: 5, comentario: ""),
-                Avaliacao(nota: 5, comentario: ""),
-            ],
-            categoria: "", telefone: "", email: "", descricao: ""),
-            
-            Empresa(
-            cnpj: "", nomeFantasia: "Nome Carlinhos Boa Vista",
-            endereco: Endereco(cep: 12, numero: 12, logradouro: "", bairro: "", cidade: "", estado: ""),
-            avaliacoes: [
-                Avaliacao(nota: 4, comentario: ""),
-                Avaliacao(nota: 5, comentario: ""),
-                Avaliacao(nota: 5, comentario: ""),
-                Avaliacao(nota: 5, comentario: ""),
-                Avaliacao(nota: 5, comentario: ""),
-            ],
-            categoria: "", telefone: "", email: "", descricao: ""),
-            
-            Empresa(
-            cnpj: "", nomeFantasia: "Nome Carlinhos Boa Vista",
-            endereco: Endereco(cep: 12, numero: 12, logradouro: "", bairro: "", cidade: "", estado: ""),
-            avaliacoes: [
-                Avaliacao(nota: 4, comentario: ""),
-                Avaliacao(nota: 5, comentario: ""),
-                Avaliacao(nota: 5, comentario: ""),
-                Avaliacao(nota: 5, comentario: ""),
-                Avaliacao(nota: 5, comentario: ""),
-            ],
-            categoria: "", telefone: "", email: "", descricao: ""),
-            
-            Empresa(
-            cnpj: "", nomeFantasia: "Nome Carlinhos Boa Vista",
-            endereco: Endereco(cep: 12, numero: 12, logradouro: "", bairro: "", cidade: "", estado: ""),
-            avaliacoes: [
-                Avaliacao(nota: 4, comentario: ""),
-                Avaliacao(nota: 5, comentario: ""),
-                Avaliacao(nota: 5, comentario: ""),
-                Avaliacao(nota: 5, comentario: ""),
-                Avaliacao(nota: 5, comentario: ""),
-            ],
-            categoria: "", telefone: "", email: "", descricao: ""),
-            
-            Empresa(
-            cnpj: "", nomeFantasia: "Nome Carlinhos Boa Vista",
-            endereco: Endereco(cep: 12, numero: 12, logradouro: "", bairro: "", cidade: "", estado: ""),
-            avaliacoes: [
-                Avaliacao(nota: 4, comentario: ""),
-                Avaliacao(nota: 5, comentario: ""),
-                Avaliacao(nota: 5, comentario: ""),
-                Avaliacao(nota: 5, comentario: ""),
-                Avaliacao(nota: 5, comentario: ""),
-            ],
-            categoria: "", telefone: "", email: "", descricao: ""),
-            
-            Empresa(
-            cnpj: "", nomeFantasia: "Nome Carlinhos Boa Vista",
-            endereco: Endereco(cep: 12, numero: 12, logradouro: "", bairro: "", cidade: "", estado: ""),
-            avaliacoes: [
-                Avaliacao(nota: 4, comentario: ""),
-                Avaliacao(nota: 5, comentario: ""),
-                Avaliacao(nota: 5, comentario: ""),
-                Avaliacao(nota: 5, comentario: ""),
-                Avaliacao(nota: 5, comentario: ""),
-            ],
-            categoria: "", telefone: "", email: "", descricao: ""),
-        ]
+            self.profissionais.sort { (a, b) -> Bool in
+                let localA = CLLocation(latitude: a.endereco.latitude, longitude: a.endereco.longitude)
+                let distA  = MapaController.instance.getDistanciaKm(ate: localA)
+                let localB = CLLocation(latitude: b.endereco.latitude, longitude: b.endereco.longitude)
+                let distB  = MapaController.instance.getDistanciaKm(ate: localB)
+                return distA > distB
+            }
+            self.tableView.reloadData()
+        }
         
-        
-        
-        let quote = "Profissionais mais próximos:"
 
         // Texto normal
         // let xString = NSMutableAttributedString(string: "mais próximos:")
@@ -158,8 +70,6 @@ class ListaProfissionaisPesquisaViewController: UIViewController, UITableViewDel
 
         // Juntar as strings
         // firstString.append(secondString)
-        
-        
         
         lbl_subtitulo.attributedText = String.negrito(texto: [
             (frase: "Profissionais ", negrito: true),
@@ -181,6 +91,7 @@ class ListaProfissionaisPesquisaViewController: UIViewController, UITableViewDel
         var nota = 0
         for a in p.avaliacoes {
             nota = nota + a.nota
+            print("AVALIACAO: ", a.nota)
         }
         
         return nota / p.avaliacoes.count
@@ -204,22 +115,26 @@ class ListaProfissionaisPesquisaViewController: UIViewController, UITableViewDel
         
         let prof = profissionais[indexPath.row]
         
+        print("# avalizalçoes: ", prof.avaliacoes.count)
+        
         let nota = calculaMedia(p: prof)
         let nome = prof.nomeFantasia
         
         // TODO: pegar as coordenadas
         var distancia : String
         
-
-        if let local = MapaController.instance.getlatLon(endereco: prof.endereco) {
-            distancia = String(format: "%.1f", MapaController.instance.getDistanciaKm(ate: local))
+        let local = CLLocation(latitude: prof.endereco.latitude, longitude: prof.endereco.longitude)
+        let dist  = MapaController.instance.getDistanciaKm(ate: local)
+        if dist != -1 {
+            distancia = String(format: "%.1f", dist)
+            cell.lblDistanciaProfissional.text = distancia + " km"
         }
         else {
-            distancia = "--"
+            cell.lblDistanciaProfissional.text = "--"
         }
         
+        print("NOTA = \(nota)")
         cell.lblNomeProfissional.text = nome
-        cell.lblDistanciaProfissional.text = distancia + " km"
         cell.imgNotaProfissional?.image = UIImage(named: "star-\(nota)")
     
         return cell
@@ -229,6 +144,7 @@ class ListaProfissionaisPesquisaViewController: UIViewController, UITableViewDel
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if let vc = storyboard?.instantiateViewController(withIdentifier: "PerfilProfissionalViewController") as? PerfilProfissionalViewController{
             view.reloadInputViews()
+            vc.empresa = profissionais[indexPath.row]
             self.navigationController?.pushViewController(vc, animated: true)
         }
     }

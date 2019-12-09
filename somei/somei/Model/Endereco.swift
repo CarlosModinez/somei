@@ -35,34 +35,17 @@ class Endereco {
         self.getLonLat()
     }
     
-    /*
-    func getLonLat(){
-        //get longidute e latitude
-        let enderecoCompleto = "\(self.numero)+\(self.logradouro),+\(self.cidade)".map({(c) -> Character in
-            return c == " " ? "+": c
-        })
+    init (cep: Int, numero: Int, logradouro: String, bairro: String, cidade: String, estado: String, lon: Double, lat: Double){
         
-        print(enderecoCompleto)
-        
-        let url = URL(string: "https://nominatim.openstreetmap.org/search?q=\(enderecoCompleto),+Brazil&format=json&addressdetails=0")!
-        let task = URLSession.shared.dataTask(with: url) {(data, response, error) in
-            guard let data = data else { return }
-
-            do{
-                let json = try JSONSerialization.jsonObject(with: data, options: .mutableLeaves) as? [Dictionary<String, AnyObject>]
-
-                let lon = json?[0]["lon"] as? String
-                let lat = json?[0]["lat"] as? String
-
-                self.latitude = Double(lat ?? "0")!
-                self.longitude = Double(lon ?? "0")!
-            }catch _{
-            }
-        }
-        task.resume()
-        
+        self.cep = cep
+        self.numero = numero
+        self.logradouro = logradouro
+        self.bairro = bairro
+        self.cidade = cidade
+        self.estado = estado
+        self.latitude = lat
+        self.longitude = lon
     }
- */
     
     func getLonLat(){
         let loc = MapaController.instance.getlatLon(endereco: self)
@@ -79,8 +62,10 @@ class Endereco {
         let bairro : String = dct["bairro"] as! String
         let cidade : String = dct["cidade"] as! String
         let estado : String = dct["estado"] as! String
+        let lat : Double = dct["latitude"] as! Double
+        let lon : Double = dct["longitude"] as! Double
     
-        let endereco = Endereco(cep: cep, numero: numero, logradouro: logradouro, bairro: bairro, cidade: cidade, estado: estado)
+        let endereco = Endereco(cep: cep, numero: numero, logradouro: logradouro, bairro: bairro, cidade: cidade, estado: estado, lon: lon, lat: lat)
         
         return endereco
     }

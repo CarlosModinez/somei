@@ -16,10 +16,10 @@ class PerfilProfissionalViewController: UIViewController, UITableViewDataSource,
     var botoesEstrela : [UIButton?] = []
     
 //    -----------------APAGAR
-    var empresa : Empresa?
-    var avaliacao : Avaliacao!
-    var avaliacoes : [Avaliacao] = []
-    var endereco : Endereco!
+    var empresa : Empresa!
+//    var avaliacao : Avaliacao!
+//    var avaliacoes : [Avaliacao] = []
+//    var endereco : Endereco!
 //    -----------------APAGAR
     
     override func viewWillAppear(_ animated: Bool) {
@@ -41,17 +41,17 @@ class PerfilProfissionalViewController: UIViewController, UITableViewDataSource,
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
 //        TODO: Apagar a população aqui
-        avaliacao = Avaliacao(nota: 3, comentario: "cuza1")
-        let avaliacao2 = Avaliacao(nota: 2, comentario: "doida1")
-        avaliacoes.append(avaliacao2)
-        avaliacoes.append(avaliacao)
+//        avaliacao = Avaliacao(nota: 3, comentario: "cuza1")
+//        let avaliacao2 = Avaliacao(nota: 2, comentario: "doida1")
+//        avaliacoes.append(avaliacao2)
+//        avaliacoes.append(avaliacao)
         
-        endereco = Endereco(cep: 82030150, numero: 240, logradouro: "Rua Ferrara", bairro: "São João", cidade: "Curitiba", estado: "Taubatexas")
-        empresa = Empresa(cnpj: "123124", nomeFantasia: "Conrider Da Nike", endereco: endereco, avaliacoes: avaliacoes, categoria: "Chinelero", telefone: "99671-4302", email: "conrider@nike.com", descricao: "alo alo voce sabem quem sou eu")
+        //endereco = Endereco(cep: 82030150, numero: 240, logradouro: "Rua Ferrara", bairro: "São João", cidade: "Curitiba", estado: "Taubatexas")
+        //empresa = Empresa(cnpj: "123124", nomeFantasia: "Conrider Da Nike", endereco: endereco, avaliacoes: avaliacoes, categoria: "Chinelero", telefone: "99671-4302", email: "conrider@nike.com", descricao: "alo alo voce sabem quem sou eu")
 //      ---------------APAGAR
 
 //        de 0 a 3 é padrão do perfil, depois disso tem que somar o numero de comentários do tipo Avaliações
-        return 4 + avaliacoes.count
+        return 4 + empresa.avaliacoes.count
         
     }
 
@@ -66,7 +66,7 @@ class PerfilProfissionalViewController: UIViewController, UITableViewDataSource,
         let cell0 = tableView.dequeueReusableCell(withIdentifier: "NomeProfissional", for: indexPath) as! NomeProfissionalTableViewCell
             
 //           nome no perfil
-            cell0.lblNomeProfissional.text = empresa?.nomeFantasia
+            cell0.lblNomeProfissional.text = empresa.nomeFantasia
 
 //            TODO: imagem profissional
 //            cell0.imgProfissional.image =
@@ -74,32 +74,7 @@ class PerfilProfissionalViewController: UIViewController, UITableViewDataSource,
 //            =========================
 //            TODO: media de avaliações
 //            =========================
-            if empresa!.avaliacoes[indexPath.row].nota == 0{
-                
-                cell0.imgAvaliacao.image = UIImage(named: "star-0")
-                
-            }
-            else if empresa!.avaliacoes[indexPath.row].nota == 1{
-                          
-                cell0.imgAvaliacao.image = UIImage(named: "star-1")
-                          
-            } else if empresa!.avaliacoes[indexPath.row].nota == 2{
-                
-                cell0.imgAvaliacao.image = UIImage(named: "star-2")
-                
-            } else if empresa!.avaliacoes[indexPath.row].nota == 3{
-                
-                cell0.imgAvaliacao.image = UIImage(named: "star-3")
-                
-            } else if empresa!.avaliacoes[indexPath.row].nota == 4{
-                
-                cell0.imgAvaliacao.image = UIImage(named: "star-4")
-                
-            } else {
-                
-                cell0.imgAvaliacao.image = UIImage(named: "star-5")
-                
-            }
+            cell0.imgAvaliacao.image = UIImage(named: "star-\(calculaMedia(p: empresa))")
             
             self.tableView.rowHeight = 90
             
@@ -112,7 +87,7 @@ class PerfilProfissionalViewController: UIViewController, UITableViewDataSource,
             
             let cell1 = tableView.dequeueReusableCell(withIdentifier: "DescricaoProfissional", for: indexPath) as! DescricaoProfissionalTableViewCell
             
-            cell1.txtDescricaoProfissional.text = empresa?.descricao
+            cell1.txtDescricaoProfissional.text = empresa.descricao
             
             self.tableView.rowHeight = 165
 
@@ -138,7 +113,7 @@ class PerfilProfissionalViewController: UIViewController, UITableViewDataSource,
         
         else if indexPath.row == 3{
             
-             let cell3 = tableView.dequeueReusableCell(withIdentifier: "AvaliacaoProfissional", for: indexPath) as! AvaliacaoProfissionalTableViewCell
+            let cell3 = tableView.dequeueReusableCell(withIdentifier: "AvaliacaoProfissional", for: indexPath) as! AvaliacaoProfissionalTableViewCell
 
             self.tableView.rowHeight = 80
             
@@ -153,32 +128,10 @@ class PerfilProfissionalViewController: UIViewController, UITableViewDataSource,
             return cell3
         }
         
-        
+        // Células de avaliação
         else {
-            
-            cell4.txtComentario.text = empresa?.avaliacoes[indexPath.row - 4].comentario
-            
-            switch empresa?.avaliacoes[indexPath.row - 4].nota {
-            case 1:
-                cell4.imgAvaliacao.image = UIImage(named: "star-1")
-                
-            case 2:
-                cell4.imgAvaliacao.image = UIImage(named: "star-2")
-            
-            case 3:
-                cell4.imgAvaliacao.image = UIImage(named: "star-3")
-            
-            case 4:
-                cell4.imgAvaliacao.image = UIImage(named: "star-4")
-            
-            case 5:
-                cell4.imgAvaliacao.image = UIImage(named: "star-5")
-                
-            default:
-                break
-                
-            }
-
+            cell4.txtComentario.text = empresa.avaliacoes[indexPath.row - 4].comentario
+            cell4.imgAvaliacao.image = UIImage(named: "star-\(empresa.avaliacoes[indexPath.row - 4].nota)")
         }
 
         return cell4
@@ -193,9 +146,9 @@ class PerfilProfissionalViewController: UIViewController, UITableViewDataSource,
         controller.messageComposeDelegate = self
         
         //conteudo da mensagem
-            controller.body = "Olá, \(empresa!.nomeFantasia)! Encontrei seu perfil no app Somei e gostaria de solicitar um orçamento."
+            controller.body = "Olá, \(empresa.nomeFantasia)! Encontrei seu perfil no app Somei e gostaria de solicitar um orçamento."
         //aqui chama o numero de telefone do model
-            controller.recipients = ["\(empresa!.telefone)"]
+            controller.recipients = ["\(empresa.telefone)"]
             
         vibrate()
         
@@ -228,7 +181,7 @@ class PerfilProfissionalViewController: UIViewController, UITableViewDataSource,
     @objc func ligarParaProfissional(){
         
         // chama o numero do model
-        let phone = empresa!.telefone
+        let phone = empresa.telefone
         
         if let url = URL(string: "tel://\(phone)"), UIApplication.shared.canOpenURL(url) {
             if #available(iOS 10, *) {
@@ -256,7 +209,7 @@ class PerfilProfissionalViewController: UIViewController, UITableViewDataSource,
             }
         }
         
-        avaliacoes.append(Avaliacao(nota: sender.tag + 1, comentario: "") )
+        empresa.avaliacoes.append(Avaliacao(nota: sender.tag + 1, comentario: "") )
         tableView.reloadData()
 
         vibrate()
@@ -265,7 +218,9 @@ class PerfilProfissionalViewController: UIViewController, UITableViewDataSource,
         if let vc = storyboard?.instantiateViewController(withIdentifier: "AdicionarComentarioViewController") as? AdicionarComentarioViewController {
             vc.notaInicial = sender.tag
             vc.empresa = empresa
-            self.navigationController?.pushViewController(vc, animated: true)
+            //show(vc, sender: self)
+            present(vc, animated: true, completion: nil)
+            //self.navigationController?.pushViewController(vc, animated: true)
             
             tableView.reloadData()
         }
@@ -280,6 +235,23 @@ class PerfilProfissionalViewController: UIViewController, UITableViewDataSource,
 
     }
     
-
+    func calculaMedia (p : Empresa) -> Int {
+        
+        // Previne pra caso não tenha recebido avaliações
+        guard p.avaliacoes.count > 0 else {
+            return 0
+        }
+        
+        // Calcula a média
+        var nota = 0
+        for a in p.avaliacoes {
+            nota = nota + a.nota
+            print("AVALIACAO: ", a.nota)
+        }
+        
+        return nota / p.avaliacoes.count
+    }
  
 }
+
+

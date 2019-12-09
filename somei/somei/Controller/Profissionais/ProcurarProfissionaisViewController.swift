@@ -11,11 +11,14 @@ import CoreLocation
 
 class ProcurarProfissionaisViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UISearchBarDelegate {
     
+    // MARK: Outlets
+    @IBOutlet weak var lbl_titulo: UILabel!
+    
     
     // MARK: Variáveis
     //Vetor com os elementos da tableView
     let categorias = [
-        "Felipe", "Encanador de jogo 2D", "Traficante de drogas ilícitas no mercado internacional", "Jose", "Aquele amigo chato do rolê", "Cristiano", "Restaurador de obras arte", "Animador de festas adultas", "Ana", "Comerciante de bicicletas e triciculos", "Conrado", "Motorista de aplicativo", "Carlinhos",
+        "designer", "eletricista", "fotógrafo", "Traficante de drogas ilícitas no mercado internacional", "Jose", "Aquele amigo chato do rolê", "Cristiano", "Restaurador de obras arte", "Animador de festas adultas", "Ana", "Comerciante de bicicletas e triciculos", "Conrado", "Motorista de aplicativo", "Carlinhos",
     ]
     
     // Controller da search bar
@@ -61,6 +64,7 @@ class ProcurarProfissionaisViewController: UIViewController, UICollectionViewDel
         searchBar.delegate = self
         //searchBar.barTintColor = .white
         
+        //DAOFireBaseCategorias
         //searchController.searchBar.delegate = self
         
         // Modais serão apresentados a partir desta tela
@@ -73,6 +77,13 @@ class ProcurarProfissionaisViewController: UIViewController, UICollectionViewDel
           layout.delegate = self
         }
         
+        let texto1 = NSMutableAttributedString(string: "Qual ")
+        let texto2 = NSMutableAttributedString(string: "profissional ", attributes: [.font: UIFont.boldSystemFont(ofSize: 32)])
+        let texto3 = NSMutableAttributedString(string: "você procura?")
+        texto1.append(texto2)
+        texto1.append(texto3)
+        
+        lbl_titulo.attributedText = texto1
         
         // Design da collection//
         collectionView?.backgroundColor = .clear
@@ -83,12 +94,31 @@ class ProcurarProfissionaisViewController: UIViewController, UICollectionViewDel
         super.viewWillAppear(animated)
                 
         // Tira o fundo cinza da caixa de busca
-        for sub in searchBar.subviews {
-            for s in sub.subviews {
-                for subview in s.subviews {
-                    subview.backgroundColor = .white
-                }
+//        for sub in searchBar.subviews {
+//            for s in sub.subviews {
+//                for subview in s.subviews {
+//                    subview.backgroundColor = .white
+//                    subview.alpha = 1
+//                }
+//            }
+//            sub.backgroundColor = .white
+//        }
+//        
+        if let textField = searchBar.value(forKey: "searchField") as? UITextField {
+            textField.backgroundColor = .white
+            //textField.font = myFont
+            //textField.textColor = myTextColor
+            //textField.tintColor = myTintColor
+            // And so on...
+
+            let backgroundView = textField.subviews.first
+            if #available(iOS 11.0, *) { // If `searchController` is in `navigationItem`
+                backgroundView?.backgroundColor = UIColor.white.withAlphaComponent(0.3) //Or any transparent color that matches with the `navigationBar color`
+                backgroundView?.subviews.forEach({ $0.removeFromSuperview() }) // Fixes an UI bug when searchBar appears or hides when scrolling
             }
+            backgroundView?.layer.cornerRadius = 10.5
+            backgroundView?.layer.masksToBounds = true
+            //Continue changing more properties...
         }
         
         // Deselegante, obriga o LM responder pra cá, porque tem que ser um vc

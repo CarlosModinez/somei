@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vhc-Zh-V1L">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vhc-Zh-V1L">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -951,7 +951,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="448"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoBranca" translatesAutoresizingMaskIntoConstraints="NO" id="lmW-HK-6J3">
-                                        <rect key="frame" x="83" y="-74.5" width="248" height="641.5"/>
+                                        <rect key="frame" x="83" y="-74.5" width="248" height="1283"/>
                                     </imageView>
                                 </subviews>
                                 <constraints>
@@ -993,7 +993,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="encontreProfissionais-1" translatesAutoresizingMaskIntoConstraints="NO" id="O93-zo-IDx">
-                                <rect key="frame" x="0.0" y="0.0" width="414.00000000000045" height="812"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="812"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JUZ-oa-rAa">
                                 <rect key="frame" x="0.0" y="537.5" width="414" height="358.5"/>
@@ -1104,7 +1104,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="negocieServico" translatesAutoresizingMaskIntoConstraints="NO" id="3j2-oo-qcj">
-                                <rect key="frame" x="0.0" y="0.0" width="414.00000000000045" height="812"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="812"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6d2-Zk-jgL">
                                 <rect key="frame" x="0.0" y="537.5" width="414" height="358.5"/>
@@ -1223,7 +1223,7 @@ Negocie o orçamento do serviço  diretamente por telefone ou sms e feche o neg�
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avalieSolucao" translatesAutoresizingMaskIntoConstraints="NO" id="CmZ-1p-Xft">
-                                <rect key="frame" x="0.0" y="0.0" width="414.00000000000045" height="812"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="812"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U3T-ku-4qL">
                                 <rect key="frame" x="0.0" y="537.5" width="414" height="358.5"/>

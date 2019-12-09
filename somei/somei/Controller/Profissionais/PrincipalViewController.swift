@@ -26,7 +26,7 @@ class PrincipalViewController: UIViewController {
 //        logoutUsiario()
 //        dadosCnpj()
         
-        getlatLon()
+       // getlatLon()
         
         
 
