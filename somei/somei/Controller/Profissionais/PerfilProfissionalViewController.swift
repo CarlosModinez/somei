@@ -199,8 +199,9 @@ class PerfilProfissionalViewController: UIViewController, UITableViewDataSource,
         
         // chama o numero do model
         let phone = empresa.telefone
-        
+        print("phone = ", phone)
         if let url = URL(string: "tel://\(phone)"), UIApplication.shared.canOpenURL(url) {
+            print("entrou")
             if #available(iOS 10, *) {
                 UIApplication.shared.open(url)
             } else {

@@ -23,8 +23,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         
         super.viewDidLoad()
         
-        self.navigationController?.navigationBar.transparentNavigationBar()
-        self.navigationController?.navigationBar.tintColor = UIColor.white
+//        self.navigationController?.navigationBar.transparentNavigationBar()
+//        self.navigationController?.navigationBar.tintColor = UIColor.white
         
         if(Model.instance.isLogado){
             self.proximaPagina()
@@ -84,17 +84,19 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     func proximaPagina(){
         if(self.voltarPara == "perfil"){
             //MARK: Achar o id e classe para a página q vai
-            if let vc = self.storyboard?.instantiateViewController(withIdentifier: "procurarProfissionaisViewController") as? ProcurarProfissionaisViewController{
-                self.navigationController?.present(vc, animated: true, completion: {
-
+            if let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "tabBar") as? UITabBarController {
+                
+                navigationController?.dismiss(animated: true, completion:  {
+                    NotificationCenter.default.post(name: NSNotification.Name(rawValue: "logou"), object: nil)
+//                    self.navigationController!.setViewControllers([vc], animated: true)
                 })
+                
             }
         }else{
+            print("Indo para os profissionais")
             //MARK: Achar o id e classe para a página q vai
-            if let vc = self.storyboard?.instantiateViewController(withIdentifier: "procurarProfissionaisViewController") as? ProcurarProfissionaisViewController{
-                self.navigationController?.present(vc, animated: true, completion: {
-
-                })
+            if let vc = UIStoryboard(name: "Profissionais", bundle: nil).instantiateViewController(withIdentifier: "ProcurarProfissionaisViewController") as? ProcurarProfissionaisViewController{
+                navigationController?.setViewControllers([vc], animated: true)
             }
         }
     }

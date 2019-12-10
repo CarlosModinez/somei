@@ -13,8 +13,8 @@ class finalOnboarding: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-    self.navigationController?.navigationBar.transparentNavigationBar()
-        self.navigationController?.navigationBar.tintColor = UIColor.white
+//    self.navigationController?.navigationBar.transparentNavigationBar()
+//        self.navigationController?.navigationBar.tintColor = UIColor.white
     }
     
 

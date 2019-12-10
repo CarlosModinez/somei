@@ -11,7 +11,7 @@
         <!--Procurar Profissionais View Controller-->
         <scene sceneID="ao6-p4-4RF">
             <objects>
-                <viewController id="ZKf-6d-vva" customClass="ProcurarProfissionaisViewController" customModule="Somei" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ProcurarProfissionaisViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ZKf-6d-vva" customClass="ProcurarProfissionaisViewController" customModule="Somei" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ju6-g7-HLr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -169,7 +169,7 @@ Cg
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="f4U-Ua-Fwo"/>
                     </view>
-                    <navigationItem key="navigationItem" id="ysJ-bL-K9j"/>
+                    <navigationItem key="navigationItem" leftItemsSupplementBackButton="YES" id="ysJ-bL-K9j"/>
                     <connections>
                         <outlet property="collectionView" destination="4qO-q6-wda" id="fty-pq-zYd"/>
                         <outlet property="lbl_sub" destination="Iyu-ii-pmA" id="KTb-ux-Cyc"/>
@@ -191,7 +191,7 @@ Cg
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TdU-tT-put">
-                                <rect key="frame" x="0.0" y="165.5" width="414" height="779.5"/>
+                                <rect key="frame" x="0.0" y="228" width="414" height="717"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Xr-ZM-scH">
                                         <rect key="frame" x="16" y="38" width="382" height="23.5"/>
@@ -214,7 +214,7 @@ Cg
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8eh-us-jv8">
-                                        <rect key="frame" x="0.0" y="69" width="414" height="591"/>
+                                        <rect key="frame" x="0.0" y="69" width="414" height="543.5"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ListaProfissionais" focusStyle="custom" rowHeight="64" id="1KP-ky-J7z" customClass="ListaProfissionaisTableViewCell" customModule="Somei" customModuleProvider="target">
@@ -295,7 +295,7 @@ Cg
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&lt;categoria&gt;" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EJj-Cv-FRh">
-                                <rect key="frame" x="115.5" y="115" width="183.5" height="38.5"/>
+                                <rect key="frame" x="115.5" y="177.5" width="183.5" height="38.5"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -308,7 +308,7 @@ Cg
                             <constraint firstItem="TdU-tT-put" firstAttribute="top" secondItem="EJj-Cv-FRh" secondAttribute="bottom" constant="12" id="BgA-Jg-WYL"/>
                             <constraint firstItem="TdU-tT-put" firstAttribute="centerX" secondItem="pZc-zU-Ztt" secondAttribute="centerX" id="cNO-Vm-HF0"/>
                             <constraint firstItem="TdU-tT-put" firstAttribute="bottom" secondItem="pZc-zU-Ztt" secondAttribute="bottom" constant="83" id="eMr-1a-Wgg"/>
-                            <constraint firstItem="TdU-tT-put" firstAttribute="height" secondItem="f8A-QJ-mXv" secondAttribute="height" multiplier="0.87" id="oZ9-hz-LA1"/>
+                            <constraint firstItem="TdU-tT-put" firstAttribute="height" secondItem="f8A-QJ-mXv" secondAttribute="height" multiplier="0.8" id="oZ9-hz-LA1"/>
                             <constraint firstItem="TdU-tT-put" firstAttribute="width" secondItem="f8A-QJ-mXv" secondAttribute="width" id="vZz-Yw-iQR"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="pZc-zU-Ztt"/>

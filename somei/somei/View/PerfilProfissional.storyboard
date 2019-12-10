@@ -25,7 +25,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Njf-5e-GIa">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Njf-5e-GIa">
                                 <rect key="frame" x="25" y="219" width="364" height="688"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
@@ -251,7 +251,7 @@
                                                         <constraint firstAttribute="width" secondItem="p0P-1Z-uhY" secondAttribute="height" multiplier="5:1" id="DiO-bt-tfM"/>
                                                     </constraints>
                                                 </imageView>
-                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Pontual e super caprichosa, preço em conta e aceita cartão de crédito. Recomendo!!!" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="8tq-5Q-mEl">
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Pontual e super caprichosa, preço em conta e aceita cartão de crédito. Recomendo!!!" translatesAutoresizingMaskIntoConstraints="NO" id="8tq-5Q-mEl">
                                                     <rect key="frame" x="16" y="18" width="324" height="86"/>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                     <constraints>

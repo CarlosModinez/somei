@@ -13,8 +13,18 @@ class InicioViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.navigationController?.navigationBar.transparentNavigationBar()
-        self.navigationController?.navigationBar.tintColor = UIColor.white
+//        self.navigationController?.navigationBar.transparentNavigationBar()
+//        self.navigationController?.navigationBar.tintColor = UIColor.white
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(self.tobias), name: NSNotification.Name(rawValue: "logou"), object: nil)
+    }
+    
+    @objc func tobias () {
+        if let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "tabBar") as? UITabBarController {
+            
+            self.navigationController!.setViewControllers([vc], animated: true)
+            
+        }
     }
     
     @IBAction func contratar () {

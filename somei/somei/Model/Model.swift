@@ -19,4 +19,7 @@ class Model{
     var isLogado :Bool = false
     var usuario :Usuario!
     
+    // Tela onde o login foi solicitado
+    var origemLoginElfica : String!
+    
 }
