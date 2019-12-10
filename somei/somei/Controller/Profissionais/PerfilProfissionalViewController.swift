@@ -11,7 +11,7 @@ import MessageUI
 
 class PerfilProfissionalViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, MFMessageComposeViewControllerDelegate {
 
-    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet var tableView: UITableView!
     
     var botoesEstrela : [UIButton?] = []
     
@@ -22,14 +22,25 @@ class PerfilProfissionalViewController: UIViewController, UITableViewDataSource,
 //    var endereco : Endereco!
 //    -----------------APAGAR
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(self.functionName), name: NSNotification.Name(rawValue: "NotificationID"), object: nil)
+    }
+    
+    @objc func functionName() {
+
+        tableView.reloadData()
+    }
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
         tableView.dataSource = self
         tableView.delegate = self
         
-        self.navigationController?.navigationBar.transparentNavigationBar()
-        self.navigationController?.navigationBar.tintColor = UIColor.white
+//        self.navigationController?.navigationBar.transparentNavigationBar()
+//        self.navigationController?.navigationBar.tintColor = UIColor.white
         
 
         tableView.reloadData()
@@ -218,6 +229,7 @@ class PerfilProfissionalViewController: UIViewController, UITableViewDataSource,
         if let vc = storyboard?.instantiateViewController(withIdentifier: "AdicionarComentarioViewController") as? AdicionarComentarioViewController {
             vc.notaInicial = sender.tag
             vc.empresa = empresa
+            //vc.volta = self
             //show(vc, sender: self)
             present(vc, animated: true) {
                 self.tableView.reloadData()

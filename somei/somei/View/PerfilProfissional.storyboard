@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lWi-Kd-cnK">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
@@ -37,13 +37,13 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Maria Helena Cruz" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TDF-cs-TXO" userLabel="nomePerfil">
-                                                    <rect key="frame" x="0.0" y="14" width="179" height="24"/>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                    <rect key="frame" x="0.0" y="14" width="364" height="38.5"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star-4" translatesAutoresizingMaskIntoConstraints="NO" id="H4i-Uu-SQM" userLabel="imgEstrelas">
-                                                    <rect key="frame" x="0.0" y="37" width="90" height="18"/>
+                                                    <rect key="frame" x="0.0" y="51.5" width="90" height="18"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="H4i-Uu-SQM" secondAttribute="height" multiplier="5:1" id="61C-Ay-yau"/>
                                                     </constraints>
@@ -54,7 +54,7 @@
                                                 <constraint firstItem="H4i-Uu-SQM" firstAttribute="top" secondItem="TDF-cs-TXO" secondAttribute="bottom" constant="-1" id="bLq-CU-LJY"/>
                                                 <constraint firstItem="H4i-Uu-SQM" firstAttribute="leading" secondItem="TDF-cs-TXO" secondAttribute="leading" id="cGe-iz-qWJ"/>
                                                 <constraint firstItem="TDF-cs-TXO" firstAttribute="top" secondItem="mps-ql-Bj6" secondAttribute="top" constant="14" id="nGv-KH-dye"/>
-                                                <constraint firstItem="TDF-cs-TXO" firstAttribute="width" secondItem="mps-ql-Bj6" secondAttribute="width" multiplier="0.491758" id="qbo-SE-kXJ"/>
+                                                <constraint firstItem="TDF-cs-TXO" firstAttribute="width" secondItem="mps-ql-Bj6" secondAttribute="width" id="qbo-SE-kXJ"/>
                                                 <constraint firstItem="TDF-cs-TXO" firstAttribute="leading" secondItem="mps-ql-Bj6" secondAttribute="leading" id="vrU-vr-lpM"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -255,7 +255,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Pontual e super caprichosa, preço em conta e aceita cartão de crédito. Recomendo!!!" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="8tq-5Q-mEl">
-                                                    <rect key="frame" x="20" y="30" width="324" height="86"/>
+                                                    <rect key="frame" x="16" y="18" width="324" height="86"/>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="8tq-5Q-mEl" secondAttribute="height" multiplier="162:43" id="Teb-Nv-jm5"/>
@@ -269,8 +269,8 @@
                                                 <constraint firstItem="p0P-1Z-uhY" firstAttribute="width" secondItem="t5v-60-zxk" secondAttribute="width" multiplier="0.247253" id="5Pv-Eh-bSV"/>
                                                 <constraint firstItem="8tq-5Q-mEl" firstAttribute="width" secondItem="t5v-60-zxk" secondAttribute="width" multiplier="0.89011" id="L8d-Nx-hda"/>
                                                 <constraint firstItem="p0P-1Z-uhY" firstAttribute="top" secondItem="t5v-60-zxk" secondAttribute="top" id="XZe-zu-82p"/>
-                                                <constraint firstItem="8tq-5Q-mEl" firstAttribute="top" secondItem="p0P-1Z-uhY" secondAttribute="bottom" constant="12" id="pcF-7k-FV7"/>
-                                                <constraint firstItem="8tq-5Q-mEl" firstAttribute="centerX" secondItem="t5v-60-zxk" secondAttribute="centerX" id="roV-of-8RA"/>
+                                                <constraint firstItem="8tq-5Q-mEl" firstAttribute="top" secondItem="p0P-1Z-uhY" secondAttribute="bottom" id="pcF-7k-FV7"/>
+                                                <constraint firstItem="8tq-5Q-mEl" firstAttribute="centerX" secondItem="t5v-60-zxk" secondAttribute="centerX" constant="-4" id="roV-of-8RA"/>
                                                 <constraint firstItem="p0P-1Z-uhY" firstAttribute="leading" secondItem="t5v-60-zxk" secondAttribute="leading" constant="20" id="ylo-jX-yqj"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -502,24 +502,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="waG-EI-z7w" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="6388.4057971014499" y="138.61607142857142"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="OnM-JK-kks">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="GWp-Qx-ugK" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hUI-7u-kh0">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="lWi-Kd-cnK" kind="relationship" relationship="rootViewController" id="sYR-GE-0hv"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Yrd-mh-nrB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4628.985507246377" y="138.61607142857142"/>
         </scene>
     </scenes>
     <resources>
