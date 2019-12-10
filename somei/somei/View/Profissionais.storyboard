@@ -141,6 +141,7 @@ Cg
                             </collectionView>
                             <searchBar contentMode="redraw" searchBarStyle="minimal" text="" placeholder="Ex: Redator, eletricista, etc." translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oou-gN-snP">
                                 <rect key="frame" x="24" y="208" width="366" height="56"/>
+                                <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <scopeButtonTitles>
@@ -171,6 +172,7 @@ Cg
                     <navigationItem key="navigationItem" id="ysJ-bL-K9j"/>
                     <connections>
                         <outlet property="collectionView" destination="4qO-q6-wda" id="fty-pq-zYd"/>
+                        <outlet property="lbl_sub" destination="Iyu-ii-pmA" id="KTb-ux-Cyc"/>
                         <outlet property="lbl_titulo" destination="HBn-II-gXS" id="s9w-1o-sRx"/>
                         <outlet property="searchBar" destination="Oou-gN-snP" id="kOP-BQ-HdU"/>
                         <segue destination="hVc-6s-QwD" kind="show" id="c36-cc-0be"/>
@@ -292,10 +294,18 @@ Cg
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&lt;categoria&gt;" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EJj-Cv-FRh">
+                                <rect key="frame" x="115.5" y="115" width="183.5" height="38.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.37697637080000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" red="0.20380932090000001" green="0.33304071429999998" blue="0.96475893260000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
+                            <constraint firstItem="EJj-Cv-FRh" firstAttribute="centerX" secondItem="pZc-zU-Ztt" secondAttribute="centerX" id="29C-R5-f2G"/>
+                            <constraint firstItem="TdU-tT-put" firstAttribute="top" secondItem="EJj-Cv-FRh" secondAttribute="bottom" constant="12" id="BgA-Jg-WYL"/>
                             <constraint firstItem="TdU-tT-put" firstAttribute="centerX" secondItem="pZc-zU-Ztt" secondAttribute="centerX" id="cNO-Vm-HF0"/>
                             <constraint firstItem="TdU-tT-put" firstAttribute="bottom" secondItem="pZc-zU-Ztt" secondAttribute="bottom" constant="83" id="eMr-1a-Wgg"/>
                             <constraint firstItem="TdU-tT-put" firstAttribute="height" secondItem="f8A-QJ-mXv" secondAttribute="height" multiplier="0.87" id="oZ9-hz-LA1"/>
@@ -306,6 +316,7 @@ Cg
                     <navigationItem key="navigationItem" id="EBk-Fy-MDN"/>
                     <connections>
                         <outlet property="lbl_subtitulo" destination="2Xr-ZM-scH" id="3Ze-zG-SGV"/>
+                        <outlet property="lbl_titulo" destination="EJj-Cv-FRh" id="Syy-eU-Gcp"/>
                         <outlet property="tableView" destination="8eh-us-jv8" id="DoP-xp-rL9"/>
                         <segue destination="Cdd-Vz-Lh2" kind="show" id="nYx-By-QiT"/>
                     </connections>

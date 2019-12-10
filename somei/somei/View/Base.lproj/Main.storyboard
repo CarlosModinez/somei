@@ -1205,7 +1205,7 @@ Negocie o orçamento do serviço  diretamente por telefone ou sms e feche o neg�
         <!--Navigation Controller-->
         <scene sceneID="5F5-u2-KqS">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vhc-Zh-V1L" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalTransitionStyle="crossDissolve" id="vhc-Zh-V1L" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Cx2-zZ-13Q">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>

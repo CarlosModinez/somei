@@ -13,6 +13,7 @@ class ProcurarProfissionaisViewController: UIViewController, UICollectionViewDel
     
     // MARK: Outlets
     @IBOutlet weak var lbl_titulo: UILabel!
+    @IBOutlet weak var lbl_sub: UILabel!
     
     
     // MARK: Variáveis
@@ -57,6 +58,7 @@ class ProcurarProfissionaisViewController: UIViewController, UICollectionViewDel
             self.collectionView.reloadData()
         })
         //print("")
+//        navigationController.st
         
         collectionView.dataSource = self
         collectionView.delegate = self
@@ -92,25 +94,16 @@ class ProcurarProfissionaisViewController: UIViewController, UICollectionViewDel
         
         lbl_titulo.attributedText = texto1
         
+        let t1 = NSMutableAttributedString(string: "mais procurados do dia:")
+        let t2 = NSMutableAttributedString(string: "Profissionais ", attributes: [.font: UIFont.boldSystemFont(ofSize: 20)])
+        t2.append(t1)
+        
+        lbl_sub.attributedText = t2
+        
         // Design da collection//
         collectionView?.backgroundColor = .clear
         collectionView?.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 10, right: 0)
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-                
-        // Tira o fundo cinza da caixa de busca
-//        for sub in searchBar.subviews {
-//            for s in sub.subviews {
-//                for subview in s.subviews {
-//                    subview.backgroundColor = .white
-//                    subview.alpha = 1
-//                }
-//            }
-//            sub.backgroundColor = .white
-//        }
-//        
+        
         if let textField = searchBar.value(forKey: "searchField") as? UITextField {
             textField.backgroundColor = .white
             //textField.font = myFont
@@ -127,6 +120,22 @@ class ProcurarProfissionaisViewController: UIViewController, UICollectionViewDel
             backgroundView?.layer.masksToBounds = true
             //Continue changing more properties...
         }
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+                
+        // Tira o fundo cinza da caixa de busca
+//        for sub in searchBar.subviews {
+//            for s in sub.subviews {
+//                for subview in s.subviews {
+//                    subview.backgroundColor = .white
+//                    subview.alpha = 1
+//                }
+//            }
+//            sub.backgroundColor = .white
+//        }
+//
         
         // Deselegante, obriga o LM responder pra cá, porque tem que ser um vc
         MapaController.instance.locationManager.delegate = self

@@ -26,6 +26,7 @@ class PerfilProfissionalViewController: UIViewController, UITableViewDataSource,
         super.viewDidLoad()
         
         NotificationCenter.default.addObserver(self, selector: #selector(self.functionName), name: NSNotification.Name(rawValue: "NotificationID"), object: nil)
+        
     }
     
     @objc func functionName() {
@@ -39,6 +40,8 @@ class PerfilProfissionalViewController: UIViewController, UITableViewDataSource,
         tableView.dataSource = self
         tableView.delegate = self
         
+        tableView.estimatedRowHeight = 44.0
+        tableView.rowHeight = UITableView.automaticDimension
 //        self.navigationController?.navigationBar.transparentNavigationBar()
 //        self.navigationController?.navigationBar.tintColor = UIColor.white
         
@@ -67,6 +70,9 @@ class PerfilProfissionalViewController: UIViewController, UITableViewDataSource,
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        tableView.estimatedRowHeight = 44.0
+        tableView.rowHeight = UITableView.automaticDimension
 
         // chamando a cell4 aqui pra não dar xabu no return lá no final dessa função da tableview
         let cell4 = tableView.dequeueReusableCell(withIdentifier: "Comentario", for: indexPath) as! ComentarioTableViewCell
@@ -100,7 +106,7 @@ class PerfilProfissionalViewController: UIViewController, UITableViewDataSource,
             
             cell1.txtDescricaoProfissional.text = empresa.descricao
             
-            self.tableView.rowHeight = 165
+            //self.tableView.rowHeight = 165
 
             return cell1
             

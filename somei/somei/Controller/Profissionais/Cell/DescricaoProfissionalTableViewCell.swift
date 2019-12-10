@@ -10,7 +10,7 @@ import UIKit
 
 class DescricaoProfissionalTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var txtDescricaoProfissional: UITextView!
+    @IBOutlet weak var txtDescricaoProfissional: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

@@ -61,6 +61,8 @@ class ListaProfissionaisPesquisaViewController: UIViewController, UITableViewDel
             self.tableView.reloadData()
         }
         
+        lbl_titulo.text = categoria
+        
 
         // Texto normal
         // let xString = NSMutableAttributedString(string: "mais próximos:")

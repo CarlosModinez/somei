@@ -63,36 +63,33 @@
                                             <outlet property="lblNomeProfissional" destination="TDF-cs-TXO" id="aJ9-QL-bT9"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="DescricaoProfissional" rowHeight="165" id="Rhi-a7-jim" customClass="DescricaoProfissionalTableViewCell" customModule="Somei" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="111" width="364" height="165"/>
+                                    <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="DescricaoProfissional" id="Rhi-a7-jim" customClass="DescricaoProfissionalTableViewCell" customModule="Somei" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="111" width="364" height="42.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Rhi-a7-jim" id="PVN-CC-SIP">
-                                            <rect key="frame" x="0.0" y="0.0" width="364" height="165"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="364" height="42.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nkZ-6d-f9U">
-                                                    <rect key="frame" x="0.0" y="0.0" width="364" height="165"/>
-                                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                                    <string key="text">Experiência, qualidade e preço justo. Lâmpadas, refletores, montagem de quadros, passagem de fiação padrão Copel, tomadas, interruptores, disjuntores, DR, DDR. Comodidades: mais opções de pagamento, diversas áreas de atuação, garantia do serviço.</string>
-                                                    <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                                </textView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GeL-P7-mPv">
+                                                    <rect key="frame" x="20" y="11" width="324" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="nkZ-6d-f9U" firstAttribute="centerY" secondItem="PVN-CC-SIP" secondAttribute="centerY" id="9xR-Fe-MJQ"/>
-                                                <constraint firstItem="nkZ-6d-f9U" firstAttribute="width" secondItem="PVN-CC-SIP" secondAttribute="width" id="DI6-g9-phh"/>
-                                                <constraint firstItem="nkZ-6d-f9U" firstAttribute="top" secondItem="PVN-CC-SIP" secondAttribute="top" multiplier="0.95" id="Ywx-6v-X0u"/>
-                                                <constraint firstItem="nkZ-6d-f9U" firstAttribute="centerX" secondItem="PVN-CC-SIP" secondAttribute="centerX" id="mwu-oR-QeN"/>
-                                                <constraint firstItem="nkZ-6d-f9U" firstAttribute="width" secondItem="PVN-CC-SIP" secondAttribute="height" multiplier="364:165" id="xYD-8C-Y2N"/>
+                                                <constraint firstItem="GeL-P7-mPv" firstAttribute="top" secondItem="PVN-CC-SIP" secondAttribute="topMargin" id="Hk8-Pp-ZfO"/>
+                                                <constraint firstItem="GeL-P7-mPv" firstAttribute="leading" secondItem="PVN-CC-SIP" secondAttribute="leadingMargin" id="Zny-nd-RjQ"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="GeL-P7-mPv" secondAttribute="bottom" id="hRY-Zr-G0y"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="GeL-P7-mPv" secondAttribute="trailing" id="jFj-2F-1uJ"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="txtDescricaoProfissional" destination="nkZ-6d-f9U" id="OUb-bC-fxh"/>
+                                            <outlet property="txtDescricaoProfissional" destination="GeL-P7-mPv" id="THI-2s-MHw"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="BotaoContato" rowHeight="140" id="q5b-IM-wCe" customClass="BotaoContatoTableViewCell" customModule="Somei" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="276" width="364" height="140"/>
+                                        <rect key="frame" x="0.0" y="153.5" width="364" height="140"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="q5b-IM-wCe" id="7fm-HE-Jqe">
                                             <rect key="frame" x="0.0" y="0.0" width="364" height="140"/>
@@ -142,7 +139,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="AvaliacaoProfissional" rowHeight="80" id="sag-2I-LXI" customClass="AvaliacaoProfissionalTableViewCell" customModule="Somei" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="416" width="364" height="80"/>
+                                        <rect key="frame" x="0.0" y="293.5" width="364" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="sag-2I-LXI" id="AJI-DE-GV9">
                                             <rect key="frame" x="0.0" y="0.0" width="364" height="80"/>
@@ -242,7 +239,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Comentario" rowHeight="112" id="4dR-24-Zh3" customClass="ComentarioTableViewCell" customModule="Somei" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="496" width="364" height="112"/>
+                                        <rect key="frame" x="0.0" y="373.5" width="364" height="112"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4dR-24-Zh3" id="t5v-60-zxk">
                                             <rect key="frame" x="0.0" y="0.0" width="364" height="112"/>
