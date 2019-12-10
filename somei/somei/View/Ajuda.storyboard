@@ -11,28 +11,28 @@
         <!--Ajuda View Controller-->
         <scene sceneID="5bq-2c-Z4U">
             <objects>
-                <viewController storyboardIdentifier="AjudaViewController" id="jhU-YW-2HT" customClass="AjudaViewController" customModule="Somei" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AjudaViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="jhU-YW-2HT" customClass="AjudaViewController" customModule="Somei" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pdH-gm-6dy">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ofQ-id-cW9">
-                                <rect key="frame" x="0.0" y="235" width="414" height="661"/>
+                                <rect key="frame" x="0.0" y="164" width="414" height="732"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Entre em contato com o Departamento de Proteção e Defesa do Consumidor do seu estado e abra uma reclamação." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="54X-Dz-P8H">
-                                        <rect key="frame" x="40" y="91.5" width="334" height="63"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                        <rect key="frame" x="40" y="87" width="334" height="94.5"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Denunciar perfil" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="prv-SY-R2N">
-                                        <rect key="frame" x="40" y="174.5" width="334" height="24"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                        <rect key="frame" x="40" y="201.5" width="334" height="25.5"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="21"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XyX-SQ-Hdn">
-                                        <rect key="frame" x="40" y="218.5" width="334" height="189"/>
+                                        <rect key="frame" x="40" y="247" width="334" height="212.5"/>
                                         <string key="text">Caso deseje denunciar o perfil do profissional entre em contato conosco via e-mail:
 
 contato@somei.net.br
@@ -40,7 +40,7 @@ contato@somei.net.br
 Atenciosamente,
 
 Equipe SOMEI</string>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -62,13 +62,13 @@ Equipe SOMEI</string>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Teve algum problema com o prestador de serviços?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iSC-OU-EEJ">
-                                <rect key="frame" x="40" y="258.5" width="334" height="48"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                <rect key="frame" x="40" y="180.5" width="334" height="50.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="21"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ajuda" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ggd-WA-7nk">
-                                <rect key="frame" x="40" y="110" width="334" height="41"/>
+                                <rect key="frame" x="40" y="103" width="334" height="41"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -80,11 +80,12 @@ Equipe SOMEI</string>
                             <constraint firstItem="TMw-AR-Guu" firstAttribute="trailing" secondItem="iSC-OU-EEJ" secondAttribute="trailing" constant="40" id="CFY-F8-xp8"/>
                             <constraint firstItem="iSC-OU-EEJ" firstAttribute="leading" secondItem="TMw-AR-Guu" secondAttribute="leading" constant="40" id="El8-lO-FLr"/>
                             <constraint firstItem="iSC-OU-EEJ" firstAttribute="centerX" secondItem="ofQ-id-cW9" secondAttribute="centerX" id="H9s-6D-06o"/>
-                            <constraint firstItem="ofQ-id-cW9" firstAttribute="top" secondItem="TMw-AR-Guu" secondAttribute="top" constant="191" id="Knc-IU-KdE"/>
-                            <constraint firstItem="ggd-WA-7nk" firstAttribute="top" secondItem="TMw-AR-Guu" secondAttribute="top" multiplier="2.5" id="UeY-GS-d6g"/>
+                            <constraint firstItem="ofQ-id-cW9" firstAttribute="top" secondItem="ggd-WA-7nk" secondAttribute="bottom" constant="20" id="JNg-B5-CgS"/>
+                            <constraint firstItem="ofQ-id-cW9" firstAttribute="top" secondItem="TMw-AR-Guu" secondAttribute="top" constant="120" id="Knc-IU-KdE"/>
                             <constraint firstItem="ofQ-id-cW9" firstAttribute="bottom" secondItem="TMw-AR-Guu" secondAttribute="bottom" constant="34" id="W3c-fx-wd2"/>
                             <constraint firstItem="ofQ-id-cW9" firstAttribute="centerX" secondItem="TMw-AR-Guu" secondAttribute="centerX" id="WIz-fr-klJ"/>
                             <constraint firstItem="iSC-OU-EEJ" firstAttribute="top" secondItem="ofQ-id-cW9" secondAttribute="top" multiplier="1.1" id="Z0i-LF-o7a"/>
+                            <constraint firstItem="ggd-WA-7nk" firstAttribute="leading" secondItem="TMw-AR-Guu" secondAttribute="leading" constant="40" id="Zgu-rF-NGC"/>
                             <constraint firstItem="54X-Dz-P8H" firstAttribute="top" secondItem="iSC-OU-EEJ" secondAttribute="bottom" constant="20" id="e9f-Af-Xvn"/>
                             <constraint firstItem="54X-Dz-P8H" firstAttribute="centerX" secondItem="iSC-OU-EEJ" secondAttribute="centerX" id="n6K-sB-LIq"/>
                             <constraint firstItem="ggd-WA-7nk" firstAttribute="width" secondItem="iSC-OU-EEJ" secondAttribute="width" id="niZ-Ei-hGz"/>

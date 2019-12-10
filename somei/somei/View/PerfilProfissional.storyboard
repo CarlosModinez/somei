@@ -36,14 +36,14 @@
                                             <rect key="frame" x="0.0" y="0.0" width="364" height="83"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Maria Helena Cruz" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TDF-cs-TXO" userLabel="nomePerfil">
-                                                    <rect key="frame" x="0.0" y="14" width="364" height="38.5"/>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Maria Helena Cruz" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TDF-cs-TXO" userLabel="nomePerfil">
+                                                    <rect key="frame" x="0.0" y="14" width="364" height="33.5"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="28"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star-4" translatesAutoresizingMaskIntoConstraints="NO" id="H4i-Uu-SQM" userLabel="imgEstrelas">
-                                                    <rect key="frame" x="0.0" y="51.5" width="90" height="18"/>
+                                                    <rect key="frame" x="0.0" y="46.5" width="90" height="18"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="H4i-Uu-SQM" secondAttribute="height" multiplier="5:1" id="61C-Ay-yau"/>
                                                     </constraints>
@@ -64,15 +64,15 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="DescricaoProfissional" id="Rhi-a7-jim" customClass="DescricaoProfissionalTableViewCell" customModule="Somei" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="111" width="364" height="42.5"/>
+                                        <rect key="frame" x="0.0" y="111" width="364" height="46.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Rhi-a7-jim" id="PVN-CC-SIP">
-                                            <rect key="frame" x="0.0" y="0.0" width="364" height="42.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="364" height="46.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GeL-P7-mPv">
-                                                    <rect key="frame" x="20" y="11" width="324" height="20.5"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <rect key="frame" x="20" y="11" width="324" height="24.5"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="21"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -89,7 +89,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="BotaoContato" rowHeight="140" id="q5b-IM-wCe" customClass="BotaoContatoTableViewCell" customModule="Somei" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="153.5" width="364" height="140"/>
+                                        <rect key="frame" x="0.0" y="157.5" width="364" height="140"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="q5b-IM-wCe" id="7fm-HE-Jqe">
                                             <rect key="frame" x="0.0" y="0.0" width="364" height="140"/>
@@ -139,26 +139,20 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="AvaliacaoProfissional" rowHeight="80" id="sag-2I-LXI" customClass="AvaliacaoProfissionalTableViewCell" customModule="Somei" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="293.5" width="364" height="80"/>
+                                        <rect key="frame" x="0.0" y="297.5" width="364" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="sag-2I-LXI" id="AJI-DE-GV9">
                                             <rect key="frame" x="0.0" y="0.0" width="364" height="80"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Avaliações" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7OP-q1-0fK">
-                                                    <rect key="frame" x="0.0" y="0.0" width="103" height="24"/>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Toque para avaliar:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4bL-r0-9Vc">
-                                                    <rect key="frame" x="0.0" y="35" width="144" height="21"/>
+                                                    <rect key="frame" x="0.0" y="36.5" width="144" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b8V-vC-XtZ">
-                                                    <rect key="frame" x="152" y="32.5" width="27" height="26"/>
+                                                    <rect key="frame" x="152" y="34" width="27" height="26"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="b8V-vC-XtZ" secondAttribute="height" multiplier="27:26" id="xWI-bC-HFZ"/>
                                                     </constraints>
@@ -168,7 +162,7 @@
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rjs-Wv-Ujd">
-                                                    <rect key="frame" x="187" y="32.5" width="27" height="26"/>
+                                                    <rect key="frame" x="187" y="34" width="27" height="26"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="Rjs-Wv-Ujd" secondAttribute="height" multiplier="27:26" id="OFQ-pj-ViK"/>
                                                     </constraints>
@@ -178,7 +172,7 @@
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CuU-HL-7oy">
-                                                    <rect key="frame" x="222" y="32.5" width="27" height="26"/>
+                                                    <rect key="frame" x="222" y="34" width="27" height="26"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="CuU-HL-7oy" secondAttribute="height" multiplier="27:26" id="RDR-rg-daz"/>
                                                     </constraints>
@@ -188,7 +182,7 @@
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k89-SD-jTO">
-                                                    <rect key="frame" x="257" y="32.5" width="27" height="26"/>
+                                                    <rect key="frame" x="257" y="34" width="27" height="26"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="k89-SD-jTO" secondAttribute="height" multiplier="27:26" id="NjK-Vk-T2t"/>
                                                     </constraints>
@@ -198,7 +192,7 @@
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Wu-ps-95j">
-                                                    <rect key="frame" x="292" y="32.5" width="27" height="26"/>
+                                                    <rect key="frame" x="292" y="34" width="27" height="26"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="8Wu-ps-95j" secondAttribute="height" multiplier="27:26" id="p7m-55-Mat"/>
                                                     </constraints>
@@ -207,6 +201,12 @@
                                                         <action selector="avaliarEstrela:" destination="lWi-Kd-cnK" eventType="touchUpInside" id="fXi-so-Zcd"/>
                                                     </connections>
                                                 </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Avaliações" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7OP-q1-0fK">
+                                                    <rect key="frame" x="128" y="0.0" width="108.5" height="25.5"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="21"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="k89-SD-jTO" firstAttribute="centerY" secondItem="CuU-HL-7oy" secondAttribute="centerY" id="0Nl-3T-AdT"/>
@@ -239,7 +239,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Comentario" rowHeight="112" id="4dR-24-Zh3" customClass="ComentarioTableViewCell" customModule="Somei" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="373.5" width="364" height="112"/>
+                                        <rect key="frame" x="0.0" y="377.5" width="364" height="112"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4dR-24-Zh3" id="t5v-60-zxk">
                                             <rect key="frame" x="0.0" y="0.0" width="364" height="112"/>
@@ -258,7 +258,7 @@
                                                         <constraint firstAttribute="width" secondItem="8tq-5Q-mEl" secondAttribute="height" multiplier="162:43" id="Teb-Nv-jm5"/>
                                                     </constraints>
                                                     <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                 </textView>
                                             </subviews>
@@ -279,7 +279,7 @@
                                 </prototypes>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Profissional" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eOm-xK-CFK">
-                                <rect key="frame" x="119.5" y="126" width="175.5" height="39"/>
+                                <rect key="frame" x="35" y="126" width="175.5" height="39"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
                                 <color key="textColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <nil key="highlightedColor"/>
@@ -293,9 +293,9 @@
                             <constraint firstItem="Njf-5e-GIa" firstAttribute="width" secondItem="W4w-N6-4Er" secondAttribute="width" multiplier="0.88" id="8iJ-sU-MYQ"/>
                             <constraint firstItem="W4w-N6-4Er" firstAttribute="top" secondItem="eOm-xK-CFK" secondAttribute="bottom" constant="30" id="Ctb-cd-dfG"/>
                             <constraint firstItem="Njf-5e-GIa" firstAttribute="centerX" secondItem="W4w-N6-4Er" secondAttribute="centerX" id="Dh8-CU-FbY"/>
+                            <constraint firstItem="eOm-xK-CFK" firstAttribute="leading" secondItem="BDQ-po-x62" secondAttribute="leading" constant="35" id="LFo-DM-k50"/>
                             <constraint firstItem="W4w-N6-4Er" firstAttribute="height" secondItem="mUL-uc-M8r" secondAttribute="height" multiplier="0.8" id="Xca-h8-DO2"/>
                             <constraint firstItem="W4w-N6-4Er" firstAttribute="centerX" secondItem="BDQ-po-x62" secondAttribute="centerX" id="e2R-tK-zEW"/>
-                            <constraint firstItem="eOm-xK-CFK" firstAttribute="centerX" secondItem="BDQ-po-x62" secondAttribute="centerX" id="etN-2n-rnf"/>
                             <constraint firstItem="W4w-N6-4Er" firstAttribute="bottom" secondItem="BDQ-po-x62" secondAttribute="bottom" constant="50" id="wIq-Qb-Jqi"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="BDQ-po-x62"/>
@@ -321,7 +321,7 @@
                                 <rect key="frame" x="0.0" y="144" width="414" height="748"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="top" borderStyle="roundedRect" placeholder="(Opcional)" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tOe-dV-Lfp">
-                                        <rect key="frame" x="20" y="169" width="374" height="299"/>
+                                        <rect key="frame" x="20" y="167" width="374" height="299"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" returnKeyType="done"/>
                                         <userDefinedRuntimeAttributes>
@@ -334,20 +334,20 @@
                                         </connections>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Deixe um comentário:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G6i-gK-v60">
-                                        <rect key="frame" x="119" y="134" width="176" height="22"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <rect key="frame" x="119" y="132.5" width="176" height="21.5"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Como você avalia o serviço prestado?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3cL-52-kp4">
-                                        <rect key="frame" x="43.5" y="30" width="327" height="24"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <rect key="frame" x="43.5" y="30" width="327" height="22.5"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="19"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ruS-Lg-Aew">
-                                        <rect key="frame" x="66.5" y="573" width="281" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <rect key="frame" x="66.5" y="571" width="281" height="21"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
                                         <state key="normal" title="Teve algum problema? Clique aqui.">
                                             <color key="titleColor" name="AzulApp"/>
                                         </state>
@@ -356,7 +356,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Bg-Bw-GQa">
-                                        <rect key="frame" x="96" y="66" width="38" height="36"/>
+                                        <rect key="frame" x="96" y="64.5" width="38" height="36"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="1Bg-Bw-GQa" secondAttribute="height" multiplier="19:18" id="yq0-DB-Uwi"/>
                                         </constraints>
@@ -366,7 +366,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lem-qw-6yE">
-                                        <rect key="frame" x="142" y="66" width="38" height="36"/>
+                                        <rect key="frame" x="142" y="64.5" width="38" height="36"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="lem-qw-6yE" secondAttribute="height" multiplier="19:18" id="ZQR-oh-muf"/>
                                         </constraints>
@@ -376,7 +376,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9lY-rt-6W2">
-                                        <rect key="frame" x="188" y="66" width="38" height="36"/>
+                                        <rect key="frame" x="188" y="64.5" width="38" height="36"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="9lY-rt-6W2" secondAttribute="height" multiplier="19:18" id="Lux-wL-RXc"/>
                                         </constraints>
@@ -386,7 +386,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="taM-Wr-1Jf">
-                                        <rect key="frame" x="234" y="66" width="38" height="36"/>
+                                        <rect key="frame" x="234" y="64.5" width="38" height="36"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="taM-Wr-1Jf" secondAttribute="height" multiplier="19:18" id="7D3-D4-ppu"/>
                                         </constraints>
@@ -396,7 +396,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RLx-1j-49P">
-                                        <rect key="frame" x="280" y="66" width="38" height="36"/>
+                                        <rect key="frame" x="280" y="64.5" width="38" height="36"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="RLx-1j-49P" secondAttribute="height" multiplier="19:18" id="UEM-z3-zev"/>
                                         </constraints>
@@ -441,12 +441,12 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hrD-NG-cUI">
-                                <rect key="frame" x="53.5" y="657" width="307" height="40"/>
+                                <rect key="frame" x="53.5" y="655" width="307" height="40"/>
                                 <color key="backgroundColor" name="AzulApp"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="hrD-NG-cUI" secondAttribute="height" multiplier="307:40" id="eT7-7E-q2F"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="21"/>
                                 <state key="normal" title="Avaliar">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>

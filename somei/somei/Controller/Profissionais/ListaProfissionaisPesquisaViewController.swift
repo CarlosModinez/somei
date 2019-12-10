@@ -144,10 +144,19 @@ class ListaProfissionaisPesquisaViewController: UIViewController, UITableViewDel
     
     // Toque na célula
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if Model.instance.usuario != nil {
         if let vc = storyboard?.instantiateViewController(withIdentifier: "PerfilProfissionalViewController") as? PerfilProfissionalViewController{
             view.reloadInputViews()
             vc.empresa = profissionais[indexPath.row]
             self.navigationController?.pushViewController(vc, animated: true)
+        }
+        }
+        else {
+            
+            let vc = (UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "loginViewController"))
+           // self.show(vc, sender: self)
+            self.present(vc, animated: true, completion: nil)
+               
         }
     }
 

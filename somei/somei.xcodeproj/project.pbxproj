@@ -14,6 +14,8 @@
 		03D9B65F239F4FE5003A3D98 /* AjudaBotaoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D9B65C239F4FE5003A3D98 /* AjudaBotaoTableViewCell.swift */; };
 		03D9B660239F4FE5003A3D98 /* DescricaoMinhaContaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D9B65D239F4FE5003A3D98 /* DescricaoMinhaContaTableViewCell.swift */; };
 		03D9B661239F4FE5003A3D98 /* NomeMinhaContaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D9B65E239F4FE5003A3D98 /* NomeMinhaContaTableViewCell.swift */; };
+		03D9B663239F5073003A3D98 /* MinhaConta.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03D9B662239F5073003A3D98 /* MinhaConta.storyboard */; };
+		03D9B665239F6112003A3D98 /* CadastroMEIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D9B664239F6112003A3D98 /* CadastroMEIViewController.swift */; };
 		03DD581D2399C9BF006FF392 /* MapaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DD581C2399C9BE006FF392 /* MapaController.swift */; };
 		3911CA59239159E20027B1FF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3911CA58239159E20027B1FF /* GoogleService-Info.plist */; };
 		397B835A239E98C800C86D2A /* ComoFuncionaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397B8359239E98C800C86D2A /* ComoFuncionaViewController.swift */; };
@@ -48,7 +50,6 @@
 		A5825D4D239C440500DB6D21 /* TodosOsUsuarios.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5825D4B239C440500DB6D21 /* TodosOsUsuarios.swift */; };
 		A5825D50239C444F00DB6D21 /* TodosOsUsuarios.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5825D4E239C444E00DB6D21 /* TodosOsUsuarios.swift */; };
 		A5825D51239C444F00DB6D21 /* TodasAsEmpresasDaCategoria.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5825D4F239C444F00DB6D21 /* TodasAsEmpresasDaCategoria.swift */; };
-		A5B5BDFE2397D0D600F800CC /* MinhaConta.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5B5BDFD2397D0D600F800CC /* MinhaConta.storyboard */; };
 		A5B5BE022397D10100F800CC /* Profissionais.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5B5BE012397D10100F800CC /* Profissionais.storyboard */; };
 		A5C71D3A23993A63006B68DB /* NomeProfissionalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C71D3923993A63006B68DB /* NomeProfissionalTableViewCell.swift */; };
 		A5C71D3C23993ADB006B68DB /* DescricaoProfissionalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C71D3B23993ADB006B68DB /* DescricaoProfissionalTableViewCell.swift */; };
@@ -81,6 +82,8 @@
 		03D9B65C239F4FE5003A3D98 /* AjudaBotaoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AjudaBotaoTableViewCell.swift; sourceTree = "<group>"; };
 		03D9B65D239F4FE5003A3D98 /* DescricaoMinhaContaTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DescricaoMinhaContaTableViewCell.swift; sourceTree = "<group>"; };
 		03D9B65E239F4FE5003A3D98 /* NomeMinhaContaTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NomeMinhaContaTableViewCell.swift; sourceTree = "<group>"; };
+		03D9B662239F5073003A3D98 /* MinhaConta.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MinhaConta.storyboard; sourceTree = "<group>"; };
+		03D9B664239F6112003A3D98 /* CadastroMEIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CadastroMEIViewController.swift; path = somei/Controller/CadastroMEIViewController.swift; sourceTree = SOURCE_ROOT; };
 		03DD581C2399C9BE006FF392 /* MapaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MapaController.swift; path = somei/Controller/MapaController.swift; sourceTree = SOURCE_ROOT; };
 		08B2B67085EA8A969AA28D9F /* Pods-Somei.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Somei.debug.xcconfig"; path = "Target Support Files/Pods-Somei/Pods-Somei.debug.xcconfig"; sourceTree = "<group>"; };
 		21E34BE9621ABE1E25C25B78 /* Pods_Somei.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Somei.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -122,7 +125,6 @@
 		A5825D4F239C444F00DB6D21 /* TodasAsEmpresasDaCategoria.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TodasAsEmpresasDaCategoria.swift; path = somei/shared/TodasAsEmpresasDaCategoria.swift; sourceTree = "<group>"; };
 		A5826D9B2399442B001BC776 /* TodasAsEmpresas.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TodasAsEmpresas.swift; path = somei/Model/shared/TodasAsEmpresas.swift; sourceTree = SOURCE_ROOT; };
 		A5826D9C2399442B001BC776 /* TodosOsUsuarios.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TodosOsUsuarios.swift; path = somei/Model/shared/TodosOsUsuarios.swift; sourceTree = SOURCE_ROOT; };
-		A5B5BDFD2397D0D600F800CC /* MinhaConta.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = MinhaConta.storyboard; path = somei/View/MinhaConta.storyboard; sourceTree = SOURCE_ROOT; };
 		A5B5BE012397D10100F800CC /* Profissionais.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Profissionais.storyboard; path = Somei/View/Profissionais.storyboard; sourceTree = SOURCE_ROOT; };
 		A5C71D3923993A63006B68DB /* NomeProfissionalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NomeProfissionalTableViewCell.swift; path = somei/Controller/Profissionais/Cell/NomeProfissionalTableViewCell.swift; sourceTree = SOURCE_ROOT; };
 		A5C71D3B23993ADB006B68DB /* DescricaoProfissionalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DescricaoProfissionalTableViewCell.swift; path = somei/Controller/Profissionais/Cell/DescricaoProfissionalTableViewCell.swift; sourceTree = SOURCE_ROOT; };
@@ -191,7 +193,7 @@
 				CC430097239C28B40004A8B2 /* avaliacoes-minha-conta.storyboard */,
 				CCCC66A6239A768C00FABFF1 /* Ajuda.storyboard */,
 				A55DD4652397D58900821A2F /* PerfilProfissional.storyboard */,
-				A5B5BDFD2397D0D600F800CC /* MinhaConta.storyboard */,
+				03D9B662239F5073003A3D98 /* MinhaConta.storyboard */,
 				39BAA0D6239159470066B302 /* Main.storyboard */,
 				39BAA0DB239159490066B302 /* LaunchScreen.storyboard */,
 				39BAA0D9239159490066B302 /* Assets.xcassets */,
@@ -213,6 +215,7 @@
 				397B8359239E98C800C86D2A /* ComoFuncionaViewController.swift */,
 				038119CF239EE8D8004D6982 /* elfoPageViewController.swift */,
 				038119D1239EF6CF004D6982 /* finalOnboarding.swift */,
+				03D9B664239F6112003A3D98 /* CadastroMEIViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -417,10 +420,10 @@
 				399B5F1D2396AB31008F886D /* Colors.xcassets in Resources */,
 				CC430098239C28B40004A8B2 /* avaliacoes-minha-conta.storyboard in Resources */,
 				CCCC66A7239A768C00FABFF1 /* Ajuda.storyboard in Resources */,
+				03D9B663239F5073003A3D98 /* MinhaConta.storyboard in Resources */,
 				39BAA0DD239159490066B302 /* LaunchScreen.storyboard in Resources */,
 				3911CA59239159E20027B1FF /* GoogleService-Info.plist in Resources */,
 				39BAA0DA239159490066B302 /* Assets.xcassets in Resources */,
-				A5B5BDFE2397D0D600F800CC /* MinhaConta.storyboard in Resources */,
 				39BAA0D8239159470066B302 /* Main.storyboard in Resources */,
 				A55DD4662397D58900821A2F /* PerfilProfissional.storyboard in Resources */,
 			);
@@ -493,6 +496,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				39EDBDAC23994952008C03A8 /* LoginViewController.swift in Sources */,
+				03D9B665239F6112003A3D98 /* CadastroMEIViewController.swift in Sources */,
 				03D9B65F239F4FE5003A3D98 /* AjudaBotaoTableViewCell.swift in Sources */,
 				A5CBEA2523954530009D2658 /* InfoEmpresa.swift in Sources */,
 				A51F9616239A831500BC6EAA /* PerfilProfissionalViewController.swift in Sources */,

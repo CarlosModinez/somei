@@ -49,7 +49,7 @@ class CadastroTresViewController: UIViewController, UITextFieldDelegate {
             DAOFireBAseUsuario.saveUser(user)
             
             //Retornar para a tela de login
-            self.navigationController?.popToViewController((self.navigationController?.viewControllers[0])!, animated: true)
+//            self.navigationController?.popToViewController((self.navigationController?.viewControllers[0])!, animated: true)
         }
     }
     
@@ -159,7 +159,10 @@ class CadastroTresViewController: UIViewController, UITextFieldDelegate {
                         DAOFireBaseEMpresas.saveEmpresa(emp)
                         
                         DAOFireBaseCategorias.categoriaJaCadastrada(categoria: categoria!) { (existe) in
-                            if(existe!){
+                            print("existe =  ", existe)
+                            print("categoria = ", categoria)
+                            
+                            if(existe == false){
                                 DAOFireBaseCategorias.saveCategoriaCadastrada(categoria!)
                             }
                         }

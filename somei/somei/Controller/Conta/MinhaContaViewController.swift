@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import FirebaseUI
+import Alamofire
 
 class MinhaContaViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -19,29 +21,51 @@ class MinhaContaViewController: UIViewController, UITableViewDelegate, UITableVi
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
-        tableView.dataSource = self
-        tableView.delegate = self
-        
+
+        usuario = Model.instance.usuario
         
         
+            if usuario == nil {
+                tabBarController?.selectedIndex = 0
+                let vc = (UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "loginViewController"))
+              // self.show(vc, sender: self)
+               self.present(vc, animated: true, completion: nil)
+                return
+            }
+        empresa = Model.instance.usuario.empresa
+
+        
+        tableView.tableFooterView = UIView()
+        
+        if let nome = usuario.nome.components(separatedBy: " ").first {
+            lblNome.text = nome
+        }
+        else {
+            lblNome.text = usuario.nome
+        }
+        //print("NOME = ", usuario.nome.)
+
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        
+        tableView.dataSource = self
+        tableView.delegate = self
     }
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+        return 4
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
+        print("index path = ", indexPath.row)
+        
         if indexPath.row == 0 {
+            tableView.estimatedRowHeight = 44.0
+            tableView.rowHeight = UITableView.automaticDimension
             
             let cell0 = tableView.dequeueReusableCell(withIdentifier: "NomeMinhaContaTableViewCell", for: indexPath) as! NomeMinhaContaTableViewCell
             
@@ -67,35 +91,59 @@ class MinhaContaViewController: UIViewController, UITableViewDelegate, UITableVi
             let cell1 = tableView.dequeueReusableCell(withIdentifier: "DescricaoMinhaContaTableViewCell", for: indexPath) as! DescricaoMinhaContaTableViewCell
             
             if empresa != nil{
+                tableView.estimatedRowHeight = 44.0
+                tableView.rowHeight = UITableView.automaticDimension
                 
                 cell1.textViewDescricao.text = empresa.descricao
                 
             } else {
                 
                 cell1.textViewDescricao.text = ""
-                tableView.rowHeight = 0.0
+                cell1.frame.size = CGSize(width: cell1.frame.width, height: 1)
+                tableView.rowHeight = 1.0
                 
             }
+            return cell1
             
-        }
-                
-                let cell1 = tableView.dequeueReusableCell(withIdentifier: "AjudaBotaoTableViewCell", for: indexPath) as! AjudaBotaoTableViewCell
-            
+        }else if indexPath.row == 2 {
+            tableView.rowHeight = 80
+            print("vai criar a terceira")
+            let cell1 = tableView.dequeueReusableCell(withIdentifier: "AjudaBotaoTableViewCell", for: indexPath) as! AjudaBotaoTableViewCell
+
             cell1.botaoAjuda.addTarget(self, action: #selector(irParaAjuda), for: .touchUpInside)
-        
-        
-                return cell1
-    
-            
+
+            return cell1
         }
+        else {
+            tableView.rowHeight = 80
+            print("vai criar a quarta")
+            let cell1 = tableView.dequeueReusableCell(withIdentifier: "LogoutBotaoTableViewCell", for: indexPath) as! LogoutBotaoTableViewCell
+
+            cell1.botaoLogout.addTarget(self, action: #selector(logout), for: .touchUpInside)
+
+            return cell1
+        }
+            
+    }
     
     @objc func irParaAjuda(){
         
-        let controller = AjudaViewController()
+        let controller = UIStoryboard(name: "Ajuda", bundle: nil).instantiateViewController(withIdentifier: "AjudaViewController") as! AjudaViewController
         
         self.present(controller, animated: true, completion: nil)
         
     }
+    
+    @objc func logout(){
+       do{
+           try Auth.auth().signOut()
+       }catch _ {
+           
+       }
+        let vc = (UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "inicioViewController"))
+    navigationController?.setViewControllers([vc], animated: true)
+        
+   }
     
     
 }

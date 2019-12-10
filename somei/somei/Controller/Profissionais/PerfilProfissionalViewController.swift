@@ -42,8 +42,8 @@ class PerfilProfissionalViewController: UIViewController, UITableViewDataSource,
         
         tableView.estimatedRowHeight = 44.0
         tableView.rowHeight = UITableView.automaticDimension
-//        self.navigationController?.navigationBar.transparentNavigationBar()
-//        self.navigationController?.navigationBar.tintColor = UIColor.white
+        self.navigationController?.navigationBar.transparentNavigationBar()
+        self.navigationController?.navigationBar.tintColor = UIColor.white
         
 
         tableView.reloadData()

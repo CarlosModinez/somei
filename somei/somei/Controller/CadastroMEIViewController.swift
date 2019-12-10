@@ -1,25 +1,28 @@
 //
-//  ComoFuncionaViewController.swift
+//  CadastroMEIViewController.swift
 //  Somei
 //
-//  Created by José Guilherme Bestel on 09/12/19.
+//  Created by Felipe Mesquita on 10/12/19.
 //  Copyright © 2019 José Guilherme Bestel. All rights reserved.
 //
 
 import UIKit
 
-class ComoFuncionaViewController: UIViewController {
+class CadastroMEIViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.navigationController?.navigationBar.transparentNavigationBar()
-        self.navigationController?.navigationBar.tintColor = UIColor.white
 
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func criarMEI(_ sender: Any) {
+        if let url = URL(string: "https://www.portalmaisempreendedor.com.br/registro/") {
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        }
+        
+    }
+    
     /*
     // MARK: - Navigation
 

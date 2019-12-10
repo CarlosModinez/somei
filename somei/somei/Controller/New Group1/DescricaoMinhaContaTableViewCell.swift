@@ -10,7 +10,7 @@ import UIKit
 
 class DescricaoMinhaContaTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var textViewDescricao: UITextView!
+    @IBOutlet weak var textViewDescricao: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

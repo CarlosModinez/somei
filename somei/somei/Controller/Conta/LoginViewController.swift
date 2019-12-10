@@ -22,9 +22,10 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         
         super.viewDidLoad()
-        
-//        self.navigationController?.navigationBar.transparentNavigationBar()
-//        self.navigationController?.navigationBar.tintColor = UIColor.white
+        senhaLogin.delegate = self
+        emailLogin.delegate = self
+        self.navigationController?.navigationBar.transparentNavigationBar()
+        self.navigationController?.navigationBar.tintColor = UIColor.white
         
         if(Model.instance.isLogado){
             self.proximaPagina()
@@ -40,6 +41,15 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
                 print("sem usuario")
             }else{
                 Model.instance.isLogado = true
+                self.emailLogin.text = user?.email
+                DAOFireBAseUsuario.buscarUsuarioPeloEmail(email: (user?.email)!) { (usuario) in
+                    Model.instance.usuario = usuario
+
+                    //Segue para pagina a retornar
+                    print("mudar tela")
+                    self.proximaPagina()
+                }
+                //self.proximaPagina()
             }
         }
     }
@@ -86,7 +96,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
             //MARK: Achar o id e classe para a página q vai
             if let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "tabBar") as? UITabBarController {
                 
-                navigationController?.dismiss(animated: true, completion:  {
+                self.dismiss(animated: true, completion:  {
                     NotificationCenter.default.post(name: NSNotification.Name(rawValue: "logou"), object: nil)
 //                    self.navigationController!.setViewControllers([vc], animated: true)
                 })
@@ -99,6 +109,17 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
                 navigationController?.setViewControllers([vc], animated: true)
             }
         }
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        print("ddddd")
+        if textField == emailLogin {
+            senhaLogin.becomeFirstResponder()
+            return true
+        }
+        
+        textField.resignFirstResponder()
+        return true
     }
 }
 
