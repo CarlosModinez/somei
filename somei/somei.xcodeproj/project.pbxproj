@@ -11,6 +11,9 @@
 		038119D0239EE8D8004D6982 /* elfoPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038119CF239EE8D8004D6982 /* elfoPageViewController.swift */; };
 		038119D2239EF6CF004D6982 /* finalOnboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038119D1239EF6CF004D6982 /* finalOnboarding.swift */; };
 		03D9B659239F4D64003A3D98 /* MinhaContaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D9B658239F4D64003A3D98 /* MinhaContaViewController.swift */; };
+		03D9B65F239F4FE5003A3D98 /* AjudaBotaoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D9B65C239F4FE5003A3D98 /* AjudaBotaoTableViewCell.swift */; };
+		03D9B660239F4FE5003A3D98 /* DescricaoMinhaContaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D9B65D239F4FE5003A3D98 /* DescricaoMinhaContaTableViewCell.swift */; };
+		03D9B661239F4FE5003A3D98 /* NomeMinhaContaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D9B65E239F4FE5003A3D98 /* NomeMinhaContaTableViewCell.swift */; };
 		03DD581D2399C9BF006FF392 /* MapaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DD581C2399C9BE006FF392 /* MapaController.swift */; };
 		3911CA59239159E20027B1FF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3911CA58239159E20027B1FF /* GoogleService-Info.plist */; };
 		397B835A239E98C800C86D2A /* ComoFuncionaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397B8359239E98C800C86D2A /* ComoFuncionaViewController.swift */; };
@@ -75,6 +78,9 @@
 		038119CF239EE8D8004D6982 /* elfoPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = elfoPageViewController.swift; path = somei/Controller/elfoPageViewController.swift; sourceTree = SOURCE_ROOT; };
 		038119D1239EF6CF004D6982 /* finalOnboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = finalOnboarding.swift; path = somei/Controller/finalOnboarding.swift; sourceTree = SOURCE_ROOT; };
 		03D9B658239F4D64003A3D98 /* MinhaContaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MinhaContaViewController.swift; path = somei/Controller/Conta/MinhaContaViewController.swift; sourceTree = SOURCE_ROOT; };
+		03D9B65C239F4FE5003A3D98 /* AjudaBotaoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AjudaBotaoTableViewCell.swift; sourceTree = "<group>"; };
+		03D9B65D239F4FE5003A3D98 /* DescricaoMinhaContaTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DescricaoMinhaContaTableViewCell.swift; sourceTree = "<group>"; };
+		03D9B65E239F4FE5003A3D98 /* NomeMinhaContaTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NomeMinhaContaTableViewCell.swift; sourceTree = "<group>"; };
 		03DD581C2399C9BE006FF392 /* MapaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MapaController.swift; path = somei/Controller/MapaController.swift; sourceTree = SOURCE_ROOT; };
 		08B2B67085EA8A969AA28D9F /* Pods-Somei.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Somei.debug.xcconfig"; path = "Target Support Files/Pods-Somei/Pods-Somei.debug.xcconfig"; sourceTree = "<group>"; };
 		21E34BE9621ABE1E25C25B78 /* Pods_Somei.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Somei.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -151,6 +157,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		03D9B65B239F4FB8003A3D98 /* New Group1 */ = {
+			isa = PBXGroup;
+			children = (
+				03D9B65C239F4FE5003A3D98 /* AjudaBotaoTableViewCell.swift */,
+				03D9B65D239F4FE5003A3D98 /* DescricaoMinhaContaTableViewCell.swift */,
+				03D9B65E239F4FE5003A3D98 /* NomeMinhaContaTableViewCell.swift */,
+			);
+			path = "New Group1";
+			sourceTree = "<group>";
+		};
 		3947C99A23915A7900B72900 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -187,6 +203,7 @@
 		3947C99C23915A9500B72900 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				03D9B65B239F4FB8003A3D98 /* New Group1 */,
 				A5825D46239C43DF00DB6D21 /* PrincipalViewController.swift */,
 				A5825D47239C43DF00DB6D21 /* ViewController.swift */,
 				03DD581C2399C9BE006FF392 /* MapaController.swift */,
@@ -476,6 +493,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				39EDBDAC23994952008C03A8 /* LoginViewController.swift in Sources */,
+				03D9B65F239F4FE5003A3D98 /* AjudaBotaoTableViewCell.swift in Sources */,
 				A5CBEA2523954530009D2658 /* InfoEmpresa.swift in Sources */,
 				A51F9616239A831500BC6EAA /* PerfilProfissionalViewController.swift in Sources */,
 				A5459D4223954BAE0023D99D /* ProfissionaisMaisProcuradosCollectionViewCell.swift in Sources */,
@@ -488,9 +506,11 @@
 				A5732D9F2397E3DB00EEAD94 /* ComentarioTableViewCell.swift in Sources */,
 				A51F9617239A831500BC6EAA /* PinterestLayout.swift in Sources */,
 				A5EC9E082395739F00BC72B3 /* (null) in Sources */,
+				03D9B661239F4FE5003A3D98 /* NomeMinhaContaTableViewCell.swift in Sources */,
 				A5825D48239C43DF00DB6D21 /* PrincipalViewController.swift in Sources */,
 				A5CBEA2223954530009D2658 /* Empresa.swift in Sources */,
 				39B26D24239DBB8B0094BD08 /* DAOFireBaseUsuario.swift in Sources */,
+				03D9B660239F4FE5003A3D98 /* DescricaoMinhaContaTableViewCell.swift in Sources */,
 				A5732DDF2397F45B00EEAD94 /* AdicionarComentarioViewController.swift in Sources */,
 				A5CBEA2323954530009D2658 /* Endereco.swift in Sources */,
 				A5825D49239C43DF00DB6D21 /* ViewController.swift in Sources */,
