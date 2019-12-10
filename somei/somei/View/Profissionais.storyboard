@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UMa-bc-q0W">
-                                <rect key="frame" x="0.0" y="284" width="414" height="661"/>
+                                <rect key="frame" x="0.0" y="235" width="414" height="661"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iyu-ii-pmA">
                                         <rect key="frame" x="34" y="24" width="346" height="20.5"/>
@@ -51,7 +51,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HBn-II-gXS">
-                                <rect key="frame" x="34" y="116.5" width="346" height="76.5"/>
+                                <rect key="frame" x="34" y="67.5" width="346" height="76.5"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Qual ">
                                         <attributes>
@@ -89,7 +89,7 @@ Cg
                                 <nil key="highlightedColor"/>
                             </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="4qO-q6-wda">
-                                <rect key="frame" x="35" y="344" width="344" height="523"/>
+                                <rect key="frame" x="35" y="295" width="344" height="523"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <collectionViewLayout key="collectionViewLayout" id="3Wh-m8-EuT" customClass="PinterestLayout" customModule="Somei" customModuleProvider="target"/>
                                 <cells>
@@ -101,10 +101,10 @@ Cg
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qaZ-98-JzB">
-                                                    <rect key="frame" x="0.0" y="0.0" width="144" height="98"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Restaurador de obras de arte" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ilY-mo-5Zu">
-                                                            <rect key="frame" x="15" y="15" width="114" height="68"/>
+                                                            <rect key="frame" x="15" y="15" width="20" height="20"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -140,7 +140,7 @@ Cg
                                 </cells>
                             </collectionView>
                             <searchBar contentMode="redraw" searchBarStyle="minimal" text="" placeholder="Ex: Redator, eletricista, etc." translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oou-gN-snP">
-                                <rect key="frame" x="24" y="208" width="366" height="56"/>
+                                <rect key="frame" x="24" y="159" width="366" height="56"/>
                                 <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -191,7 +191,7 @@ Cg
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TdU-tT-put">
-                                <rect key="frame" x="0.0" y="228" width="414" height="717"/>
+                                <rect key="frame" x="0.0" y="179" width="414" height="717"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Xr-ZM-scH">
                                         <rect key="frame" x="16" y="38" width="382" height="23.5"/>
@@ -295,7 +295,7 @@ Cg
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&lt;categoria&gt;" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EJj-Cv-FRh">
-                                <rect key="frame" x="115.5" y="177.5" width="183.5" height="38.5"/>
+                                <rect key="frame" x="115.5" y="128.5" width="183.5" height="38.5"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -329,8 +329,9 @@ Cg
         <scene sceneID="kac-mI-bPo">
             <objects>
                 <navigationController storyboardIdentifier="UIProfissionais" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="5Z2-7n-snU" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Profissionais" selectedImage="icon-profissionais" id="Cej-VB-0t7"/>
+                    <tabBarItem key="tabBarItem" title="Profissionais" image="icon-profissionais" id="A4q-wn-POC"/>
                     <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" hidden="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="h7M-Qj-XwJ">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>

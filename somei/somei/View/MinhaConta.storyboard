@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mrz-cP-9s8">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mrz-cP-9s8">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Minha Conta Oficial View Controller-->
+        <!--Minha Conta View Controller-->
         <scene sceneID="4C4-f6-IdN">
             <objects>
-                <viewController id="ACA-Jz-BBN" customClass="MinhaContaOficialViewController" customModule="Somei" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ACA-Jz-BBN" customClass="MinhaContaViewController" customModule="Somei" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6Md-px-FUo">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -153,6 +153,10 @@
                         <viewLayoutGuide key="safeArea" id="mz4-TU-3si"/>
                     </view>
                     <navigationItem key="navigationItem" id="Ktr-Q3-bqw"/>
+                    <connections>
+                        <outlet property="lbl_nome" destination="P0i-L0-5cz" id="2Vt-0r-3Dl"/>
+                        <outlet property="tableView" destination="raK-dQ-dZu" id="QR0-zV-PRh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SPE-RZ-11h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
