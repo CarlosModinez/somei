@@ -27,11 +27,15 @@
 		39EDBDB323994DF0008C03A8 /* CadastroTresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39EDBDB223994DF0008C03A8 /* CadastroTresViewController.swift */; };
 		39EDBDB723994E7A008C03A8 /* InicioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39EDBDB623994E7A008C03A8 /* InicioViewController.swift */; };
 		39EDBDB923995600008C03A8 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39EDBDB823995600008C03A8 /* Extensions.swift */; };
+		A505B822239EFCD8000D4699 /* AjudaBotaoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A505B821239EFCD8000D4699 /* AjudaBotaoTableViewCell.swift */; };
 		A51F9614239A831500BC6EAA /* AdicionarComentarioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51F9610239A831500BC6EAA /* AdicionarComentarioViewController.swift */; };
 		A51F9615239A831500BC6EAA /* ListaProfissionaisPesquisaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51F9611239A831500BC6EAA /* ListaProfissionaisPesquisaViewController.swift */; };
 		A51F9616239A831500BC6EAA /* PerfilProfissionalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51F9612239A831500BC6EAA /* PerfilProfissionalViewController.swift */; };
 		A51F9617239A831500BC6EAA /* PinterestLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51F9613239A831500BC6EAA /* PinterestLayout.swift */; };
 		A53A7665239EC5E4009CB815 /* AjudaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53A7664239EC5E4009CB815 /* AjudaViewController.swift */; };
+		A53BC07B239EF5940091C397 /* MinhaContaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53BC07A239EF5940091C397 /* MinhaContaViewController.swift */; };
+		A53BC07F239EF6960091C397 /* NomeMinhaContaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53BC07E239EF6960091C397 /* NomeMinhaContaTableViewCell.swift */; };
+		A53BC081239EF8150091C397 /* DescricaoMinhaContaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53BC080239EF8150091C397 /* DescricaoMinhaContaTableViewCell.swift */; };
 		A5459D4023954BA20023D99D /* ProcurarProfissionaisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5459D3F23954BA20023D99D /* ProcurarProfissionaisViewController.swift */; };
 		A5459D4223954BAE0023D99D /* ProfissionaisMaisProcuradosCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5459D4123954BAE0023D99D /* ProfissionaisMaisProcuradosCollectionViewCell.swift */; };
 		A5459D492395527E0023D99D /* EXTViewArrendondada.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5459D482395527E0023D99D /* EXTViewArrendondada.swift */; };
@@ -95,11 +99,15 @@
 		39EDBDB623994E7A008C03A8 /* InicioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InicioViewController.swift; sourceTree = "<group>"; };
 		39EDBDB823995600008C03A8 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		46F7EE9F17B980114189616F /* Pods-Somei.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Somei.release.xcconfig"; path = "Target Support Files/Pods-Somei/Pods-Somei.release.xcconfig"; sourceTree = "<group>"; };
+		A505B821239EFCD8000D4699 /* AjudaBotaoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AjudaBotaoTableViewCell.swift; path = "somei/Controller/New Group/Cell/AjudaBotaoTableViewCell.swift"; sourceTree = SOURCE_ROOT; };
 		A51F9610239A831500BC6EAA /* AdicionarComentarioViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AdicionarComentarioViewController.swift; path = somei/Controller/Profissionais/AdicionarComentarioViewController.swift; sourceTree = SOURCE_ROOT; };
 		A51F9611239A831500BC6EAA /* ListaProfissionaisPesquisaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListaProfissionaisPesquisaViewController.swift; path = somei/Controller/Profissionais/ListaProfissionaisPesquisaViewController.swift; sourceTree = SOURCE_ROOT; };
 		A51F9612239A831500BC6EAA /* PerfilProfissionalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PerfilProfissionalViewController.swift; path = somei/Controller/Profissionais/PerfilProfissionalViewController.swift; sourceTree = SOURCE_ROOT; };
 		A51F9613239A831500BC6EAA /* PinterestLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PinterestLayout.swift; path = somei/Controller/Profissionais/PinterestLayout.swift; sourceTree = SOURCE_ROOT; };
 		A53A7664239EC5E4009CB815 /* AjudaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AjudaViewController.swift; path = somei/Controller/Conta/AjudaViewController.swift; sourceTree = SOURCE_ROOT; };
+		A53BC07A239EF5940091C397 /* MinhaContaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MinhaContaViewController.swift; path = "Somei/Controller/New Group/MinhaContaViewController.swift"; sourceTree = SOURCE_ROOT; };
+		A53BC07E239EF6960091C397 /* NomeMinhaContaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NomeMinhaContaTableViewCell.swift; path = "somei/Controller/New Group/Cell/NomeMinhaContaTableViewCell.swift"; sourceTree = SOURCE_ROOT; };
+		A53BC080239EF8150091C397 /* DescricaoMinhaContaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DescricaoMinhaContaTableViewCell.swift; path = "somei/Controller/New Group/Cell/DescricaoMinhaContaTableViewCell.swift"; sourceTree = SOURCE_ROOT; };
 		A5459D3F23954BA20023D99D /* ProcurarProfissionaisViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProcurarProfissionaisViewController.swift; path = somei/Controller/Profissionais/ProcurarProfissionaisViewController.swift; sourceTree = SOURCE_ROOT; };
 		A5459D4123954BAE0023D99D /* ProfissionaisMaisProcuradosCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfissionaisMaisProcuradosCollectionViewCell.swift; path = somei/Controller/Profissionais/Cell/ProfissionaisMaisProcuradosCollectionViewCell.swift; sourceTree = SOURCE_ROOT; };
 		A5459D482395527E0023D99D /* EXTViewArrendondada.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EXTViewArrendondada.swift; path = somei/EXTViewArrendondada.swift; sourceTree = SOURCE_ROOT; };
@@ -191,6 +199,7 @@
 				39EDBDB623994E7A008C03A8 /* InicioViewController.swift */,
 				A5459D3E23954B520023D99D /* Profissionais */,
 				39EDBDAD23994957008C03A8 /* Conta */,
+				A53BC07C239EF6360091C397 /* New Group */,
 				397B8359239E98C800C86D2A /* ComoFuncionaViewController.swift */,
 				038119CF239EE8D8004D6982 /* elfoPageViewController.swift */,
 				038119D1239EF6CF004D6982 /* finalOnboarding.swift */,
@@ -241,6 +250,25 @@
 				A53A7664239EC5E4009CB815 /* AjudaViewController.swift */,
 			);
 			path = Conta;
+			sourceTree = "<group>";
+		};
+		A53BC07C239EF6360091C397 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				A53BC07D239EF6780091C397 /* Cell */,
+				A53BC07A239EF5940091C397 /* MinhaContaViewController.swift */,
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		A53BC07D239EF6780091C397 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				A53BC07E239EF6960091C397 /* NomeMinhaContaTableViewCell.swift */,
+				A53BC080239EF8150091C397 /* DescricaoMinhaContaTableViewCell.swift */,
+				A505B821239EFCD8000D4699 /* AjudaBotaoTableViewCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		A5459D3A23954A760023D99D /* Cell */ = {
@@ -473,9 +501,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				39EDBDAC23994952008C03A8 /* LoginViewController.swift in Sources */,
+				A505B822239EFCD8000D4699 /* AjudaBotaoTableViewCell.swift in Sources */,
 				A5CBEA2523954530009D2658 /* InfoEmpresa.swift in Sources */,
 				A51F9616239A831500BC6EAA /* PerfilProfissionalViewController.swift in Sources */,
 				A5459D4223954BAE0023D99D /* ProfissionaisMaisProcuradosCollectionViewCell.swift in Sources */,
+				A53BC07B239EF5940091C397 /* MinhaContaViewController.swift in Sources */,
 				A5CBEA2423954530009D2658 /* Usuario.swift in Sources */,
 				D1A984C1239921A6004C170C /* ListaProfissionaisPesquisaViewController.swift in Sources */,
 				D1D518B12399233D008C8C1A /* ListaProfissionaisTableViewCell.swift in Sources */,
@@ -505,12 +535,14 @@
 				037A3B54239A90F900708803 /* Ext_String.swift in Sources */,
 				D1D518B02399233D008C8C1A /* ListaAtividadesTableViewCell.swift in Sources */,
 				A5825D4C239C440500DB6D21 /* TodasAsEmpresasDaCategoria.swift in Sources */,
+				A53BC07F239EF6960091C397 /* NomeMinhaContaTableViewCell.swift in Sources */,
 				A5EC9E0A2395754300BC72B3 /* PerfilProfissionalViewController.swift in Sources */,
 				A5825D50239C444F00DB6D21 /* TodosOsUsuarios.swift in Sources */,
 				39A5D675239F0F47007C43B1 /* Model.swift in Sources */,
 				A5459D4023954BA20023D99D /* ProcurarProfissionaisViewController.swift in Sources */,
 				A5C71D3A23993A63006B68DB /* NomeProfissionalTableViewCell.swift in Sources */,
 				A51F9614239A831500BC6EAA /* AdicionarComentarioViewController.swift in Sources */,
+				A53BC081239EF8150091C397 /* DescricaoMinhaContaTableViewCell.swift in Sources */,
 				A53A7665239EC5E4009CB815 /* AjudaViewController.swift in Sources */,
 				038119D2239EF6CF004D6982 /* finalOnboarding.swift in Sources */,
 				397B835A239E98C800C86D2A /* ComoFuncionaViewController.swift in Sources */,
@@ -667,7 +699,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = GUL3CPS6RX;
+				DEVELOPMENT_TEAM = 7NGUQDD35C;
 				INFOPLIST_FILE = Somei/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -687,7 +719,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = GUL3CPS6RX;
+				DEVELOPMENT_TEAM = 7NGUQDD35C;
 				INFOPLIST_FILE = Somei/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (

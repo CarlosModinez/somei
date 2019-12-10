@@ -31,6 +31,8 @@ class ListaProfissionaisPesquisaViewController: UIViewController, UITableViewDel
         
         tableView.dataSource = self
         tableView.delegate = self
+        
+        
     
         // remove as linhas vazias do final da table
         tableView.tableFooterView = UIView()
@@ -142,11 +144,38 @@ class ListaProfissionaisPesquisaViewController: UIViewController, UITableViewDel
     
     // Toque na célula
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if let vc = storyboard?.instantiateViewController(withIdentifier: "PerfilProfissionalViewController") as? PerfilProfissionalViewController{
-            view.reloadInputViews()
-            vc.empresa = profissionais[indexPath.row]
+        
+        if Model.instance.isLogado{
+            
+            
+            
+            if let vc = storyboard?.instantiateViewController(withIdentifier: "PerfilProfissionalViewController") as? PerfilProfissionalViewController{
+                view.reloadInputViews()
+                vc.empresa = profissionais[indexPath.row]
+                self.navigationController?.pushViewController(vc, animated: true)
+                
+            }
+            
+        } else{
+            
+            
+            if let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "loginViewController") as? LoginViewController{
+            
+//            if let vc = storyboard?.instantiateViewController(withIdentifier: "loginViewController") as? LoginViewController{
+                
+                view.reloadInputViews()
+                
+                vc.empresa = profissionais[indexPath.row]
+                vc.voltarPara = "profissionais"
+                
             self.navigationController?.pushViewController(vc, animated: true)
+            
+            
         }
+        
+        
     }
+
+}
 
 }

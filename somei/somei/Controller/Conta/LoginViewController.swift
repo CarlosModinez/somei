@@ -15,6 +15,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     var handle :AuthStateDidChangeListenerHandle!
     var isLogado :Bool = false
     var voltarPara :String = "perfil"
+    var empresa : Empresa?
     
     @IBOutlet var emailLogin: UITextField!
     @IBOutlet var senhaLogin: UITextField!
@@ -89,11 +90,12 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
 
                 })
             }
-        }else{
+        }else if (self.voltarPara == "profissionais"){
             //MARK: Achar o id e classe para a página q vai
-            if let vc = self.storyboard?.instantiateViewController(withIdentifier: "procurarProfissionaisViewController") as? ProcurarProfissionaisViewController{
+            if let vc = self.storyboard?.instantiateViewController(withIdentifier: "PerfilProfissionalViewController") as? PerfilProfissionalViewController{
+                vc.empresa = self.empresa
                 self.navigationController?.present(vc, animated: true, completion: {
-
+                    
                 })
             }
         }
