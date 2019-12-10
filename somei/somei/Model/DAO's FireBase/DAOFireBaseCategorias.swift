@@ -70,13 +70,13 @@ class DAOFireBaseCategorias {
         let db = Firestore.firestore()
         var categorias : [String] = []
         
-        db.collection("codigoMEI").getDocuments() { (querySnapshot, err) in
+        db.collection("categoriasCadastradas").getDocuments() { (querySnapshot, err) in
             if let err =  err {
                 print("Error: \(err)")
             } else {
                 
                 for document in querySnapshot!.documents {
-                    let categoria = document.data()["traducao"] as? String
+                    let categoria = document.data()["categoria"] as? String
                     if(!categorias.contains(categoria!)){
                         categorias.append(categoria!)
                     }
@@ -92,7 +92,7 @@ class DAOFireBaseCategorias {
         let db = Firestore.firestore()
         
         var userRef: DocumentReference? = nil
-        let userData: [String: Any] = [categoria:1]
+        let userData: [String: Any] = ["categoria":categoria]
         
         userRef = db.collection("categoriasCadastradas").addDocument(data: userData) { err in
             if let err = err {
@@ -109,7 +109,7 @@ class DAOFireBaseCategorias {
         let db = Firestore.firestore()
         var existe : Bool = false
         
-        db.collection("codigoMEI").whereField("traducao", isEqualTo: categoria).getDocuments() { (querySnapshot, err) in
+        db.collection("categoriasCadastradas").whereField("categoria", isEqualTo: categoria).getDocuments() { (querySnapshot, err) in
             if let err =  err {
                 print("Error: \(err)")
             } else {
