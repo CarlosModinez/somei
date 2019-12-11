@@ -13,9 +13,20 @@ import Firebase
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         FirebaseApp.configure()
+        
+            
+        // Já ativa a localização se tiver permissão
+        MapaController.instance.ativarMapaSePuder()
+        
+        do{
+            try Auth.auth().signOut()
+            print("logout efetuado")
+        }catch _ {
+            print("Erro no logout")
+        }
+        
         return true
     }
 
