@@ -20,6 +20,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Já ativa a localização se tiver permissão
         MapaController.instance.ativarMapaSePuder()
         
+        do{
+            try Auth.auth().signOut()
+            print("logout efetuado")
+        }catch _ {
+            print("Erro no logout")
+        }
+        
         return true
     }
 
